@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Episodios</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8E%A7%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Documentales en audio y vídeo para escuchar andando">
+<style>
+  :root {
+    --bg: #f6f3ee; --card: #ffffff; --ink: #1f1c18; --muted: #6b645b; --line: #e3ddd3;
+    --accent: #9a4b2a; --accent-soft: #f3e3d9; --ok: #2f6b4f; --ok-soft: #dcefe4;
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161412; --card: #201d1a; --ink: #ece6dd; --muted: #a39b90; --line: #36312b;
+      --accent: #e08a5f; --accent-soft: #3a2a21; --ok: #7cc9a2; --ok-soft: #1f3329;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px 16px 64px; }
+  header h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2rem; margin: 8px 0 2px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); }
+  .stats { margin-top: 10px; font-size: .9rem; color: var(--muted); }
+  .stats b { color: var(--ink); }
+  .tools { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 12px 0 10px; margin-top: 8px; }
+  .search { width: 100%; padding: 12px 14px; font-size: 1rem; border: 1px solid var(--line); border-radius: 12px;
+    background: var(--card); color: var(--ink); }
+  .chips { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  .chip { border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 6px 12px; border-radius: 999px;
+    font-size: .9rem; cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  details.serie { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); margin: 14px 0; }
+  details.serie > summary { list-style: none; cursor: pointer; padding: 16px; }
+  details.serie > summary::-webkit-details-marker { display: none; }
+  .serie-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+  .serie-head h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; margin: 0; }
+  .serie-count { font-size: .85rem; color: var(--muted); white-space: nowrap; }
+  .serie-desc { color: var(--muted); font-size: .92rem; margin: 4px 0 10px; }
+  .bar { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; }
+  .bar > span { display: block; height: 100%; background: var(--ok); }
+  .temporada { padding: 0 16px 8px; }
+  .temporada h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 10px 0 6px; }
+  .nota { font-size: .9rem; color: var(--muted); margin: 0 0 10px; }
+  .ep { border-top: 1px solid var(--line); padding: 14px 0; }
+  .ep:first-of-type { border-top: 0; }
+  .ep-title { display: flex; gap: 10px; align-items: flex-start; }
+  .num { flex: none; font-size: .8rem; color: var(--muted); min-width: 2.2em; padding-top: 3px; }
+  .ep h4 { margin: 0; font-size: 1.02rem; line-height: 1.35; }
+  .ep p { margin: 4px 0 0; color: var(--muted); font-size: .92rem; }
+  .meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .tag { font-size: .75rem; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+  .tag.ok { background: var(--ok-soft); color: var(--ok); }
+  .tag.soon { background: transparent; border: 1px dashed var(--line); color: var(--muted); }
+  .ep.pendiente h4 { color: var(--muted); font-weight: 500; }
+  .player { margin-top: 10px; }
+  .player audio, .player video { width: 100%; border-radius: 10px; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .btn { font-size: .88rem; padding: 7px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--card);
+    color: var(--ink); text-decoration: none; cursor: pointer; }
+  .btn.done { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); }
+  .fuentes { margin-top: 8px; font-size: .88rem; }
+  .fuentes summary { cursor: pointer; color: var(--muted); }
+  .fuentes ul { margin: 6px 0 0; padding-left: 18px; }
+  .fuentes a { color: var(--accent); }
+  .vacio { text-align: center; color: var(--muted); padding: 30px 0; }
+  footer { margin-top: 30px; font-size: .82rem; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="titulo">Episodios</h1>
+    <p id="subtitulo"></p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="tools">
+    <input class="search" id="q" type="search" placeholder="Buscar por título, tema o persona..." autocomplete="off">
+    <div class="chips" role="group" aria-label="Filtro">
+      <button class="chip" data-f="todos" aria-pressed="true">Todos</button>
+      <button class="chip" data-f="porOir">Por escuchar</button>
+      <button class="chip" data-f="oidos">Escuchados</button>
+      <button class="chip" data-f="proximos">Próximamente</button>
+    </div>
+  </div>
+
+  <main id="lista"></main>
+  <footer>Las marcas de "escuchado" y el punto donde te quedaste se guardan en este navegador.</footer>
+</div>
+
+<script>
+(function () {
+  var KEY_OIDOS = "episodios:oidos";
+  var KEY_POS = "episodios:pos:";
+  var estado = { filtro: "todos", q: "", datos: null };
+
+  function leer(k, def) { try { var v = localStorage.getItem(k); return v === null ? def : JSON.parse(v); } catch (e) { return def; } }
+  function guardar(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  var oidos = leer(KEY_OIDOS, {});
+
+  function el(tag, attrs, hijos) {
+    var n = document.createElement(tag);
+    if (attrs) for (var a in attrs) {
+      if (a === "text") n.textContent = attrs[a];
+      else if (a === "class") n.className = attrs[a];
+      else n.setAttribute(a, attrs[a]);
+    }
+    (hijos || []).forEach(function (h) { if (h) n.appendChild(h); });
+    return n;
+  }
+  function norm(s) { return (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
+  function fechaBonita(iso) {
+    if (!iso) return "";
+    var m = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+    var p = iso.split("-");
+    return Number(p[2]) + " " + m[Number(p[1]) - 1] + " " + p[0];
+  }
+
+  function pasaFiltro(ep, serie) {
+    var pub = ep.estado === "publicado";
+    var oido = !!oidos[ep.id];
+    if (estado.filtro === "porOir" && !(pub && !oido)) return false;
+    if (estado.filtro === "oidos" && !oido) return false;
+    if (estado.filtro === "proximos" && pub) return false;
+    if (estado.q) {
+      var texto = norm([ep.titulo, ep.descripcion, serie.nombre].join(" "));
+      var palabras = norm(estado.q).split(/\s+/).filter(Boolean);
+      for (var i = 0; i < palabras.length; i++) if (texto.indexOf(palabras[i]) === -1) return false;
+    }
+    return true;
+  }
+
+  function reproductor(ep) {
+    var esVideo = ep.formato === "video";
+    var m = el(esVideo ? "video" : "audio", { controls: "", preload: "none", src: ep.archivo });
+    if (esVideo) m.setAttribute("playsinline", "");
+    var ultimo = 0;
+    m.addEventListener("loadedmetadata", function () {
+      var pos = leer(KEY_POS + ep.id, 0);
+      if (pos > 5 && pos < m.duration - 10) m.currentTime = pos;
+    });
+    m.addEventListener("timeupdate", function () {
+      var ahora = Date.now();
+      if (ahora - ultimo > 4000) { ultimo = ahora; guardar(KEY_POS + ep.id, m.currentTime); }
+    });
+    m.addEventListener("ended", function () {
+      guardar(KEY_POS + ep.id, 0);
+      oidos[ep.id] = true; guardar(KEY_OIDOS, oidos); pintar();
+    });
+    return el("div", { class: "player" }, [m]);
+  }
+
+  function tarjeta(ep, n) {
+    var pub = ep.estado === "publicado";
+    var oido = !!oidos[ep.id];
+    var meta = el("div", { class: "meta" }, [
+      el("span", { class: "tag", text: ep.formato === "video" ? "Vídeo" : "Audio" }),
+      ep.duracion ? el("span", { class: "tag", text: ep.duracion }) : null,
+      pub && ep.fecha ? el("span", { class: "tag", text: fechaBonita(ep.fecha) }) : null,
+      !pub ? el("span", { class: "tag soon", text: "Próximamente" }) : null,
+      oido ? el("span", { class: "tag ok", text: "Escuchado" }) : null
+    ]);
+    var hijos = [
+      el("div", { class: "ep-title" }, [
+        el("span", { class: "num", text: String(n).padStart(2, "0") }),
+        el("div", null, [el("h4", { text: ep.titulo }), el("p", { text: ep.descripcion || "" }), meta])
+      ])
+    ];
+    if (pub) {
+      hijos.push(reproductor(ep));
+      var marcar = el("button", { class: "btn" + (oido ? " done" : ""), type: "button", text: oido ? "✓ Escuchado" : "Marcar como escuchado" });
+      marcar.addEventListener("click", function () {
+        if (oidos[ep.id]) delete oidos[ep.id]; else oidos[ep.id] = true;
+        guardar(KEY_OIDOS, oidos); pintar();
+      });
+      var acciones = el("div", { class: "actions" }, [
+        marcar,
+        el("a", { class: "btn", href: ep.archivo, download: "", text: "Descargar" }),
+        ep.guion ? el("a", { class: "btn", href: ep.guion, target: "_blank", rel: "noopener", text: "Guion" }) : null
+      ]);
+      hijos.push(acciones);
+      if (ep.fuentes && ep.fuentes.length) {
+        var ul = el("ul");
+        ep.fuentes.forEach(function (f) {
+          ul.appendChild(el("li", null, [el("a", { href: f.url, target: "_blank", rel: "noopener", text: f.titulo })]));
+        });
+        hijos.push(el("details", { class: "fuentes" }, [el("summary", { text: "Fuentes (" + ep.fuentes.length + ")" }), ul]));
+      }
+    }
+    return el("div", { class: "ep " + (pub ? "publicado" : "pendiente"), id: ep.id }, hijos);
+  }
+
+  function pintar() {
+    var d = estado.datos, lista = document.getElementById("lista");
+    var abiertas = {};
+    lista.querySelectorAll("details.serie").forEach(function (x) { abiertas[x.dataset.id] = x.open; });
+    lista.innerHTML = "";
+    var totalPub = 0, totalOido = 0, mostrados = 0;
+    d.series.forEach(function (s) {
+      var pubSerie = 0, oidoSerie = 0, bloques = [];
+      s.temporadas.forEach(function (t) {
+        var eps = [];
+        t.episodios.forEach(function (ep, i) {
+          if (ep.estado === "publicado") { pubSerie++; if (oidos[ep.id]) oidoSerie++; }
+          if (pasaFiltro(ep, s)) eps.push(tarjeta(ep, i + 1));
+        });
+        var sinFiltro = estado.filtro === "todos" && !estado.q;
+        if (eps.length || (sinFiltro && t.nota)) {
+          var tb = el("div", { class: "temporada" }, [el("h3", { text: t.nombre })]);
+          if (t.nota && !t.episodios.length) tb.appendChild(el("p", { class: "nota", text: t.nota }));
+          eps.forEach(function (e) { tb.appendChild(e); });
+          bloques.push(tb);
+          mostrados += eps.length;
+        }
+      });
+      totalPub += pubSerie; totalOido += oidoSerie;
+      if (!bloques.length) return;
+      var total = s.temporadas.reduce(function (a, t) { return a + t.episodios.length; }, 0);
+      var pct = pubSerie ? Math.round(100 * oidoSerie / pubSerie) : 0;
+      var head = el("summary", null, [
+        el("div", { class: "serie-head" }, [
+          el("h2", { text: s.nombre }),
+          el("span", { class: "serie-count", text: pubSerie + " de " + total + " publicados" })
+        ]),
+        el("div", { class: "serie-desc", text: s.descripcion }),
+        el("div", { class: "bar", title: oidoSerie + " escuchados" }, [el("span", { style: "width:" + pct + "%" })])
+      ]);
+      var det = el("details", { class: "serie" }, [head].concat(bloques));
+      det.dataset.id = s.id;
+      if (estado.q || estado.filtro !== "todos") det.open = true;
+      else if (s.id in abiertas) det.open = abiertas[s.id];
+      else det.open = pubSerie > 0;
+      lista.appendChild(det);
+    });
+    if (!mostrados && (estado.q || estado.filtro !== "todos")) lista.appendChild(el("p", { class: "vacio", text: "No hay episodios que coincidan." }));
+    document.getElementById("stats").innerHTML = "";
+    document.getElementById("stats").appendChild(el("span", null, [
+      el("b", { text: String(totalPub) }), document.createTextNode(" publicados · "),
+      el("b", { text: String(totalOido) }), document.createTextNode(" escuchados · "),
+      el("b", { text: String(totalPub - totalOido) }), document.createTextNode(" por escuchar")
+    ]));
+  }
+
+  document.getElementById("q").addEventListener("input", function (e) { estado.q = e.target.value.trim(); pintar(); });
+  document.querySelectorAll(".chip").forEach(function (b) {
+    b.addEventListener("click", function () {
+      document.querySelectorAll(".chip").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+      b.setAttribute("aria-pressed", "true"); estado.filtro = b.dataset.f; pintar();
+    });
+  });
+
+  fetch("catalogo.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+    estado.datos = d;
+    document.getElementById("titulo").textContent = d.titulo;
+    document.getElementById("subtitulo").textContent = d.subtitulo;
+    pintar();
+  }).catch(function () {
+    document.getElementById("lista").appendChild(el("p", { class: "vacio", text: "No se ha podido cargar el catálogo." }));
+  });
+})();
+</script>
+</body>
+</html>
