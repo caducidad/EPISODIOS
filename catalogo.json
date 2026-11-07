@@ -21,32 +21,125 @@
               "duracion": "27 min",
               "fecha": "2026-11-07",
               "fuentes": [
-                {"titulo": "Great Hanoi Rat Massacre (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre"},
-                {"titulo": "Entrevista a Michael G. Vann (World History Connected)", "url": "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html"},
-                {"titulo": "The Great Hanoi Rat Massacre (Atlas Obscura)", "url": "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902"},
-                {"titulo": "Goodhart's law (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law"},
-                {"titulo": "A lot of hot air: Hoy No Circula (Stanford Social Innovation Review)", "url": "https://ssir.org/articles/entry/a_lot_of_hot_air"},
-                {"titulo": "Driving restrictions haven't cleared Mexico City's air (Pacific Standard)", "url": "https://psmag.com/?p=16970"},
-                {"titulo": "'Perverse' carbon payments send flood of money to China (Yale e360)", "url": "https://e360.yale.edu/features/perverse_co2_payments_send_flood_of_money_to_china"},
-                {"titulo": "China threatens to vent (Climate Control News)", "url": "https://www.climatecontrolnews.com.au/news/china-threatens-to-vent"},
-                {"titulo": "La justicia europea se pronuncia sobre el caso del lino (Modaes)", "url": "https://www.modaes.com/entorno/la-justicia-europea-se-pronuncia-sobre-el-caso-del"},
-                {"titulo": "Garzón concluye la instrucción del caso del lino (Infoagro)", "url": "https://www.infoagro.com/noticias/2003/5/11747_ue-lino_garzon_concluye_instruccion_exculpa_comuni.asp"},
-                {"titulo": "Paying per bone fragment (Freakonomics)", "url": "https://freakonomics.com/2009/10/20/when-youre-paying-per-bone-fragment-expect-more-fragments"},
-                {"titulo": "Effectiveness of a bounty program for reducing wild pig densities", "url": "https://ui.adsabs.harvard.edu/abs/2017WSBu...41..548D"},
-                {"titulo": "Wells Fargo: 3,5 millones de cuentas (AP)", "url": "https://krocnews.com/wells-fargo-scandal-larger-than-first-reported/"},
-                {"titulo": "Atlanta school cheating scandal (NBC News)", "url": "https://www.nbcnews.com/id/wbna43779246"},
-                {"titulo": "UK 100,000 tests target (The Independent)", "url": "https://www.inkl.com/news/coronavirus-tests-posted-to-uk-homes-counted-towards-100-000-a-day-government-target"},
-                {"titulo": "Why AI agents lie and cheat (MIT Technology Review)", "url": "https://technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals"},
-                {"titulo": "Why AI models cheat: reward hacking explained (Decrypt)", "url": "https://decrypt.co/382274/why-ai-models-cheat-reward-hacking-explained"}
+                {
+                  "titulo": "Great Hanoi Rat Massacre (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Great_Hanoi_Rat_Massacre"
+                },
+                {
+                  "titulo": "Entrevista a Michael G. Vann (World History Connected)",
+                  "url": "https://worldhistoryconnected.press.uillinois.edu/15.2/vann_interview.html"
+                },
+                {
+                  "titulo": "The Great Hanoi Rat Massacre (Atlas Obscura)",
+                  "url": "https://www.atlasobscura.com/articles/hanoi-rat-massacre-1902"
+                },
+                {
+                  "titulo": "Goodhart's law (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law"
+                },
+                {
+                  "titulo": "A lot of hot air: Hoy No Circula (Stanford Social Innovation Review)",
+                  "url": "https://ssir.org/articles/entry/a_lot_of_hot_air"
+                },
+                {
+                  "titulo": "Driving restrictions haven't cleared Mexico City's air (Pacific Standard)",
+                  "url": "https://psmag.com/?p=16970"
+                },
+                {
+                  "titulo": "'Perverse' carbon payments send flood of money to China (Yale e360)",
+                  "url": "https://e360.yale.edu/features/perverse_co2_payments_send_flood_of_money_to_china"
+                },
+                {
+                  "titulo": "China threatens to vent (Climate Control News)",
+                  "url": "https://www.climatecontrolnews.com.au/news/china-threatens-to-vent"
+                },
+                {
+                  "titulo": "La justicia europea se pronuncia sobre el caso del lino (Modaes)",
+                  "url": "https://www.modaes.com/entorno/la-justicia-europea-se-pronuncia-sobre-el-caso-del"
+                },
+                {
+                  "titulo": "Garzón concluye la instrucción del caso del lino (Infoagro)",
+                  "url": "https://www.infoagro.com/noticias/2003/5/11747_ue-lino_garzon_concluye_instruccion_exculpa_comuni.asp"
+                },
+                {
+                  "titulo": "Paying per bone fragment (Freakonomics)",
+                  "url": "https://freakonomics.com/2009/10/20/when-youre-paying-per-bone-fragment-expect-more-fragments"
+                },
+                {
+                  "titulo": "Effectiveness of a bounty program for reducing wild pig densities",
+                  "url": "https://ui.adsabs.harvard.edu/abs/2017WSBu...41..548D"
+                },
+                {
+                  "titulo": "Wells Fargo: 3,5 millones de cuentas (AP)",
+                  "url": "https://krocnews.com/wells-fargo-scandal-larger-than-first-reported/"
+                },
+                {
+                  "titulo": "Atlanta school cheating scandal (NBC News)",
+                  "url": "https://www.nbcnews.com/id/wbna43779246"
+                },
+                {
+                  "titulo": "UK 100,000 tests target (The Independent)",
+                  "url": "https://www.inkl.com/news/coronavirus-tests-posted-to-uk-homes-counted-towards-100-000-a-day-government-target"
+                },
+                {
+                  "titulo": "Why AI agents lie and cheat (MIT Technology Review)",
+                  "url": "https://technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals"
+                },
+                {
+                  "titulo": "Why AI models cheat: reward hacking explained (Decrypt)",
+                  "url": "https://decrypt.co/382274/why-ai-models-cheat-reward-hacking-explained"
+                }
               ]
             },
-            {"id": "sc02", "titulo": "Los lobos de Yellowstone", "descripcion": "Cómo devolver un depredador a un parque cambió los ciervos, la vegetación y hasta el curso de los ríos.", "estado": "pendiente", "formato": "video"},
-            {"id": "sc03", "titulo": "Mao contra los gorriones", "descripcion": "La campaña para exterminar a los gorriones, las plagas de langosta y la Gran Hambruna china.", "estado": "pendiente", "formato": "audio"},
-            {"id": "sc04", "titulo": "Fallos en cascada", "descripcion": "Grandes apagones, pánicos bursátiles y el Flash Crash de 2010: cuando un fallo pequeño tumba el sistema entero.", "estado": "pendiente", "formato": "video"},
-            {"id": "sc05", "titulo": "Orden sin jefe", "descripcion": "Bandadas de estorninos, hormigueros y atascos fantasma: el orden que surge sin que nadie lo dirija.", "estado": "pendiente", "formato": "video"},
-            {"id": "sc06", "titulo": "Invasores", "descripcion": "Sapos de caña, conejos y otras especies que se introdujeron para resolver un problema y se convirtieron en otro.", "estado": "pendiente", "formato": "audio"},
-            {"id": "sc07", "titulo": "Burbujas", "descripcion": "De los tulipanes holandeses a las criptomonedas: por qué los mercados enloquecen de vez en cuando.", "estado": "pendiente", "formato": "audio"},
-            {"id": "sc08", "titulo": "Contagios", "descripcion": "Cómo se propagan por una red las epidemias, los rumores y las modas, y qué tienen en común.", "estado": "pendiente", "formato": "video"}
+            {
+              "id": "sc02",
+              "titulo": "Los lobos de Yellowstone",
+              "descripcion": "Cómo devolver un depredador a un parque cambió los ciervos, la vegetación y hasta el curso de los ríos.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "sc03",
+              "titulo": "Mao contra los gorriones",
+              "descripcion": "La campaña para exterminar a los gorriones, las plagas de langosta y la Gran Hambruna china.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "sc04",
+              "titulo": "Fallos en cascada",
+              "descripcion": "Grandes apagones, pánicos bursátiles y el Flash Crash de 2010: cuando un fallo pequeño tumba el sistema entero.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "sc05",
+              "titulo": "Orden sin jefe",
+              "descripcion": "Bandadas de estorninos, hormigueros y atascos fantasma: el orden que surge sin que nadie lo dirija.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "sc06",
+              "titulo": "Invasores",
+              "descripcion": "Sapos de caña, conejos y otras especies que se introdujeron para resolver un problema y se convirtieron en otro.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "sc07",
+              "titulo": "Burbujas",
+              "descripcion": "De los tulipanes holandeses a las criptomonedas: por qué los mercados enloquecen de vez en cuando.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "sc08",
+              "titulo": "Contagios",
+              "descripcion": "Cómo se propagan por una red las epidemias, los rumores y las modas, y qué tienen en común.",
+              "estado": "pendiente",
+              "formato": "video"
+            }
           ]
         }
       ]
@@ -70,18 +163,69 @@
               "duracion": "11 min",
               "fecha": "2026-11-07",
               "fuentes": [
-                {"titulo": "Logroño conmemora el auto de fe de 1610 (Nuevecuatrouno)", "url": "https://nuevecuatrouno.com/2026/11/07/logrono-conmemora-auto-fe-1610-ultima-gran-hoguera-brujeria-espana-zugarramurdi"},
-                {"titulo": "Nadie espera a la Inquisición española (The Objective)", "url": "https://theobjective.com/elsubjetivo/opinion/2022-09-25/nadie-espera-a-la-inquisicion-espanola/"},
-                {"titulo": "Las brujas y el inquisidor, de Elvira Roca Barea (Planeta)", "url": "https://www.planetadelibros.com/premios/premio-primavera-de-novela/edicion/721"}
+                {
+                  "titulo": "Logroño conmemora el auto de fe de 1610 (Nuevecuatrouno)",
+                  "url": "https://nuevecuatrouno.com/2026/11/07/logrono-conmemora-auto-fe-1610-ultima-gran-hoguera-brujeria-espana-zugarramurdi"
+                },
+                {
+                  "titulo": "Nadie espera a la Inquisición española (The Objective)",
+                  "url": "https://theobjective.com/elsubjetivo/opinion/2022-09-25/nadie-espera-a-la-inquisicion-espanola/"
+                },
+                {
+                  "titulo": "Las brujas y el inquisidor, de Elvira Roca Barea (Planeta)",
+                  "url": "https://www.planetadelibros.com/premios/premio-primavera-de-novela/edicion/721"
+                }
               ]
             },
-            {"id": "sh02", "titulo": "Friedrich Spee y las hogueras de Würzburg", "descripcion": "El jesuita que confesaba a las condenadas y escribió que bajo tortura cualquiera confiesa cualquier cosa.", "estado": "pendiente", "formato": "audio"},
-            {"id": "sh03", "titulo": "Lorenzo Valla y la gran falsificación", "descripcion": "Cómo el análisis del latín destapó que la Donación de Constantino era falsa.", "estado": "pendiente", "formato": "audio"},
-            {"id": "sh04", "titulo": "Franklin y Lavoisier contra Mesmer", "descripcion": "El magnetismo animal, la alta sociedad de París y uno de los primeros experimentos a ciegas.", "estado": "pendiente", "formato": "audio"},
-            {"id": "sh05", "titulo": "John Snow y la fuente de Broad Street", "descripcion": "Un mapa de muertes por cólera y la manivela que cambió la epidemiología.", "estado": "pendiente", "formato": "video"},
-            {"id": "sh06", "titulo": "Semmelweis y las manos de los médicos", "descripcion": "El médico que descubrió por qué morían las parturientas y al que nadie quiso creer.", "estado": "pendiente", "formato": "audio"},
-            {"id": "sh07", "titulo": "Hans el Listo", "descripcion": "El caballo que sabía contar y el psicólogo que descubrió lo que de verdad hacía.", "estado": "pendiente", "formato": "audio"},
-            {"id": "sh08", "titulo": "Houdini contra los médiums", "descripcion": "El mago más famoso del mundo al servicio de desenmascarar a los espiritistas.", "estado": "pendiente", "formato": "audio"}
+            {
+              "id": "sh02",
+              "titulo": "Friedrich Spee y las hogueras de Würzburg",
+              "descripcion": "El jesuita que confesaba a las condenadas y escribió que bajo tortura cualquiera confiesa cualquier cosa.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "sh03",
+              "titulo": "Lorenzo Valla y la gran falsificación",
+              "descripcion": "Cómo el análisis del latín destapó que la Donación de Constantino era falsa.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "sh04",
+              "titulo": "Franklin y Lavoisier contra Mesmer",
+              "descripcion": "El magnetismo animal, la alta sociedad de París y uno de los primeros experimentos a ciegas.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "sh05",
+              "titulo": "John Snow y la fuente de Broad Street",
+              "descripcion": "Un mapa de muertes por cólera y la manivela que cambió la epidemiología.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "sh06",
+              "titulo": "Semmelweis y las manos de los médicos",
+              "descripcion": "El médico que descubrió por qué morían las parturientas y al que nadie quiso creer.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "sh07",
+              "titulo": "Hans el Listo",
+              "descripcion": "El caballo que sabía contar y el psicólogo que descubrió lo que de verdad hacía.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "sh08",
+              "titulo": "Houdini contra los médiums",
+              "descripcion": "El mago más famoso del mundo al servicio de desenmascarar a los espiritistas.",
+              "estado": "pendiente",
+              "formato": "audio"
+            }
           ]
         }
       ]
@@ -94,12 +238,48 @@
         {
           "nombre": "Temporada 1",
           "episodios": [
-            {"id": "ia01", "titulo": "Qué es una red neuronal, desde cero", "descripcion": "Neuronas artificiales, pesos y aprendizaje, explicado con dibujos.", "estado": "pendiente", "formato": "video"},
-            {"id": "ia02", "titulo": "El juego de la vida", "descripcion": "Cuatro reglas simples, una cuadrícula y una complejidad que nadie esperaba.", "estado": "pendiente", "formato": "video"},
-            {"id": "ia03", "titulo": "Capacidades emergentes", "descripcion": "Habilidades que aparecen de golpe al crecer los modelos, y el debate sobre si son reales o un efecto de cómo se miden.", "estado": "pendiente", "formato": "audio"},
-            {"id": "ia04", "titulo": "Grokking", "descripcion": "Redes que memorizan durante mucho tiempo y de repente parecen entender.", "estado": "pendiente", "formato": "audio"},
-            {"id": "ia05", "titulo": "Dentro de la caja negra", "descripcion": "Neuronas que representan conceptos, superposición y cómo se intenta descifrar lo que pasa dentro de un modelo.", "estado": "pendiente", "formato": "video"},
-            {"id": "ia06", "titulo": "El hackeo de la recompensa", "descripcion": "Por qué los sistemas que aprenden por recompensas encuentran atajos, y qué se está haciendo para evitarlo.", "estado": "pendiente", "formato": "audio"}
+            {
+              "id": "ia01",
+              "titulo": "Qué es una red neuronal, desde cero",
+              "descripcion": "Neuronas artificiales, pesos y aprendizaje, explicado con dibujos.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "ia02",
+              "titulo": "El juego de la vida",
+              "descripcion": "Cuatro reglas simples, una cuadrícula y una complejidad que nadie esperaba.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "ia03",
+              "titulo": "Capacidades emergentes",
+              "descripcion": "Habilidades que aparecen de golpe al crecer los modelos, y el debate sobre si son reales o un efecto de cómo se miden.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "ia04",
+              "titulo": "Grokking",
+              "descripcion": "Redes que memorizan durante mucho tiempo y de repente parecen entender.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "ia05",
+              "titulo": "Dentro de la caja negra",
+              "descripcion": "Neuronas que representan conceptos, superposición y cómo se intenta descifrar lo que pasa dentro de un modelo.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "ia06",
+              "titulo": "El hackeo de la recompensa",
+              "descripcion": "Por qué los sistemas que aprenden por recompensas encuentran atajos, y qué se está haciendo para evitarlo.",
+              "estado": "pendiente",
+              "formato": "audio"
+            }
           ]
         }
       ]
@@ -112,14 +292,62 @@
         {
           "nombre": "Temporada 1",
           "episodios": [
-            {"id": "an01", "titulo": "La trampa de la evitación", "descripcion": "Por qué huir de lo que nos da miedo lo hace más grande.", "estado": "pendiente", "formato": "audio"},
-            {"id": "an02", "titulo": "Conductas de seguridad", "descripcion": "Las protecciones que alivian en el momento y mantienen el miedo a largo plazo.", "estado": "pendiente", "formato": "audio"},
-            {"id": "an03", "titulo": "No pienses en un oso blanco", "descripcion": "El experimento de Wegner y por qué suprimir un pensamiento lo hace volver.", "estado": "pendiente", "formato": "audio"},
-            {"id": "an04", "titulo": "El círculo vicioso del pánico", "descripcion": "Cómo interpretar un síntoma físico como peligro dispara la crisis.", "estado": "pendiente", "formato": "audio"},
-            {"id": "an05", "titulo": "La intención paradójica", "descripcion": "Viktor Frankl y la idea de buscar a propósito el síntoma que se teme.", "estado": "pendiente", "formato": "audio"},
-            {"id": "an06", "titulo": "Rumiar y preocuparse", "descripcion": "Cuando darle vueltas a algo se disfraza de resolverlo.", "estado": "pendiente", "formato": "audio"},
-            {"id": "an07", "titulo": "La búsqueda de reafirmación", "descripcion": "Preguntar una y otra vez si todo va bien, y por qué la tranquilidad dura tan poco.", "estado": "pendiente", "formato": "audio"},
-            {"id": "an08", "titulo": "Intentar dormir", "descripcion": "El insomnio y por qué esforzarse por dormir es lo que lo impide.", "estado": "pendiente", "formato": "audio"}
+            {
+              "id": "an01",
+              "titulo": "La trampa de la evitación",
+              "descripcion": "Por qué huir de lo que nos da miedo lo hace más grande.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "an02",
+              "titulo": "Conductas de seguridad",
+              "descripcion": "Las protecciones que alivian en el momento y mantienen el miedo a largo plazo.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "an03",
+              "titulo": "No pienses en un oso blanco",
+              "descripcion": "El experimento de Wegner y por qué suprimir un pensamiento lo hace volver.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "an04",
+              "titulo": "El círculo vicioso del pánico",
+              "descripcion": "Cómo interpretar un síntoma físico como peligro dispara la crisis.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "an05",
+              "titulo": "La intención paradójica",
+              "descripcion": "Viktor Frankl y la idea de buscar a propósito el síntoma que se teme.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "an06",
+              "titulo": "Rumiar y preocuparse",
+              "descripcion": "Cuando darle vueltas a algo se disfraza de resolverlo.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "an07",
+              "titulo": "La búsqueda de reafirmación",
+              "descripcion": "Preguntar una y otra vez si todo va bien, y por qué la tranquilidad dura tan poco.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "an08",
+              "titulo": "Intentar dormir",
+              "descripcion": "El insomnio y por qué esforzarse por dormir es lo que lo impide.",
+              "estado": "pendiente",
+              "formato": "audio"
+            }
           ]
         }
       ]
@@ -130,26 +358,211 @@
       "descripcion": "Cada filósofo en su época: su vida, su ciudad y los problemas a los que respondía.",
       "temporadas": [
         {
-          "nombre": "Temporada 1: Grecia",
+          "nombre": "Temporada 0: antes de empezar",
           "episodios": [
-            {"id": "fi01", "titulo": "Los milesios: del mito al logos", "descripcion": "Tales, Anaximandro y Anaxímenes, y la pregunta por el principio de todas las cosas.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi02", "titulo": "Pitágoras y los números", "descripcion": "Una secta, una escuela matemática y la idea de que el mundo está hecho de proporciones.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi03", "titulo": "Heráclito y Parménides", "descripcion": "Todo fluye frente a nada cambia: el gran debate sobre el ser y el devenir.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi04", "titulo": "Los pluralistas y los atomistas", "descripcion": "Empédocles, Anaxágoras, Leucipo y Demócrito.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi05", "titulo": "Los sofistas", "descripcion": "Protágoras, Gorgias y la Atenas democrática.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi06", "titulo": "Sócrates", "descripcion": "El hombre que no escribió nada, su método y su juicio.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi07", "titulo": "Platón I: vida y diálogos", "descripcion": "De la muerte de Sócrates a la Academia y los viajes a Siracusa.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi08", "titulo": "Platón II: la teoría de las Ideas", "descripcion": "La caverna, la línea dividida y el conocimiento.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi09", "titulo": "Platón III: la República", "descripcion": "La justicia, el alma y la ciudad ideal.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi10", "titulo": "Aristóteles I: vida y lógica", "descripcion": "De la Academia al Liceo, y la invención de la lógica.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi11", "titulo": "Aristóteles II: física y metafísica", "descripcion": "Sustancia, causas, acto y potencia.", "estado": "pendiente", "formato": "audio"},
-            {"id": "fi12", "titulo": "Aristóteles III: ética y política", "descripcion": "La felicidad, la virtud y el animal político.", "estado": "pendiente", "formato": "audio"}
+            {
+              "id": "fi0-1",
+              "titulo": "¿Qué es eso de filosofar?",
+              "descripcion": "Tales en el pozo y las prensas de aceite, Mileto como cruce de caminos, del mito al logos, Pitágoras y la palabra filosofía, el asombro, la filosofía y las ciencias, y los papiros de Herculano que se están leyendo con inteligencia artificial.",
+              "estado": "publicado",
+              "formato": "video",
+              "archivo": "media/fi0-1-que-es-filosofar.mp4",
+              "guion": "guiones/fi0-1-que-es-filosofar.txt",
+              "duracion": "27 min",
+              "fecha": "2026-11-07",
+              "fuentes": [
+                {
+                  "titulo": "Tales: textos de Platón y Aristóteles (Teeteto 174a, Política 1259a)",
+                  "url": "https://old.maa.org/node/692721"
+                },
+                {
+                  "titulo": "Hans Blumenberg, La risa de la muchacha tracia (reseña)",
+                  "url": "https://repositorio.uca.edu.ar/handle/123456789/13485"
+                },
+                {
+                  "titulo": "Aristóteles, Política 1259a (Perseus, trad. Rackham)",
+                  "url": "https://hsalbert.blogspot.com/2017/09/aristotle-politics-1259a.html"
+                },
+                {
+                  "titulo": "Eclipse of Thales (Wikipedia)",
+                  "url": "https://EN.wikipedia.com/wiki/Eclipse_of_Thales"
+                },
+                {
+                  "titulo": "Herodotus's report on Thales' eclipse (Electronic Antiquity)",
+                  "url": "https://scholar.lib.vt.edu/ejournals/ElAnt/V3N7/worthen.html"
+                },
+                {
+                  "titulo": "Leo of Phlius (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Leo_of_Phlius"
+                },
+                {
+                  "titulo": "Cicerón, Tusculanas V (trad. Yonge)",
+                  "url": "https://www.attalus.org/cicero/tusc5A.html"
+                },
+                {
+                  "titulo": "El paso del mito al logos y sus críticas (Dykinson)",
+                  "url": "https://www.dykinson.com/media/pdf/70011011_2027.pdf"
+                },
+                {
+                  "titulo": "¿Se ha encontrado la tumba de Platón? (Universidad Pablo de Olavide)",
+                  "url": "https://www.upo.es/patio-colorado/2024/04/23/se-ha-encontrado-la-tumba-de-platon/"
+                },
+                {
+                  "titulo": "Historic breakthrough, junio de 2026 (Universidad de Kentucky)",
+                  "url": "https://ptc.engr.uky.edu/herculaneum"
+                },
+                {
+                  "titulo": "New secrets revealed from the Herculaneum scrolls (Diamond Light Source, 2026)",
+                  "url": "https://www.diamond.ac.uk/Home/News/LatestNews/2026/New-secrets-revealed-from-the-Herculaneum-scrolls.html"
+                }
+              ]
+            },
+            {
+              "id": "fi0-2",
+              "titulo": "El mapa de las grandes preguntas",
+              "descripcion": "Las ramas de la filosofía, cada una con la pregunta que la mueve.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "fi0-3",
+              "titulo": "Los debates que nunca se cierran",
+              "descripcion": "Ser y cambio, razón y experiencia, mente y cuerpo, libertad y determinismo, verdad y relativismo.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "fi0-4",
+              "titulo": "La caja de herramientas del filósofo",
+              "descripcion": "Argumentos, lógica básica, falacias, experimentos mentales y distinciones clave.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "fi0-5",
+              "titulo": "El escenario griego",
+              "descripcion": "Homero, Hesíodo, la polis, Jonia y el problema de las fuentes.",
+              "estado": "pendiente",
+              "formato": "video"
+            },
+            {
+              "id": "fi0-6",
+              "titulo": "El mismo siglo en otros lugares",
+              "descripcion": "La era axial: Confucio, Buda y las Upanishads, contemporáneos de los primeros filósofos griegos.",
+              "estado": "pendiente",
+              "formato": "video"
+            }
           ]
         },
-        {"nombre": "Temporada 2: helenística y Roma", "episodios": [], "nota": "Cínicos, epicúreos, estoicos, escépticos y Plotino. Por detallar."},
-        {"nombre": "Temporada 3: Edad Media", "episodios": [], "nota": "Por detallar."},
-        {"nombre": "Temporada 4: Renacimiento y filosofía moderna", "episodios": [], "nota": "Por detallar."},
-        {"nombre": "Temporada 5: siglos XIX y XX", "episodios": [], "nota": "Por detallar."}
+        {
+          "nombre": "Temporada 1: Grecia",
+          "episodios": [
+            {
+              "id": "fi01",
+              "titulo": "Los milesios: del mito al logos",
+              "descripcion": "Tales, Anaximandro y Anaxímenes, y la pregunta por el principio de todas las cosas.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi02",
+              "titulo": "Pitágoras y los números",
+              "descripcion": "Una secta, una escuela matemática y la idea de que el mundo está hecho de proporciones.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi03",
+              "titulo": "Heráclito y Parménides",
+              "descripcion": "Todo fluye frente a nada cambia: el gran debate sobre el ser y el devenir.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi04",
+              "titulo": "Los pluralistas y los atomistas",
+              "descripcion": "Empédocles, Anaxágoras, Leucipo y Demócrito.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi05",
+              "titulo": "Los sofistas",
+              "descripcion": "Protágoras, Gorgias y la Atenas democrática.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi06",
+              "titulo": "Sócrates",
+              "descripcion": "El hombre que no escribió nada, su método y su juicio.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi07",
+              "titulo": "Platón I: vida y diálogos",
+              "descripcion": "De la muerte de Sócrates a la Academia y los viajes a Siracusa.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi08",
+              "titulo": "Platón II: la teoría de las Ideas",
+              "descripcion": "La caverna, la línea dividida y el conocimiento.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi09",
+              "titulo": "Platón III: la República",
+              "descripcion": "La justicia, el alma y la ciudad ideal.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi10",
+              "titulo": "Aristóteles I: vida y lógica",
+              "descripcion": "De la Academia al Liceo, y la invención de la lógica.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi11",
+              "titulo": "Aristóteles II: física y metafísica",
+              "descripcion": "Sustancia, causas, acto y potencia.",
+              "estado": "pendiente",
+              "formato": "audio"
+            },
+            {
+              "id": "fi12",
+              "titulo": "Aristóteles III: ética y política",
+              "descripcion": "La felicidad, la virtud y el animal político.",
+              "estado": "pendiente",
+              "formato": "audio"
+            }
+          ]
+        },
+        {
+          "nombre": "Temporada 2: helenística y Roma",
+          "episodios": [],
+          "nota": "Cínicos, epicúreos, estoicos, escépticos y Plotino. Por detallar."
+        },
+        {
+          "nombre": "Temporada 3: Edad Media",
+          "episodios": [],
+          "nota": "Por detallar."
+        },
+        {
+          "nombre": "Temporada 4: Renacimiento y filosofía moderna",
+          "episodios": [],
+          "nota": "Por detallar."
+        },
+        {
+          "nombre": "Temporada 5: siglos XIX y XX",
+          "episodios": [],
+          "nota": "Por detallar."
+        }
       ]
     }
   ]
