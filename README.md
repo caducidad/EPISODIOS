@@ -2,7 +2,7 @@
 
 Documentales en audio y vídeo, en castellano, para escuchar andando.
 
-Página: https://caducidad.github.io/episodios/
+Página: https://caducidad.github.io/EPISODIOS/
 
 ## Cómo está organizado
 
