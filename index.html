@@ -141,7 +141,8 @@
   }
 
   function medio(ep, tipo, autoplay) {
-    var m = el(tipo, { controls: "", preload: autoplay ? "auto" : "none", src: ep.archivo });
+    var src = (tipo === "audio" && ep.audio) ? ep.audio : ep.archivo;
+    var m = el(tipo, { controls: "", preload: autoplay ? "auto" : "none", src: src });
     if (tipo === "video") m.setAttribute("playsinline", "");
     var ultimo = 0;
     m.addEventListener("loadedmetadata", function () {
@@ -187,7 +188,7 @@
       bOir.setAttribute("aria-pressed", String(modo === "audio"));
       hueco.innerHTML = "";
       hueco.appendChild(medio(ep, modo, sonando));
-      if (modo === "audio") hueco.appendChild(el("p", { class: "nota-oir", text: "Modo solo escuchar: debería seguir sonando con la pantalla apagada." }));
+      if (modo === "audio") hueco.appendChild(el("p", { class: "nota-oir", text: "Modo solo escuchar: sigue sonando con la pantalla apagada." }));
     }
     bVer.addEventListener("click", function () { if (modo !== "video") poner("video", true); });
     bOir.addEventListener("click", function () { if (modo !== "audio") poner("audio", true); });
@@ -220,7 +221,8 @@
       });
       var acciones = el("div", { class: "actions" }, [
         marcar,
-        el("a", { class: "btn", href: ep.archivo, download: "", text: "Descargar" }),
+        el("a", { class: "btn", href: ep.archivo, download: "", text: ep.audio ? "Descargar vídeo" : "Descargar" }),
+        ep.audio ? el("a", { class: "btn", href: ep.audio, download: "", text: "Descargar audio" }) : null,
         ep.guion ? el("a", { class: "btn", href: ep.guion, target: "_blank", rel: "noopener", text: "Guion" }) : null
       ]);
       hijos.push(acciones);
