@@ -72,6 +72,11 @@
   .fuentes ul { margin: 6px 0 0; padding-left: 18px; }
   .fuentes a { color: var(--accent); }
   .vacio { text-align: center; color: var(--muted); padding: 30px 0; }
+  mark { background: #f3d27a; color: #1f1c18; border-radius: 3px; padding: 0 1px; }
+  .frag { margin-top: 10px; padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 8px; }
+  .frag-et { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); }
+  .frag p { margin: 4px 0 6px; font-family: Georgia, "Times New Roman", serif; font-size: .98rem; line-height: 1.5; color: var(--ink); }
+  .frag-ir { font-size: .85rem; color: var(--accent); text-decoration: none; }
   footer { margin-top: 30px; font-size: .82rem; color: var(--muted); text-align: center; }
 </style>
 </head>
@@ -84,7 +89,7 @@
   </header>
 
   <div class="tools">
-    <input class="search" id="q" type="search" placeholder="Buscar por título, tema o persona..." autocomplete="off">
+    <input class="search" id="q" type="search" placeholder="Buscar en títulos y transcripciones..." autocomplete="off">
     <div class="chips" role="group" aria-label="Filtro">
       <button class="chip" data-f="todos" aria-pressed="true">Todos</button>
       <button class="chip" data-f="porOir">Por escuchar</button>
@@ -107,6 +112,7 @@
   function leer(k, def) { try { var v = localStorage.getItem(k); return v === null ? def : JSON.parse(v); } catch (e) { return def; } }
   function guardar(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   var oidos = leer(KEY_OIDOS, {});
+  var textos = {}, cargandoTextos = null;
 
   function el(tag, attrs, hijos) {
     var n = document.createElement(tag);
@@ -126,6 +132,52 @@
     return Number(p[2]) + " " + m[Number(p[1]) - 1] + " " + p[0];
   }
 
+  function limpiar(t) {
+    return t.split("\n").filter(function (l) { return l.indexOf("@@") !== 0; }).join("\n").replace(/\n{3,}/g, "\n\n").trim();
+  }
+  function cargarTextos() {
+    if (cargandoTextos) return cargandoTextos;
+    var eps = [];
+    estado.datos.series.forEach(function (s) { s.temporadas.forEach(function (t) { t.episodios.forEach(function (ep) {
+      if (ep.estado === "publicado" && ep.guion) eps.push(ep);
+    }); }); });
+    cargandoTextos = Promise.all(eps.map(function (ep) {
+      return fetch(ep.guion).then(function (r) { return r.ok ? r.text() : ""; })
+        .then(function (t) { textos[ep.id] = limpiar(t); }).catch(function () {});
+    }));
+    return cargandoTextos;
+  }
+  function palabrasBusqueda() { return norm(estado.q).split(/\s+/).filter(function (w) { return w.length > 1; }); }
+  function resaltar(nodo, texto, palabras) {
+    var nt = norm(texto), i = 0;
+    while (i < texto.length) {
+      var mejor = -1, largo = 0;
+      palabras.forEach(function (w) { var k = nt.indexOf(w, i); if (k !== -1 && (mejor === -1 || k < mejor)) { mejor = k; largo = w.length; } });
+      if (mejor === -1) { nodo.appendChild(document.createTextNode(texto.slice(i))); break; }
+      nodo.appendChild(document.createTextNode(texto.slice(i, mejor)));
+      nodo.appendChild(el("mark", { text: texto.slice(mejor, mejor + largo) }));
+      i = mejor + largo;
+    }
+  }
+  function fragmento(ep) {
+    var t = textos[ep.id], palabras = palabrasBusqueda();
+    if (!t || !palabras.length) return null;
+    var nt = norm(t), frase = palabras.join(" "), pos = nt.indexOf(frase);
+    if (pos === -1) pos = nt.indexOf(palabras[0]);
+    if (pos === -1) return null;
+    var ini = Math.max(0, pos - 100), fin = Math.min(t.length, pos + frase.length + 160);
+    while (ini > 0 && !/\s/.test(t[ini - 1])) ini--;
+    while (fin < t.length && !/\s/.test(t[fin])) fin++;
+    var caja = el("div", { class: "frag" }, [el("div", { class: "frag-et", text: "En la transcripción" })]);
+    var p = el("p");
+    if (ini > 0) p.appendChild(document.createTextNode("… "));
+    resaltar(p, t.slice(ini, fin).replace(/\s+/g, " "), nt.indexOf(frase) !== -1 ? [frase] : palabras);
+    if (fin < t.length) p.appendChild(document.createTextNode(" …"));
+    caja.appendChild(p);
+    caja.appendChild(el("a", { class: "frag-ir", href: "leer.html?id=" + encodeURIComponent(ep.id) + "&q=" + encodeURIComponent(estado.q), text: "Abrir la transcripción en ese punto →" }));
+    return caja;
+  }
+
   function pasaFiltro(ep, serie) {
     var pub = ep.estado === "publicado";
     var oido = !!oidos[ep.id];
@@ -133,7 +185,7 @@
     if (estado.filtro === "oidos" && !oido) return false;
     if (estado.filtro === "proximos" && pub) return false;
     if (estado.q) {
-      var texto = norm([ep.titulo, ep.descripcion, serie.nombre].join(" "));
+      var texto = norm([ep.titulo, ep.descripcion, serie.nombre, textos[ep.id] || ""].join(" "));
       var palabras = norm(estado.q).split(/\s+/).filter(Boolean);
       for (var i = 0; i < palabras.length; i++) if (texto.indexOf(palabras[i]) === -1) return false;
     }
@@ -212,6 +264,7 @@
         el("div", null, [el("h4", { text: ep.titulo }), el("p", { text: ep.descripcion || "" }), meta])
       ])
     ];
+    if (pub && estado.q) { var fr = fragmento(ep); if (fr) hijos.push(fr); }
     if (pub) {
       hijos.push(reproductor(ep));
       var marcar = el("button", { class: "btn" + (oido ? " done" : ""), type: "button", text: oido ? "✓ Escuchado" : "Marcar como escuchado" });
@@ -223,7 +276,7 @@
         marcar,
         el("a", { class: "btn", href: ep.archivo, download: "", text: ep.audio ? "Descargar vídeo" : "Descargar" }),
         ep.audio ? el("a", { class: "btn", href: ep.audio, download: "", text: "Descargar audio" }) : null,
-        ep.guion ? el("a", { class: "btn", href: ep.guion, target: "_blank", rel: "noopener", text: "Guion" }) : null
+        ep.guion ? el("a", { class: "btn", href: "leer.html?id=" + encodeURIComponent(ep.id), text: "Transcripción" }) : null
       ]);
       hijos.push(acciones);
       if (ep.fuentes && ep.fuentes.length) {
@@ -288,7 +341,10 @@
     ]));
   }
 
-  document.getElementById("q").addEventListener("input", function (e) { estado.q = e.target.value.trim(); pintar(); });
+  document.getElementById("q").addEventListener("input", function (e) {
+    estado.q = e.target.value.trim(); pintar();
+    if (estado.q && estado.datos) cargarTextos().then(pintar);
+  });
   document.querySelectorAll(".chip").forEach(function (b) {
     b.addEventListener("click", function () {
       document.querySelectorAll(".chip").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });

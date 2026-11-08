@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transcripción · Episodios</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8E%A7%3C/text%3E%3C/svg%3E">
+<style>
+  :root { --bg: #f6f3ee; --card: #ffffff; --ink: #1f1c18; --muted: #6b645b; --line: #e3ddd3; --accent: #9a4b2a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161412; --card: #201d1a; --ink: #ece6dd; --muted: #a39b90; --line: #36312b; --accent: #e08a5f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 18px 80px; }
+  a.volver { color: var(--accent); text-decoration: none; font-size: .95rem; }
+  .serie { margin-top: 16px; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 1.7rem; line-height: 1.2; margin: 6px 0 4px; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  .buscar { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 12px 0 10px; display: flex; gap: 8px; align-items: center; }
+  .buscar input { flex: 1; min-width: 0; padding: 10px 12px; font-size: 1rem; border: 1px solid var(--line); border-radius: 10px;
+    background: var(--card); color: var(--ink); }
+  .buscar button { padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink);
+    font-size: 1rem; cursor: pointer; }
+  .cuenta { font-size: .85rem; color: var(--muted); min-width: 3.6em; text-align: center; }
+  .texto { font-family: Georgia, "Times New Roman", serif; font-size: 1.12rem; line-height: 1.75; margin-top: 6px; }
+  .texto p { margin: 0 0 1.05em; }
+  mark { background: #f3d27a; color: #1f1c18; border-radius: 3px; padding: 0 1px; }
+  mark.actual { background: #e0893c; color: #fff; }
+  .fuentes { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 14px; font-size: .92rem; }
+  .fuentes h2 { font-size: 1rem; margin: 0 0 8px; }
+  .fuentes ul { margin: 0; padding-left: 18px; }
+  .fuentes a, .pie a { color: var(--accent); }
+  .pie { margin-top: 22px; font-size: .9rem; color: var(--muted); }
+  .aviso { color: var(--muted); padding: 30px 0; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="volver" href="./">← Episodios</a>
+  <div class="serie" id="serie"></div>
+  <h1 id="titulo">Transcripción</h1>
+  <div class="meta" id="meta"></div>
+  <div class="buscar">
+    <input id="q" type="search" placeholder="Buscar en este episodio..." autocomplete="off">
+    <span class="cuenta" id="cuenta"></span>
+    <button id="ant" type="button" aria-label="Coincidencia anterior">↑</button>
+    <button id="sig" type="button" aria-label="Coincidencia siguiente">↓</button>
+  </div>
+  <div class="texto" id="texto"><p class="aviso">Cargando…</p></div>
+  <div class="fuentes" id="fuentes" hidden></div>
+  <div class="pie" id="pie"></div>
+</div>
+
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var id = params.get("id"), qInicial = params.get("q") || "";
+  var parrafos = [], marcas = [], actual = -1;
+  var caja = document.getElementById("texto");
+
+  function norm(s) { return (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
+  function limpiar(t) {
+    return t.split("\n").filter(function (l) { return l.indexOf("@@") !== 0; }).join("\n").replace(/\n{3,}/g, "\n\n").trim();
+  }
+  function el(tag, attrs, texto) {
+    var n = document.createElement(tag);
+    for (var a in (attrs || {})) n.setAttribute(a, attrs[a]);
+    if (texto) n.textContent = texto;
+    return n;
+  }
+  function fechaBonita(iso) {
+    var m = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+    var p = (iso || "").split("-");
+    return p.length === 3 ? Number(p[2]) + " de " + m[Number(p[1]) - 1] + " de " + p[0] : "";
+  }
+  function resaltar(nodo, texto, palabras) {
+    var nt = norm(texto), i = 0;
+    while (i < texto.length) {
+      var mejor = -1, largo = 0;
+      palabras.forEach(function (w) {
+        var k = nt.indexOf(w, i);
+        if (k !== -1 && (mejor === -1 || k < mejor)) { mejor = k; largo = w.length; }
+      });
+      if (mejor === -1) { nodo.appendChild(document.createTextNode(texto.slice(i))); break; }
+      nodo.appendChild(document.createTextNode(texto.slice(i, mejor)));
+      nodo.appendChild(el("mark", null, texto.slice(mejor, mejor + largo)));
+      i = mejor + largo;
+    }
+  }
+  function pintar(q) {
+    var palabras = norm(q).split(/\s+/).filter(function (w) { return w.length > 1; });
+    var frase = palabras.join(" ");
+    if (palabras.length > 1 && norm(parrafos.join(" ")).indexOf(frase) !== -1) palabras = [frase];
+    caja.innerHTML = "";
+    parrafos.forEach(function (p) {
+      var nodo = el("p");
+      if (palabras.length) resaltar(nodo, p, palabras); else nodo.textContent = p;
+      caja.appendChild(nodo);
+    });
+    marcas = Array.prototype.slice.call(caja.querySelectorAll("mark"));
+    actual = -1;
+    document.getElementById("cuenta").textContent = palabras.length ? (marcas.length ? marcas.length + (marcas.length === 1 ? " vez" : " veces") : "0") : "";
+    if (marcas.length) ir(0);
+  }
+  function ir(k) {
+    if (!marcas.length) return;
+    if (actual >= 0) marcas[actual].classList.remove("actual");
+    actual = (k + marcas.length) % marcas.length;
+    marcas[actual].classList.add("actual");
+    marcas[actual].scrollIntoView({ block: "center", behavior: "smooth" });
+    document.getElementById("cuenta").textContent = (actual + 1) + " de " + marcas.length;
+  }
+
+  var espera;
+  var input = document.getElementById("q");
+  input.addEventListener("input", function () { clearTimeout(espera); espera = setTimeout(function () { pintar(input.value.trim()); }, 250); });
+  input.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); ir(actual + 1); } });
+  document.getElementById("sig").addEventListener("click", function () { ir(actual + 1); });
+  document.getElementById("ant").addEventListener("click", function () { ir(actual - 1); });
+
+  fetch("catalogo.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+    var ep = null, serie = null;
+    d.series.forEach(function (s) { s.temporadas.forEach(function (t) { t.episodios.forEach(function (e) { if (e.id === id) { ep = e; serie = s; } }); }); });
+    if (!ep || !ep.guion) { caja.innerHTML = "<p class='aviso'>No se ha encontrado la transcripción de este episodio.</p>"; return; }
+    document.title = ep.titulo + " · Transcripción";
+    document.getElementById("serie").textContent = serie.nombre;
+    document.getElementById("titulo").textContent = ep.titulo;
+    document.getElementById("meta").textContent = [ep.duracion, fechaBonita(ep.fecha)].filter(Boolean).join(" · ");
+    if (ep.fuentes && ep.fuentes.length) {
+      var f = document.getElementById("fuentes"); f.hidden = false;
+      f.appendChild(el("h2", null, "Fuentes"));
+      var ul = el("ul");
+      ep.fuentes.forEach(function (x) { var li = el("li"); li.appendChild(el("a", { href: x.url, target: "_blank", rel: "noopener" }, x.titulo)); ul.appendChild(li); });
+      f.appendChild(ul);
+    }
+    var pie = document.getElementById("pie");
+    pie.appendChild(el("a", { href: ep.guion, download: "" }, "Descargar el texto"));
+    return fetch(ep.guion).then(function (r) { return r.text(); }).then(function (t) {
+      parrafos = limpiar(t).split(/\n\s*\n/).map(function (p) { return p.replace(/\s+/g, " ").trim(); }).filter(Boolean);
+      input.value = qInicial;
+      pintar(qInicial);
+      if (!qInicial) window.scrollTo(0, 0);
+    });
+  }).catch(function () { caja.innerHTML = "<p class='aviso'>No se ha podido cargar la transcripción.</p>"; });
+})();
+</script>
+</body>
+</html>
