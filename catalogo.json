@@ -1,6 +1,17 @@
 {
   "titulo": "Episodios",
   "subtitulo": "Documentales en audio y vídeo para escuchar andando",
+  "rotacion": {
+    "orden": [
+      "ia",
+      "an",
+      "sc",
+      "sh",
+      "fi"
+    ],
+    "ultima": "fi",
+    "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
+  },
   "series": [
     {
       "id": "sc",
