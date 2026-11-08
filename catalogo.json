@@ -96,49 +96,56 @@
               "titulo": "Los lobos de Yellowstone",
               "descripcion": "Cómo devolver un depredador a un parque cambió los ciervos, la vegetación y hasta el curso de los ríos.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "sc03",
               "titulo": "Mao contra los gorriones",
               "descripcion": "La campaña para exterminar a los gorriones, las plagas de langosta y la Gran Hambruna china.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "sc04",
               "titulo": "Fallos en cascada",
               "descripcion": "Grandes apagones, pánicos bursátiles y el Flash Crash de 2010: cuando un fallo pequeño tumba el sistema entero.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "sc05",
               "titulo": "Orden sin jefe",
               "descripcion": "Bandadas de estorninos, hormigueros y atascos fantasma: el orden que surge sin que nadie lo dirija.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "sc06",
               "titulo": "Invasores",
               "descripcion": "Sapos de caña, conejos y otras especies que se introdujeron para resolver un problema y se convirtieron en otro.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "sc07",
               "titulo": "Burbujas",
               "descripcion": "De los tulipanes holandeses a las criptomonedas: por qué los mercados enloquecen de vez en cuando.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "sc08",
               "titulo": "Contagios",
               "descripcion": "Cómo se propagan por una red las epidemias, los rumores y las modas, y qué tienen en común.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             }
           ]
         }
@@ -182,49 +189,56 @@
               "titulo": "Friedrich Spee y las hogueras de Würzburg",
               "descripcion": "El jesuita que confesaba a las condenadas y escribió que bajo tortura cualquiera confiesa cualquier cosa.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "sh03",
               "titulo": "Lorenzo Valla y la gran falsificación",
               "descripcion": "Cómo el análisis del latín destapó que la Donación de Constantino era falsa.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "sh04",
               "titulo": "Franklin y Lavoisier contra Mesmer",
               "descripcion": "El magnetismo animal, la alta sociedad de París y uno de los primeros experimentos a ciegas.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "sh05",
               "titulo": "John Snow y la fuente de Broad Street",
               "descripcion": "Un mapa de muertes por cólera y la manivela que cambió la epidemiología.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "sh06",
               "titulo": "Semmelweis y las manos de los médicos",
               "descripcion": "El médico que descubrió por qué morían las parturientas y al que nadie quiso creer.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "sh07",
               "titulo": "Hans el Listo",
               "descripcion": "El caballo que sabía contar y el psicólogo que descubrió lo que de verdad hacía.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "sh08",
               "titulo": "Houdini contra los médiums",
               "descripcion": "El mago más famoso del mundo al servicio de desenmascarar a los espiritistas.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             }
           ]
         }
@@ -243,42 +257,48 @@
               "titulo": "Qué es una red neuronal, desde cero",
               "descripcion": "Neuronas artificiales, pesos y aprendizaje, explicado con dibujos.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "ia02",
               "titulo": "El juego de la vida",
               "descripcion": "Cuatro reglas simples, una cuadrícula y una complejidad que nadie esperaba.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "ia03",
               "titulo": "Capacidades emergentes",
               "descripcion": "Habilidades que aparecen de golpe al crecer los modelos, y el debate sobre si son reales o un efecto de cómo se miden.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "ia04",
               "titulo": "Grokking",
               "descripcion": "Redes que memorizan durante mucho tiempo y de repente parecen entender.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "ia05",
               "titulo": "Dentro de la caja negra",
               "descripcion": "Neuronas que representan conceptos, superposición y cómo se intenta descifrar lo que pasa dentro de un modelo.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "ia06",
               "titulo": "El hackeo de la recompensa",
               "descripcion": "Por qué los sistemas que aprenden por recompensas encuentran atajos, y qué se está haciendo para evitarlo.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             }
           ]
         }
@@ -297,56 +317,64 @@
               "titulo": "La trampa de la evitación",
               "descripcion": "Por qué huir de lo que nos da miedo lo hace más grande.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "an02",
               "titulo": "Conductas de seguridad",
               "descripcion": "Las protecciones que alivian en el momento y mantienen el miedo a largo plazo.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "an03",
               "titulo": "No pienses en un oso blanco",
               "descripcion": "El experimento de Wegner y por qué suprimir un pensamiento lo hace volver.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "an04",
               "titulo": "El círculo vicioso del pánico",
               "descripcion": "Cómo interpretar un síntoma físico como peligro dispara la crisis.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "an05",
               "titulo": "La intención paradójica",
               "descripcion": "Viktor Frankl y la idea de buscar a propósito el síntoma que se teme.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "an06",
               "titulo": "Rumiar y preocuparse",
               "descripcion": "Cuando darle vueltas a algo se disfraza de resolverlo.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "an07",
               "titulo": "La búsqueda de reafirmación",
               "descripcion": "Preguntar una y otra vez si todo va bien, y por qué la tranquilidad dura tan poco.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "an08",
               "titulo": "Intentar dormir",
               "descripcion": "El insomnio y por qué esforzarse por dormir es lo que lo impide.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             }
           ]
         }
@@ -423,35 +451,40 @@
               "titulo": "El mapa de las grandes preguntas",
               "descripcion": "Las ramas de la filosofía, cada una con la pregunta que la mueve.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "fi0-3",
               "titulo": "Los debates que nunca se cierran",
               "descripcion": "Ser y cambio, razón y experiencia, mente y cuerpo, libertad y determinismo, verdad y relativismo.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "fi0-4",
               "titulo": "La caja de herramientas del filósofo",
               "descripcion": "Argumentos, lógica básica, falacias, experimentos mentales y distinciones clave.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "fi0-5",
               "titulo": "El escenario griego",
               "descripcion": "Homero, Hesíodo, la polis, Jonia y el problema de las fuentes.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             },
             {
               "id": "fi0-6",
               "titulo": "El mismo siglo en otros lugares",
               "descripcion": "La era axial: Confucio, Buda y las Upanishads, contemporáneos de los primeros filósofos griegos.",
               "estado": "pendiente",
-              "formato": "video"
+              "formato": "video",
+              "estilo": "ilustrado"
             }
           ]
         },
@@ -463,84 +496,96 @@
               "titulo": "Los milesios: del mito al logos",
               "descripcion": "Tales, Anaximandro y Anaxímenes, y la pregunta por el principio de todas las cosas.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi02",
               "titulo": "Pitágoras y los números",
               "descripcion": "Una secta, una escuela matemática y la idea de que el mundo está hecho de proporciones.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi03",
               "titulo": "Heráclito y Parménides",
               "descripcion": "Todo fluye frente a nada cambia: el gran debate sobre el ser y el devenir.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi04",
               "titulo": "Los pluralistas y los atomistas",
               "descripcion": "Empédocles, Anaxágoras, Leucipo y Demócrito.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi05",
               "titulo": "Los sofistas",
               "descripcion": "Protágoras, Gorgias y la Atenas democrática.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi06",
               "titulo": "Sócrates",
               "descripcion": "El hombre que no escribió nada, su método y su juicio.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi07",
               "titulo": "Platón I: vida y diálogos",
               "descripcion": "De la muerte de Sócrates a la Academia y los viajes a Siracusa.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi08",
               "titulo": "Platón II: la teoría de las Ideas",
               "descripcion": "La caverna, la línea dividida y el conocimiento.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi09",
               "titulo": "Platón III: la República",
               "descripcion": "La justicia, el alma y la ciudad ideal.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi10",
               "titulo": "Aristóteles I: vida y lógica",
               "descripcion": "De la Academia al Liceo, y la invención de la lógica.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi11",
               "titulo": "Aristóteles II: física y metafísica",
               "descripcion": "Sustancia, causas, acto y potencia.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             },
             {
               "id": "fi12",
               "titulo": "Aristóteles III: ética y política",
               "descripcion": "La felicidad, la virtud y el animal político.",
               "estado": "pendiente",
-              "formato": "audio"
+              "formato": "video",
+              "estilo": "ligero"
             }
           ]
         },
