@@ -58,6 +58,11 @@
   .ep.pendiente h4 { color: var(--muted); font-weight: 500; }
   .player { margin-top: 10px; }
   .player audio, .player video { width: 100%; border-radius: 10px; }
+  .segs { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 8px; }
+  .seg { font-size: .88rem; padding: 7px 14px; border: 0; background: var(--card); color: var(--ink); cursor: pointer; }
+  .seg + .seg { border-left: 1px solid var(--line); }
+  .seg[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .nota-oir { font-size: .8rem; color: var(--muted); margin: 6px 0 0; }
   .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
   .btn { font-size: .88rem; padding: 7px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--card);
     color: var(--ink); text-decoration: none; cursor: pointer; }
@@ -96,6 +101,7 @@
 (function () {
   var KEY_OIDOS = "episodios:oidos";
   var KEY_POS = "episodios:pos:";
+  var KEY_MODO = "episodios:modo";
   var estado = { filtro: "todos", q: "", datos: null };
 
   function leer(k, def) { try { var v = localStorage.getItem(k); return v === null ? def : JSON.parse(v); } catch (e) { return def; } }
@@ -134,24 +140,59 @@
     return true;
   }
 
-  function reproductor(ep) {
-    var esVideo = ep.formato === "video";
-    var m = el(esVideo ? "video" : "audio", { controls: "", preload: "none", src: ep.archivo });
-    if (esVideo) m.setAttribute("playsinline", "");
+  function medio(ep, tipo, autoplay) {
+    var m = el(tipo, { controls: "", preload: autoplay ? "auto" : "none", src: ep.archivo });
+    if (tipo === "video") m.setAttribute("playsinline", "");
     var ultimo = 0;
     m.addEventListener("loadedmetadata", function () {
       var pos = leer(KEY_POS + ep.id, 0);
       if (pos > 5 && pos < m.duration - 10) m.currentTime = pos;
     });
+    m.addEventListener("play", function () {
+      if ("mediaSession" in navigator) {
+        try { navigator.mediaSession.metadata = new MediaMetadata({ title: ep.titulo, artist: "Episodios" }); } catch (e) {}
+      }
+    });
     m.addEventListener("timeupdate", function () {
       var ahora = Date.now();
       if (ahora - ultimo > 4000) { ultimo = ahora; guardar(KEY_POS + ep.id, m.currentTime); }
     });
+    m.addEventListener("pause", function () { guardar(KEY_POS + ep.id, m.currentTime); });
     m.addEventListener("ended", function () {
       guardar(KEY_POS + ep.id, 0);
       oidos[ep.id] = true; guardar(KEY_OIDOS, oidos); pintar();
     });
-    return el("div", { class: "player" }, [m]);
+    if (autoplay) { var p = m.play(); if (p && p.catch) p.catch(function () {}); }
+    return m;
+  }
+
+  function reproductor(ep) {
+    var caja = el("div", { class: "player" });
+    if (ep.formato !== "video") { caja.appendChild(medio(ep, "audio", false)); return caja; }
+    var modo = leer(KEY_MODO, "video");
+    var bVer = el("button", { class: "seg", type: "button", text: "Ver vídeo" });
+    var bOir = el("button", { class: "seg", type: "button", text: "Solo escuchar" });
+    var hueco = el("div");
+    caja.appendChild(el("div", { class: "segs" }, [bVer, bOir]));
+    caja.appendChild(hueco);
+    function poner(nuevo, desdeClic) {
+      var actual = hueco.firstChild, sonando = false;
+      if (actual) {
+        sonando = !actual.paused;
+        guardar(KEY_POS + ep.id, actual.currentTime);
+        actual.pause(); actual.removeAttribute("src"); actual.load();
+      }
+      modo = nuevo; if (desdeClic) guardar(KEY_MODO, modo);
+      bVer.setAttribute("aria-pressed", String(modo === "video"));
+      bOir.setAttribute("aria-pressed", String(modo === "audio"));
+      hueco.innerHTML = "";
+      hueco.appendChild(medio(ep, modo, sonando));
+      if (modo === "audio") hueco.appendChild(el("p", { class: "nota-oir", text: "Modo solo escuchar: debería seguir sonando con la pantalla apagada." }));
+    }
+    bVer.addEventListener("click", function () { if (modo !== "video") poner("video", true); });
+    bOir.addEventListener("click", function () { if (modo !== "audio") poner("audio", true); });
+    poner(modo, false);
+    return caja;
   }
 
   function tarjeta(ep, n) {
