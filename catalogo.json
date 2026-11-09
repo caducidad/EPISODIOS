@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "fi",
+    "ultima": "ia",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -266,10 +266,73 @@
             {
               "id": "ia01",
               "titulo": "Qué es una red neuronal, desde cero",
-              "descripcion": "Neuronas artificiales, pesos y aprendizaje, explicado con dibujos.",
-              "estado": "pendiente",
+              "descripcion": "Cajal y las mariposas del alma, Pitts y McCulloch, el perceptrón de Rosenblatt y sus mandos movidos por motores, el invierno tras Minsky y Papert, la retropropagación explicada como bajar una montaña en la niebla, AlexNet y una neurona real que necesita una red de cinco a ocho capas para imitarla.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ilustrado"
+              "estilo": "ilustrado",
+              "archivo": "media/ia01-que-es-una-red-neuronal.mp4",
+              "audio": "media/ia01-que-es-una-red-neuronal.m4a",
+              "guion": "guiones/ia01-que-es-una-red-neuronal.txt",
+              "duracion": "35 min",
+              "fecha": "2026-11-09",
+              "fuentes": [
+                {
+                  "titulo": "Walter Pitts (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Walter_Pitts"
+                },
+                {
+                  "titulo": "Warren Sturgis McCulloch (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Warren_Sturgis_McCulloch"
+                },
+                {
+                  "titulo": "A Logical Calculus of the Ideas Immanent in Nervous Activity (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/A_Logical_Calculus_of_the_Ideas_Immanent_in_Nervous_Activity"
+                },
+                {
+                  "titulo": "Perceptron: historia y Mark I (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Perceptron"
+                },
+                {
+                  "titulo": "Professor’s perceptron paved the way for AI – 60 years too soon (Cornell Chronicle)",
+                  "url": "https://news.cornell.edu/node/313946"
+                },
+                {
+                  "titulo": "Perceptrons, XOR, and the first AI winter (Sean Trott)",
+                  "url": "https://seantrott.substack.com/p/perceptrons-xor-and-the-first-ai"
+                },
+                {
+                  "titulo": "Learning representations by back-propagating errors, Nature 1986 (ADS)",
+                  "url": "https://ui.adsabs.harvard.edu/abs/1986Natur.323..533R/abstract"
+                },
+                {
+                  "titulo": "How Many Neurons Are in the Brain? Suzana Herculano-Houzel (BrainFacts)",
+                  "url": "https://www.brainfacts.org/in-the-lab/meet-the-researcher/2018/how-many-neurons-are-in-the-brain-120418"
+                },
+                {
+                  "titulo": "Santiago Ramón y Cajal y el Nobel de 1906 (Muy Interesante)",
+                  "url": "https://muyinteresante.okdiario.com/?p=188002"
+                },
+                {
+                  "titulo": "LeNet (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/LeNet"
+                },
+                {
+                  "titulo": "AlexNet (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/AlexNet"
+                },
+                {
+                  "titulo": "How Computationally Complex Is a Single Neuron? (Quanta Magazine)",
+                  "url": "https://www.quantamagazine.org/how-computationally-complex-is-a-single-neuron-20210902/"
+                },
+                {
+                  "titulo": "The discovery of tools key to machine learning wins the 2024 physics Nobel (Science News)",
+                  "url": "https://sciencenews.org/article/nobel-physics-2024-machine-learning"
+                },
+                {
+                  "titulo": "Kimi K2: Open Agentic Intelligence (arXiv)",
+                  "url": "https://arxiv.org/abs/2507.20534"
+                }
+              ]
             },
             {
               "id": "ia02",

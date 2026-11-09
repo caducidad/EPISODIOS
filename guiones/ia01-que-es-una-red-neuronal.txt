@@ -1,0 +1,226 @@
+@@ s01 | titulo | {"t": "Qué es una red neuronal, desde cero", "s": "Temporada 1 · Episodio 1"}
+Qué es una red neuronal, desde cero. Inteligencia artificial: lo que emerge. Temporada uno, episodio uno.
+
+@@ s02 | ilus | {"fig": "movil", "pie": "Cada día usamos redes neuronales sin verlas"}
+Esta mañana, probablemente, una red neuronal ha trabajado para ti sin que te dieras cuenta. Quizá desbloqueó tu teléfono al reconocer tu cara, o tradujo una frase, o filtró un correo basura antes de que llegara a tu bandeja de entrada. Hoy vivimos rodeados de estos sistemas, y sin embargo casi nadie sabría explicar qué hay dentro de ellos.
+
+El nombre, red neuronal, hace pensar en un cerebro metido en una caja. La verdad es bastante más sencilla, y a la vez más sorprendente.
+
+@@ s03 | rotulo | {"t": "Piezas tontas, conjunto listo", "s": "La idea que recorre toda esta serie"}
+Esta serie trata de lo que emerge, es decir, de cómo muchas piezas muy simples, conectadas entre sí, acaban haciendo cosas que ninguna de ellas sabría hacer por separado. Y no hay mejor punto de partida que la red neuronal, porque es el ejemplo perfecto. Cada una de sus piezas es casi ridículamente simple. Solo sabe multiplicar, sumar y decidir si el resultado pasa de cierto valor. Nada más.
+
+Hoy vamos a construir una red neuronal desde cero, de palabra, sin fórmulas. Veremos de dónde salió la idea, por qué estuvo a punto de morir dos veces, y cómo unas piezas tan humildes aprenden a leer un número escrito a mano. Y para empezar, tenemos que ir a Madrid, a finales del siglo diecinueve.
+
+@@ s04 | persona | {"n": "Santiago Ramón y Cajal", "r": "Histólogo. Nobel de Medicina en 1906, compartido con Camillo Golgi", "a": "1852 – 1934"}
+Allí trabaja un médico aragonés con un talento enorme para el dibujo, Santiago Ramón y Cajal. Durante horas observa al microscopio finísimas láminas de tejido nervioso, teñidas con un método que había inventado el italiano Camillo Golgi. Ese tinte tenía una propiedad curiosa, porque solo coloreaba de negro unas pocas células al azar, y las dejaba destacar con todo detalle sobre un fondo casi transparente.
+
+En aquella época, muchos científicos, entre ellos el propio Golgi, pensaban que el sistema nervioso era una red continua, una especie de malla sin interrupciones por la que circulaba la actividad. Cajal, mirando aquellas preparaciones con una paciencia infinita, llegó a una conclusión distinta. El cerebro estaba hecho de células independientes, separadas unas de otras, que se comunicaban a través de puntos de contacto.
+
+@@ s05 | ilus | {"fig": "neurona_bio", "pie": "Una neurona: recibe por las dendritas, decide en el cuerpo, transmite por el axón"}
+Esas células son las neuronas, y Cajal las dibujó con una belleza que todavía hoy asombra. Llegó a llamarlas las mariposas del alma. Su descripción, que se conoce como la doctrina de la neurona, le valió el premio Nobel de Medicina en mil novecientos seis, curiosamente compartido con Golgi, que seguía sin estar de acuerdo con él.
+
+Gracias a Cajal y a quienes vinieron después, sabemos cómo es una neurona típica. Tiene un cuerpo central y unas ramificaciones cortas y muy abundantes, las dendritas, que recogen señales de otras neuronas. Y tiene una prolongación larga, el axón, por la que envía su propia señal hacia otras células. Los puntos de contacto entre una neurona y la siguiente se llaman sinapsis.
+
+@@ s06 | ilus | {"fig": "disparo", "pie": "Si la suma de señales supera el umbral, la neurona dispara"}
+Lo más interesante es cómo decide una neurona si debe transmitir una señal. Simplificando mucho, una neurona recibe a la vez estímulos de cientos o miles de vecinas. Algunos la excitan y otros la frenan. Si la suma de todo lo que le llega supera cierto umbral, la neurona dispara un impulso eléctrico que recorre su axón. Si no lo supera, se queda callada.
+
+Es una especie de votación, en la que algunas vecinas pesan más que otras. Quedaos con esta imagen, porque toda la inteligencia artificial moderna se apoya en una versión muy simplificada de ella.
+
+@@ s07 | dato | {"v": "86.000 millones", "t": "neuronas en un cerebro humano adulto", "s": "Recuento de Suzana Herculano-Houzel y su equipo, publicado en 2009"}
+Y de estas piezas tenemos muchísimas. Durante décadas, los libros repetían que el cerebro humano tenía unos cien mil millones de neuronas, una cifra redonda que nadie había comprobado de verdad. Contar células en un órgano tan grande y tan irregular era casi imposible, porque había que extrapolar a partir de pequeñas muestras.
+
+La neurocientífica brasileña Suzana Herculano-Houzel tuvo una idea tan ingeniosa como poco poética. Disolvió cerebros en una especie de sopa homogénea y contó los núcleos de las células que flotaban en ella. El resultado, publicado en dos mil nueve, fue de unos ochenta y seis mil millones de neuronas.
+
+@@ s08 | capitulo | {"n": "Primera parte", "t": "Una neurona hecha de lógica"}
+Pero entender cómo funciona una neurona no es lo mismo que entender cómo piensa un cerebro. Para dar ese salto hizo falta una pareja de lo más improbable, que se conoció en Chicago a principios de los años cuarenta del siglo veinte.
+
+@@ s09 | persona | {"n": "Walter Pitts", "r": "Lógico autodidacta. Escribió con McCulloch el primer modelo matemático de una red neuronal", "a": "1923 – 1969"}
+Walter Pitts nació en Detroit en mil novecientos veintitrés, en una familia pobre y difícil. Aprendió por su cuenta lógica, matemáticas, griego y latín. Según contaron después sus amigos, con unos doce años se pasó tres días seguidos en la biblioteca leyendo los Principia Mathematica, la monumental obra de lógica de Bertrand Russell y Alfred North Whitehead.
+
+Y no solo los leyó. Según el relato de su amigo Jerome Lettvin, Pitts le escribió una carta a Russell señalando varios problemas en la primera parte del libro. Russell, impresionado, lo invitó a estudiar con él en Inglaterra. Pitts no fue, pero aquello decidió su vocación. Sería lógico. Con quince años se marchó de casa y acabó en Chicago, donde vivía como podía y asistía a clases en la universidad sin estar matriculado.
+
+@@ s10 | persona | {"n": "Warren McCulloch", "r": "Neurofisiólogo y psiquiatra, profesor en la Universidad de Illinois en Chicago", "a": "1898 – 1969"}
+Allí, gracias a Lettvin, conoció a Warren McCulloch, un neurofisiólogo y psiquiatra veinticinco años mayor que él, con barba de profeta y una obsesión. McCulloch quería entender cómo era posible que un órgano hecho de carne pudiera razonar, es decir, cómo surgía la lógica de la biología. Le faltaban las matemáticas para formular su idea, y Pitts las tenía de sobra.
+
+A principios de mil novecientos cuarenta y dos, McCulloch invitó a Pitts y a Lettvin, que no tenían donde vivir, a instalarse en su casa con su familia. Por las noches, después de cenar, se quedaban trabajando hasta muy tarde. De aquellas veladas salió, en mil novecientos cuarenta y tres, un artículo de título intimidante: Un cálculo lógico de las ideas inmanentes en la actividad nerviosa.
+
+@@ s11 | ilus | {"fig": "mcp", "pie": "La neurona de McCulloch y Pitts: entradas de sí o no, una suma y un umbral"}
+La idea central del artículo era muy simple. Imaginemos una neurona idealizada que solo puede estar en dos estados, encendida o apagada, uno o cero. Recibe varias entradas, que también son unos o ceros, y tiene un umbral. Si el número de entradas encendidas alcanza ese umbral, la neurona se enciende. Si no lo alcanza, se queda apagada.
+
+Con esta pieza tan modesta, McCulloch y Pitts demostraron algo asombroso. Combinando neuronas de este tipo se podía construir cualquier operación de la lógica. Una neurona con dos entradas y umbral dos solo se enciende si las dos están activas, y eso es la operación y. Si el umbral es uno, basta con que se active cualquiera de las dos, y eso es la operación o.
+
+@@ s12 | comparar | {"izq": ["Puerta «y»", "Dos entradas", "Umbral: 2", "Solo se enciende si llegan las dos"], "der": ["Puerta «o»", "Dos entradas", "Umbral: 1", "Se enciende si llega cualquiera"]}
+Y si con neuronas se pueden construir todas las operaciones lógicas, entonces una red de neuronas, en principio, puede calcular cualquier cosa que se pueda calcular con reglas precisas. El cerebro, según esta visión, sería una especie de máquina lógica gigantesca. Aquella idea influyó en John von Neumann cuando diseñó la arquitectura de los primeros ordenadores, y de hecho él citaba el trabajo de McCulloch y Pitts.
+
+Pero al modelo le faltaba algo fundamental. Las neuronas de McCulloch y Pitts no aprendían. Alguien tenía que decidir de antemano cómo conectarlas y qué umbral poner a cada una, igual que un ingeniero diseña un circuito.
+
+@@ s13 | cita | {"q": "Las neuronas que se activan juntas se conectan entre sí", "a": "Resumen popular de la idea de Donald Hebb (1949), acuñado décadas después"}
+La primera pista sobre cómo podría aprender una red de neuronas llegó en mil novecientos cuarenta y nueve, de la mano del psicólogo canadiense Donald Hebb. En su libro La organización de la conducta propuso que, cuando una neurona contribuye repetidamente a que otra se active, la conexión entre ambas se refuerza.
+
+La frase pegadiza de que las neuronas que se disparan juntas acaban conectándose no es suya, sino una simplificación posterior, pero captura lo esencial. El aprendizaje no consistiría en añadir piezas nuevas, sino en cambiar la fuerza de las conexiones que ya existen. Y esa es exactamente la idea que hace funcionar a todas las redes neuronales artificiales que usamos hoy.
+
+@@ s14 | capitulo | {"n": "Segunda parte", "t": "El perceptrón, una máquina que aprende"}
+Teníamos, por un lado, una neurona lógica, y por otro, una idea de cómo podría aprender. Faltaba alguien que juntara las dos cosas y construyera una máquina de verdad. Ese alguien fue un joven psicólogo de Nueva York llamado Frank Rosenblatt.
+
+@@ s15 | persona | {"n": "Frank Rosenblatt", "r": "Psicólogo del Laboratorio Aeronáutico de Cornell. Inventó el perceptrón", "a": "1928 – 1971"}
+Rosenblatt nació en mil novecientos veintiocho, estudió en la Universidad de Cornell y se doctoró en psicología en mil novecientos cincuenta y seis. Era un hombre de intereses inagotables, que llegó a construirse un observatorio astronómico en su casa. Y estaba convencido de que se podía construir una máquina que aprendiera a ver por sí misma.
+
+Trabajando en el Laboratorio Aeronáutico de Cornell, en Búfalo, con financiación de la Oficina de Investigación Naval de la Marina estadounidense, diseñó lo que llamó el perceptrón. En mil novecientos cincuenta y siete lo simuló en un enorme ordenador de la época, un IBM setecientos cuatro, que ocupaba una habitación entera.
+@@ s16 | ilus | {"fig": "perceptron", "pie": "Cada entrada se multiplica por su peso; se suma todo y se compara con el umbral"}
+Para entender el perceptrón, vamos a construir uno con un ejemplo cotidiano. Supongamos que queremos una máquina que decida si hoy es buen día para salir a caminar. Le damos tres datos, que serán sus entradas. Si hace sol, si tengo tiempo libre y si hace frío. Cada dato vale uno si es verdad y cero si no lo es.
+
+Ahora viene la novedad respecto a McCulloch y Pitts. Cada entrada tiene un peso, un número que indica cuánto importa. Digamos que el sol pesa dos, el tiempo libre pesa tres y el frío resta, con un peso de menos uno. La máquina multiplica cada entrada por su peso, suma los resultados y compara el total con un umbral, por ejemplo tres. Si lo supera, la respuesta es sí, salimos a caminar.
+
+@@ s17 | ilus | {"fig": "suma", "pie": "Sol y tiempo libre, pero frío: 2 + 3 − 1 = 4, que supera el umbral de 3"}
+Hagamos la cuenta para un día concreto. Hace sol, tengo tiempo libre, pero hace frío. Sol vale uno por dos, que son dos. Tiempo libre vale uno por tres, que son tres. Y el frío vale uno por menos uno, que es menos uno. En total, cuatro. Como cuatro es mayor que el umbral de tres, la máquina dice que sí.
+
+Esto es todo lo que hace una neurona artificial. Multiplicar, sumar y comparar. Los pesos son su conocimiento, la forma en que valora cada dato. Y aquí está la pregunta decisiva, la que separa a Rosenblatt de sus predecesores. ¿Quién elige los pesos? En el perceptrón, nadie. La máquina los descubre sola, a base de equivocarse.
+
+@@ s18 | lista | {"t": "La regla del perceptrón", "items": ["Empieza con pesos al azar", "Mira un ejemplo y da una respuesta", "Si acierta, no cambia nada", "Si falla, corrige los pesos un poquito", "Repite con miles de ejemplos"]}
+La regla de aprendizaje es de una sencillez desarmante. Se empieza con pesos cualesquiera, por ejemplo todos a cero o elegidos al azar. Se le enseña a la máquina un ejemplo del que conocemos la respuesta correcta. Si acierta, no se toca nada. Si se equivoca, se ajustan un poquito los pesos de las entradas que estaban activas, subiéndolos si debería haber dicho que sí y bajándolos si debería haber dicho que no.
+
+Y se repite, ejemplo tras ejemplo, una y otra vez. Al principio la máquina responde casi al azar, pero cada error la empuja un poco en la dirección correcta. Rosenblatt demostró además algo muy importante. Si existe una combinación de pesos capaz de clasificar bien todos los ejemplos, esta regla la encuentra siempre en un número finito de pasos.
+
+@@ s19 | fecha | {"a": "1958", "t": "La Marina presenta el perceptrón a la prensa", "s": "Tras unos cincuenta intentos, distingue tarjetas marcadas a la izquierda o a la derecha"}
+En julio de mil novecientos cincuenta y ocho, la Marina organizó una presentación para la prensa. El perceptrón, simulado en el IBM, recibía tarjetas perforadas marcadas a la izquierda o a la derecha, y tras unos cincuenta intentos aprendió a distinguirlas sin que nadie le programara la diferencia. Rosenblatt lo describió como la primera máquina capaz de tener una idea original.
+
+Al día siguiente, el New York Times publicó una crónica que hoy se cita como ejemplo clásico de entusiasmo desmedido. Decía que la Marina había presentado el embrión de un ordenador electrónico que, según esperaba, sería capaz de andar, hablar, ver, escribir, reproducirse y ser consciente de su propia existencia.
+
+@@ s20 | ilus | {"fig": "mark1", "pie": "Mark I: 400 fotocélulas en una cuadrícula de 20 × 20 y pesos guardados en potenciómetros movidos por motores"}
+Después, Rosenblatt construyó una máquina física, el Mark I Perceptron, presentado en público en junio de mil novecientos sesenta. Tenía como ojo una cuadrícula de veinte por veinte fotocélulas, cuatrocientas en total, como una cámara de cuatrocientos píxeles. Esas células se conectaban al azar, mediante una maraña de cables, con quinientas doce unidades intermedias.
+
+Y lo más llamativo era su memoria. Los pesos no eran números guardados en un chip, sino la posición de unos potenciómetros, como los mandos de volumen de una radio antigua. Cuando la máquina se equivocaba, unos pequeños motores eléctricos giraban los mandos para corregir los pesos. Era, literalmente, una máquina que aprendía moviendo ruedecitas. Hoy se conserva en el museo Smithsonian de Historia Americana, en Washington.
+
+@@ s21 | ilus | {"fig": "recta", "pie": "Un perceptrón solo sabe trazar una línea recta para separar el «sí» del «no»"}
+Para entender lo que vino después, conviene ver el perceptrón de otra manera, de forma geométrica. Imaginemos que solo tiene dos entradas, por ejemplo la temperatura y la humedad, y que queremos que decida si un día es agradable. Cada día se puede dibujar como un punto en un plano, con la temperatura en un eje y la humedad en el otro.
+
+Lo que hace un perceptrón, en el fondo, es trazar una línea recta en ese plano. A un lado de la recta responde que sí, y al otro lado, que no. Aprender consiste en ir moviendo y girando esa recta hasta que deje los puntos de cada tipo en su lado. Si los dos grupos se pueden separar con una recta, el perceptrón lo consigue siempre.
+
+@@ s22 | capitulo | {"n": "Tercera parte", "t": "El invierno de las redes neuronales"}
+Pero ahí estaba también su gran debilidad. ¿Qué pasa si los puntos no se pueden separar con una línea recta? La respuesta llegó en forma de libro, y estuvo a punto de enterrar todo el campo durante más de una década.
+
+@@ s23 | ilus | {"fig": "xor", "pie": "«O exclusivo»: sí cuando las entradas son distintas. Ninguna recta separa los puntos"}
+En mil novecientos sesenta y nueve, dos matemáticos del Instituto Tecnológico de Massachusetts, Marvin Minsky y Seymour Papert, publicaron un libro titulado precisamente Perceptrones. Era un análisis matemático riguroso de lo que estas máquinas podían y no podían hacer, y su ejemplo más famoso es casi un juego de niños, la operación llamada o exclusivo.
+
+Imaginemos un interruptor de escalera, con dos llaves, una abajo y otra arriba. La luz se enciende cuando las dos llaves están en posiciones distintas, y se apaga cuando están iguales. Si dibujamos los cuatro casos posibles en un plano, los dos casos de luz encendida quedan en esquinas opuestas de un cuadrado, y los dos de luz apagada en las otras dos esquinas. Por mucho que lo intentemos, no hay ninguna línea recta capaz de separarlos. Y un perceptrón de una sola capa, por tanto, nunca podrá aprenderlo.
+
+@@ s24 | rotulo | {"t": "El libro no decía que las redes fueran inútiles", "s": "Pero así se leyó, y la financiación se desplomó"}
+Minsky y Papert sabían perfectamente que una red con varias capas de neuronas sí podía resolver el problema. Lo que nadie sabía era cómo entrenarla, porque la regla de Rosenblatt solo funcionaba con una capa. Y en el libro se mostraban muy escépticos sobre que aquello fuera a tener solución.
+
+El efecto fue demoledor, aunque los historiadores discuten hasta qué punto se debió al libro y hasta qué punto a otros factores. Lo cierto es que el dinero para investigar redes neuronales se secó, y la atención se desplazó hacia la inteligencia artificial simbólica, basada en reglas escritas a mano. A ese periodo de frío se le llama hoy el primer invierno de la inteligencia artificial.
+
+@@ s25 | tiempo | {"t": "Dos finales tristes", "marcas": [["1943", "El artículo de McCulloch y Pitts"], ["1958", "Presentación del perceptrón"], ["1969", "Libro Perceptrones; mueren Pitts y McCulloch"], ["1971", "Muere Rosenblatt"]]}
+Los protagonistas de esta primera época no vieron el final de la historia. Walter Pitts se había ido hundiendo desde los años cincuenta. En mil novecientos cincuenta y dos, su mentor, el matemático Norbert Wiener, rompió de golpe con él y con McCulloch, y Pitts nunca se recuperó. Hacia mil novecientos cincuenta y nueve quemó su tesis doctoral inacabada y años de trabajo inédito. Murió en mayo de mil novecientos sesenta y nueve, con cuarenta y seis años. McCulloch murió cuatro meses después.
+
+Frank Rosenblatt murió en mil novecientos setenta y uno, ahogado mientras navegaba en un velero por la bahía de Chesapeake, el mismo día en que cumplía cuarenta y tres años. Para entonces llevaba tiempo dedicado a otras investigaciones, sobre la memoria en el cerebro de las ratas. Hay quien ha relacionado su muerte con el golpe que supuso aquel libro, pero no hay ninguna prueba de ello. Lo que sí es cierto es que no llegó a ver cómo sus ideas acabarían cambiando el mundo.
+
+@@ s26 | capitulo | {"n": "Cuarta parte", "t": "Capas ocultas"}
+Volvamos al interruptor de escalera. Sabemos que un perceptrón solo no puede con él. Pero ¿qué pasa si ponemos varias neuronas en fila, unas detrás de otras?
+
+@@ s27 | ilus | {"fig": "capas", "pie": "Una capa intermedia, «oculta», resuelve el «o exclusivo»"}
+La solución es poner una capa intermedia. Ponemos dos neuronas en medio. La primera se enciende si al menos una de las llaves está levantada, es decir, hace la operación o. La segunda se enciende solo si las dos están levantadas, es decir, hace la operación y. Y al final ponemos una tercera neurona que se enciende cuando la primera está activa pero la segunda no.
+
+El resultado es exactamente el interruptor de escalera. Si las dos llaves están bajadas, no se enciende nada. Si solo una está levantada, la primera neurona se activa, la segunda no, y la luz se enciende. Y si las dos están levantadas, la segunda neurona bloquea la respuesta final y la luz se apaga. Cada neurona por separado solo traza una recta, pero combinando dos rectas logramos separar lo que una sola no podía.
+
+@@ s28 | rotulo | {"t": "Capa de entrada, capas ocultas, capa de salida", "s": "Las capas intermedias se llaman ocultas porque nadie les dice qué deben hacer"}
+A estas capas intermedias se les llama capas ocultas, porque no están en contacto con el exterior. Y aquí aparece algo muy interesante, que es el corazón de esta serie. En el ejemplo del interruptor hemos decidido nosotros qué debía hacer cada neurona oculta. Pero en una red de verdad, nadie se lo dice. Si la red aprende, son ellas mismas las que descubren qué papel les conviene desempeñar.
+
+El problema era cómo aprender. Con capas ocultas, cuando la salida se equivoca, ¿de quién es la culpa? ¿De la última neurona, de alguna intermedia, o de algún peso perdido al principio de la red?
+
+@@ s29 | ilus | {"fig": "culpa", "pie": "El problema de la asignación de culpa: ¿qué peso hay que corregir, y cuánto?"}
+Pensemos en una cadena de montaje con muchos trabajadores, cada uno de los cuales hace una pequeña modificación a la pieza antes de pasarla al siguiente. Al final de la cadena, el inspector descubre que la pieza ha salido mal. ¿A quién hay que corregir, y cuánto?
+
+A esto se le llama el problema de la asignación de culpa, o de crédito, y es la gran barrera que separaba al perceptrón de las redes modernas. Para superarla hacían falta dos cosas. La primera, una forma de medir el error con precisión, no solo de saber si la respuesta es correcta o no. Y la segunda, un método para repartir ese error entre todos los pesos de la red, capa por capa, hacia atrás.
+@@ s30 | capitulo | {"n": "Quinta parte", "t": "Bajar la montaña a ciegas"}
+La primera pieza es medir el error. Y para eso hubo que hacer un pequeño cambio en las neuronas que, aunque parece un detalle técnico, lo cambió todo.
+
+@@ s31 | ilus | {"fig": "sigmoide", "pie": "Del escalón brusco a una curva suave: la neurona ya no dice solo sí o no"}
+Las neuronas de Rosenblatt funcionaban como un interruptor. O la suma pasaba del umbral, o no pasaba, y la respuesta saltaba de golpe del cero al uno, como un escalón. El problema es que con un escalón no hay matices. Si cambias un poco un peso, lo normal es que la respuesta no cambie nada, y de repente, en un punto concreto, cambie del todo.
+
+La solución fue sustituir el escalón por una curva suave, con forma de ese alargada, que sube poco a poco del cero al uno. Así la neurona ya no responde solo sí o no, sino algo como bastante seguro que sí, o casi seguro que no. Y lo importante es que ahora cualquier cambio pequeño en un peso produce un cambio pequeño en la respuesta.
+
+@@ s32 | rotulo | {"t": "Error: la distancia entre lo que dice la red y lo que debería decir", "s": "Aprender es hacer ese número lo más pequeño posible"}
+Con neuronas suaves podemos medir el error de forma precisa. Si queríamos que la red respondiera uno y ha respondido cero coma siete, el error es pequeño. Si ha respondido cero coma uno, es grande. Sumando los errores de muchos ejemplos obtenemos un solo número que resume lo mal que lo hace la red. Los especialistas lo llaman función de pérdida, y aprender consiste simplemente en hacer que ese número sea lo más pequeño posible.
+
+Ese número depende de todos los pesos de la red a la vez. Y aquí ayuda mucho una imagen clásica.
+
+@@ s33 | ilus | {"fig": "montana", "pie": "Descenso por el gradiente: en cada paso, bajar por donde la pendiente es mayor"}
+Imaginemos que estamos en lo alto de una montaña, en medio de una niebla tan espesa que no vemos más allá de nuestros pies. Queremos bajar al valle, pero no tenemos mapa. ¿Qué hacemos? Lo más sensato es tantear el suelo a nuestro alrededor, notar hacia dónde baja con más fuerza la pendiente y dar un paso en esa dirección. Y repetimos, paso a paso, hasta llegar abajo.
+
+En una red neuronal, la altura del terreno es el error, y nuestra posición son los valores de los pesos. Con mil pesos, el paisaje tiene mil dimensiones, imposible de imaginar, pero las matemáticas funcionan igual. A esta forma de bajar se le llama descenso por el gradiente, y gradiente es simplemente el nombre técnico de la pendiente.
+
+@@ s34 | ilus | {"fig": "retro", "pie": "Retropropagación: el error viaja hacia atrás y cada peso recibe su parte de culpa"}
+Falta la segunda pieza, la más ingeniosa. Para dar cada paso tenemos que saber cuánto influye cada peso en el error final, también los que están al principio de la red, enterrados bajo varias capas. Y eso es lo que resuelve la retropropagación del error, en inglés backpropagation.
+
+La idea es recorrer la red al revés. Se empieza por el final, donde se conoce el error, y se calcula cuánto ha contribuido a él cada peso de la última capa. Después se pasa esa información a la capa anterior, que puede calcular su propia parte de culpa a partir de la que le llega, y así sucesivamente, capa a capa, hasta llegar al principio. Volviendo a la cadena de montaje, es como si el inspector hablara con el último trabajador, este con el anterior, y cada uno supiera exactamente cuánto debe corregir.
+
+@@ s35 | tiempo | {"t": "Una idea que se descubrió varias veces", "marcas": [["1970", "Linnainmaa: el método matemático"], ["1974", "Werbos lo aplica a redes"], ["1986", "Rumelhart, Hinton y Williams lo popularizan"]]}
+Como pasa con muchas grandes ideas, la retropropagación tiene una historia enredada y varios padres. El método matemático en el que se basa lo describió en mil novecientos setenta un estudiante finlandés, Seppo Linnainmaa, en su tesis de máster, aunque sin pensar en redes neuronales. En mil novecientos setenta y cuatro, el estadounidense Paul Werbos propuso en su tesis doctoral usarlo para entrenar redes de neuronas, pero apenas nadie le hizo caso.
+
+La idea se hizo famosa en mil novecientos ochenta y seis, con un breve artículo en la revista Nature firmado por David Rumelhart, Geoffrey Hinton y Ronald Williams, titulado Aprender representaciones mediante la retropropagación de errores. Lo importante de aquel artículo no era solo el método, sino lo que mostraba. Las neuronas ocultas, entrenadas así, aprendían por sí solas a representar rasgos útiles de los datos que nadie les había enseñado.
+
+@@ s36 | capitulo | {"n": "Sexta parte", "t": "Una red que lee números"}
+Ya tenemos todas las piezas. Vamos a juntarlas en el ejemplo con el que casi todo el mundo aprende cómo funciona una red neuronal, que es leer números escritos a mano.
+
+@@ s37 | ilus | {"fig": "digito", "pie": "Una imagen de 28 × 28 píxeles: 784 números entre el negro y el blanco"}
+Imaginemos una foto pequeña de un número escrito a mano, por ejemplo un tres, de veintiocho por veintiocho píxeles. Para la red, esa imagen no es un tres, sino una lista de setecientos ochenta y cuatro números, uno por píxel, que indican lo oscuro que es cada punto. Esos setecientos ochenta y cuatro números son las entradas de la primera capa.
+
+Después vienen una o varias capas ocultas, por ejemplo con unas decenas de neuronas cada una. Y al final, una capa de salida con diez neuronas, una para cada dígito del cero al nueve. La neurona de salida que más se active será la respuesta de la red. Al principio, con los pesos al azar, la red dice disparates. Pero le enseñamos decenas de miles de ejemplos con su respuesta correcta, y tras cada uno, la retropropagación ajusta un poquito todos los pesos.
+
+@@ s38 | ilus | {"fig": "rasgos", "pie": "Nadie le dice a la red qué buscar: los rasgos aparecen solos, capa a capa"}
+Lo fascinante es lo que ocurre dentro. Si miramos a qué responden las neuronas ocultas después del entrenamiento, en muchos casos encontramos que algunas se han especializado en detectar trazos, como pequeñas líneas en cierta posición o curvas en cierta orientación. Y en redes con más capas, las siguientes combinan esos trazos para detectar formas más complejas, como un círculo cerrado o un ángulo.
+
+No siempre es tan limpio, y muchas neuronas responden a mezclas difíciles de interpretar, algo que veremos en otro episodio. Pero la idea general es impresionante. Nadie le ha dicho a la red que un tres está hecho de dos curvas. La red lo ha descubierto por su cuenta, porque esa forma de ver las cosas le ayuda a equivocarse menos.
+
+@@ s39 | dato | {"v": "1 de cada 10", "t": "cheques de Estados Unidos los leía una red neuronal hacia 2001", "s": "Sistema derivado del trabajo de Yann LeCun en los Laboratorios Bell"}
+Y esto no es teoría. En mil novecientos ochenta y nueve, el investigador francés Yann LeCun y su equipo en los Laboratorios Bell entrenaron con retropropagación una red que leía los códigos postales escritos a mano en las cartas. Era una red llamada convolucional, inspirada en la corteza visual.
+
+Años más tarde, un sistema basado en ese trabajo se instaló en los bancos para leer los importes de los cheques. Hacia el año dos mil uno se calculaba que leía unos veinte millones de cheques al día, alrededor de la décima parte de todos los cheques de Estados Unidos. Sin titulares, las redes neuronales ya estaban trabajando.
+
+@@ s40 | rotulo | {"t": "Una capa oculta basta… en teoría", "s": "Teorema de aproximación universal (George Cybenko, 1989)"}
+También en mil novecientos ochenta y nueve, el matemático George Cybenko demostró un resultado que se conoce como teorema de aproximación universal. Viene a decir que una red con una sola capa oculta, si tiene suficientes neuronas, puede aproximar con la precisión que queramos prácticamente cualquier relación entre entradas y salidas.
+
+Suena a que el problema estaba resuelto, pero hay truco. El teorema dice que esa red existe, no cómo encontrarla, ni cuántas neuronas hacen falta, ni cuántos ejemplos habría que enseñarle. En la práctica, las redes con muchas capas resultan mucho más eficientes, y de ahí viene el nombre de aprendizaje profundo.
+
+@@ s41 | capitulo | {"n": "Séptima parte", "t": "Datos, músculo y paciencia"}
+Durante los años noventa y la primera década de este siglo, las redes neuronales vivieron un segundo invierno, más suave que el primero. Funcionaban en algunos problemas, pero otros métodos daban mejores resultados con menos esfuerzo. Faltaban dos ingredientes, y los dos llegaron a la vez.
+
+@@ s42 | comparar | {"izq": ["Lo que faltaba", "Pocos datos etiquetados", "Ordenadores lentos", "Redes pequeñas"], "der": ["Lo que llegó", "ImageNet: millones de fotos", "Tarjetas gráficas de videojuegos", "Redes con millones de pesos"]}
+El primero fueron los datos. En dos mil siete, la investigadora Fei-Fei Li, de la Universidad de Princeton y luego de Stanford, empezó a construir ImageNet, una gigantesca colección de fotografías clasificadas a mano. Para la competición de dos mil doce, el conjunto de entrenamiento tenía un millón doscientas mil imágenes, repartidas en mil categorías.
+
+El segundo fue la potencia de cálculo, y llegó de un lugar inesperado, los videojuegos. Las tarjetas gráficas, diseñadas para dibujar escenas en tres dimensiones, son muy buenas haciendo a la vez miles de multiplicaciones sencillas. Y eso es justo lo que necesita una red neuronal, porque, como hemos visto, sus neuronas no hacen otra cosa que multiplicar y sumar.
+
+@@ s43 | dato | {"v": "15,3 %", "t": "de error de AlexNet en ImageNet en 2012, frente a cerca del 26 % del segundo", "s": "60 millones de pesos, entrenada con dos tarjetas gráficas en un dormitorio"}
+En dos mil doce, en la Universidad de Toronto, Alex Krizhevsky, estudiante de Hinton, presentó con Ilya Sutskever y el propio Hinton a la competición de ImageNet una red neuronal profunda que hoy se conoce como AlexNet. Tenía unos sesenta millones de pesos y unas seiscientas cincuenta mil neuronas, y Krizhevsky la entrenó con dos tarjetas gráficas en el dormitorio de la casa de sus padres.
+
+Cuando se le daban cinco intentos para acertar qué había en cada foto, AlexNet se equivocaba en algo más del quince por ciento de los casos. El segundo clasificado, que usaba métodos tradicionales, fallaba en torno al veintiséis por ciento. En un campo donde se celebraban mejoras de un punto, aquello fue un terremoto, y casi de la noche a la mañana, toda la investigación en visión por ordenador se pasó a las redes neuronales.
+
+@@ s44 | dato | {"v": "1 billón", "t": "de pesos en algunos modelos de lenguaje actuales", "s": "Por ejemplo, Kimi K2 (2025): un billón en total, 32.000 millones activos en cada paso"}
+Desde entonces, el tamaño de las redes no ha dejado de crecer. Los grandes modelos de lenguaje que usamos hoy para conversar, traducir o programar tienen una arquitectura más sofisticada. Pero por dentro siguen hechos de lo mismo, de neuronas artificiales que multiplican, suman y aplican una curva, entrenadas con descenso por el gradiente y retropropagación.
+
+Y las cifras dan vértigo. En julio de dos mil veinticinco, la empresa china Moonshot publicó Kimi K dos, un modelo de un billón de pesos, es decir, un millón de millones. No todos se usan a la vez, porque el modelo está dividido en especialistas y en cada paso solo se activan unos treinta y dos mil millones. Del perceptrón, con sus quinientos doce mandos movidos por motores, a esto, han pasado menos de setenta años.
+
+@@ s45 | comparar | {"izq": ["Neurona artificial", "Multiplica, suma y aplica una curva", "Un número de salida", "Pesos fijos tras entrenar"], "der": ["Neurona real", "Dendritas que calculan por su cuenta", "Impulsos en el tiempo", "Conexiones que cambian siempre"]}
+Llegados aquí, conviene volver al principio y preguntarse cuánto se parece todo esto al cerebro. La respuesta corta es que muy poco. La neurona artificial es una caricatura extrema de la real. Sus dendritas, por ejemplo, no se limitan a sumar, sino que hacen cálculos propios.
+
+En dos mil veintiuno, tres investigadores de la Universidad Hebrea de Jerusalén, David Beniaguev, Idan Segev y Michael London, intentaron medir esa diferencia. Entrenaron redes artificiales para imitar con precisión de milisegundos el comportamiento de una sola neurona de la corteza de una rata, simulada en el ordenador. Necesitaron redes de entre cinco y ocho capas, con alrededor de mil neuronas artificiales, para reproducir una única neurona biológica. Gran parte de esa complejidad venía de unos receptores de las dendritas, los llamados ene eme de a.
+
+@@ s46 | rotulo | {"t": "Una sola neurona real equivale a una red de cinco a ocho capas", "s": "Beniaguev, Segev y London, revista Neuron, 2021"}
+Los propios autores advierten que no hay que tomar la cifra al pie de la letra. Pero el estudio sirve para poner en su sitio las comparaciones fáciles.
+
+Y al mismo tiempo, esto hace aún más llamativo lo que han conseguido las redes artificiales. Con piezas mucho más pobres que las nuestras, y con un mecanismo de aprendizaje que casi seguro no es el que usa el cerebro, han aprendido a reconocer caras, traducir idiomas o mantener una conversación. Lo que emerge de la red no depende tanto de lo sofisticada que sea cada pieza como de cuántas hay, de cómo se conectan y de cómo aprenden.
+
+@@ s47 | fecha | {"a": "2024", "t": "Nobel de Física para John Hopfield y Geoffrey Hinton", "s": "Por descubrimientos que permiten el aprendizaje automático con redes neuronales artificiales"}
+En octubre de dos mil veinticuatro, la Real Academia Sueca de Ciencias concedió el premio Nobel de Física a John Hopfield y Geoffrey Hinton, por sus descubrimientos fundamentales para el aprendizaje automático con redes neuronales artificiales. Hopfield había creado en mil novecientos ochenta y dos un tipo de red capaz de guardar y recuperar patrones, inspirada en la física de los materiales magnéticos. Hinton la amplió con la llamada máquina de Boltzmann, basada en la física estadística.
+
+El premio sorprendió a mucha gente, empezando por el propio Hinton, que dijo estar estupefacto. Y tenía su punto de ironía, porque Hinton había dejado Google en dos mil veintitrés precisamente para poder hablar con libertad de los riesgos de la inteligencia artificial.
+
+@@ s48 | rotulo | {"t": "Multiplicar, sumar, comparar… y corregir el error", "s": "Todo lo demás emerge"}
+Recapitulemos. Una neurona artificial recibe números, los multiplica por sus pesos, los suma y pasa el resultado por una curva. Muchas neuronas se organizan en capas. Al principio los pesos están al azar, y la red se equivoca. Se mide el error, se reparte la culpa hacia atrás, capa por capa, y cada peso se mueve un poquito en la dirección que reduce el error. Y se repite millones de veces.
+
+En ninguna parte de ese proceso hay una regla que diga qué es una cara, qué es un tres o qué significa una palabra. Esas cosas no se programan, aparecen. La capacidad de la red no está en ninguna de sus piezas, sino en la forma en que miles o millones de ellas se ajustan juntas.
+
+@@ s49 | fin | {"t": "En el próximo episodio", "items": ["El juego de la vida", "Cuatro reglas y una cuadrícula", "Complejidad que nadie esperaba"]}
+Y de eso trata esta serie. En el próximo episodio dejaremos un momento las redes neuronales para ver el ejemplo más puro de este fenómeno, el juego de la vida. Es un tablero cuadriculado con cuatro reglas tan simples que caben en una servilleta, y del que surgen formas que se mueven, se reproducen y hasta calculan. Allí veremos, con toda claridad, cómo de lo simple brota lo complejo.
+
+Gracias por acompañarme en este primer episodio. Hasta la próxima.
