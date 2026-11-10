@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "ia",
+    "ultima": "an",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -389,10 +389,89 @@
             {
               "id": "an01",
               "titulo": "La trampa de la evitación",
-              "descripcion": "Por qué huir de lo que nos da miedo lo hace más grande.",
-              "estado": "pendiente",
+              "descripcion": "El pequeño Albert y la rata blanca, los perros de Solomon que siguieron saltando sin descargas, el alivio como pegamento, la evitación experiencial, los padres que ayudan a evitar, el conejo de Peter, Wolpe, el aprendizaje inhibitorio y el tratamiento de Bergen en cuatro días.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ligero"
+              "estilo": "ligero",
+              "archivo": "media/an01-trampa-evitacion.mp4",
+              "audio": "media/an01-trampa-evitacion.m4a",
+              "guion": "guiones/an01-trampa-evitacion.txt",
+              "duracion": "33 min",
+              "fecha": "2026-11-10",
+              "fuentes": [
+                {
+                  "titulo": "Little Albert experiment (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Little_Albert_experiment"
+                },
+                {
+                  "titulo": "Solomon y Wynne (1953): Traumatic avoidance learning (PDF)",
+                  "url": "https://www.appstate.edu/~steelekm/classes/psy5150/Documents/Solomon&Wynne 1953.pdf"
+                },
+                {
+                  "titulo": "Avoidance response (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Avoidance_response"
+                },
+                {
+                  "titulo": "Escape and avoidance: teoría de los dos factores (apuntes, Sacramento State)",
+                  "url": "https://www.csus.edu/indiv/w/wickelgren/psyc104/chapter09_escapeclass.pdf"
+                },
+                {
+                  "titulo": "Wong, Wieser y Andreatta (2026): The role of relief in persistent avoidance of learnt fear",
+                  "url": "https://www.sciencedirect.com/science/article/pii/S0005796726000288"
+                },
+                {
+                  "titulo": "Boschet-Lange y otros (2025): Temporal dynamics of costly avoidance in anxiety disorders",
+                  "url": "https://www.sciencedirect.com/science/article/pii/S0887618525000416"
+                },
+                {
+                  "titulo": "Ferro García (2000): evitación experiencial según Hayes y colaboradores (Psicothema)",
+                  "url": "https://www.psicothema.com/pi?pii=355"
+                },
+                {
+                  "titulo": "New way to combat childhood anxiety: treat the parents (Yale News, 2019)",
+                  "url": "https://news.yale.edu/2019/03/12/new-way-combat-childhood-anxiety-treat-parents"
+                },
+                {
+                  "titulo": "Absenteeism at Japanese schools rises again (Nippon.com)",
+                  "url": "https://www.nippon.com/en/japan-data/h02594/absenteeism-at-japanese-schools-rises-again.html"
+                },
+                {
+                  "titulo": "Mary Cover Jones (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Mary_Cover_Jones"
+                },
+                {
+                  "titulo": "Little Peter experiment (Simply Psychology)",
+                  "url": "https://www.simplypsychology.org/little_peter_cover_jones_1924.html"
+                },
+                {
+                  "titulo": "Joseph Wolpe (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Joseph_Wolpe"
+                },
+                {
+                  "titulo": "Craske y otros (2014): Maximizing exposure therapy, an inhibitory learning approach (resumen)",
+                  "url": "https://nationalsocialanxietycenter.com/research-summaries/inhibitory-learning-in-exposure-therapy-for-social-anxiety-and-other-anxiety-related-disorders/"
+                },
+                {
+                  "titulo": "Öst y Ollendick: One-session treatment of specific phobias (PubMed, 2008)",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/18721635/"
+                },
+                {
+                  "titulo": "Hansen y otros (2018): The Bergen 4-day OCD treatment, 12-month follow-up",
+                  "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00639/text"
+                },
+                {
+                  "titulo": "New research at Emory examines link between anxiety and avoidance (GPB, 2026)",
+                  "url": "https://www.gpb.org/news/2026/07/07/new-research-at-emory-examines-link-between-anxiety-and-avoidance"
+                },
+                {
+                  "titulo": "Brown (2026): Anxiety is distinctly associated with maladaptive exploration of uncertainty",
+                  "url": "https://ccnp.princeton.edu/2026/09/09/20-may-2026-anxiety-is-distinctly-associated-with-maladaptive-exploration-of-uncertainty/"
+                },
+                {
+                  "titulo": "Más de mil millones de personas padecen trastornos de salud mental, según la OMS (Consumer)",
+                  "url": "https://www.consumer.es/?p=600051"
+                }
+              ]
             },
             {
               "id": "an02",
