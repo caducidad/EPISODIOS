@@ -1,0 +1,239 @@
+@@ s01 | titulo | {"t": "Los lobos de Yellowstone", "s": "Temporada 1 · Episodio 2"}
+Los lobos de Yellowstone. Sistemas complejos y efectos inesperados. Temporada uno, episodio dos.
+
+@@ s02 | fecha | {"a": "12 de enero de 1995", "t": "Llegan los primeros lobos a Yellowstone", "s": "Ocho lobos capturados en Alberta, Canadá"}
+El doce de enero de mil novecientos noventa y cinco, con el valle cubierto de nieve y un frío que cortaba la respiración, un pequeño convoy cruzó la entrada norte del parque nacional de Yellowstone. En la parte de atrás de un remolque viajaban ocho jaulas metálicas, y dentro de cada una había un lobo gris capturado pocos días antes en las montañas de Alberta, en Canadá.
+
+Hacía casi setenta años que en Yellowstone no vivía ninguna manada. Aquella mañana, entre fotógrafos, funcionarios y algún que otro ranchero enfadado, empezaba uno de los experimentos ecológicos más famosos del mundo.
+
+@@ s03 | rotulo | {"t": "La historia más famosa de la ecología", "s": "Y la pregunta incómoda: ¿pasó de verdad así?"}
+Quizá conozcas el final de esta historia, porque se ha contado millones de veces. Los lobos volvieron, los herbívoros se asustaron, los árboles crecieron de nuevo, regresaron los castores, los pájaros y los peces, y hasta los ríos cambiaron de forma.
+
+En este episodio vamos a contar esa historia entera, desde el exterminio de los lobos hasta su regreso. Pero también vamos a hacer algo menos habitual, que es mirar con lupa lo que dicen los datos treinta años después.
+
+@@ s04 | capitulo | {"n": "Primera parte", "t": "Un parque sin lobos"}
+Para entender lo que pasó cuando los lobos volvieron, primero hay que entender cómo desaparecieron. Y para eso tenemos que retroceder hasta el siglo diecinueve.
+
+@@ s05 | mapa | {"titulo": "Yellowstone, el primer parque nacional", "region": [-118, -100, 40, 50], "puntos": [{"n": "Yellowstone", "lat": 44.6, "lon": -110.5, "p": true, "pos": "der"}, {"n": "Wyoming", "lat": 43.0, "lon": -107.5, "pos": "der"}, {"n": "Montana", "lat": 47.0, "lon": -109.5, "pos": "der"}, {"n": "Idaho", "lat": 44.0, "lon": -114.5, "pos": "izq"}], "nota": "Creado en 1872, en las Montañas Rocosas"}
+Yellowstone se creó en mil ochocientos setenta y dos, cuando el presidente Ulysses Grant firmó la ley que lo convertía en el primer parque nacional del mundo. Está en el corazón de las Montañas Rocosas, sobre todo en el estado de Wyoming, con una franja en Montana y otra en Idaho.
+
+Cuando se fundó el parque, los lobos ya vivían allí, como vivían en casi toda Norteamérica. Pero la idea que se tenía entonces de la naturaleza era muy distinta de la actual.
+
+@@ s06 | rotulo | {"t": "Animales «buenos» y animales «malos»", "s": "La mentalidad de finales del siglo XIX"}
+Para los gestores de aquella época, un parque debía proteger a los animales que la gente quería ver, como los bisontes, los ciervos o los wapitíes. Los depredadores eran otra cosa. Los lobos, los pumas y los coyotes se consideraban alimañas, enemigos de la caza y del ganado de los ranchos vecinos, y había que eliminarlos.
+
+Conviene aclarar una palabra que va a aparecer mucho en este episodio. El animal que en inglés se llama elk no es el alce europeo, sino un gran ciervo norteamericano, pariente cercano de nuestro ciervo común, que en castellano se llama wapití.
+
+@@ s07 | dato | {"v": "136", "t": "lobos muertos dentro del parque entre 1914 y 1926", "s": "Como mínimo, según el Servicio de Parques Nacionales"}
+A finales del siglo diecinueve ya se mataban lobos en Yellowstone, pero la campaña se volvió sistemática a principios del veinte. Entre mil novecientos catorce y mil novecientos veintiséis, solo dentro de los límites del parque, se mataron al menos ciento treinta y seis lobos, muchos de ellos cachorros sacados de sus madrigueras.
+
+En mil novecientos veintiséis se eliminó la última manada conocida. Después se siguieron viendo de vez en cuando lobos solitarios, de paso, pero ya no había familias que criaran en el parque. Los pumas corrieron una suerte parecida, y en los años treinta prácticamente habían desaparecido también.
+
+@@ s08 | persona | {"n": "Aldo Leopold", "r": "Forestal y ecólogo, autor de «A Sand County Almanac» (1949)", "a": "1887 – 1948"}
+Mientras tanto, en otro rincón del oeste americano, un joven forestal llamado Aldo Leopold participaba con entusiasmo en esa misma guerra contra los depredadores. Años después contaría un episodio que le cambió la vida. Estando en Arizona con unos compañeros, vio a una loba vadear un río con sus cachorros ya crecidos, y todos abrieron fuego sin pensarlo dos veces.
+
+Leopold llegó junto a la loba a tiempo de verla morir, y escribió que vio apagarse en sus ojos un fiero fuego verde. En aquel momento sintió que había algo en esa mirada que él no entendía, algo que solo conocían la loba y la montaña.
+
+@@ s09 | cita | {"q": "La montaña teme a sus ciervos más que los ciervos temen al lobo", "a": "Aldo Leopold, «Pensar como una montaña» (paráfrasis)"}
+En los años siguientes, Leopold vio cómo las montañas de las que se habían eliminado los lobos se llenaban de ciervos. Los animales devoraban los brotes, las matas y los árboles jóvenes, abrían senderos por todas las laderas, y al final morían de hambre por miles, después de haber arrasado aquello de lo que vivían.
+
+De ahí sacó una idea que dejó escrita en un ensayo breve titulado Pensar como una montaña, publicado en mil novecientos cuarenta y nueve, después de su muerte. Una manada de ciervos se recupera en pocos años, venía a decir, pero una ladera destrozada puede tardar décadas en curarse. Es una de las primeras formulaciones de lo que hoy llamaríamos una cascada trófica.
+
+@@ s10 | rotulo | {"t": "Sin lobos, los wapitíes crecen", "s": "Del sacrificio controlado a la «regulación natural»"}
+Yellowstone vivió algo parecido a lo que describió Leopold. Sin lobos, el número de wapitíes del llamado rango norte, los valles bajos donde pasan el invierno, empezó a crecer.
+
+Durante décadas, los guardas del parque los sacrificaban para proteger los pastos, hasta que en los años sesenta se adoptó la llamada regulación natural, es decir, dejar que la población se ajustara sola a la comida disponible. El resultado fue que la manada del norte llegó a superar en algunos momentos los veinte mil animales, y cuando los lobos regresaron todavía rondaba los diecisiete mil.
+
+@@ s11 | comparar | {"izq": ["1921", "25 colonias de castores", "en el rango norte", "Muchas talaban álamos"], "der": ["1953", "8 colonias", "Ninguna en los sitios de 1921", "Sauces y álamos en declive"]}
+Mientras los wapitíes aumentaban, otras cosas iban a menos. Los álamos temblones, esos árboles de corteza blanca cuyas hojas tiemblan con la menor brisa, dejaron casi de regenerarse en el rango norte, porque los brotes eran devorados antes de crecer. Los sauces de las orillas de los arroyos se quedaron reducidos a matas bajas y mordisqueadas.
+
+Y con los sauces se fueron los castores, que dependen de ellos para comer y para construir sus presas. Un recuento de mil novecientos veintiuno encontró veinticinco colonias de castores en el rango norte. En mil novecientos cincuenta y tres quedaban ocho, y ninguna estaba en los lugares donde se habían visto treinta años antes.
+
+@@ s12 | capitulo | {"n": "Segunda parte", "t": "El regreso"}
+Durante buena parte del siglo veinte, la idea de devolver los lobos a Yellowstone parecía impensable. Fue abriéndose paso muy despacio, a medida que cambiaba la forma de entender la conservación.
+
+@@ s13 | tiempo | {"t": "Un regreso que tardó veinte años", "marcas": [["1973", "Ley de Especies en Peligro"], ["1974", "El lobo gris, en peligro"], ["1991", "Se financia el estudio de impacto"], ["1994", "Más de 160.000 comentarios"], ["1995", "Llegan los lobos"]]}
+En mil novecientos setenta y tres, Estados Unidos aprobó la Ley de Especies en Peligro de Extinción, y al año siguiente el lobo gris entró en la lista de especies protegidas. Eso obligaba al gobierno federal a preparar planes de recuperación, y Yellowstone, con su enorme extensión y sus manadas de wapitíes, era el candidato evidente.
+
+Pero el camino fue largo y muy disputado. Los ganaderos de Wyoming, Montana e Idaho temían por sus vacas y sus ovejas, y muchos cazadores temían que los lobos acabaran con los wapitíes. En mil novecientos noventa y uno, el Congreso financió un estudio de impacto ambiental, que se terminó en mil novecientos noventa y cuatro. Para entonces había recibido más de ciento sesenta mil comentarios del público, una cifra récord para la época. En junio de ese año se firmó la decisión: los lobos volverían.
+
+@@ s14 | mapa | {"titulo": "De dónde vinieron los 41 lobos", "region": [-128, -104, 42, 58], "puntos": [{"n": "Alberta (14)", "lat": 53.5, "lon": -116.5, "pos": "der"}, {"n": "Columbia Británica (17)", "lat": 56.5, "lon": -123.5, "pos": "der"}, {"n": "Noroeste de Montana (10)", "lat": 48.4, "lon": -114.5, "pos": "izq"}, {"n": "Yellowstone", "lat": 44.6, "lon": -110.5, "p": true, "pos": "der"}], "nota": "Entre 1995 y 1997"}
+Los primeros catorce lobos llegaron en enero de mil novecientos noventa y cinco, en dos tandas: los ocho del doce de enero y otros seis el día diecinueve. Todos procedían de Alberta. Al año siguiente llegaron diecisiete más, capturados en la Columbia Británica, y en mil novecientos noventa y siete se añadieron diez lobos del noroeste de Montana. En total, cuarenta y uno. Al mismo tiempo se soltaron otros treinta y cinco en el centro de Idaho.
+
+No se eligieron lobos canadienses por capricho. Venían de zonas donde cazaban sobre todo wapitíes, alces y ciervos, así que conocían bien las presas que iban a encontrar en Yellowstone.
+
+@@ s15 | rotulo | {"t": "Unas semanas en un cercado", "s": "Para que los lobos no volvieran corriendo a Canadá"}
+Los lobos no se soltaron directamente. Primero pasaron varias semanas en cercados de aclimatación, rodeados de malla metálica y vigilados por guardas armados. Dos veces por semana se les dejaba carne de wapitíes y ciervos muertos en las carreteras, y la zona estaba cerrada al público.
+
+Se buscaba que se acostumbraran al lugar y no intentaran volver al norte. Cuando por fin se abrieron las puertas, en la primavera de mil novecientos noventa y cinco, algunos lobos tardaron días en atreverse a salir, como si desconfiaran de una puerta abierta.
+
+@@ s16 | persona | {"n": "Mollie Beattie", "r": "Primera mujer al frente del Servicio de Pesca y Vida Silvestre de EE. UU.", "a": "1947 – 1996"}
+Una de aquellas primeras familias se instaló en el valle de Crystal Creek, y por eso se la llamó la manada de Crystal Creek. Años después, en el año dos mil, recibió un nuevo nombre en honor de Mollie Beattie, la primera mujer que dirigió el Servicio de Pesca y Vida Silvestre de los Estados Unidos. Beattie había apoyado la reintroducción y murió de cáncer en mil novecientos noventa y seis, con solo cuarenta y ocho años.
+
+Guardad este nombre, la manada de Mollie, porque volverá a aparecer al final del episodio con una historia de este mismo otoño.
+
+@@ s17 | ilus | {"fig": "lobos_bar", "pie": "Lobos dentro del parque en algunos años clave"}
+Los lobos se adaptaron mucho mejor de lo que esperaban los más optimistas. La población creció deprisa, con altibajos por brotes de moquillo y de sarna.
+
+El máximo llegó a principios de los años dos mil, con ciento setenta y cuatro lobos repartidos en hasta dieciséis manadas. Una de ellas, la manada de Druid Peak, llegó a tener treinta y siete miembros en dos mil uno, una de las mayores manadas de lobos que se han documentado en libertad. Después la población bajó y se estabilizó en torno al centenar de lobos, en unas diez manadas.
+
+@@ s18 | ilus | {"fig": "wapities_bar", "pie": "Wapitíes de la manada del norte en invierno"}
+Mientras tanto, los wapitíes del norte iniciaron un descenso muy pronunciado. De unos diecisiete mil cuando llegaron los lobos pasaron a tres mil novecientos quince en el recuento de dos mil trece, la cifra más baja desde que se dejaron de sacrificar en los años sesenta. Desde entonces la manada se ha recuperado algo, y el recuento de dos mil veintidós dio seis mil seiscientos setenta y tres.
+
+Los lobos tenían buena parte de culpa, desde luego. En invierno, alrededor de un ochenta y cinco por ciento de los animales que matan son wapitíes. Pero, como veremos, no eran los únicos responsables, y ese detalle va a resultar importante.
+
+@@ s19 | capitulo | {"n": "Tercera parte", "t": "La cascada"}
+Y entonces empezaron a llegar noticias de cambios mucho más allá de los wapitíes. Cambios en los árboles, en los arroyos, en los animales pequeños. Había nacido una idea que iba a dar la vuelta al mundo.
+
+@@ s20 | ilus | {"fig": "cadena", "pie": "Una cascada trófica: el efecto baja, escalón a escalón, por la cadena alimentaria"}
+Los ecólogos llaman cascada trófica a un efecto que baja en escalera por la cadena alimentaria. Un depredador reduce el número de herbívoros, o cambia su comportamiento. Al haber menos herbívoros comiendo, las plantas crecen más. Y al crecer las plantas, cambia todo lo que depende de ellas, desde los insectos hasta los pájaros que anidan en sus ramas.
+
+La idea no nació en Yellowstone. El ecólogo Robert Paine la había estudiado en los años sesenta en la costa del Pacífico, quitando a mano las estrellas de mar de unas rocas y viendo cómo los mejillones se apoderaban de todo. Yellowstone parecía la versión terrestre, a lo grande, de esos experimentos.
+
+@@ s21 | persona | {"n": "William Ripple y Robert Beschta", "r": "Ecólogos de la Universidad Estatal de Oregón", "a": "Estudian Yellowstone desde finales de los años noventa"}
+Dos investigadores de la Universidad Estatal de Oregón, William Ripple y Robert Beschta, se convirtieron en los grandes defensores de esta interpretación. Ripple empezó estudiando los álamos temblones del parque. Contando los anillos de los troncos, descubrió que casi no había árboles nacidos después de los años veinte, justo cuando desaparecieron los lobos, y propuso que había una relación directa entre ambas cosas.
+
+Tras el regreso de los lobos, Ripple y Beschta publicaron una serie de estudios. En ellos describían cómo los sauces y los álamos empezaban a crecer de nuevo en algunos tramos de arroyo del rango norte.
+
+@@ s22 | ilus | {"fig": "miedo", "pie": "El «paisaje del miedo»: los wapitíes evitarían los lugares donde es fácil caer en una emboscada"}
+El mecanismo que propusieron se conoce como el paisaje del miedo. La idea es que los lobos no solo actúan matando wapitíes, sino también asustándolos. Un wapití que sabe que hay lobos cerca se vuelve más vigilante, pasa menos tiempo con la cabeza agachada comiendo. Y evita los lugares donde sería fácil caer en una emboscada, como los fondos de los barrancos, las orillas de los arroyos o los terrenos con poca visibilidad.
+
+Si eso fuera así, los sauces de las riberas podrían recuperarse aunque los wapitíes no hubieran disminuido mucho, simplemente porque ya no se atreverían a quedarse mucho tiempo allí.
+
+@@ s23 | lista | {"t": "«Cómo los lobos cambian los ríos» (2014)", "items": ["Los herbívoros evitan valles y barrancos", "Los árboles se multiplican por cinco en seis años", "Vuelven aves, castores y nutrias", "Los ríos serpentean menos", "Los lobos cambian la geografía física"]}
+En febrero de dos mil catorce, el periodista británico George Monbiot publicó un vídeo de unos cinco minutos, sacado de una charla suya en las conferencias TED, con música y bonitas imágenes de naturaleza. Se titulaba Cómo los lobos cambian los ríos, y se convirtió en un fenómeno, con decenas de millones de visualizaciones en todo el mundo.
+
+El vídeo contaba la cascada completa. Los herbívoros empezaban a evitar valles y barrancos, los árboles de algunas zonas quintuplicaban su altura en seis años, volvían los pájaros cantores, los castores construían presas y con ellas volvían las nutrias, los patos y los peces. Y, para terminar, los ríos se estabilizaban, serpenteaban menos y se erosionaban menos. Los lobos, concluía, habían cambiado la geografía física del parque.
+
+@@ s24 | ilus | {"fig": "castores", "pie": "Colonias de castores en todo el parque, según los recuentos aéreos"}
+Algunos datos parecían darle la razón. En mil novecientos noventa y seis, un recuento aéreo encontró cuarenta y nueve colonias de castores en todo el parque. En dos mil siete eran ciento veintisiete, y en dos mil veinticuatro se estimaron ciento veintiuna. Los sauces habían vuelto a algunas riberas, y casi todas las colonias nuevas estaban junto a ellos.
+
+Pero hay un detalle que el vídeo no contaba. Entre mil novecientos ochenta y seis y mil novecientos noventa y nueve, el Servicio Forestal soltó ciento veintinueve castores en los valles situados al norte del parque, para repoblar un bosque nacional vecino. Según el propio Servicio de Parques, parte de las colonias nuevas probablemente se deben a castores que llegaron desde allí. Y otra parte se debe sencillamente a que los observadores han mejorado su capacidad de detectarlas desde el aire.
+
+@@ s25 | ilus | {"fig": "carrona", "pie": "Caída de la carroña disponible al final de un invierno suave, según el modelo de Wilmers (2005)"}
+Hay efectos de los lobos que nadie discute. Uno de los más claros tiene que ver con la carroña. Los lobos dejan restos de sus presas que aprovechan cuervos, águilas calvas, coyotes, osos grizzly y muchos otros carroñeros.
+
+En dos mil cinco, un equipo de la Universidad de California en Berkeley dirigido por Chris Wilmers calculó lo que pasaría sin lobos. Los inviernos suaves dejarían a los carroñeros sin comida al final de la estación, porque mueren menos wapitíes de frío y hambre. En su modelo, sin lobos la carroña disponible caía un veintisiete por ciento en marzo y un sesenta y seis por ciento en abril. Con lobos, las caídas eran solo del cuatro y del once por ciento. Los lobos amortiguaban, por así decirlo, el efecto del cambio climático sobre toda una comunidad de animales.
+
+@@ s26 | rotulo | {"t": "Un relato perfecto", "s": "Sencillo, emocionante y con moraleja"}
+Así que, a mediados de la década de dos mil diez, la historia estaba escrita. Lobos, miedo, árboles, castores, ríos. Era un relato perfecto, sencillo de contar, emocionante y con una moraleja clara sobre la importancia de los grandes depredadores. Aparecía en documentales, en libros de divulgación y en muchos libros de texto.
+
+@@ s27 | capitulo | {"n": "Cuarta parte", "t": "Las dudas"}
+La primera grieta apareció en la pieza más atractiva del relato, el miedo.
+
+@@ s28 | ilus | {"fig": "reloj", "pie": "Los lobos cazan sobre todo al amanecer y al anochecer (Kohl y otros, 2018)"}
+En dos mil dieciocho, Michel Kohl y Daniel MacNulty, de la Universidad Estatal de Utah, analizaron los collares con GPS que habían llevado veintisiete wapitíes entre dos mil uno y dos mil cuatro. Y compararon sus movimientos con los de los lobos. Lo que encontraron fue que los lobos cazan sobre todo al amanecer y al anochecer, y que de día y de noche están bastante inactivos.
+
+Los wapitíes lo sabían. Evitaban los lugares más peligrosos justo en las horas en que los lobos estaban activos, pero el resto del tiempo los usaban con total tranquilidad. Como dijeron los autores, el lobo no es una amenaza permanente, las veinticuatro horas del día. Así que el miedo difícilmente podía mantener a los wapitíes alejados de los sauces. Si los lobos tenían algún efecto sobre las plantas, lo más probable es que fuera por la vía directa, matando wapitíes, y no asustándolos.
+
+@@ s29 | ilus | {"fig": "altos", "pie": "Medir solo los cinco árboles más altos exagera la recuperación (Brice y otros, 2021)"}
+La segunda grieta tenía que ver con la forma de medir. Muchos estudios sobre los álamos temblones habían seguido un método concreto: en cada bosquete se medían solo los cinco árboles jóvenes más altos, con la idea de que indicaban hacia dónde iba el conjunto. En dos mil veintiuno, Elaine Brice, Daniel MacNulty y Eric Larsen compararon ese método con un muestreo al azar, y el resultado fue que medir solo los más altos exageraba la recuperación de forma significativa.
+
+La razón es casi de sentido común. Los wapitíes comen sobre todo a la altura de los hombros, así que un árbol que ya es alto crece más deprisa porque es alto, no porque haya lobos. Además, los árboles más altos suelen estar en los mejores sitios, con más luz y más agua. Brice lo comparó con calcular el promedio de bateo de un equipo de béisbol dejando fuera al jugador que siempre falla.
+
+@@ s30 | persona | {"n": "Tom Hobbs y David Cooper", "r": "Ecólogos de la Universidad Estatal de Colorado", "a": "Un experimento de más de veinte años"}
+La tercera grieta fue la más seria, porque no venía de reanalizar datos ajenos, sino de un experimento de campo. En dos mil uno, Tom Hobbs y David Cooper, de la Universidad Estatal de Colorado, pusieron en marcha un estudio en cuatro zonas del rango norte que duraría más de dos décadas. Su pregunta era sencilla de formular. Si se quita por completo la presión de los wapitíes sobre los sauces, ¿vuelven a ser como antes?
+
+Para responderla vallaron varias parcelas, de modo que ningún herbívoro pudiera entrar. Y en algunas de ellas, con y sin valla, construyeron presas artificiales que imitaban las de los castores, para que el agua subiera de nivel. Así podían separar dos factores: el mordisqueo de los herbívoros y la altura del agua bajo el suelo.
+
+@@ s31 | ilus | {"fig": "parcelas", "pie": "Altura de los sauces en el experimento de Hobbs y Cooper (esquema)"}
+Los resultados, publicados en dos mil veinticuatro en la revista Ecological Monographs, fueron muy claros. En las parcelas con valla y con presa, los sauces crecieron más de tres veces más altos que en las parcelas de control, y mucho más densos. Pero donde solo se puso la valla, sin presa, los sauces crecieron bastante menos. Y en las zonas de control, donde los wapitíes seguían entrando, los sauces siguieron siendo bajos, con o sin lobos en los alrededores.
+
+Dicho de otro modo, ni siquiera eliminando por completo a los herbívoros, que es mucho más de lo que pueden hacer los lobos, los sauces volvían a ser lo que eran. Les faltaba algo más, y ese algo era el agua.
+
+@@ s32 | ilus | {"fig": "cauce", "pie": "Sin presas de castor, el arroyo se encaja y el agua queda fuera del alcance de las raíces"}
+Aquí está la clave de toda la historia. Durante las décadas sin lobos, al desaparecer los sauces desaparecieron también los castores, y con ellos sus presas. Esas presas frenaban el agua, la extendían por el valle y mantenían alto el nivel freático, es decir, el agua que empapa el suelo. Sin ellas, los arroyos empezaron a correr más deprisa y a excavar su propio cauce, hundiéndose poco a poco en el terreno.
+
+Un arroyo encajado de esa manera deja las orillas más altas y más secas. El agua subterránea baja, y las raíces de los sauces ya no llegan a ella. El valle, que antes era una pradera húmeda salpicada de sauces y castores, se convirtió en una pradera seca. Y ese nuevo paisaje se ha mantenido aunque los depredadores hayan vuelto.
+
+@@ s33 | ilus | {"fig": "estados", "pie": "Dos estados estables: volver atrás exige mucho más que quitar lo que causó el cambio"}
+Los ecólogos llaman a esto un estado alternativo. Imagina una bola en un paisaje con dos valles separados por una colina. Mientras la bola está en el primer valle, que sería la pradera húmeda con sauces y castores, pequeños empujones no la mueven de allí. Pero un empujón fuerte, como la desaparición de los lobos durante setenta años, puede sacarla de ese valle y dejarla caer en el otro, la pradera seca. Y entonces devolverla a su sitio exige mucho más que deshacer aquel empujón. Hay que subir otra vez toda la colina.
+
+Hobbs lo resumió con una frase que conviene recordar: mantened intacta la cadena alimentaria, porque no hay un arreglo rápido cuando se pierden los grandes depredadores de un ecosistema.
+
+@@ s34 | ilus | {"fig": "actores", "pie": "Los lobos no estaban solos: muchos factores cambiaron a la vez"}
+Y había otro problema con el relato clásico. Los lobos no fueron lo único que cambió en Yellowstone a finales del siglo veinte. Los pumas habían vuelto por su cuenta a principios de los años ochenta, probablemente desde las montañas de Idaho. Los osos grizzly, protegidos desde los años setenta, eran cada vez más numerosos, y se comen muchos cervatillos de wapití en primavera. Fuera del parque, los cazadores abatían cada invierno muchos de los wapitíes que salían de sus límites. Y a principios de los dos mil hubo varios años de sequía severa.
+
+Por si fuera poco, mientras los wapitíes disminuían, los bisontes aumentaban, y los bisontes también pisotean y mordisquean los sauces.
+
+@@ s35 | dato | {"v": "15–22 → 26–42", "t": "pumas en el rango norte, antes y después de los lobos", "s": "Estimaciones de 1987–1993 y de 1998–2005"}
+Los pumas son un buen ejemplo de actor olvidado. Se estima que antes de la llegada de los lobos había entre quince y veintidós pumas en el rango norte. Entre mil novecientos noventa y ocho y dos mil cinco ya eran entre veintiséis y cuarenta y dos. En ese periodo, los investigadores documentaron cuatrocientas setenta y tres presas de puma, y casi tres de cada cuatro eran wapitíes, sobre todo crías.
+
+@@ s36 | capitulo | {"n": "Quinta parte", "t": "Una polémica que sigue viva"}
+Con todo esto, uno podría pensar que el debate se cerró. Nada de eso. En los últimos dos años se ha recrudecido, y es un buen ejemplo de cómo discute la ciencia cuando los datos son difíciles.
+
+@@ s37 | dato | {"v": "1.500 %", "t": "aumento del volumen de las copas de los sauces entre 2001 y 2020", "s": "Ripple y otros, Global Ecology and Conservation, 2025"}
+En enero de dos mil veinticinco, William Ripple y varios colegas publicaron un nuevo análisis en la revista Global Ecology and Conservation. Usaban datos tomados en veinticinco tramos de ribera entre dos mil uno y dos mil veinte. Su conclusión era que el volumen de las copas de los sauces, es decir, el espacio que ocupan sus ramas, había aumentado un mil quinientos por ciento. Hablaban de una de las cascadas tróficas más fuertes descritas en el mundo.
+
+Ripple lo resumió diciendo que los depredadores son arquitectos de los ecosistemas. Según él, la vuelta de los lobos y de otros grandes carnívoros había transformado partes de Yellowstone, en beneficio de los sauces, los álamos, los alisos y los arbustos de bayas que comen los osos.
+
+@@ s38 | ilus | {"fig": "circular", "pie": "La crítica: si la altura sirve para calcular el volumen, predecir el volumen con la altura es un círculo"}
+La respuesta llegó en forma de comentario en la misma revista, firmado por Daniel MacNulty, David Cooper, Michael Procko y Thomas Clark-Wolf. Sus críticas eran técnicas, pero se entienden bien. Para calcular el volumen de las copas, el estudio había usado la altura de los sauces medida por otro equipo. Y luego usaba esa misma altura para predecir el volumen. Según MacNulty, eso solo demostraba que la altura predice la altura.
+
+Señalaban además que el modelo para pasar de altura a volumen estaba pensado para sauces de forma normal, no para matas muy mordisqueadas y deformes. Y añadían que muchas de las parcelas comparadas entre dos mil uno y dos mil veinte no estaban en el mismo sitio. Corregidos esos problemas, decían, no había pruebas de un aumento grande y generalizado, sino de una respuesta modesta y desigual, que dependía del agua, del mordisqueo y de las condiciones de cada lugar.
+
+@@ s39 | cita | {"q": "Nuestro objetivo es aclarar las pruebas, no restar importancia a los depredadores", "a": "Daniel MacNulty, Universidad Estatal de Utah"}
+Ripple no se ha movido de su posición. Defiende que sus métodos son sólidos, que el enfoque estadístico es el habitual, y que las críticas nacen de malentendidos sobre su trabajo. Otros investigadores de su entorno, como Luke Painter, han defendido que existe una cascada real, aunque más débil de lo que decía la versión popular. Y han cuestionado a su vez algunos aspectos del experimento de Hobbs y Cooper.
+
+Un ecólogo ajeno a las dos partes, Jake Goheen, de la Universidad Estatal de Iowa, dio quizá la opinión más equilibrada. Las pruebas presentadas hasta ahora, dijo, no bastan para sostener una cascada fuerte sobre los sauces, pero eso no significa que no exista ninguna.
+
+@@ s40 | rotulo | {"t": "¿Y los ríos?", "s": "La parte más famosa del vídeo es la más débil"}
+Queda la afirmación más espectacular de todas, la de que los lobos cambiaron el curso de los ríos. Los propios Beschta y Ripple han defendido que los grandes carnívoros pueden influir en los arroyos a largo plazo, al permitir que la vegetación de las orillas sujete los márgenes. Pero cambiar el trazado de un río es un proceso lento, que se mide en décadas o siglos, y en el que influyen las crecidas, los sedimentos y la geología.
+
+Un ejemplo lo deja claro. En junio de dos mil veintidós, unas lluvias torrenciales sobre la nieve provocaron una crecida histórica en Yellowstone. En pocos días, los ríos del norte del parque arrancaron carreteras, puentes y orillas enteras, y movieron sus cauces mucho más de lo que hubieran podido moverlos treinta años de sauces.
+
+@@ s41 | comparar | {"izq": ["Lo que sabemos", "Los lobos cazan wapitíes", "Hay más carroña para otros", "Hay una cascada, aunque débil", "Depende mucho de cada lugar"], "der": ["Lo que no se sostiene", "Que el miedo lo cambió todo", "Que el bosque volvió solo", "Que los lobos movieron ríos", "Que fueron la única causa"]}
+Si hubiera que hacer balance, podría ser algo así. Casi todos los científicos que trabajan en Yellowstone coinciden en que existe una cascada trófica, en el sentido de que los lobos afectan a los wapitíes y eso tiene consecuencias sobre la vegetación. Lo que se discute es su fuerza, su alcance y qué parte del mérito corresponde a cada actor.
+
+Lo que no se sostiene es la versión de cuento de hadas. Ni el miedo mantuvo a los wapitíes lejos de los ríos, ni el bosque volvió por sí solo en seis años, ni los lobos cambiaron la geografía.
+
+@@ s42 | capitulo | {"n": "Sexta parte", "t": "Lo que enseña Yellowstone"}
+Y ahora vamos a lo que hace de esta historia un caso perfecto para una serie sobre sistemas complejos.
+
+@@ s43 | rotulo | {"t": "Quitar una pieza no es lo contrario de ponerla", "s": "Los sistemas complejos tienen memoria"}
+La primera lección es que en un sistema complejo quitar una pieza y volver a ponerla no es como deshacer una operación. Los ecosistemas tienen memoria. Durante setenta años sin lobos pasaron cosas que no se borran al devolverlos: se fueron los castores, los arroyos se hundieron, el agua bajó, la pradera cambió. El sistema no volvió al punto de partida, porque el punto de partida ya no existía.
+
+Los físicos tienen una palabra para esto, histéresis, que viene del griego y significa algo así como quedarse atrás. Describe sistemas cuyo estado no depende solo de las condiciones actuales, sino también del camino que han recorrido para llegar hasta ellas.
+
+@@ s44 | rotulo | {"t": "Muchas causas a la vez", "s": "Y la tentación de quedarse con una sola"}
+La segunda lección es que en los sistemas complejos casi nunca hay una sola causa. En Yellowstone, en las mismas décadas, volvieron los lobos, aumentaron los pumas y los osos, cambió la caza fuera del parque, hubo sequías, crecieron los bisontes y llegaron castores desde los bosques vecinos.
+
+Frente a esa maraña, la mente humana tiende a quedarse con la explicación más sencilla y más bonita. Un depredador carismático que vuelve y lo arregla todo es una historia irresistible. Pero que una historia sea bonita no la hace verdadera, y la ciencia consiste en buena parte en resistirse a esa tentación.
+
+@@ s45 | rotulo | {"t": "Los datos tardan; los vídeos, no", "s": "Cinco minutos frente a veinte años de experimento"}
+La tercera lección tiene que ver con el tiempo. El vídeo sobre los lobos y los ríos se hizo en unas semanas y llegó a decenas de millones de personas. El experimento de Hobbs y Cooper tardó más de veinte años en dar resultados, y lo conocen sobre todo los especialistas.
+
+@@ s46 | capitulo | {"n": "Epílogo", "t": "Los lobos, hoy"}
+Para terminar, veamos cómo están los lobos de Yellowstone ahora mismo, en este otoño de dos mil veintiséis. Porque la historia sigue escribiéndose.
+
+@@ s47 | dato | {"v": "84", "t": "lobos en el parque a finales de 2025, en 8 manadas", "s": "Un año antes eran 108 en 9 manadas"}
+El último recuento oficial, de finales de dos mil veinticinco, dio ochenta y cuatro lobos repartidos en ocho manadas, frente a los ciento ocho en nueve manadas del año anterior. La causa principal parece haber sido un brote de moquillo canino, que hizo estragos entre los cachorros. De los treinta y seis cachorros que se vieron salir de las madrigueras, solo diecisiete seguían vivos el invierno siguiente, un récord negativo. Lo habitual es que sobrevivan unos tres de cada cuatro.
+
+Este año tampoco ha sido bueno para la cría, aunque esta vez no por enfermedad.
+
+@@ s48 | cita | {"q": "No es una señal de alarma biológica", "a": "Dan Stahler, jefe del Proyecto Lobo de Yellowstone (2026)"}
+Aun así, el biólogo que dirige el Proyecto Lobo de Yellowstone, Dan Stahler, pide calma. Según explicó este otoño, no ve una señal de alarma biológica, sino el funcionamiento normal de una población natural, con sus altibajos. Recuerda que la cifra actual está por debajo de la media de los últimos quince años, que ronda el centenar, pero que no es un mínimo histórico. En dos mil doce se contaron ochenta y tres lobos, y en dos mil dieciocho, ochenta, y en ambos casos la población se recuperó.
+
+@@ s49 | ilus | {"fig": "mollie", "pie": "La manada de Mollie salió del parque en otoño de 2025 y crió fuera en 2026"}
+Y ahora, la historia de este otoño que prometimos. La manada de Mollie es la última que queda de las familias de la reintroducción. Según el biólogo retirado Doug Smith, que dirigió el Proyecto Lobo durante décadas, tiene el linaje genético intacto más largo que se conoce en Norteamérica.
+
+Durante años, más del noventa y cinco por ciento de sus movimientos fueron dentro del parque, en el valle de Pelican. Pero hacia Halloween del año pasado, la manada salió hacia el este, y en primavera una vecina descubrió en su cámara de fototrampeo a seis lobos en la cuenca de Sunlight, fuera de Yellowstone. Allí criaron este verano a cinco cachorros. La explicación más probable, según Stahler, es un invierno suave y con poca nieve, en el que las presas del parque estaban en mejor forma y eran más difíciles de cazar.
+
+@@ s50 | fecha | {"a": "15 de septiembre de 2026", "t": "Se abre la caza del lobo en Wyoming", "s": "Cupo de cuatro lobos en la zona donde crió la manada de Mollie"}
+El problema es que, fuera del parque, los lobos ya no están protegidos. En el norte de las Montañas Rocosas, tras años de idas y venidas judiciales, la gestión del lobo pasó a los estados, y en Wyoming se pueden cazar en una amplia zona alrededor de Yellowstone. La comisión de caza del estado redujo este año los cupos a menos de la mitad por el brote de moquillo. Pero rechazó cerrar la zona donde estaba la manada de Mollie, que tenía un cupo de cuatro lobos.
+
+La temporada se abrió el quince de septiembre, y en apenas cinco días se cubrió el cupo. Durante unos días hubo incertidumbre sobre si alguno de los lobos abatidos pertenecía a la manada. Finalmente, el departamento de caza de Wyoming confirmó que no. Algunos de sus miembros habían vuelto a entrar en el parque justo cuando empezó la temporada. Entre ellos está la hembra conocida como diez noventa efe, de unos doce años, que se cree que es la loba más vieja de Yellowstone.
+
+@@ s51 | rotulo | {"t": "Una frontera invisible", "s": "Dentro del parque, protegidos; fuera, no"}
+La historia de la manada de Mollie resume muy bien la situación de los lobos de Yellowstone. El parque es una isla protegida en un paisaje donde la convivencia con los lobos sigue siendo motivo de conflicto. Hay ganaderos que pierden reses, cazadores que compiten por los wapitíes y defensores de los lobos que piden más protección. Los lobos, por supuesto, no ven la frontera. Simplemente siguen a sus presas.
+
+@@ s52 | rotulo | {"t": "Más allá de Yellowstone", "s": "Colorado, la última gran reintroducción"}
+La experiencia de Yellowstone ha inspirado otros proyectos. El más reciente es el de Colorado, donde los votantes aprobaron en referéndum en dos mil veinte la vuelta del lobo, y donde se soltaron los primeros ejemplares en diciembre de dos mil veintitrés. A principios de este año, el estado decidió no soltar más lobos en dos mil veintiséis, y la población ronda los cuarenta y cinco animales.
+
+@@ s53 | rotulo | {"t": "Pensar como una montaña… y como un río", "s": "Ver el sistema entero y sus tiempos largos"}
+Volvamos, para terminar, a aquella mañana de enero de mil novecientos noventa y cinco, con los ocho lobos de Alberta en sus jaulas. Quienes los llevaron a Yellowstone esperaban recuperar una especie, y lo consiguieron.
+
+Aldo Leopold escribió que había que aprender a pensar como una montaña, es decir, a ver el sistema entero y sus tiempos largos, y no solo la pieza que tenemos delante. Yellowstone nos enseña que también hay que pensar como un río, que tarda décadas en cambiar su cauce y que no vuelve atrás solo porque devolvamos lo que le quitamos. Los lobos no arreglaron Yellowstone en seis años. Hicieron algo más modesto y más valioso: devolverle una pieza que le faltaba, y recordarnos lo difícil que es entender un sistema en el que todo está conectado.
+
+@@ s54 | fin | {"t": "Próximo episodio de la serie", "items": ["Mao contra los gorriones", "La campaña para exterminar a los gorriones", "Las plagas de langosta y la Gran Hambruna china"]}
+En el próximo episodio de Sistemas complejos y efectos inesperados viajaremos a la China de finales de los años cincuenta, cuando Mao Zedong declaró la guerra a los gorriones. Veremos cómo una campaña contra unos pájaros pequeños acabó enredada en una de las mayores tragedias del siglo veinte. Gracias por escuchar, y hasta la próxima.

@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "an",
+    "ultima": "sc",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -105,10 +105,97 @@
             {
               "id": "sc02",
               "titulo": "Los lobos de Yellowstone",
-              "descripcion": "Cómo devolver un depredador a un parque cambió los ciervos, la vegetación y hasta el curso de los ríos.",
-              "estado": "pendiente",
+              "descripcion": "El exterminio de los lobos, su regreso en 1995 y la famosa cascada trófica: qué hay de verdad en que los lobos devolvieron los sauces, los castores y hasta cambiaron los ríos, qué dicen veinte años de experimentos y cómo están hoy los lobos del parque.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ilustrado"
+              "estilo": "ilustrado",
+              "archivo": "media/sc02-lobos-yellowstone.mp4",
+              "audio": "media/sc02-lobos-yellowstone.m4a",
+              "guion": "guiones/sc02-lobos-yellowstone.txt",
+              "duracion": "34 min",
+              "fecha": "2026-11-11",
+              "fuentes": [
+                {
+                  "titulo": "Wolf Restoration in Yellowstone: Reintroduction to Recovery (NPS)",
+                  "url": "https://home.nps.gov/articles/wolf-restoration-in-yellowstone-reintroduction-to-recovery.htm"
+                },
+                {
+                  "titulo": "History of Wolf Management (NPS)",
+                  "url": "https://www.nps.gov/yell/learn/historyculture/wolf-management.htm"
+                },
+                {
+                  "titulo": "Elk (Yellowstone, NPS)",
+                  "url": "https://www.nps.gov/yell/learn/nature/elk.htm"
+                },
+                {
+                  "titulo": "Beaver (Yellowstone, NPS)",
+                  "url": "https://www.nps.gov/yell/learn/nature/beaver.htm"
+                },
+                {
+                  "titulo": "Cougar (Yellowstone, NPS)",
+                  "url": "https://www.nps.gov/yell/learn/nature/cougar.htm"
+                },
+                {
+                  "titulo": "Thinking Like a Mountain, Aldo Leopold (E. O. Wilson Foundation)",
+                  "url": "https://eowilsonfoundation.org/wp-content/uploads/2023/10/Thinking-Like-a-Mountain-Essay.pdf"
+                },
+                {
+                  "titulo": "How Wolves Change Rivers, George Monbiot (2014)",
+                  "url": "https://www.monbiot.com/2014/02/13/how-wolves-change-rivers"
+                },
+                {
+                  "titulo": "Wilmers y otros (2005): los lobos amortiguan el cambio climático para los carroñeros (ScienceDaily)",
+                  "url": "https://www.sciencedaily.com/releases/2005/03/050322134346.htm"
+                },
+                {
+                  "titulo": "Kohl y otros (2018): el paisaje del miedo depende de la hora (Earth.com)",
+                  "url": "https://earth.com/news/predators-yellowstone-landscape-fear"
+                },
+                {
+                  "titulo": "Brice, MacNulty y Larsen (2021): el sesgo de muestreo exagera la cascada (EurekAlert)",
+                  "url": "https://www.eurekalert.org/news-releases/934833"
+                },
+                {
+                  "titulo": "Hobbs y Cooper (2024), Ecological Monographs: no hay arreglo rápido (Phys.org)",
+                  "url": "https://phys.org/news/2024-02-apex-predators-quick-ecosystems-year.pdf"
+                },
+                {
+                  "titulo": "Ripple y otros (2025): aumento del 1.500 % de los sauces (Conservation Biology Institute)",
+                  "url": "https://consbio.org/news/wolves-transform-yellowstones-landscape-1500-growth-in-riverside-plants-shows-natures-comeback/"
+                },
+                {
+                  "titulo": "MacNulty y otros (2025): crítica a Ripple y otros (ScienceDaily, 2026)",
+                  "url": "https://sciencedaily.com/releases/2026/02/260212025612.htm"
+                },
+                {
+                  "titulo": "Did reintroducing wolves really cause an ecological cascade? (Live Science)",
+                  "url": "https://www.livescience.com/animals/land-mammals/did-reintroducing-wolves-to-yellowstone-really-cause-an-ecological-cascade"
+                },
+                {
+                  "titulo": "Yellowstone wolf population declined in 2025 (International Wolf Center)",
+                  "url": "https://wolf.org/headlines/yellowstone-national-park-wolf-population-declined-in-2025/"
+                },
+                {
+                  "titulo": "Yellowstone wolves struggle to produce pups, again (WyoFile)",
+                  "url": "https://wyofile.com/yellowstone-wolves-struggle-to-produce-pups-again-but-dont-blame-disease-this-time/"
+                },
+                {
+                  "titulo": "Mollie's Pack leaves the park (Daily Montanan, julio de 2026)",
+                  "url": "https://dailymontanan.com/2026/07/16/repub/yellowstones-oldest-wolf-pack-mollies-pack-leaves-the-park-raising-fears-for-its-future/"
+                },
+                {
+                  "titulo": "No Mollie's Pack wolves killed as hunt quota reached (Cowboy State Daily)",
+                  "url": "https://cowboystatedaily.com/2026/09/22/with-wolf-hunt-quota-reached-whether-any-of-mollies-pack-were-taken-is-unknown/"
+                },
+                {
+                  "titulo": "Colorado wolf reintroduction paused (CPR)",
+                  "url": "https://www.cpr.org/2026/01/21/colorado-wolf-reintroduction-paused/"
+                },
+                {
+                  "titulo": "Colorado wolf population stalls at 45 (Cowboy State Daily)",
+                  "url": "https://cowboystatedaily.com/2026/10/01/colorado-backs-off-killing-wolves-that-attack-cattle-as-population-stalls-at-45/"
+                }
+              ]
             },
             {
               "id": "sc03",

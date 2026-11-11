@@ -15,7 +15,7 @@ pip install --break-system-packages pocket-tts
 | `mezclar.py` | Trata la voz, añade la música de fondo (estilo B) y crea el `.m4a` final (AAC mono 64 kbps). |
 | `video_ligero.py` | Vídeo ligero: dibuja un rótulo por escena (título, dato, fecha, persona, cita, lista, comparación, mapa, línea de tiempo) sobre el fondo propio de cada serie, con cabecera y barra de progreso. |
 | `montar_video.py` | Monta el MP4 final: una imagen fija por escena con fundidos y el audio de `mezclar.py`, sin recodificar. |
-| `video_ilustrado.py` | Vídeo ilustrado: igual que `video_ligero.py` más el tipo `ilus` (`{"fig": nombre, "pie": texto}`), con ilustraciones SVG hechas a propósito en `FIGURAS` (primeras: episodio ia01). Mismos argumentos que `video_ligero.py`. |
+| `video_ilustrado.py` | Vídeo ilustrado: igual que `video_ligero.py` más el tipo `ilus` (`{"fig": nombre, "pie": texto}`), con ilustraciones SVG hechas a propósito en `FIGURAS` (episodios ia01 y sc02). Mismos argumentos que `video_ligero.py`. |
 | `video_escenas.py` | Vídeo ilustrado: plantillas e ilustraciones del piloto de filosofía (punto de partida para episodios ilustrados). |
 | `video_montar.py` | Montaje usado en el piloto (sustituido por `montar_video.py`). |
 

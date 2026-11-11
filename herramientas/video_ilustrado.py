@@ -9,7 +9,7 @@ Tipo nuevo:
 
 Las figuras se dibujan en un lienzo de 1160x440 (se coloca entre la cabecera y el pie). Cada función recibe el
 tema T (colores de la serie) y devuelve el contenido SVG. Para un episodio nuevo, añade sus figuras a FIGURAS.
-Figuras actuales: episodio ia01 (Qué es una red neuronal, desde cero).
+Figuras actuales: episodios ia01 (Qué es una red neuronal, desde cero) y sc02 (Los lobos de Yellowstone).
 """
 import math, os, random, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -379,9 +379,265 @@ def f_rasgos(T):
         s += tx(x, 390, t, T, 30, T["tinta"], peso=600)
     return s
 
+
+# ---------------------------------------------------------------- figuras del episodio sc02 (Los lobos de Yellowstone)
+def barras(T, datos, x0, y0, w, h, vmax, col=None, fmt=str, ancho=None, nota_col=None):
+    """datos: [(etiqueta, valor, color opcional)]. Dibuja barras verticales con su valor encima."""
+    n = len(datos); paso = w / n; bw = ancho or paso * .56; s = ""
+    s += linea(x0, y0 + h, x0 + w, y0 + h, T["suave"], 2, .7)
+    for i, d in enumerate(datos):
+        et, v = d[0], d[1]; c = d[2] if len(d) > 2 else (col or T["linea"])
+        bh = max(4, h * v / vmax); x = x0 + i * paso + (paso - bw) / 2
+        s += f"<rect x='{x:.1f}' y='{y0 + h - bh:.1f}' width='{bw:.1f}' height='{bh:.1f}' rx='6' fill='{c}'/>"
+        s += tx(x + bw / 2, y0 + h - bh - 14, fmt(v), T, 30, T["tinta"], peso=600)
+        s += tx(x + bw / 2, y0 + h + 38, et, T, 26, T["suave"])
+    return s
+
+def miles(v):
+    return f"{v:,}".replace(",", ".")
+
+def f_lobos_bar(T):
+    datos = [("1994", 0), ("1995", 14, T["suave"]), ("Máximo", 174, T["acento"]), ("2012", 83), ("2018", 80), ("2024", 108), ("2025", 84)]
+    s = barras(T, datos, 40, 40, 1080, 300, 190)
+    s += tx(1120, 30, "lobos en el parque", T, 24, T["suave"], anc="end")
+    return s
+
+def f_wapities_bar(T):
+    datos = [("1995", 17000), ("2013", 3915, T["acento"]), ("2022", 6673)]
+    s = barras(T, datos, 200, 40, 760, 300, 18500, fmt=miles, ancho=170)
+    s += tx(1120, 30, "wapitíes contados en invierno (rango norte)", T, 24, T["suave"], anc="end")
+    return s
+
+def pict_lobo(x, y, T, k=1.0, col=None):
+    c = col or T["tinta"]
+    pts = [(-34, 10), (-26, -30), (-12, -12), (12, -12), (26, -30), (34, 10), (14, 30), (0, 38), (-14, 30)]
+    s = "<polygon points='" + " ".join(f"{x + a * k:.1f},{y + b * k:.1f}" for a, b in pts) + f"' fill='{c}'/>"
+    s += f"<circle cx='{x - 12 * k}' cy='{y + 4 * k}' r='{4 * k}' fill='{T['c2']}'/><circle cx='{x + 12 * k}' cy='{y + 4 * k}' r='{4 * k}' fill='{T['c2']}'/>"
+    return s
+
+def pict_wapiti(x, y, T, k=1.0, col=None):
+    c = col or T["tinta"]; s = ""
+    s += f"<ellipse cx='{x}' cy='{y + 14 * k}' rx='{18 * k}' ry='{26 * k}' fill='{c}'/>"
+    for sg in (-1, 1):
+        s += f"<path d='M{x + sg * 10 * k} {y - 8 * k} L{x + sg * 30 * k} {y - 44 * k} M{x + sg * 20 * k} {y - 26 * k} L{x + sg * 40 * k} {y - 30 * k} M{x + sg * 26 * k} {y - 36 * k} L{x + sg * 22 * k} {y - 56 * k}' stroke='{c}' stroke-width='{5 * k}' stroke-linecap='round' fill='none'/>"
+    return s
+
+def pict_sauce(x, y, T, k=1.0, col=None, alto=1.0):
+    c = col or T["linea"]; s = linea(x, y + 40 * k, x, y + 40 * k - 70 * k * alto, "#a07850", 6 * k)
+    top = y + 40 * k - 70 * k * alto
+    for d in range(-3, 4):
+        s += f"<path d='M{x} {top} q {d * 10 * k} {-8 * k} {d * 14 * k} {40 * k * alto}' stroke='{c}' stroke-width='{4 * k}' fill='none' stroke-linecap='round'/>"
+    return s
+
+def pict_castor(x, y, T, k=1.0):
+    s = f"<ellipse cx='{x + 28 * k}' cy='{y + 16 * k}' rx='{20 * k}' ry='{9 * k}' fill='#7a5a3a' transform='rotate(-15 {x + 28 * k} {y + 16 * k})'/>"
+    s += f"<ellipse cx='{x - 4 * k}' cy='{y + 4 * k}' rx='{30 * k}' ry='{20 * k}' fill='#a87a4c'/>"
+    s += f"<circle cx='{x - 30 * k}' cy='{y - 6 * k}' r='{13 * k}' fill='#a87a4c'/><circle cx='{x - 34 * k}' cy='{y - 10 * k}' r='{3 * k}' fill='{T['c2']}'/>"
+    return s
+
+def pict_rio(x, y, T, k=1.0):
+    s = ""
+    for j in range(3):
+        s += f"<path d='M{x - 46 * k} {y - 14 * k + j * 16 * k} q {23 * k} {-14 * k} {46 * k} 0 t {46 * k} 0' stroke='#6fb7e0' stroke-width='{5 * k}' fill='none' stroke-linecap='round'/>"
+    return s
+
+def f_cadena(T):
+    items = [(110, "Lobo", pict_lobo), (340, "Wapití", pict_wapiti), (580, "Sauce", pict_sauce), (820, "Castor", pict_castor), (1050, "Río", pict_rio)]
+    s = ""
+    for i, (x, t, f) in enumerate(items):
+        s += f"<rect x='{x - 95}' y='60' width='190' height='230' rx='20' fill='{T['panel']}' stroke='{T['acento'] if i == 0 else T['linea']}' stroke-width='3'/>"
+        s += f(x, 150, T, 1.3)
+        s += tx(x, 268, t, T, 32, peso=600)
+        if i < 4:
+            s += flecha(x + 100, 175, x + 135, 175, T["acento"], 5)
+    for x, t in [(225, "come"), (460, "come"), (700, "alimenta"), (935, "frena")]:
+        s += tx(x, 330, t, T, 24, T["suave"])
+    s += tx(580, 400, "Si cambia el primer eslabón, ¿cambia todo lo demás?", T, 28, T["tinta"])
+    return s
+
+def f_miedo(T):
+    s = f"<path d='M0 300 C 200 300 300 120 460 120 C 620 120 640 330 760 330 C 880 330 960 160 1160 160 L1160 440 L0 440 Z' fill='{T['tierra']}' opacity='.9'/>"
+    s += f"<path d='M640 335 C 700 342 820 342 880 330' stroke='#6fb7e0' stroke-width='10' fill='none' stroke-linecap='round'/>"
+    s += f"<ellipse cx='760' cy='310' rx='170' ry='90' fill='{CORAL}' opacity='.22'/>"
+    s += tx(760, 378, "zona de riesgo", T, 28, CORAL, peso=600)
+    for xx in (690, 730, 800, 840):
+        s += pict_sauce(xx, 255, T, .8, alto=1.0)
+    s += pict_lobo(1010, 120, T, 1.1, CORAL)
+    for (xx, yy) in [(330, 150), (400, 120), (250, 200)]:
+        s += pict_wapiti(xx, yy, T, .9)
+    s += flecha(560, 170, 460, 150, T["acento"], 4)
+    s += tx(300, 300, "lugares abiertos, con buena vista", T, 26, T["tinta"])
+    s += tx(760, 426, "barrancos y riberas: fácil emboscada", T, 26, T["tinta"])
+    return s
+
+def f_castores(T):
+    datos = [("1996", 49), ("2007", 127, T["acento"]), ("2024", 121)]
+    s = barras(T, datos, 40, 40, 640, 300, 140, ancho=150)
+    s += f"<rect x='740' y='70' width='400' height='250' rx='18' fill='{T['panel']}' stroke='{CORAL}' stroke-width='3'/>"
+    s += tx(940, 140, "Pero entre 1986 y 1999", T, 28, CORAL, peso=600)
+    s += tx(940, 200, "se soltaron 129 castores", T, 30, peso=600)
+    s += tx(940, 245, "al norte del parque", T, 28)
+    s += tx(940, 290, "(Servicio Forestal)", T, 24, T["suave"])
+    s += tx(360, 30, "colonias de castores en todo el parque", T, 24, T["suave"])
+    return s
+
+def f_carrona(T):
+    s = ""; grupos = [("Marzo", 27, 4), ("Abril", 66, 11)]
+    y0, h = 50, 290
+    s += linea(80, y0 + h, 1100, y0 + h, T["suave"], 2, .7)
+    for i, (mes, sin, con) in enumerate(grupos):
+        cx = 330 + i * 500
+        for j, (v, c, et) in enumerate([(sin, CORAL, "sin lobos"), (con, T["linea"], "con lobos")]):
+            x = cx - 150 + j * 170; bh = h * v / 70
+            s += f"<rect x='{x}' y='{y0 + h - bh}' width='130' height='{bh}' rx='6' fill='{c}'/>"
+            s += tx(x + 65, y0 + h - bh - 14, f"−{v} %", T, 32, peso=600)
+            s += tx(x + 65, y0 + h + 34, et, T, 24, T["suave"])
+        s += tx(cx - 20, y0 + h + 80, mes, T, 30, peso=600)
+    return s
+
+def f_reloj(T):
+    cx, cy, r = 340, 215, 170; s = ""
+    s += f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='{T['panel']}' stroke='{T['suave']}' stroke-width='3'/>"
+    def arco(h0, h1, col):
+        a0 = math.radians(h0 / 24 * 360 - 90); a1 = math.radians(h1 / 24 * 360 - 90)
+        x0, y0 = cx + r * math.cos(a0), cy + r * math.sin(a0); x1, y1 = cx + r * math.cos(a1), cy + r * math.sin(a1)
+        large = 1 if (h1 - h0) % 24 > 12 else 0
+        return f"<path d='M{cx} {cy} L{x0:.1f} {y0:.1f} A {r} {r} 0 {large} 1 {x1:.1f} {y1:.1f} Z' fill='{col}' opacity='.85'/>"
+    s += arco(5, 9, CORAL) + arco(17, 21, CORAL)
+    for h, t in [(0, "0 h"), (6, "6 h"), (12, "12 h"), (18, "18 h")]:
+        a = math.radians(h / 24 * 360 - 90)
+        s += tx(cx + (r + 34) * math.cos(a), cy + (r + 34) * math.sin(a) + 9, t, T, 24, T["suave"])
+    s += f"<circle cx='{cx}' cy='{cy}' r='8' fill='{T['tinta']}'/>"
+    s += f"<rect x='640' y='90' width='34' height='34' rx='6' fill='{CORAL}'/>" + tx(694, 117, "Lobos activos: amanecer y anochecer", T, 28, anc="start")
+    s += f"<rect x='640' y='180' width='34' height='34' rx='6' fill='{T['panel']}' stroke='{T['suave']}'/>" + tx(694, 207, "El resto del día: poco activos", T, 28, anc="start")
+    s += tx(640, 300, "Los wapitíes evitan las zonas de riesgo", T, 28, T["acento"], anc="start", peso=600)
+    s += tx(640, 340, "solo en las horas peligrosas", T, 28, T["acento"], anc="start", peso=600)
+    return s
+
+def f_altos(T):
+    r = random.Random(7); s = ""
+    alturas = [r.uniform(.15, .55) for _ in range(22)]
+    for i in r.sample(range(22), 5):
+        alturas[i] = r.uniform(.8, 1.0)
+    altos = sorted(range(22), key=lambda i: -alturas[i])[:5]
+    for i, a in enumerate(alturas):
+        x = 60 + i * 50; base = 330; hh = 260 * a
+        col = T["acento"] if i in altos else T["linea"]
+        s += linea(x, base, x, base - hh, "#cfc7b8", 5)
+        s += f"<ellipse cx='{x}' cy='{base - hh}' rx='16' ry='{14 + 10 * a:.0f}' fill='{col}' opacity='{1 if i in altos else .55}'/>"
+    s += linea(30, 332, 1130, 332, T["suave"], 2, .7)
+    s += f"<circle cx='{60 + 0}' cy='395' r='10' fill='{T['acento']}'/>" + tx(80, 404, "Los 5 más altos: «se recupera deprisa»", T, 26, anc="start")
+    s += f"<circle cx='680' cy='395' r='10' fill='{T['linea']}'/>" + tx(700, 404, "Al azar: recuperación más lenta", T, 26, anc="start")
+    return s
+
+def f_parcelas(T):
+    s = ""; base = 330
+    cols = [("Control", .28, False, False), ("Solo valla", .55, True, False), ("Solo presa", .38, False, True), ("Valla y presa", 1.0, True, True)]
+    for i, (t, a, valla, presa) in enumerate(cols):
+        x = 145 + i * 290
+        s += f"<rect x='{x - 125}' y='40' width='250' height='{base - 30}' rx='14' fill='{T['panel']}'/>"
+        if presa:
+            s += f"<rect x='{x - 115}' y='{base - 26}' width='230' height='22' rx='4' fill='#6fb7e0' opacity='.8'/>"
+        for dx in (-55, 0, 55):
+            hh = 250 * a
+            s += linea(x + dx, base, x + dx, base - hh, "#a07850", 5)
+            for d in range(-2, 3):
+                s += f"<path d='M{x + dx} {base - hh} q {d * 8} -6 {d * 12} {min(60, hh * .5):.0f}' stroke='{T['linea']}' stroke-width='4' fill='none'/>"
+        if valla:
+            for k in range(6):
+                s += linea(x - 118 + k * 47, base, x - 118 + k * 47, base - 70, T["tinta"], 3, .8)
+            s += linea(x - 118, base - 60, x + 117, base - 60, T["tinta"], 2, .8) + linea(x - 118, base - 30, x + 117, base - 30, T["tinta"], 2, .8)
+        s += tx(x, base + 40, t, T, 28, T["acento"] if i == 3 else T["tinta"], peso=600)
+    s += tx(580, base + 90, "Solo con valla y agua alta los sauces crecen más de tres veces", T, 26, T["suave"])
+    return s
+
+def f_cauce(T):
+    s = ""
+    for k, (x0, titulo, enc) in enumerate([(0, "Con presas de castor", False), (600, "Sin presas: arroyo encajado", True)]):
+        s += tx(x0 + 280, 34, titulo, T, 30, T["acento"] if k == 0 else CORAL, peso=600)
+        if not enc:
+            s += f"<path d='M{x0 + 20} 200 L{x0 + 220} 200 Q{x0 + 280} 235 {x0 + 340} 200 L{x0 + 540} 200 L{x0 + 540} 380 L{x0 + 20} 380 Z' fill='{T['tierra']}'/>"
+            s += f"<path d='M{x0 + 228} 204 Q{x0 + 280} 232 {x0 + 332} 204 Z' fill='#6fb7e0'/>"
+            s += linea(x0 + 20, 225, x0 + 540, 225, "#6fb7e0", 3, .9, "10 8")
+            for xx in (x0 + 80, x0 + 150, x0 + 410, x0 + 480):
+                s += pict_sauce(xx, 150, T, 1.0, alto=1.0)
+                s += f"<path d='M{xx} 200 l -6 22 M{xx} 200 l 6 24' stroke='#a07850' stroke-width='3'/>"
+        else:
+            s += f"<path d='M{x0 + 20} 200 L{x0 + 240} 200 L{x0 + 255} 330 L{x0 + 305} 330 L{x0 + 320} 200 L{x0 + 540} 200 L{x0 + 540} 380 L{x0 + 20} 380 Z' fill='{T['tierra']}'/>"
+            s += f"<rect x='{x0 + 257}' y='310' width='46' height='20' fill='#6fb7e0'/>"
+            s += linea(x0 + 20, 320, x0 + 540, 320, "#6fb7e0", 3, .9, "10 8")
+            for xx in range(x0 + 40, x0 + 540, 26):
+                if abs(xx - (x0 + 280)) > 50:
+                    s += f"<path d='M{xx} 200 l -4 -16 M{xx} 200 l 4 -14 M{xx} 200 l 0 -18' stroke='#c9b46a' stroke-width='3'/>"
+            s += pict_sauce(x0 + 110, 172, T, .6, alto=.6)
+        s += tx(x0 + 280, 420, "agua subterránea alta" if not enc else "el agua queda lejos de las raíces", T, 26, T["suave"])
+    s += linea(580, 60, 580, 420, T["suave"], 2, .4)
+    return s
+
+def f_estados(T):
+    s = ""
+    pts = []
+    for i in range(0, 1001, 10):
+        x = 60 + i * 1.04; u = i / 1000
+        y = 330 - 210 * math.exp(-((u - .5) / .13) ** 2) - 60 * (math.exp(-((u + .05) / .12) ** 2) + math.exp(-((u - 1.05) / .12) ** 2))
+        pts.append((x, y))
+    d = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in pts)
+    s += f"<path d='{d} L1100 440 L60 440 Z' fill='{T['tierra']}' opacity='.8'/>"
+    s += f"<path d='{d}' stroke='{T['linea']}' stroke-width='4' fill='none'/>"
+    s += f"<circle cx='{60 + 250 * 1.04 - 30}' cy='{316}' r='24' fill='{T['suave']}' opacity='.5' stroke='{T['tinta']}' stroke-dasharray='5 5'/>"
+    s += f"<circle cx='{60 + 780 * 1.04}' cy='{314}' r='26' fill='{T['acento']}'/>"
+    s += f"<path d='M300 250 Q 580 20 860 250' stroke='{CORAL}' stroke-width='4' fill='none' stroke-dasharray='12 10'/>"
+    s += f"<polygon points='860,250 842,236 852,262' fill='{CORAL}'/>"
+    s += tx(250, 400, "Pradera húmeda con sauces", T, 28)
+    s += tx(880, 400, "Pradera seca", T, 28)
+    s += tx(580, 60, "70 años sin lobos", T, 28, CORAL, peso=600)
+    return s
+
+def f_actores(T):
+    cx, cy = 580, 215; s = ""
+    s += f"<circle cx='{cx}' cy='{cy}' r='88' fill='{T['panel']}' stroke='{T['acento']}' stroke-width='4'/>"
+    s += pict_wapiti(cx, cy - 10, T, 1.0) + tx(cx, cy + 66, "Wapitíes", T, 26, peso=600)
+    act = [("Lobos", -160), ("Pumas", -110), ("Osos grizzly", -60), ("Cazadores", -10), ("Sequía", 40), ("Bisontes", 140), ("Agua y castores", 200)]
+    for t, ang in act:
+        a = math.radians(ang); x = cx + 390 * math.cos(a); y = cy + 175 * math.sin(a)
+        s += flecha(x - (x - cx) * .22, y - (y - cy) * .22, cx + 105 * math.cos(a), cy + 100 * math.sin(a), T["linea"], 3, .8)
+        w = 26 * len(t) * .62 + 40
+        s += f"<rect x='{x - w / 2:.0f}' y='{y - 30:.0f}' width='{w:.0f}' height='58' rx='14' fill='{T['panel']}' stroke='{T['acento'] if t == 'Lobos' else T['linea']}' stroke-width='2'/>"
+        s += tx(x, y + 9, t, T, 28, T["acento"] if t == "Lobos" else T["tinta"], peso=600)
+    return s
+
+def f_circular(T):
+    s = ""
+    cajas = [(250, 110, "Altura del sauce"), (910, 110, "Volumen de la copa"), (580, 340, "«La altura predice el volumen»")]
+    for x, y, t in cajas:
+        w = 420 if "predice" in t else 340
+        s += f"<rect x='{x - w / 2}' y='{y - 42}' width='{w}' height='84' rx='18' fill='{T['panel']}' stroke='{T['linea']}' stroke-width='3'/>"
+        s += tx(x, y + 10, t, T, 30, peso=600)
+    s += flecha(425, 110, 735, 110, T["acento"], 5) + tx(580, 92, "se calcula con", T, 24, T["suave"])
+    s += flecha(860, 158, 700, 292, T["acento"], 5)
+    s += flecha(460, 292, 300, 158, CORAL, 5)
+    s += tx(300, 250, "¿círculo?", T, 30, CORAL, peso=600)
+    return s
+
+def f_mollie(T):
+    s = f"<path d='M150 40 L560 40 L560 400 L180 400 L150 330 Z' fill='{T['tierra']}' stroke='{T['linea']}' stroke-width='4'/>"
+    s += tx(355, 80, "Parque Nacional de Yellowstone", T, 26, T["suave"])
+    s += f"<ellipse cx='330' cy='300' rx='110' ry='38' fill='#6fb7e0' opacity='.5'/>" + tx(330, 308, "lago Yellowstone", T, 22, T["tinta"])
+    s += f"<circle cx='420' cy='200' r='14' fill='{T['tinta']}'/>" + tx(420, 245, "Valle de Pelican", T, 28, peso=600)
+    s += f"<path d='M440 190 C 560 120 640 120 730 160' stroke='{T['acento']}' stroke-width='6' fill='none' stroke-dasharray='14 10'/>"
+    s += f"<polygon points='740,166 716,166 730,146' fill='{T['acento']}'/>"
+    s += f"<circle cx='760' cy='175' r='16' fill='{T['acento']}'/>" + tx(785, 160, "Cuenca de Sunlight", T, 30, T["acento"], anc="start", peso=600)
+    s += tx(785, 200, "fuera del parque: zona de caza", T, 24, CORAL, anc="start")
+    s += f"<circle cx='980' cy='300' r='10' fill='{T['tinta']}'/>" + tx(1000, 309, "Cody", T, 26, anc="start")
+    s += tx(1100, 420, "Esquema, sin escala", T, 22, T["suave"], anc="end")
+    return s
+
 FIGURAS = {"movil": f_movil, "neurona_bio": f_neurona_bio, "disparo": f_disparo, "mcp": f_mcp, "perceptron": f_perceptron,
            "suma": f_suma, "mark1": f_mark1, "recta": f_recta, "xor": f_xor, "capas": f_capas, "culpa": f_culpa,
-           "sigmoide": f_sigmoide, "montana": f_montana, "retro": f_retro, "digito": f_digito, "rasgos": f_rasgos}
+           "sigmoide": f_sigmoide, "montana": f_montana, "retro": f_retro, "digito": f_digito, "rasgos": f_rasgos,
+           "lobos_bar": f_lobos_bar, "wapities_bar": f_wapities_bar, "cadena": f_cadena, "miedo": f_miedo, "castores": f_castores,
+           "carrona": f_carrona, "reloj": f_reloj, "altos": f_altos, "parcelas": f_parcelas, "cauce": f_cauce, "estados": f_estados,
+           "actores": f_actores, "circular": f_circular, "mollie": f_mollie}
 
 # ---------------------------------------------------------------- integración con video_ligero
 _plantilla_base = VL.plantilla
