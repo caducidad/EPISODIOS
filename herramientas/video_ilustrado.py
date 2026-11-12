@@ -9,7 +9,8 @@ Tipo nuevo:
 
 Las figuras se dibujan en un lienzo de 1160x440 (se coloca entre la cabecera y el pie). Cada función recibe el
 tema T (colores de la serie) y devuelve el contenido SVG. Para un episodio nuevo, añade sus figuras a FIGURAS.
-Figuras actuales: episodios ia01 (Qué es una red neuronal, desde cero) y sc02 (Los lobos de Yellowstone).
+Figuras actuales: episodios ia01 (Qué es una red neuronal, desde cero), sc02 (Los lobos de Yellowstone)
+y fi0-2 (El mapa de las grandes preguntas).
 """
 import math, os, random, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -632,12 +633,362 @@ def f_mollie(T):
     s += tx(1100, 420, "Esquema, sin escala", T, 22, T["suave"], anc="end")
     return s
 
+# ---------------------------------------------------------------- figuras del episodio fi0-2 (El mapa de las grandes preguntas)
+AZUL = "#8fc1e3"
+VERDE = "#4f8a63"
+
+def pildora(x, y, t, T, size=28, col=None, borde=None, pad=22, peso=600, fondo=None, w=None):
+    w = w or (len(t) * size * .56 + 2 * pad); h = size * 1.95
+    return (f"<rect x='{x - w / 2:.0f}' y='{y - h / 2:.0f}' width='{w:.0f}' height='{h:.0f}' rx='{h / 2:.0f}' fill='{fondo or T['panel']}' "
+            f"stroke='{borde or T['linea']}' stroke-width='2.5'/>" + tx(x, y + size * .36, t, T, size, col or T["tinta"], peso=peso))
+
+def caja(x, y, w, h, T, borde=None, fondo=None, sw=3, rx=18):
+    return f"<rect x='{x}' y='{y}' width='{w}' height='{h}' rx='{rx}' fill='{fondo or T['panel']}' stroke='{borde or T['linea']}' stroke-width='{sw}'/>"
+
+def blob(cx, cy, rx, ry, seed, n=14, jit=.15):
+    r = random.Random(seed); pts = []
+    for i in range(n):
+        a = 2 * math.pi * i / n; k = 1 + r.uniform(-jit, jit)
+        pts.append((cx + rx * k * math.cos(a), cy + ry * k * math.sin(a)))
+    d = f"M{pts[0][0]:.1f} {pts[0][1]:.1f}"
+    for i in range(n):
+        p0, p1, p2, p3 = pts[(i - 1) % n], pts[i], pts[(i + 1) % n], pts[(i + 2) % n]
+        c1 = (p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6); c2 = (p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6)
+        d += f" C{c1[0]:.1f} {c1[1]:.1f} {c2[0]:.1f} {c2[1]:.1f} {p2[0]:.1f} {p2[1]:.1f}"
+    return d + "Z"
+
+def visto(x, y, col, k=1.0):
+    return f"<path d='M{x - 14 * k:.0f} {y:.0f} l{10 * k:.0f} {11 * k:.0f} l{20 * k:.0f} {-24 * k:.0f}' stroke='{col}' stroke-width='{6 * k:.0f}' fill='none' stroke-linecap='round' stroke-linejoin='round'/>"
+
+def f_frontera(T):
+    s = tx(300, 62, "filósofo natural", T, 40, T["suave"], fam="Corm", peso=600)
+    s += linea(160, 50, 440, 50, CORAL, 3, .9)
+    s += flecha(490, 50, 660, 50, T["acento"], 5)
+    s += tx(860, 66, "científico", T, 56, T["acento"], fam="Corm", peso=700)
+    s += linea(580, 110, 580, 430, T["acento"], 4, .9, dash="14 12")
+    # lado de la filosofía
+    s += tx(290, 330, "?", T, 230, T["tinta"], fam="Corm", peso=700)
+    s += tx(290, 410, "Filosofía", T, 36, peso=600)
+    # lado de la ciencia: matraz y telescopio
+    s += (f"<path d='M770 170 L770 250 L715 345 Q705 372 735 372 L845 372 Q875 372 865 345 L810 250 L810 170' fill='none' stroke='{T['tinta']}' stroke-width='5' stroke-linejoin='round'/>"
+          f"<line x1='758' y1='170' x2='822' y2='170' stroke='{T['tinta']}' stroke-width='5' stroke-linecap='round'/>"
+          f"<path d='M738 310 L842 310 L862 348 Q868 364 846 364 L734 364 Q712 364 718 348 Z' fill='{AZUL}' opacity='.75'/>")
+    s += (f"<g transform='rotate(-28 990 250)'><rect x='900' y='232' width='130' height='36' rx='6' fill='none' stroke='{T['tinta']}' stroke-width='5'/>"
+          f"<rect x='1030' y='224' width='60' height='52' rx='6' fill='none' stroke='{T['tinta']}' stroke-width='5'/></g>"
+          + linea(985, 262, 940, 372, T["tinta"], 5) + linea(985, 262, 1030, 372, T["tinta"], 5) + linea(985, 262, 985, 372, T["tinta"], 5))
+    s += tx(870, 410, "Ciencia", T, 36, peso=600)
+    return s
+
+def huevo_path(cx, cy, rx, ry):
+    # contorno de huevo: más estrecho arriba
+    return (f"M{cx} {cy - ry * 1.12:.0f} C{cx + rx * .78:.0f} {cy - ry * 1.12:.0f} {cx + rx:.0f} {cy - ry * .1:.0f} {cx + rx:.0f} {cy + ry * .28:.0f} "
+            f"C{cx + rx:.0f} {cy + ry * .78:.0f} {cx + rx * .55:.0f} {cy + ry:.0f} {cx} {cy + ry:.0f} "
+            f"C{cx - rx * .55:.0f} {cy + ry:.0f} {cx - rx:.0f} {cy + ry * .78:.0f} {cx - rx:.0f} {cy + ry * .28:.0f} "
+            f"C{cx - rx:.0f} {cy - ry * .1:.0f} {cx - rx * .78:.0f} {cy - ry * 1.12:.0f} {cx} {cy - ry * 1.12:.0f}Z")
+
+def f_huevo(T):
+    cx, cy = 360, 232
+    s = f"<path d='{huevo_path(cx, cy, 165, 190)}' fill='#f7f1e3' stroke='#cdb98f' stroke-width='16'/>"
+    s += f"<circle cx='{cx}' cy='{cy + 40}' r='78' fill='#e9b33a' stroke='#c98f1e' stroke-width='4'/>"
+    filas = [(70, "Cáscara", "Lógica", cx + 150, cy - 110), (220, "Clara", "Ética", cx + 110, cy - 20), (370, "Yema", "Física", cx + 60, cy + 60)]
+    for y, parte, rama, px, py in filas:
+        s += linea(px, py, 640, y - 8, T["acento"], 3, .9) + f"<circle cx='{px}' cy='{py}' r='7' fill='{T['acento']}'/>"
+        s += tx(660, y, parte, T, 30, T["suave"], anc="start")
+        s += tx(820, y + 4, rama, T, 56, T["tinta"], anc="start", fam="Corm", peso=700)
+    return s
+
+def f_huerto(T):
+    s = f"<rect x='60' y='330' width='1040' height='70' rx='10' fill='{T['tierra']}'/>"
+    for i, x in enumerate([250, 480, 710, 930]):
+        s += f"<rect x='{x - 13}' y='210' width='26' height='125' rx='6' fill='#7a5a3a'/>"
+        s += f"<circle cx='{x}' cy='165' r='82' fill='{VERDE}'/><circle cx='{x - 52}' cy='200' r='48' fill='{VERDE}'/><circle cx='{x + 52}' cy='200' r='48' fill='{VERDE}'/>"
+        for dx, dy in [(-45, -10), (20, -45), (48, 22), (-12, 28), (-62, 44)]:
+            s += f"<circle cx='{x + dx}' cy='{165 + dy}' r='12' fill='{T['acento']}' stroke='#8a6420' stroke-width='2'/>"
+    # valla
+    s += f"<rect x='60' y='322' width='1050' height='12' fill='#b39c6c' stroke='#6b5a3c' stroke-width='2'/><rect x='60' y='366' width='1050' height='12' fill='#b39c6c' stroke='#6b5a3c' stroke-width='2'/>"
+    for x in range(70, 1100, 46):
+        s += f"<path d='M{x} 404 L{x} 300 L{x + 11} 286 L{x + 22} 300 L{x + 22} 404 Z' fill='{T['costa']}' stroke='#6b5a3c' stroke-width='2'/>"
+    s += pildora(140, 40, "Fruto: ética", T, 30, T["acento"], T["acento"])
+    s += linea(190, 68, 228, 150, T["acento"], 3, .9)
+    s += pildora(590, 40, "Tierra y árboles: física", T, 30)
+    s += linea(560, 70, 500, 120, T["linea"], 3, .8) + linea(620, 70, 690, 120, T["linea"], 3, .8)
+    s += pildora(1010, 40, "Valla: lógica", T, 30)
+    s += linea(1040, 70, 1076, 284, T["linea"], 3, .8)
+    return s
+
+def f_aristoteles(T):
+    cols = [("Teóricos", "conocer por conocer", ["Física", "Matemáticas", "Filosofía primera"]),
+            ("Prácticos", "orientar la acción", ["Ética", "Política"]),
+            ("Productivos", "hacer cosas", ["Poética", "Retórica"])]
+    s = ""
+    for i, (t, sub, items) in enumerate(cols):
+        x = 10 + i * 385
+        s += caja(x, 6, 370, 318, T, borde=T["acento"] if i == 0 else T["linea"])
+        s += tx(x + 185, 62, t, T, 52, T["acento"], fam="Corm", peso=700)
+        s += tx(x + 185, 100, sub, T, 26, T["suave"])
+        s += linea(x + 60, 122, x + 310, 122, T["suave"], 2, .5)
+        for j, it in enumerate(items):
+            s += tx(x + 185, 172 + j * 50, it, T, 34, peso=500)
+    s += caja(10, 350, 1140, 80, T, borde=T["acento"], rx=40)
+    s += tx(580, 402, "Órganon · la lógica, instrumento para todos los saberes", T, 32, peso=600)
+    return s
+
+def f_arbol(T):
+    s = linea(40, 300, 1120, 300, T["suave"], 3, .6, dash="6 10")
+    # raíces
+    for d in ["M580 300 C560 350 470 350 400 400", "M580 300 C580 360 560 380 540 425", "M580 300 C600 350 690 350 760 400", "M580 300 C585 360 610 380 630 425"]:
+        s += f"<path d='{d}' stroke='#9a7a52' stroke-width='10' fill='none' stroke-linecap='round'/>"
+    # tronco y ramas
+    s += f"<path d='M552 300 L562 190 L598 190 L608 300 Z' fill='#7a5a3a'/>"
+    for x, y in [(330, 95), (580, 60), (830, 95)]:
+        s += f"<path d='M580 200 Q{(580 + x) / 2:.0f} {y + 95:.0f} {x} {y + 40}' stroke='#7a5a3a' stroke-width='16' fill='none' stroke-linecap='round'/>"
+    for x, y, t in [(330, 95, "Medicina"), (580, 60, "Mecánica"), (830, 95, "Moral")]:
+        s += f"<circle cx='{x}' cy='{y}' r='74' fill='{VERDE}'/><circle cx='{x - 58}' cy='{y + 22}' r='44' fill='{VERDE}'/><circle cx='{x + 58}' cy='{y + 22}' r='44' fill='{VERDE}'/>"
+        for dx, dy in [(-70, 40), (66, 44), (0, -52)]:
+            s += f"<circle cx='{x + dx}' cy='{y + dy}' r='11' fill='{T['acento']}' stroke='#8a6420' stroke-width='2'/>"
+        s += tx(x, y + 14, t, T, 34, T["tinta"], peso=600, extra="stroke='#1d3a28' stroke-width='5' paint-order='stroke'")
+    s += tx(640, 262, "Física", T, 40, T["tinta"], anc="start", fam="Corm", peso=700)
+    s += tx(640, 290, "el tronco", T, 24, T["suave"], anc="start")
+    s += tx(860, 392, "Metafísica", T, 46, T["acento"], anc="start", fam="Corm", peso=700)
+    s += tx(860, 424, "las raíces", T, 24, T["suave"], anc="start")
+    s += tx(60, 392, "Las ramas dan el fruto", T, 28, T["suave"], anc="start")
+    return s
+
+def f_enciclopedia(T):
+    s = pildora(580, 40, "Entendimiento", T, 30, T["suave"])
+    cols = [(200, "Memoria", "Historia", False), (580, "Razón", "Filosofía", True), (960, "Imaginación", "Poesía", False)]
+    for x, fac, saber, prin in cols:
+        s += linea(580, 70, x, 132, T["linea"], 3, .6)
+        s += f"<ellipse cx='{x}' cy='190' rx='125' ry='56' fill='{T['panel']}' stroke='{T['acento'] if prin else T['linea']}' stroke-width='4'/>"
+        s += tx(x, 201, fac, T, 32, peso=600)
+        s += flecha(x, 250, x, 300, T["acento"] if prin else T["linea"], 4)
+        w = 300
+        s += caja(x - w / 2, 310, w, 86, T, borde=T["acento"] if prin else T["linea"])
+        s += tx(x, 370, saber, T, 52, T["acento"] if prin else T["tinta"], fam="Corm", peso=700)
+    s += tx(580, 432, "incluía las ciencias de Dios, del hombre y de la naturaleza", T, 24, T["suave"])
+    return s
+
+def f_wolff(T):
+    s = caja(20, 120, 380, 200, T, borde=T["acento"])
+    s += tx(210, 180, "Metafísica general", T, 30, T["suave"])
+    s += tx(210, 240, "Ontología", T, 60, T["acento"], fam="Corm", peso=700)
+    s += tx(210, 286, "el ser en cuanto tal", T, 28)
+    s += tx(830, 36, "Metafísica especial", T, 30, T["suave"])
+    filas = [(105, "Cosmología", "el mundo"), (225, "Psicología racional", "el alma"), (345, "Teología natural", "Dios")]
+    for y, t, o in filas:
+        s += flecha(400, 220, 520, y, T["linea"], 3, .8)
+        s += caja(530, y - 50, 610, 100, T)
+        s += tx(560, y + 16, t, T, 44, T["tinta"], anc="start", fam="Corm", peso=700)
+        s += tx(1110, y + 12, o, T, 30, T["acento"], anc="end", peso=600)
+    return s
+
+def _kant(T, final):
+    filas = [("¿Qué puedo saber?", "Metafísica"), ("¿Qué debo hacer?", "Moral"), ("¿Qué me cabe esperar?", "Religión"), ("¿Qué es el hombre?", "Antropología")]
+    s = ""
+    for i, (q, d) in enumerate(filas):
+        y = 62 + i * 104; ult = i == 3
+        op = 1 if (ult or not final) else .55
+        col = T["acento"] if ult else T["tinta"]
+        s += f"<g opacity='{op}'>"
+        if ult:
+            s += caja(20, y - 52, 1120, 96, T, borde=T["acento"], rx=20)
+        s += tx(50, y + 14, q, T, 54 if ult else 48, col, anc="start", fam="Corm", peso=700 if ult else 600, extra="font-style='italic'")
+        s += flecha(640, y, 730, y, T["suave"], 3, .8)
+        s += tx(760, y + 11, d, T, 34, col, anc="start", peso=600)
+        s += "</g>"
+    # las tres primeras remiten a la cuarta
+    s += f"<path d='M1040 62 L1090 62 L1090 322' stroke='{T['acento']}' stroke-width='4' fill='none' opacity='.9'/>"
+    s += linea(1040, 166, 1090, 166, T["acento"], 4, .9) + linea(1040, 270, 1090, 270, T["acento"], 4, .9)
+    s += f"<polygon points='1090,326 1078,304 1102,304' fill='{T['acento']}'/>"
+    return s
+
+def f_kant(T):
+    return _kant(T, False)
+
+def f_kant_fin(T):
+    return _kant(T, True)
+
+ISLAS = [("meta", "Metafísica", 185, 118, 150, 86, 11), ("epis", "Epistemología", 525, 108, 168, 82, 23), ("logi", "Lógica", 860, 118, 128, 78, 37),
+         ("etic", "Ética", 200, 322, 140, 84, 41), ("poli", "Política", 525, 330, 152, 80, 59), ("este", "Estética", 850, 326, 128, 80, 67)]
+
+def _mapa(T, hl=None):
+    s = ""
+    # rutas entre islas
+    for a, b in [(0, 1), (1, 2), (0, 3), (3, 4), (4, 5), (1, 4), (2, 5)]:
+        s += linea(ISLAS[a][2], ISLAS[a][3], ISLAS[b][2], ISLAS[b][3], T["suave"], 2, .35, dash="4 10")
+    for k, nombre, cx, cy, rx, ry, sem in ISLAS:
+        activa = hl == k; apagada = hl is not None and not activa
+        d = blob(cx, cy, rx, ry, sem)
+        relleno = "#c79a47" if activa else ("#262433" if apagada else T["tierra"])
+        borde = "#fff3cf" if activa else ("#6f6a78" if apagada else T["costa"])
+        s += f"<path d='{d}' fill='{relleno}' stroke='{borde}' stroke-width='{6 if activa else 3}'/>"
+        s += f"<path d='{blob(cx, cy, rx * .72, ry * .68, sem + 5)}' fill='none' stroke='{borde}' stroke-width='1.5' opacity='.35'/>"
+        s += tx(cx, cy + 14, nombre, T, 46 if len(nombre) < 11 else 42, "#1b1408" if activa else ("#8f8a99" if apagada else T["tinta"]), fam="Corm", peso=700)
+    # archipiélago de las «filosofías de»
+    r = random.Random(7)
+    s += f"<g opacity='{.4 if hl else 1}'>"
+    for i, y in enumerate([92, 160, 228, 296, 364]):
+        x = 1085 + (22 if i % 2 else -18)
+        s += f"<path d='{blob(x, y, 30 + r.uniform(-5, 6), 22 + r.uniform(-4, 4), 90 + i, n=9)}' fill='{T['tierra']}' stroke='{T['costa']}' stroke-width='2.5'/>"
+    s += tx(1085, 38, "filosofías de…", T, 26, T["suave"])
+    s += "</g>"
+    return s
+
+def f_mapa(T):
+    return _mapa(T)
+
+def f_estanteria(T):
+    s = f"<rect x='40' y='340' width='1080' height='18' rx='4' fill='#7a5a3a'/>"
+    r = random.Random(3); x = 80
+    for i in range(8):
+        h = r.randint(150, 200); w = 30
+        s += f"<rect x='{x}' y='{340 - h}' width='{w}' height='{h}' rx='4' fill='#3f5f8a' stroke='{AZUL}' stroke-width='2'/>"
+        x += w + 6
+    fin_fis = x
+    x += 70; ini_meta = x
+    for i in range(14):
+        h = r.randint(150, 200); w = 30
+        s += f"<rect x='{x}' y='{340 - h}' width='{w}' height='{h}' rx='4' fill='#8a6a2c' stroke='{T['acento']}' stroke-width='2'/>"
+        x += w + 6
+    s += tx((80 + fin_fis) / 2, 110, "Física", T, 46, AZUL, fam="Corm", peso=700)
+    s += tx((ini_meta + x) / 2, 78, "«después de la Física»", T, 46, T["acento"], fam="Corm", peso=700)
+    s += tx((ini_meta + x) / 2, 116, "catorce libros sin título común", T, 26, T["suave"])
+    s += flecha(fin_fis + 4, 250, ini_meta - 8, 250, T["tinta"], 4)
+    s += tx(1100, 410, "Aristóteles la llamaba «filosofía primera»", T, 28, T["tinta"], anc="end")
+    return s
+
+def f_reloj_parado(T):
+    cx, cy, r = 260, 218, 185
+    s = f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='{T['panel']}' stroke='{T['tinta']}' stroke-width='8'/>"
+    for i in range(12):
+        a = math.radians(i * 30); r0 = r - (30 if i % 3 == 0 else 18)
+        s += linea(cx + r0 * math.sin(a), cy - r0 * math.cos(a), cx + (r - 8) * math.sin(a), cy - (r - 8) * math.cos(a), T["tinta"], 6 if i % 3 == 0 else 3)
+    s += linea(cx, cy, cx, cy - 140, T["tinta"], 7) + linea(cx, cy, cx + 95, cy, T["acento"], 10)
+    s += f"<circle cx='{cx}' cy='{cy}' r='12' fill='{T['acento']}'/>"
+    s += tx(cx, cy + 96, "parado desde ayer", T, 26, CORAL, peso=600)
+    filas = ["Crees que son las tres", "Es verdad: son las tres", "Tienes buenas razones"]
+    for i, t in enumerate(filas):
+        y = 78 + i * 76
+        s += visto(560, y, VERDE if False else "#7fd49a", 1.1) + tx(600, y + 12, t, T, 38, anc="start")
+    s += tx(545, 370, "¿Lo sabías?", T, 84, T["acento"], anc="start", fam="Corm", peso=700)
+    return s
+
+def f_silogismo(T):
+    s = ""
+    for i, t in enumerate(["Todos los griegos son humanos", "Todos los humanos son mortales"]):
+        s += tx(30, 110 + i * 70, t, T, 38, anc="start")
+    s += linea(30, 220, 590, 220, T["acento"], 4)
+    s += tx(30, 290, "Todos los griegos son mortales", T, 38, T["acento"], anc="start", peso=600)
+    s += tx(30, 380, "Si todo A es B y todo B es C, todo A es C", T, 28, T["suave"], anc="start")
+    cx, cy = 900, 220
+    s += f"<circle cx='{cx}' cy='{cy}' r='205' fill='{T['panel']}' stroke='{T['linea']}' stroke-width='4'/>"
+    s += tx(cx, cy - 150, "mortales", T, 30)
+    s += f"<circle cx='{cx}' cy='{cy + 40}' r='135' fill='{T['panel']}' stroke='{AZUL}' stroke-width='4'/>"
+    s += tx(cx, cy - 52, "humanos", T, 30, AZUL)
+    s += f"<circle cx='{cx}' cy='{cy + 85}' r='70' fill='#8a6a2c' stroke='{T['acento']}' stroke-width='4'/>"
+    s += tx(cx, cy + 95, "griegos", T, 28, T["tinta"], peso=600)
+    return s
+
+def f_pisos(T):
+    s = f"<path d='M40 62 L290 6 L540 62 Z' fill='{T['panel']}' stroke='{T['linea']}' stroke-width='4' stroke-linejoin='round'/>"
+    filas = [("Metaética", "¿Qué significa «bueno»? ¿Hay verdades morales?"), ("Ética normativa", "¿Qué hace que una acción sea correcta?"),
+             ("Ética aplicada", "¿Qué hacemos en este caso concreto?")]
+    for i, (t, q) in enumerate(filas):
+        y = 62 + i * 122
+        s += caja(60, y, 460, 122, T, borde=T["acento"] if i == 1 else T["linea"], rx=0)
+        s += tx(290, y + 76, t, T, 52, T["acento"] if i == 1 else T["tinta"], fam="Corm", peso=700)
+        s += linea(520, y + 61, 580, y + 61, T["suave"], 3, .7)
+        pal = q.split(" "); corte = len(pal) // 2 if len(q) > 36 else len(pal)
+        l1, l2 = " ".join(pal[:corte]), " ".join(pal[corte:])
+        if l2:
+            s += tx(600, y + 52, l1, T, 30, anc="start") + tx(600, y + 90, l2, T, 30, anc="start")
+        else:
+            s += tx(600, y + 72, l1, T, 30, anc="start")
+    return s
+
+def pct(v):
+    return f"{v} %"
+
+def f_empate(T):
+    datos = [("Virtudes", 37, T["acento"]), ("Deberes", 32, AZUL), ("Consecuencias", 31, T["tinta"])]
+    s = barras(T, datos, 150, 50, 860, 300, 46, fmt=pct, ancho=190)
+    return s
+
+def f_filosofias_de(T):
+    cx, cy = 580, 222; s = ""
+    s += f"<ellipse cx='{cx}' cy='{cy}' rx='170' ry='70' fill='{T['panel']}' stroke='{T['acento']}' stroke-width='4'/>"
+    s += tx(cx, cy + 16, "Filosofía de…", T, 50, T["acento"], fam="Corm", peso=700)
+    act = [("la mente", -150), ("el lenguaje", -90), ("la ciencia", -30), ("la religión", 30), ("el derecho", 90), ("la historia", 150), ("las matemáticas", 180), ("la técnica", 0)]
+    for t, ang in act:
+        a = math.radians(ang); x = cx + 420 * math.cos(a); y = cy + 178 * math.sin(a)
+        s += linea(cx + 175 * math.cos(a), cy + 74 * math.sin(a), x - (x - cx) * .3, y - (y - cy) * .22, T["linea"], 3, .6)
+        s += pildora(x, y, t, T, 30)
+    return s
+
+def f_taxonomia(T):
+    s = caja(10, 180, 190, 80, T, borde=T["acento"])
+    s += tx(105, 232, "Filosofía", T, 40, T["acento"], fam="Corm", peso=700)
+    areas = ["Metafísica y epistemología", "Teoría del valor", "Ciencia, lógica y matemáticas", "Historia de la filosofía occidental", "Tradiciones filosóficas"]
+    r = random.Random(5)
+    for i, t in enumerate(areas):
+        y = 44 + i * 88
+        s += linea(200, 220, 250, y, T["linea"], 3, .7)
+        s += caja(250, y - 34, 480, 68, T, rx=14)
+        s += tx(270, y + 10, t, T, 28, anc="start", peso=500)
+        for j in range(3):
+            y2 = y - 26 + j * 26
+            s += linea(730, y, 790, y2, T["suave"], 2, .7) + f"<circle cx='{794}' cy='{y2}' r='5' fill='{T['suave']}'/>"
+            for k in range(3):
+                y3 = y2 - 8 + k * 8
+                s += linea(799, y2, 850, y3, T["suave"], 1.2, .6) + f"<circle cx='{853}' cy='{y3}' r='2.5' fill='{T['acento']}' opacity='.9'/>"
+    s += tx(1010, 210, "5.647", T, 96, T["acento"], fam="Corm", peso=700)
+    s += tx(1010, 252, "categorías", T, 32)
+    s += tx(1010, 290, "(finales de 2020)", T, 24, T["suave"])
+    return s
+
+def f_cruce(T):
+    cx, cy = 580, 215; s = ""
+    nodos = [(215, 70, "Filosofía de la mente", "¿Qué es pensar?"), (945, 70, "Filosofía del lenguaje", "¿Qué es entender?"),
+             (215, 362, "Ética", "¿Qué le debemos?"), (945, 362, "Filosofía política", "¿Quién decide sus valores?")]
+    for x, y, t, q in nodos:
+        s += linea(cx, cy, x, y, CORAL, 4, .9, dash="12 10")
+    for x, y, t, q in nodos:
+        s += caja(x - 205, y - 62, 410, 124, T, fondo="#0a0e22")
+        s += tx(x, y - 10, t, T, 38, T["tinta"], fam="Corm", peso=700)
+        s += tx(x, y + 34, q, T, 28, T["suave"])
+    s += f"<ellipse cx='{cx}' cy='{cy}' rx='190' ry='78' fill='{T['c2']}' stroke='{T['acento']}' stroke-width='5'/>"
+    s += tx(cx, cy - 4, "¿Puede pensar", T, 44, T["acento"], fam="Corm", peso=700)
+    s += tx(cx, cy + 40, "una máquina?", T, 44, T["acento"], fam="Corm", peso=700)
+    return s
+
+def f_fines(T):
+    datos = [("Comprender", 56, T["acento"]), ("Verdad y conocimiento", 42, None), ("Sabiduría", 31, None), ("Bondad y justicia", 23, None), ("Felicidad", 13, None)]
+    s = ""
+    for i, (t, v, c) in enumerate(datos):
+        y = 26 + i * 82
+        s += tx(390, y + 40, t, T, 32, T["tinta"], anc="end", peso=600 if c else 500)
+        s += f"<rect x='410' y='{y}' width='{v * 10.6:.0f}' height='56' rx='8' fill='{c or AZUL}'/>"
+        s += tx(410 + v * 10.6 + 18, y + 40, f"{v} %", T, 34, T["tinta"], anc="start", peso=600)
+    return s
+
+def f_progreso(T):
+    datos = [("Ninguno", 4, T["suave"]), ("Un poco", 47, AZUL), ("Mucho", 42, T["acento"])]
+    return barras(T, datos, 150, 50, 860, 300, 56, fmt=pct, ancho=190)
+
+FIGURAS_FI02 = {"frontera": f_frontera, "huevo": f_huevo, "huerto": f_huerto, "aristoteles": f_aristoteles, "arbol": f_arbol,
+                "enciclopedia": f_enciclopedia, "wolff": f_wolff, "kant": f_kant, "kant_fin": f_kant_fin, "mapa": f_mapa,
+                "estanteria": f_estanteria, "reloj_parado": f_reloj_parado, "silogismo": f_silogismo, "pisos": f_pisos, "empate": f_empate,
+                "filosofias_de": f_filosofias_de, "taxonomia": f_taxonomia, "cruce": f_cruce, "fines": f_fines, "progreso": f_progreso}
+for _k in ("meta", "epis", "logi", "etic", "poli", "este"):
+    FIGURAS_FI02["mapa_" + _k] = (lambda k: (lambda T: _mapa(T, k)))(_k)
+
 FIGURAS = {"movil": f_movil, "neurona_bio": f_neurona_bio, "disparo": f_disparo, "mcp": f_mcp, "perceptron": f_perceptron,
            "suma": f_suma, "mark1": f_mark1, "recta": f_recta, "xor": f_xor, "capas": f_capas, "culpa": f_culpa,
            "sigmoide": f_sigmoide, "montana": f_montana, "retro": f_retro, "digito": f_digito, "rasgos": f_rasgos,
            "lobos_bar": f_lobos_bar, "wapities_bar": f_wapities_bar, "cadena": f_cadena, "miedo": f_miedo, "castores": f_castores,
            "carrona": f_carrona, "reloj": f_reloj, "altos": f_altos, "parcelas": f_parcelas, "cauce": f_cauce, "estados": f_estados,
            "actores": f_actores, "circular": f_circular, "mollie": f_mollie}
+FIGURAS.update(FIGURAS_FI02)
 
 # ---------------------------------------------------------------- integración con video_ligero
 _plantilla_base = VL.plantilla

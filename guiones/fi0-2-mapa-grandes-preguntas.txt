@@ -1,0 +1,203 @@
+@@ s01 | titulo | {"t": "El mapa de las grandes preguntas", "s": "Temporada 0 · Episodio 2"}
+El mapa de las grandes preguntas. Historia de la filosofía. Temporada cero, episodio dos.
+
+@@ s02 | fecha | {"a": "24 de junio de 1833", "t": "Una reunión de sabios en Cambridge", "s": "Asociación Británica para el Avance de la Ciencia"}
+El veinticuatro de junio de mil ochocientos treinta y tres, la Asociación Británica para el Avance de la Ciencia celebraba en Cambridge su tercera reunión anual. En la sala había geólogos, astrónomos, químicos y naturalistas, gente que pasaba sus días excavando fósiles o haciendo experimentos con la electricidad. Todos ellos se llamaban a sí mismos, como se había hecho siempre, filósofos naturales.
+
+@@ s03 | persona | {"n": "Samuel Taylor Coleridge", "r": "Poeta. Les negó el nombre de filósofos", "a": "1772 – 1834"}
+Según la reconstrucción de la historiadora Laura Snyder, aquel día se levantó a hablar un anciano frágil al que casi nadie esperaba ver allí. Era el poeta Samuel Taylor Coleridge, que moriría al año siguiente, y lo que dijo cayó como un jarro de agua fría. Sostuvo que quienes se dedicaban a cavar en canteras o a manipular aparatos no tenían derecho a llamarse filósofos.
+
+@@ s04 | persona | {"n": "William Whewell", "r": "Propuso la palabra «científico»", "a": "1794 – 1866"}
+Le respondió uno de los organizadores de la reunión, William Whewell, un profesor de Cambridge que sabía de mineralogía, de mareas, de arquitectura y de casi todo. Whewell aceptó con cortesía que hacía falta un nombre nuevo, y propuso uno sobre la marcha. Si filósofo resultaba un término demasiado amplio y elevado, entonces, igual que del arte decimos artista, de la ciencia podríamos decir científico.
+
+@@ s05 | rotulo | {"t": "Nace la palabra «científico»", "s": "En letra impresa, en 1834. Faraday nunca quiso usarla"}
+La palabra apareció impresa al año siguiente, en una reseña anónima del propio Whewell sobre un libro de la divulgadora Mary Somerville. Tardó décadas en imponerse, y a muchos les sonaba fatal. Michael Faraday, el gran experimentador de la electricidad, no la usó nunca, y prefirió seguir siendo un filósofo natural hasta el final de sus días.
+
+@@ s06 | ilus | {"fig": "frontera", "pie": "1833: una palabra traza la frontera"}
+Aquella escena tiene algo de ceremonia de separación. En el episodio anterior contamos que las ciencias se fueron marchando de la casa de la filosofía, como hijos que se independizan. Pues bien, ese día de mil ochocientos treinta y tres alguien trazó la frontera con una palabra. A un lado quedaban los científicos, con sus instrumentos y sus métodos. Al otro lado quedaban los filósofos, y con ellos una pregunta incómoda.
+
+@@ s07 | rotulo | {"t": "¿Qué territorio le quedó a la filosofía?", "s": "Hoy lo recorremos con un mapa en la mano"}
+Si la física, la química y la biología ya tenían dueño, ¿qué territorio le quedaba exactamente a la filosofía? ¿Y cómo está organizado por dentro? De eso trata el episodio de hoy. Vamos a desplegar el mapa de las grandes preguntas, con sus regiones principales, la pregunta que mueve a cada una y la historia, a veces muy curiosa, de cómo recibieron su nombre.
+
+@@ s08 | rotulo | {"t": "Un mapa no es el territorio", "s": "Las fronteras las dibuja quien hace el mapa"}
+Antes de empezar conviene hacer una advertencia. Un mapa no es el territorio, y las fronteras que aparecen en él no están pintadas en el suelo. Las preguntas filosóficas no nacieron clasificadas. Alguien decidió agruparlas de una manera y no de otra, y cada época ha dibujado el mapa a su modo. Por eso, antes de mirar el mapa actual, merece la pena repasar algunos de los antiguos.
+
+@@ s09 | capitulo | {"n": "Primera parte", "t": "Los mapas antiguos"}
+El primero que conocemos es griego, y tiene solo tres regiones. Según el médico y filósofo escéptico Sexto Empírico, quien lo formuló de manera explícita fue Jenócrates. Era un discípulo de Platón que dirigió la Academia durante veinticinco años, a finales del siglo cuarto antes de Cristo. Para Jenócrates, toda la filosofía se repartía entre la física, la ética y la lógica.
+
+@@ s10 | lista | {"t": "El mapa griego: tres regiones", "items": ["Física: cómo es el mundo", "Ética: cómo hay que vivir", "Lógica: cómo razonar y conocer"]}
+Sexto añade que la división ya estaba en Platón de forma implícita, porque Platón había discutido sobre las tres cosas. Pero conviene no dejarse engañar por los nombres. La física de entonces no era la nuestra. Era el estudio de la naturaleza entera, e incluía preguntas sobre los dioses, el alma y el origen del cosmos. Y la lógica abarcaba también lo que hoy llamaríamos teoría del conocimiento y filosofía del lenguaje.
+
+@@ s11 | ilus | {"fig": "huevo", "pie": "El huevo de los estoicos, según Diógenes Laercio"}
+Quienes hicieron famoso este mapa fueron los estoicos, la escuela que fundó Zenón de Citio en Atenas hacia el año trescientos antes de Cristo. Y lo explicaban con unas comparaciones muy caseras, que recoge Diógenes Laercio. La filosofía, decían, es como un huevo. La cáscara es la lógica, que protege todo lo demás. La clara es la ética, y la yema, en el centro, es la física.
+
+@@ s12 | ilus | {"fig": "huerto", "pie": "El huerto: la lógica es la valla, la física la tierra y los árboles, la ética el fruto"}
+También la comparaban con un huerto fértil. La lógica es la valla que lo rodea y lo defiende de los intrusos. La física es la tierra y los árboles. Y la ética es el fruto, es decir, aquello por lo que uno se toma el trabajo de plantar. La imagen dice algo importante sobre los estoicos. Para ellos se estudiaba el mundo y se aprendía a razonar con un fin, que era vivir bien.
+
+@@ s13 | rotulo | {"t": "Ni los estoicos se ponían de acuerdo", "s": "En otra versión, la yema del huevo es la ética"}
+Lo divertido es que ni siquiera ellos se ponían de acuerdo sobre el dibujo. En la versión que transmite Sexto Empírico, la yema del huevo no es la física, sino la ética. Y el estoico Posidonio prefería comparar la filosofía con un animal, porque las partes de un huerto se pueden separar y las de un ser vivo no. Discutían también por dónde había que empezar a enseñar. El mapa, ya entonces, era motivo de debate.
+
+@@ s14 | ilus | {"fig": "aristoteles", "pie": "Aristóteles: saberes para conocer, para actuar y para producir"}
+Aristóteles, que fue compañero de Jenócrates en la Academia, dibujó un mapa distinto. Para él, los saberes se dividen según para qué sirven. Están los teóricos, que buscan conocer por conocer, y que son la física, las matemáticas y lo que él llamaba filosofía primera. Están los prácticos, que orientan la acción, como la ética y la política. Y están los productivos, que enseñan a hacer cosas, como la poética o la retórica.
+
+@@ s15 | rotulo | {"t": "Órganon: «instrumento»", "s": "La lógica no es una región, sino la herramienta"}
+¿Y la lógica? En este mapa no aparece como una región más. Los seguidores de Aristóteles reunieron sus tratados lógicos bajo el título de Órganon, que en griego significa instrumento. La lógica sería la herramienta que hay que dominar antes de entrar en cualquier territorio. Es una diferencia interesante con los estoicos, que la consideraban una parte de la filosofía con pleno derecho.
+
+@@ s16 | ilus | {"fig": "arbol", "pie": "Descartes, 1647: «toda la filosofía es como un árbol»"}
+Demos ahora un salto de casi dos mil años. En mil seiscientos cuarenta y siete, René Descartes escribió un prólogo para la edición francesa de sus Principios de la filosofía, y en él dejó una de las imágenes más célebres. Toda la filosofía, dice, es como un árbol. Las raíces son la metafísica, el tronco es la física, y las ramas que salen del tronco son las demás ciencias, que se reducen a tres principales: la medicina, la mecánica y la moral.
+
+@@ s17 | rotulo | {"t": "El fruto se recoge en las ramas", "s": "Para Descartes, la física todavía era filosofía"}
+Descartes añade que los frutos no se recogen de las raíces ni del tronco, sino de los extremos de las ramas. Fijaos en dos detalles. El primero es que la física sigue siendo, para él, parte de la filosofía, casi dos siglos antes de la escena de Cambridge. El segundo es que cuando hoy hablamos de las ramas de la filosofía seguimos usando, sin darnos cuenta, la imagen del árbol.
+
+@@ s18 | ilus | {"fig": "enciclopedia", "pie": "La Enciclopedia, 1751: el saber según las facultades de la mente"}
+Un siglo después, en mil setecientos cincuenta y uno, Diderot y D'Alembert abrieron el primer tomo de su Enciclopedia con un gran cuadro de todos los conocimientos humanos. Se inspiraron en el inglés Francis Bacon y repartieron el saber según tres facultades de la mente. De la memoria nace la historia. De la imaginación nace la poesía. Y de la razón nace la filosofía, que en aquel cuadro incluía todavía casi todas las ciencias.
+
+@@ s19 | ilus | {"fig": "wolff", "pie": "Christian Wolff: una metafísica general y tres especiales"}
+Por las mismas fechas, en las universidades alemanas triunfaba el mapa de Christian Wolff, un profesor metódico hasta el agotamiento. Wolff dividió la metafísica en una parte general, que estudia el ser en cuanto tal, y tres partes especiales. La cosmología se ocupaba del mundo, la psicología racional se ocupaba del alma y la teología natural se ocupaba de Dios. Ese fue el mapa que estudió de joven Immanuel Kant, y contra el que acabaría escribiendo.
+
+@@ s20 | ilus | {"fig": "kant", "pie": "Las cuatro preguntas de Kant"}
+Y es Kant quien nos da el mapa más breve de todos, hecho solo de preguntas. En la Crítica de la razón pura, de mil setecientos ochenta y uno, escribe que todo el interés de su razón se resume en tres. Qué puedo saber, qué debo hacer y qué me cabe esperar. Años después, en sus lecciones de lógica, añadió una cuarta pregunta, que es qué es el hombre.
+
+@@ s21 | rotulo | {"t": "Todas remiten a la última", "s": "¿Qué es el ser humano?"}
+Según ese texto, a la primera pregunta responde la metafísica, a la segunda la moral, a la tercera la religión y a la cuarta la antropología. Pero en el fondo, añade, todo podría contarse como antropología, porque las tres primeras preguntas remiten a la última. Hay que decir que esas lecciones las preparó para la imprenta un discípulo, en el año mil ochocientos, a partir de las notas del maestro. La idea, en cualquier caso, es de Kant, y es una buena brújula para el viaje.
+
+@@ s22 | capitulo | {"n": "Segunda parte", "t": "El mapa de hoy"}
+Con estos mapas antiguos en la memoria, despleguemos ahora el que se usa hoy en casi cualquier facultad. Tiene unas cuantas regiones grandes y muchas comarcas pequeñas. Vamos a recorrer las principales una por una, y en cada parada haremos dos cosas, que son formular la pregunta que la mueve y contar de dónde viene su nombre.
+
+@@ s23 | ilus | {"fig": "mapa", "pie": "Las grandes regiones de la filosofía"}
+Las regiones mayores son seis. La metafísica, que pregunta por lo que hay. La epistemología, que pregunta por lo que podemos saber. La lógica, que estudia el buen razonamiento. La ética, que pregunta cómo debemos vivir. La filosofía política, que pregunta cómo debemos vivir juntos. Y la estética, que se ocupa de la belleza y del arte. Alrededor se extiende un archipiélago de filosofías especiales, que visitaremos al final.
+
+@@ s24 | ilus | {"fig": "mapa_meta", "pie": "Metafísica: ¿qué hay, y cómo es en el fondo?"}
+Empecemos por la metafísica, la región más antigua y la de peor fama. Su pregunta es tan sencilla que parece infantil. ¿Qué hay? ¿De qué está hecha la realidad, en último término, y cómo es? Dentro de ella caben preguntas como si existen los números, qué es el tiempo, qué hace que una cosa siga siendo la misma aunque cambie, o qué significa que algo cause otra cosa.
+
+@@ s25 | ilus | {"fig": "estanteria", "pie": "«Ta metá ta physiká»: lo que va después de la física"}
+El nombre tiene una historia famosa. Aristóteles nunca usó la palabra metafísica, y a esos estudios los llamaba filosofía primera. Se cuenta que, en el siglo primero antes de Cristo, Andrónico de Rodas preparó una edición de sus obras y se encontró con catorce libros que no sabía dónde colocar. Los puso detrás de los tratados de física y los rotuló, sin más, como los libros que van después de la física. En griego, ta metá ta physiká.
+
+@@ s26 | rotulo | {"t": "¿Un accidente de estantería?", "s": "Una historia famosa… y discutida"}
+Es una anécdota estupenda, porque haría de la palabra más solemne de la filosofía un simple accidente de biblioteca. El problema es que no está nada claro que ocurriera así. Ningún autor antiguo la cuenta de ese modo. Algunos estudiosos del siglo veinte rastrearon su origen y concluyeron que la versión del bibliotecario en apuros se popularizó en torno al año mil ochocientos, al parecer gracias a un erudito alemán llamado Buhle.
+
+@@ s27 | rotulo | {"t": "«Después», ¿en qué sentido?", "s": "Quizá después en el orden de aprender"}
+Hoy muchos especialistas creen que el título es más antiguo que Andrónico, y que quizá se remonta a los primeros discípulos de Aristóteles. Los comentaristas antiguos explicaban además ese después de otra manera. No sería después en la estantería, sino después en el orden del aprendizaje, porque primero se estudia la naturaleza y solo luego lo que está más allá de ella. Sea como sea, la etiqueta acabó convertida en el nombre de toda una disciplina.
+
+@@ s28 | fecha | {"a": "1606", "t": "Se imprime por primera vez «ontología»", "s": "Jacob Lorhard, San Galo (Suiza)"}
+La metafísica tiene una palabra hermana, ontología, que significa estudio del ser. Suena a griego antiguo, pero ningún griego antiguo la usó jamás. Que sepamos, apareció impresa por primera vez en mil seiscientos seis, en la portada de un manual escolar. Su autor era Jacob Lorhard, director de un instituto en la ciudad suiza de San Galo, y la usaba como sinónimo de metafísica.
+
+@@ s29 | rotulo | {"t": "Una palabra con suerte", "s": "De la portada de un manual a toda Europa"}
+El libro era una colección de esquemas para estudiantes, y según ha mostrado el filósofo Barry Smith, la palabra figura en el título pero no dentro de los esquemas. Pocos años después la recogió un diccionario filosófico, y en el siglo dieciocho Wolff la difundió por toda Europa como nombre de su metafísica general. Así que una de las palabras más imponentes del vocabulario filosófico empezó su carrera en la cubierta de un libro de texto.
+
+@@ s30 | ilus | {"fig": "mapa_epis", "pie": "Epistemología: ¿qué puedo saber, y cómo sé que lo sé?"}
+La segunda región es la epistemología, o teoría del conocimiento, que en español también se ha llamado gnoseología. Si la metafísica pregunta qué hay, la epistemología pregunta cómo lo sabemos. ¿Qué diferencia hay entre saber algo y simplemente creerlo? ¿De dónde viene el conocimiento, de los sentidos o de la razón? ¿Y podemos estar seguros de algo, o cabe dudar de todo?
+
+@@ s31 | persona | {"n": "James Frederick Ferrier", "r": "Acuñó «epistemología» en 1854", "a": "1808 – 1864"}
+Las preguntas son tan viejas como Platón, pero el nombre es sorprendentemente joven. Lo inventó en mil ochocientos cincuenta y cuatro un filósofo escocés, James Frederick Ferrier, profesor en la Universidad de Saint Andrews. Lo formó sobre la palabra griega episteme, que significa conocimiento, y lo presentó como la pareja natural de la ontología. Una estudiaría el ser y la otra el saber.
+
+@@ s32 | rotulo | {"t": "Agnoiología: teoría de la ignorancia", "s": "La otra palabra de Ferrier, que no cuajó"}
+En el mismo libro, Ferrier propuso otra palabra para una disciplina gemela, la agnoiología, que sería la teoría de la ignorancia. Esa no tuvo tanta suerte, aunque la idea no era ninguna tontería. Preguntarse qué es exactamente no saber resulta casi tan interesante como preguntarse qué es saber. Un aviso, por cierto, para quien lea libros traducidos. En algunas tradiciones, como la francesa, epistemología quiere decir más bien filosofía de la ciencia.
+
+@@ s33 | ilus | {"fig": "reloj_parado", "pie": "Creencia verdadera y con buenas razones… ¿es eso saber?"}
+Para ver el tipo de problema que se discute aquí, sirve un ejemplo de Bertrand Russell. Imagina que miras un reloj que marca las tres, y que efectivamente son las tres. Tu creencia es verdadera y tienes buenas razones para tenerla. Pero resulta que el reloj lleva parado desde ayer, y has acertado por pura casualidad. ¿Sabías de verdad qué hora era? Casi todo el mundo responde que no.
+
+@@ s34 | fecha | {"a": "1963", "t": "Tres páginas que sacudieron la epistemología", "s": "Edmund Gettier y la definición clásica del conocimiento"}
+En mil novecientos sesenta y tres, el filósofo estadounidense Edmund Gettier publicó un artículo de apenas tres páginas con casos de este estilo. Con ellos puso en apuros una definición del conocimiento que ya se discutía en un diálogo de Platón, la de creencia verdadera y justificada. Desde entonces se han escrito miles de páginas para repararla. Es un buen ejemplo de cómo se trabaja en esta región, afinando conceptos que usamos todos los días sin pensar. Decimos que sabemos cosas a todas horas, y sin embargo nadie ha conseguido todavía una definición del saber que convenza a todos.
+
+@@ s35 | ilus | {"fig": "mapa_logi", "pie": "Lógica: ¿qué se sigue de qué?"}
+La tercera región es la lógica, y su pregunta puede decirse en cinco palabras. ¿Qué se sigue de qué? La lógica no se ocupa de si lo que decimos es verdad, sino de si nuestras conclusiones se desprenden realmente de aquello de lo que partimos. Estudia la forma de los razonamientos, con independencia de que hablen de planetas, de impuestos o de dioses.
+
+@@ s36 | ilus | {"fig": "silogismo", "pie": "La forma vale para cualquier contenido"}
+Su fundador fue Aristóteles, que la llamaba analítica y que descubrió algo extraordinario. Hay esquemas de razonamiento que funcionan siempre, se rellenen con lo que se rellenen. Si todos los griegos son humanos, y todos los humanos son mortales, entonces todos los griegos son mortales. Kant llegó a escribir, en mil setecientos ochenta y siete, que desde Aristóteles la lógica no había tenido que dar ni un paso atrás, pero tampoco había podido dar ninguno adelante.
+
+@@ s37 | rotulo | {"t": "Kant se equivocó", "s": "En 1879, Frege reinventó la lógica"}
+Fue una de las profecías más desafortunadas de la historia del pensamiento. Menos de un siglo después, en mil ochocientos setenta y nueve, el matemático alemán Gottlob Frege publicó un librito que reinventaba la lógica con un lenguaje simbólico nuevo. De ahí salieron, con el tiempo, la lógica matemática y los fundamentos teóricos de la informática. La región que parecía terminada resultó ser una de las más fértiles.
+
+@@ s38 | ilus | {"fig": "mapa_etic", "pie": "Ética: ¿cómo debo vivir?"}
+Pasemos a la ética, que es seguramente la región más visitada. Su pregunta es la que Sócrates, según Platón, consideraba la más seria de todas, la de cómo se debe vivir. De ella cuelgan otras muchas. ¿Qué hace que una acción sea buena o mala? ¿Qué nos debemos unos a otros? ¿En qué consiste una vida lograda?
+
+@@ s39 | fecha | {"a": "44 a. C.", "t": "Cicerón inventa la palabra «moral»", "s": "Para traducir al latín el griego «ethikós»"}
+El nombre viene del griego ethos, que significa carácter o costumbre. Y aquí hay un bautizo que podemos fechar con rara precisión. Hacia el año cuarenta y cuatro antes de Cristo, Cicerón estaba vertiendo la filosofía griega al latín y no encontraba un adjetivo equivalente. Así que lo fabricó a partir de la palabra latina para costumbre, y anunció que, para enriquecer la lengua, a esa parte de la filosofía convenía llamarla moral.
+
+@@ s40 | rotulo | {"t": "Ética y moral: la misma palabra", "s": "Una en griego, la otra en latín"}
+Es decir, que ética y moral nacieron como la misma palabra dicha en dos idiomas. Con los siglos, muchos filósofos han querido distinguirlas, y suelen reservar moral para las normas que de hecho sigue una sociedad y ética para la reflexión sobre ellas. Es una distinción útil, pero conviene saber que es posterior y que no todos la respetan.
+
+@@ s41 | ilus | {"fig": "pisos", "pie": "Los tres pisos de la ética"}
+Hoy la ética se suele organizar en tres pisos. En el de arriba está la metaética, que se pregunta qué queremos decir cuando llamamos bueno a algo, y si existen verdades morales. En el de en medio está la ética normativa, que busca los criterios generales para distinguir lo correcto de lo incorrecto. Y a pie de calle está la ética aplicada, que se ocupa de problemas concretos, desde la eutanasia hasta el trato a los animales.
+
+@@ s42 | ilus | {"fig": "empate", "pie": "Encuesta PhilPapers 2020: «acepto o me inclino por…»"}
+En el piso de en medio compiten desde hace siglos tres grandes familias de teorías. Unas ponen el acento en las consecuencias de los actos, otras en los deberes y otras en las virtudes del carácter. En una gran encuesta a filósofos profesionales, de la que luego hablaremos, las tres quedaron en un empate casi perfecto. La ética de las virtudes reunió un treinta y siete por ciento de adhesiones, la del deber un treinta y dos y la de las consecuencias un treinta y uno.
+
+@@ s43 | comparar | {"izq": ["Fritz Jahr, 1927", "Pastor en Halle", "«Imperativo bioético»", "Respetar a todo ser vivo"], "der": ["Van R. Potter, 1970", "Bioquímico en Wisconsin", "Bioética como «puente»", "Entre ciencia y valores"]}
+La ética aplicada tiene, por cierto, una palabra que se inventó dos veces. En mil novecientos veintisiete, un pastor protestante de la ciudad alemana de Halle, llamado Fritz Jahr, publicó un artículo titulado Bioética. En él pedía respetar a todo ser vivo como un fin en sí mismo, pero casi nadie le hizo caso. En mil novecientos setenta, el bioquímico estadounidense Van Rensselaer Potter volvió a acuñar el término, al parecer sin conocer a su predecesor. Y esta vez la palabra dio la vuelta al mundo.
+
+@@ s44 | ilus | {"fig": "mapa_poli", "pie": "Filosofía política: ¿cómo debemos vivir juntos?"}
+Pegada a la ética está la filosofía política. Si la ética pregunta cómo debo vivir yo, la filosofía política pregunta cómo debemos vivir juntos. ¿Quién tiene derecho a mandar, y por qué habría que obedecerle? ¿Qué es una sociedad justa? ¿Cuánta libertad y cuánta igualdad debe haber, y qué hacemos cuando chocan? Para los griegos, las dos regiones eran casi una sola. Aristóteles presenta su Ética como una parte de la ciencia política, porque pensaba que es muy difícil llegar a ser bueno fuera de una ciudad con buenas leyes.
+
+@@ s45 | ilus | {"fig": "mapa_este", "pie": "Estética: ¿qué es lo bello, y qué es el arte?"}
+La sexta región es la estética, que se pregunta qué es la belleza y qué es el arte. ¿Hay cosas objetivamente bellas, o la belleza está solo en quien mira? ¿Qué distingue una obra de arte de un objeto cualquiera? Sobre lo primero, por cierto, los filósofos están partidos casi por la mitad. En la encuesta que mencionaba, un cuarenta y cuatro por ciento se inclinó por el valor estético objetivo y un cuarenta y uno por el subjetivo.
+
+@@ s46 | persona | {"n": "Alexander Baumgarten", "r": "Dio nombre a la estética con 21 años", "a": "1714 – 1762"}
+El nombre lo puso un estudiante. En mil setecientos treinta y cinco, Alexander Baumgarten, que tenía veintiún años, presentó en la Universidad de Halle una tesis sobre la poesía. Casi al final proponía una ciencia nueva y la bautizaba a partir de la palabra griega aísthesis, que significa sensación. La estética no sería, en principio, la ciencia de lo bello, sino la ciencia del conocimiento sensible, una hermana pequeña de la lógica.
+
+@@ s47 | rotulo | {"t": "De la sensación a la belleza", "s": "Baumgarten: «Aesthetica», 1750 y 1758, inacabada"}
+Baumgarten, que se había formado en la escuela de Wolff, desarrolló la idea en una obra enorme, la Aesthetica, cuyos dos volúmenes aparecieron en mil setecientos cincuenta y mil setecientos cincuenta y ocho. Murió sin terminarla. Pero la palabra hizo fortuna y fue deslizándose desde la percepción hacia el gusto, y del gusto hacia el arte. Todavía conserva su sentido original en la palabra anestesia, que es justamente la ausencia de sensación.
+
+@@ s48 | tiempo | {"t": "El bautizo de las regiones", "marcas": [["s. I a. C.", "Metafísica"], ["44 a. C.", "Moral"], ["1606", "Ontología"], ["1735", "Estética"], ["1854", "Epistemología"], ["1927", "Bioética"]]}
+Si ponemos todos estos bautizos en fila, sale una lección curiosa. Las preguntas son antiquísimas, pero las etiquetas son en su mayoría modernas, y varias se deben a profesores y estudiantes de lugares modestos. Platón hizo epistemología sin saber que se llamaba así, y Aristóteles hizo metafísica sin haber oído nunca esa palabra. Los nombres llegaron después, cuando alguien necesitó ordenar el territorio para poder enseñarlo.
+
+@@ s49 | rotulo | {"t": "Halle, fábrica de palabras", "s": "Wolff, Baumgarten y Jahr pasaron por la misma ciudad"}
+Hay incluso una ciudad que se repite en esta historia. En la Universidad de Halle enseñó Wolff, el gran difusor de la palabra ontología. Allí presentó Baumgarten la tesis que dio nombre a la estética. Y en Halle vivía, dos siglos más tarde, el pastor que acuñó por primera vez la palabra bioética. Para ser una ciudad mediana del centro de Alemania, no es mala cosecha.
+
+@@ s50 | ilus | {"fig": "filosofias_de", "pie": "Las «filosofías de»: las preguntas que cada saber no responde solo"}
+Nos queda el archipiélago. Alrededor de las grandes regiones hay un sinfín de islas cuyo nombre empieza siempre igual. Filosofía de la mente, filosofía del lenguaje, filosofía de la ciencia, de la religión, del derecho, de la historia o de las matemáticas. Todas funcionan de un modo parecido. Toman una actividad humana y le hacen las preguntas que esa actividad no puede contestar con sus propios métodos.
+
+@@ s51 | lista | {"t": "Preguntas del archipiélago", "items": ["Ciencia: ¿qué hace científica a una teoría?", "Lenguaje: ¿cómo significan las palabras?", "Mente: ¿cómo surge la experiencia?", "Matemáticas: ¿existen los números?", "Derecho: ¿qué hace válida una ley?"]}
+Un físico usa las matemáticas, pero no le corresponde decidir si los números existen. Un juez aplica las leyes, pero no suele preguntarse qué hace que una ley sea válida. Y un biólogo propone teorías sin detenerse a definir qué distingue a una teoría científica de otra que no lo es. Esas preguntas de segundo orden son las que recoge cada filosofía especial. No es casualidad que uno de los fundadores de la filosofía de la ciencia fuera William Whewell, el hombre que inventó la palabra científico.
+
+@@ s52 | rotulo | {"t": "El «problema difícil» de la conciencia", "s": "David Chalmers, 1994"}
+La isla más concurrida en las últimas décadas es probablemente la filosofía de la mente. Su gran pregunta es cómo encaja la mente en un mundo hecho de materia. En mil novecientos noventa y cuatro, el filósofo australiano David Chalmers le puso nombre a su núcleo más duro. Lo llamó el problema difícil de la conciencia, y consiste en explicar por qué la actividad del cerebro va acompañada de experiencia, de un sentir algo por dentro. En la encuesta que venimos citando, seis de cada diez filósofos consultados opinaron que ese problema es real y no un simple malentendido.
+
+@@ s53 | capitulo | {"n": "Tercera parte", "t": "Un mapa vivo"}
+Hasta aquí, el mapa tal como suele dibujarse en los manuales. Pero cualquiera que haya trabajado con mapas sabe que envejecen. Cambian las fronteras, aparecen territorios nuevos y algunas regiones que parecían centrales se quedan despobladas. La cosmología y la psicología racional de Wolff ya no figuran con ese nombre en ningún plan de estudios. En cambio, la filosofía de la mente o la bioética, que hace un siglo no existían como especialidades, llenan hoy congresos enteros. Con el mapa de la filosofía pasa exactamente lo mismo, y hoy tenemos una manera bastante precisa de comprobarlo.
+
+@@ s54 | ilus | {"fig": "taxonomia", "pie": "PhilPapers: cinco grandes áreas y más de 5.600 categorías"}
+El mayor índice de publicaciones filosóficas del mundo, que se llama PhilPapers, clasifica millones de artículos y libros con un mapa propio. Tiene cinco grandes áreas y cinco niveles de detalle, y a finales de dos mil veinte contaba ya más de cinco mil seiscientas categorías. Sus responsables reconocen con franqueza que no es un mapa definitivo, sino uno práctico, y que filósofos de otras tradiciones lo habrían dibujado de forma muy distinta.
+
+@@ s55 | ilus | {"fig": "cruce", "pie": "¿Puede pensar una máquina? Una sola pregunta atraviesa medio mapa"}
+Además, las fronteras son porosas. Tomemos una pregunta de moda, la de si una máquina puede pensar. Para responderla hay que decidir qué es pensar, y eso es filosofía de la mente. Hay que aclarar si entender un idioma es algo más que manejar símbolos, y eso es filosofía del lenguaje. Si la respuesta fuera que sí, habría que preguntarse qué le debemos a esa máquina, y ya estamos en la ética. Una sola pregunta, bien tirada, atraviesa medio mapa.
+
+@@ s56 | dato | {"v": "1.785", "t": "filósofos respondieron a la encuesta PhilPapers de 2020", "s": "Cien preguntas. Dirigida por David Bourget y David Chalmers"}
+¿Y qué piensan los habitantes de este territorio? En dos mil veinte, David Bourget y el propio David Chalmers enviaron un cuestionario de cien preguntas a filósofos profesionales de todo el mundo, sobre todo de lengua inglesa. Respondieron mil setecientos ochenta y cinco. No es un censo perfecto, y una mayoría no demuestra nada, pero es la mejor fotografía que tenemos del estado de la opinión.
+
+@@ s57 | lista | {"t": "Lo que respondió la mayoría", "items": ["Hay un mundo exterior real: 80 %", "Ateísmo: 67 % · Teísmo: 19 %", "Libertad compatible con el determinismo: 59 %", "La mente es física: 52 % · No lo es: 32 %"]}
+Algunos resultados son rotundos. Cuatro de cada cinco creen que existe un mundo exterior real y que podemos conocerlo. Dos de cada tres se declaran ateos, frente a algo menos de uno de cada cinco que se declara teísta. Casi seis de cada diez piensan que la libertad humana es compatible con que todo esté determinado. En otros asuntos el desacuerdo es profundo. Sobre si la mente es enteramente física, por ejemplo, un cincuenta y dos por ciento dijo que sí y un treinta y dos que no.
+
+@@ s58 | ilus | {"fig": "fines", "pie": "¿Cuál es el fin de la filosofía? Se podía elegir más de una respuesta"}
+Hay dos preguntas de la encuesta que nos interesan especialmente, porque tratan del mapa mismo. La primera es cuál es el fin de la filosofía. Se podía marcar más de una respuesta, y la más votada no fue la verdad, sino la comprensión, con un cincuenta y seis por ciento. Después venían la verdad y el conocimiento, con un cuarenta y dos, y la sabiduría, con un treinta y uno. Cerraban la lista la bondad y la justicia, con un veintitrés, y la felicidad, con un trece. Que la felicidad quede la última habría sorprendido bastante a los filósofos antiguos, para quienes era precisamente la meta de todo el esfuerzo.
+
+@@ s59 | ilus | {"fig": "progreso", "pie": "¿Hay progreso en filosofía?"}
+La segunda pregunta es si la filosofía progresa. Solo un cuatro por ciento respondió que nada en absoluto. Un cuarenta y siete por ciento dijo que un poco, y un cuarenta y dos por ciento, que mucho. Es un dato que matiza la vieja acusación de que los filósofos llevan veinticinco siglos dando vueltas a lo mismo. Quizá no cierran las grandes preguntas, pero creen que hoy las entienden mejor que antes.
+
+@@ s60 | rotulo | {"t": "Un territorio nuevo: la filosofía de la IA", "s": "Mente, lenguaje, ética y política a la vez"}
+El mapa, además, sigue creciendo, y ahora mismo lo hace por un lugar inesperado. La inteligencia artificial ha convertido en problemas prácticos preguntas que parecían puramente especulativas. Qué es comprender, si puede haber conciencia en una máquina, o qué valores debe seguir un sistema que conversa con millones de personas. Son preguntas que cruzan la filosofía de la mente, la del lenguaje, la ética y la política.
+
+@@ s61 | dato | {"v": "1 % → 16 %", "t": "ofertas de empleo en filosofía que mencionan la IA", "s": "Portal PhilJobs, de 2013 a 2025. Análisis de Charles Lassiter"}
+Este año la prensa ha contado que varios grandes laboratorios de inteligencia artificial están contratando filósofos. Google DeepMind, por ejemplo, incorporó en dos mil veintiséis a Henry Shevlin, un filósofo de la mente de Cambridge, con el cargo de filósofo. Y hay un análisis del portal de empleo académico PhilJobs que da una idea de la tendencia. Las ofertas de filosofía que mencionan la inteligencia artificial pasaron de un uno por ciento en dos mil trece a cerca de un dieciséis en dos mil veinticinco.
+
+@@ s62 | rotulo | {"t": "Con cautela", "s": "De 1.815 vacantes en laboratorios de IA, ninguna exigía el título de Filosofía"}
+Conviene tomarlo con cautela. El autor de ese análisis revisó en junio, junto con un colega, más de mil ochocientas vacantes abiertas en once laboratorios, y ninguna exigía un título de filosofía. Solo en torno a un cinco por ciento tenía que ver de forma sustancial con la ética o la seguridad. Y algún profesor ha advertido de que tanto interés puede distorsionar la disciplina. La demanda existe en los problemas, pero casi nunca aparece en el nombre del puesto.
+
+@@ s63 | fecha | {"a": "5 – 7 de noviembre de 2026", "t": "Primer congreso de la Red Española de Filosofía de la IA", "s": "Facultad de Filosofía, Santiago de Compostela"}
+En España tenemos una señal muy reciente de ese movimiento. Hace apenas una semana, del cinco al siete de noviembre, estaba convocado en Santiago de Compostela un encuentro significativo. Era el primer congreso internacional de la Red Española de Filosofía de la Inteligencia Artificial, organizado en la Facultad de Filosofía de la ciudad. El programa anunciaba unas noventa comunicaciones, además de conferencias de figuras como Adela Cortina o Javier Echeverría. Entre los temas estaban si las máquinas pueden pensar y si cabe responsabilidad sin conciencia.
+
+@@ s64 | rotulo | {"t": "Un mapa entre otros", "s": "El de hoy es el de la tradición occidental"}
+Una última advertencia antes de plegar el mapa. El que hemos recorrido es el de la tradición occidental, la que nace en Grecia. Otras tradiciones, como las de la India o China, repartieron sus preguntas de otra manera, y no siempre separaron la filosofía de la religión o de la medicina. La tradición india, por ejemplo, se organizó en escuelas llamadas darshanas, una palabra que significa visión o punto de vista. Nos asomaremos a ellas en el último episodio de esta temporada.
+
+@@ s65 | ilus | {"fig": "kant_fin", "pie": "¿Qué es el ser humano? La pregunta que reúne a las demás"}
+Volvamos, para terminar, a las preguntas de Kant. Qué puedo saber, qué debo hacer, qué me cabe esperar y qué es el ser humano. Si lo pensáis, cada una de ellas señala una región del mapa que hemos recorrido. Pero Kant decía que las tres primeras remiten a la cuarta, y esa observación apunta a algo que ningún mapa puede mostrar del todo. Las regiones no son países independientes, sino maneras distintas de acercarse a una misma inquietud.
+
+@@ s66 | cita | {"q": "Comprender cómo encajan entre sí las cosas, en el sentido más amplio", "a": "Wilfrid Sellars, 1962 (paráfrasis)"}
+El filósofo estadounidense Wilfrid Sellars lo expresó en mil novecientos sesenta y dos con una fórmula que se ha hecho célebre. El objetivo de la filosofía, venía a decir, es comprender cómo encajan entre sí las cosas, tomando tanto las cosas como el encajar en el sentido más amplio posible. El especialista conoce muy bien su comarca. El filósofo, según Sellars, es quien intenta saber moverse por el conjunto.
+
+@@ s67 | rotulo | {"t": "Filósofos naturales, otra vez", "s": "La frontera de 1833 nunca fue un muro"}
+Y eso nos devuelve a la sala de Cambridge. Aquel día de mil ochocientos treinta y tres pareció que la ciencia y la filosofía se repartían el mundo para siempre. Pero la frontera nunca fue un muro. Cada vez que una ciencia llega al límite de sus métodos, vuelve a hacerse preguntas que solo pueden llamarse filosóficas. Le ocurre ante el origen del universo, ante la conciencia o ante una máquina que parece razonar. Y entonces los científicos vuelven a ser, aunque sea por un rato, filósofos naturales.
+
+@@ s68 | fin | {"t": "Próximamente", "items": ["Los debates que nunca se cierran", "La caja de herramientas del filósofo", "El escenario griego", "El mismo siglo en otros lugares"]}
+En el próximo episodio dejaremos el mapa y bajaremos al terreno. Veremos los grandes debates que llevan siglos sin cerrarse. Entre ellos están el del ser y el cambio, el de la razón y la experiencia, el de la mente y el cuerpo o el de la libertad y el determinismo. Mientras tanto, os propongo un pequeño ejercicio para el paseo. Elegid una pregunta que os importe de verdad, e intentad averiguar por cuántas regiones del mapa tendríais que pasar para responderla.

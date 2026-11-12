@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "sh",
+    "ultima": "fi",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -768,10 +768,117 @@
             {
               "id": "fi0-2",
               "titulo": "El mapa de las grandes preguntas",
-              "descripcion": "Las ramas de la filosofía, cada una con la pregunta que la mueve.",
-              "estado": "pendiente",
+              "descripcion": "Las ramas de la filosofía, cada una con la pregunta que la mueve y la historia de su nombre: del día en que se inventó la palabra «científico» al huevo de los estoicos, el árbol de Descartes y las cuatro preguntas de Kant; metafísica, epistemología, lógica, ética, política y estética; qué piensan hoy los filósofos según la encuesta PhilPapers, y el territorio nuevo de la filosofía de la inteligencia artificial.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ilustrado"
+              "estilo": "ilustrado",
+              "archivo": "media/fi0-2-mapa-grandes-preguntas.mp4",
+              "audio": "media/fi0-2-mapa-grandes-preguntas.m4a",
+              "guion": "guiones/fi0-2-mapa-grandes-preguntas.txt",
+              "duracion": "33 min",
+              "fecha": "2026-11-12",
+              "fuentes": [
+                {
+                  "titulo": "Laura J. Snyder, Inventing the Scientist (Whewell, Coleridge y la palabra «scientist»)",
+                  "url": "https://www.laurajsnyder.com/2011/01/inventing-the-scientist/"
+                },
+                {
+                  "titulo": "William Whewell (MacTutor, Universidad de St Andrews)",
+                  "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Whewell.html"
+                },
+                {
+                  "titulo": "Xenocrates (Stanford Encyclopedia of Philosophy)",
+                  "url": "https://plato.stanford.edu/entries/xenocrates/"
+                },
+                {
+                  "titulo": "Sexto Empírico, Against the Logicians I, 16-19 (trad. Bett, Cambridge University Press)",
+                  "url": "https://assets.cambridge.org/052182/4974/excerpt/0521824974_excerpt.htm"
+                },
+                {
+                  "titulo": "Stoicism (Stanford Encyclopedia of Philosophy)",
+                  "url": "https://plato.stanford.edu/entries/stoicism/"
+                },
+                {
+                  "titulo": "S. Marc Cohen, Aristotle: The Organization of the Sciences",
+                  "url": "https://staff.washington.edu/smcohen/433/OrganizationSciences.pdf"
+                },
+                {
+                  "titulo": "Tree of knowledge (philosophy): el árbol de Descartes (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Tree_of_knowledge_(philosophy)"
+                },
+                {
+                  "titulo": "Figurative system of human knowledge: el cuadro de la Enciclopedia (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Figurative_system_of_human_knowledge"
+                },
+                {
+                  "titulo": "Christian Wolff (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Christian_Wolff_(philosopher)"
+                },
+                {
+                  "titulo": "K. Himi, Kant's Critiques as Fulfillment of the Philosophy in sensu cosmopolitico (las cuatro preguntas)",
+                  "url": "https://suzuka.repo.nii.ac.jp/record/1441/files/KJ00006921359.pdf"
+                },
+                {
+                  "titulo": "El origen del título «Metafísica»: Reiner, Chroust y otros (Theory and History of Ontology)",
+                  "url": "https://www.ontology.co/being-qua-being.htm"
+                },
+                {
+                  "titulo": "P. Jaroszyński, From Ta Metá Ta Physiká to Metaphysics (Espíritu, 2013)",
+                  "url": "https://dialnet.unirioja.es/descarga/articulo/4318694.pdf"
+                },
+                {
+                  "titulo": "Jacob Lorhard, creador del término «ontologia» (Theory and History of Ontology)",
+                  "url": "https://ontology.co/jacob-lorhard.htm"
+                },
+                {
+                  "titulo": "Barry Smith, The Birth of Ontology (2022)",
+                  "url": "https://philarchive.org/rec/AUGTBO-2"
+                },
+                {
+                  "titulo": "James Frederick Ferrier (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/James_Frederick_Ferrier"
+                },
+                {
+                  "titulo": "Gettier problem y el reloj parado de Russell (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Gettier_problem"
+                },
+                {
+                  "titulo": "Cicerón, De fato, I (texto latino e inglés, The Logic Museum)",
+                  "url": "https://www.logicmuseum.com/wiki/Authors/cicero/defato"
+                },
+                {
+                  "titulo": "F. Lolas, Bioethics and animal research: la contribución de Fritz Jahr",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2997650"
+                },
+                {
+                  "titulo": "P. Guyer, The Origins of Modern Aesthetics (Baumgarten, 1735)",
+                  "url": "https://www.cambridge.org/core/books/values-of-beauty/origins-of-modern-aesthetics/313FE6C30625DF80BD521CBBB3997A3E"
+                },
+                {
+                  "titulo": "Hard problem of consciousness (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Hard_problem_of_consciousness"
+                },
+                {
+                  "titulo": "The PhilPapers Categorization Project",
+                  "url": "https://philpapers.org/help/categorization.html"
+                },
+                {
+                  "titulo": "PhilPapers Survey 2020: resultados",
+                  "url": "https://survey2020.philpeople.org/survey/results/all"
+                },
+                {
+                  "titulo": "¿Qué hacen los filósofos que contrata la industria de IA? (El Comercio, 2026)",
+                  "url": "https://www.elcomercio.com/tecnologia/filosofos-inteligencia-artificial-quito/"
+                },
+                {
+                  "titulo": "Los filósofos, uno de los perfiles más cotizados de la IA (El Economista, junio de 2026)",
+                  "url": "https://www.eleconomista.es/tecnologia/noticias/13990348/06/26/el-nuevo-fichaje-estrella-de-la-ia-no-es-un-ingeniero-los-filosofos-se-convierten-uno-de-los-perfiles-mas-cotizados.html"
+                },
+                {
+                  "titulo": "I Congreso Internacional de la Red Española de Filosofía de la IA, Santiago de Compostela, 5-7 de noviembre de 2026",
+                  "url": "https://www.santiagoramonycajal.org/2026/10/30/primer-congreso-filosofia-inteligencia-artificial-santiago-2026/"
+                }
+              ]
             },
             {
               "id": "fi0-3",
