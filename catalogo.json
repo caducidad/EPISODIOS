@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "sc",
+    "ultima": "sh",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -285,10 +285,89 @@
             {
               "id": "sh02",
               "titulo": "Friedrich Spee y las hogueras de Würzburg",
-              "descripcion": "El jesuita que confesaba a las condenadas y escribió que bajo tortura cualquiera confiesa cualquier cosa.",
-              "estado": "pendiente",
+              "descripcion": "El jesuita y poeta que, en plena caza de brujas, demostró que bajo tortura cualquiera confiesa cualquier cosa. Y la leyenda de su paso por las hogueras de Wurzburgo, revisada.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ligero"
+              "estilo": "ligero",
+              "archivo": "media/sh02-friedrich-spee.mp4",
+              "audio": "media/sh02-friedrich-spee.m4a",
+              "guion": "guiones/sh02-friedrich-spee.txt",
+              "duracion": "35 min",
+              "fecha": "2026-11-12",
+              "fuentes": [
+                {
+                  "titulo": "Friedrich Spee (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Friedrich_Spee"
+                },
+                {
+                  "titulo": "Spee, Friedrich von (Deutsche Biographie)",
+                  "url": "https://www.deutsche-biographie.de/sfz80673.html"
+                },
+                {
+                  "titulo": "Friedrich Spee von Langenfeld (Rheinische Geschichte, LVR)",
+                  "url": "https://www.rheinische-geschichte.lvr.de/Persoenlichkeiten/friedrich-spee-von-langenfeld/DE-2086/lido/57c9537ab741e1.30560080"
+                },
+                {
+                  "titulo": "Leibniz, Teodicea, párrafo 97 (Proyecto Gutenberg)",
+                  "url": "https://gutenberg.org/files/17147/17147-h/17147-h.htm"
+                },
+                {
+                  "titulo": "Spee, Cautio Criminalis, extractos (German History in Documents and Images)",
+                  "url": "https://germanhistorydocs.org/de/von-den-reformationen-bis-zum-dreissigjaehrigen-krieg-1500-1648/ein-skeptiker-betrachtet-die-hexenverfolgung-eingehender-friedrich-von-spee-1631"
+                },
+                {
+                  "titulo": "Würzburg witch trials (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/W%C3%BCrzburg_witch_trials"
+                },
+                {
+                  "titulo": "Johannes Junius (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Johannes_Junius"
+                },
+                {
+                  "titulo": "Drudenhaus de Bamberg (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Drudenhaus_(prison)"
+                },
+                {
+                  "titulo": "Friedrich Spee en Würzburg (WürzburgWiki)",
+                  "url": "https://wuerzburgwiki.de/wiki/Friedrich_Spee"
+                },
+                {
+                  "titulo": "Kämpfer gegen die Hexenverfolgungen (katholisch.de)",
+                  "url": "https://www.katholisch.de/kirche-in-deutschland/kaempfer-gegen-die-hexenverfolgungen"
+                },
+                {
+                  "titulo": "Johann Philipp von Schönborn (Catholic Encyclopedia)",
+                  "url": "https://www.newadvent.org/cathen/13553b.htm"
+                },
+                {
+                  "titulo": "Maria Renata Saenger von Mossau (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Maria_Renata_Saenger_von_Mossau"
+                },
+                {
+                  "titulo": "Opfer von Hexenverbrennung in Köln rehabilitiert (domradio, 2012)",
+                  "url": "https://www.domradio.de/artikel/opfer-von-hexenverbrennung-koeln-rehabilitiert"
+                },
+                {
+                  "titulo": "Wie man Hexen rehabilitiert (Legal Tribune Online)",
+                  "url": "https://www.lto.de/recht/feuilleton/f/rechtsgeschichte-hexen-verfolgung-rehabilitation-sozialethik"
+                },
+                {
+                  "titulo": "DNA Exonerations in the United States (Innocence Project)",
+                  "url": "https://innocenceproject.org/dna-exonerations-in-the-united-states/"
+                },
+                {
+                  "titulo": "Plan nacional contra la violencia por acusaciones de brujería en Papúa Nueva Guinea (INAWARA, 2025)",
+                  "url": "https://www.theinternationalnetwork.org/blog/sarvnapaug2025launch"
+                },
+                {
+                  "titulo": "Hexenglaube gestern und heute: Geburtstag von Friedrich Spee (Kaiserswerth, 2025)",
+                  "url": "https://nordbote.de/kalender/hexenglaube-gestern-und-heute-geburtstag-von-friedrich-spee"
+                },
+                {
+                  "titulo": "Sonderausstellung Friedrich Spee (SiegfriedMuseum Xanten, 2026)",
+                  "url": "https://www.siegfriedmuseum-xanten.de/sonderausstellung-friedrich-spee/"
+                }
+              ]
             },
             {
               "id": "sh03",
