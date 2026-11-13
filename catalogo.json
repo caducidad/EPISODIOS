@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "fi",
+    "ultima": "ia",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -503,10 +503,93 @@
             {
               "id": "ia02",
               "titulo": "El juego de la vida",
-              "descripcion": "Cuatro reglas simples, una cuadrícula y una complejidad que nadie esperaba.",
-              "estado": "pendiente",
+              "descripcion": "De la máquina autorreproductora de von Neumann a las cuatro reglas de Conway: el planeador, el cañón de Gosper y su apuesta de cincuenta dólares, ordenadores hechos de planeadores, la criatura Géminis, la prueba de dos mil veintitrés de que existen osciladores de todos los periodos, la regla ciento diez, Lenia, la lagartija que se regenera y por qué a las redes neuronales les cuesta aprender el juego.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ilustrado"
+              "estilo": "ilustrado",
+              "archivo": "media/ia02-juego-de-la-vida.mp4",
+              "audio": "media/ia02-juego-de-la-vida.m4a",
+              "guion": "guiones/ia02-juego-de-la-vida.txt",
+              "duracion": "35 min",
+              "fecha": "2026-11-13",
+              "fuentes": [
+                {
+                  "titulo": "Conway's Game of Life (LifeWiki)",
+                  "url": "https://conwaylife.com/wiki/Conway's_Game_of_Life"
+                },
+                {
+                  "titulo": "Glider: descubrimiento por Richard Guy (Life Lexicon)",
+                  "url": "https://playgameoflife.com/lexicon/glider"
+                },
+                {
+                  "titulo": "Not Just Fun and Games: John Conway (Scientific American)",
+                  "url": "https://www.scientificamerican.com/article/not-just-fun-and-games/"
+                },
+                {
+                  "titulo": "John Horton Conway, obituario (The Guardian, MacTutor)",
+                  "url": "https://mathshistory.st-andrews.ac.uk/Obituaries/Conway_Guardian/"
+                },
+                {
+                  "titulo": "John Horton Conway, obituario (The New York Times, MacTutor)",
+                  "url": "https://mathshistory.st-andrews.ac.uk/Obituaries/Conway_NY_Times/"
+                },
+                {
+                  "titulo": "Von Neumann universal constructor (Wikipedia)",
+                  "url": "https://kiwix.lema.org/wikipedia_en_all_mini_2024-02/Von_Neumann_universal_constructor"
+                },
+                {
+                  "titulo": "Life Programmed In Life: el metapíxel OTCA (I Programmer)",
+                  "url": "https://www.i-programmer.info/news/181-algorithms/4959-life-programmed-in-life.html"
+                },
+                {
+                  "titulo": "Turing machine implemented in Life (Slashdot, 2000)",
+                  "url": "https://tech.slashdot.org/story/00/11/29/148202/turing-machine-implemented-in-life"
+                },
+                {
+                  "titulo": "Gemini (LifeWiki)",
+                  "url": "https://conwaylife.njohnston.ca/wiki/Gemini"
+                },
+                {
+                  "titulo": "Math's 'Game of Life' Reveals Long-Sought Repeating Patterns (Quanta Magazine)",
+                  "url": "https://www.quantamagazine.org/maths-game-of-life-reveals-long-sought-repeating-patterns-20240118/"
+                },
+                {
+                  "titulo": "Conway's Game of Life is Omniperiodic (arXiv)",
+                  "url": "https://arxiv.org/pdf/2312.02799"
+                },
+                {
+                  "titulo": "Mathematicians prove the omniperiodicity of Conway's Game of Life (Discover)",
+                  "url": "https://www.discovermagazine.com/the-sciences/mathematicians-prove-the-omniperiodicity-of-conways-game-of-life"
+                },
+                {
+                  "titulo": "Wolfram Research v Cook (LessWrong)",
+                  "url": "https://www.greaterwrong.com/posts/scGEKgQWAdYPt2Swh/wolfram-research-v-cook"
+                },
+                {
+                  "titulo": "Lenia: Biology of Artificial Life (arXiv)",
+                  "url": "https://arxiv.org/pdf/1812.05433"
+                },
+                {
+                  "titulo": "Growing Neural Cellular Automata (Google Research, Distill)",
+                  "url": "https://research.google/pubs/growing-neural-cellular-automata/"
+                },
+                {
+                  "titulo": "It's Hard for Neural Networks To Learn the Game of Life (arXiv)",
+                  "url": "https://arxiv.org/pdf/2009.01398"
+                },
+                {
+                  "titulo": "Why neural networks struggle with the Game of Life (TechTalks)",
+                  "url": "https://bdtechtalks.com/2020/09/16/deep-learning-game-of-life"
+                },
+                {
+                  "titulo": "Automating the Search for Artificial Life with Foundation Models (Sakana AI)",
+                  "url": "https://sakana.ai/asal/"
+                },
+                {
+                  "titulo": "Conway's Game of Life as an Analogue to a Habitable World (Proceedings of the IAU)",
+                  "url": "https://www.cambridge.org/core/journals/proceedings-of-the-international-astronomical-union/article/conways-game-of-life-as-an-analogue-to-a-habitable-world-livingness-beyond-the-biological/8034B0A26CDC682C4BCFD563E781E521"
+                }
+              ]
             },
             {
               "id": "ia03",

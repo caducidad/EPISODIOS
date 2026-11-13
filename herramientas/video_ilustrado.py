@@ -9,8 +9,8 @@ Tipo nuevo:
 
 Las figuras se dibujan en un lienzo de 1160x440 (se coloca entre la cabecera y el pie). Cada función recibe el
 tema T (colores de la serie) y devuelve el contenido SVG. Para un episodio nuevo, añade sus figuras a FIGURAS.
-Figuras actuales: episodios ia01 (Qué es una red neuronal, desde cero), sc02 (Los lobos de Yellowstone)
-y fi0-2 (El mapa de las grandes preguntas).
+Figuras actuales: episodios ia01 (Qué es una red neuronal, desde cero), sc02 (Los lobos de Yellowstone),
+fi0-2 (El mapa de las grandes preguntas) e ia02 (El juego de la vida).
 """
 import math, os, random, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -989,6 +989,427 @@ FIGURAS = {"movil": f_movil, "neurona_bio": f_neurona_bio, "disparo": f_disparo,
            "carrona": f_carrona, "reloj": f_reloj, "altos": f_altos, "parcelas": f_parcelas, "cauce": f_cauce, "estados": f_estados,
            "actores": f_actores, "circular": f_circular, "mollie": f_mollie}
 FIGURAS.update(FIGURAS_FI02)
+
+# ---------------------------------------------------------------- figuras del episodio ia02 (El juego de la vida)
+import numpy as np
+
+def vida_paso(g):
+    n = sum(np.roll(np.roll(g, i, 0), j, 1) for i in (-1, 0, 1) for j in (-1, 0, 1) if (i, j) != (0, 0))
+    return ((n == 3) | (g & (n == 2))).astype(bool)
+
+def vida(celdas, alto, ancho, gens, oy=0, ox=0):
+    g = np.zeros((alto, ancho), bool)
+    for (y, x) in celdas:
+        g[y + oy, x + ox] = True
+    for _ in range(gens):
+        g = vida_paso(g)
+    return g
+
+def patron(txt):
+    return [(i, j) for i, fila in enumerate(txt.strip("\n").split("\n")) for j, ch in enumerate(fila) if ch in "O#"]
+
+GLIDER = patron(".O.\n..O\nOOO")
+RPENTO = patron(".OO\nOO.\n.O.")
+GOSPER = patron("""
+........................O...........
+......................O.O...........
+............OO......OO............OO
+...........O...O....OO............OO
+OO........O.....O...OO..............
+OO........O...O.OO....O.O...........
+..........O.....O.......O...........
+...........O...O....................
+............OO......................""")
+
+def rejilla(g, x0, y0, c, T, col=None, lineas=True, op_lin=.22, viva_op=1.0, gap=None, rx=None):
+    alto, ancho = g.shape; col = col or T["acento"]; s = ""
+    if lineas:
+        s += f"<rect x='{x0}' y='{y0}' width='{ancho * c}' height='{alto * c}' fill='{T['panel']}'/>"
+        for i in range(alto + 1):
+            s += f"<line x1='{x0}' y1='{y0 + i * c}' x2='{x0 + ancho * c}' y2='{y0 + i * c}' stroke='{T['suave']}' stroke-width='1' opacity='{op_lin}'/>"
+        for j in range(ancho + 1):
+            s += f"<line x1='{x0 + j * c}' y1='{y0}' x2='{x0 + j * c}' y2='{y0 + alto * c}' stroke='{T['suave']}' stroke-width='1' opacity='{op_lin}'/>"
+    gap = c * .1 if gap is None else gap; rx = c * .18 if rx is None else rx
+    ys, xs = np.nonzero(g)
+    for y, x in zip(ys, xs):
+        s += f"<rect x='{x0 + x * c + gap:.1f}' y='{y0 + y * c + gap:.1f}' width='{c - 2 * gap:.1f}' height='{c - 2 * gap:.1f}' rx='{rx:.1f}' fill='{col}' opacity='{viva_op}'/>"
+    return s
+
+def mini(celdas, alto, ancho):
+    g = np.zeros((alto, ancho), bool)
+    for y, x in celdas:
+        g[y, x] = True
+    return g
+
+def f_cuadricula(T):
+    r = random.Random(7); g = np.zeros((14, 22), bool)
+    for _ in range(70):
+        g[r.randrange(14), r.randrange(22)] = True
+    s = rejilla(g, 20, 10, 30, T, col=T["linea"])
+    # resalta una casilla y su vecindario
+    cy, cx = 6, 10
+    s += f"<rect x='{20 + (cx - 1) * 30}' y='{10 + (cy - 1) * 30}' width='90' height='90' fill='none' stroke='{T['acento']}' stroke-width='4' rx='4'/>"
+    s += f"<rect x='{20 + cx * 30 + 3}' y='{10 + cy * 30 + 3}' width='24' height='24' fill='{CORAL}' rx='4'/>"
+    # zoom
+    s += linea(20 + (cx + 2) * 30, 10 + (cy - 1) * 30, 790, 70, T["acento"], 2, .7, "6 6")
+    s += linea(20 + (cx + 2) * 30, 10 + (cy + 2) * 30, 790, 370, T["acento"], 2, .7, "6 6")
+    z = 100
+    for i in range(3):
+        for j in range(3):
+            centro = (i, j) == (1, 1)
+            s += (f"<rect x='{790 + j * z}' y='{70 + i * z}' width='{z - 8}' height='{z - 8}' rx='12' "
+                  f"fill='{CORAL if centro else T['panel']}' stroke='{T['acento'] if not centro else CORAL}' stroke-width='3'/>")
+            if not centro:
+                n = i * 3 + j + (1 if i * 3 + j < 4 else 0)
+                s += tx(790 + j * z + 46, 70 + i * z + 60, str(n), T, 34, T["acento"], peso=700)
+    s += tx(936, 420, "Ocho vecinas", T, 32, peso=600)
+    return s
+
+def regla_panel(x, titulo, sub, antes, despues, T, col):
+    s = caja(x, 0, 265, 430, T, borde=col)
+    s += tx(x + 132, 46, titulo, T, 32, col, peso=700)
+    s += tx(x + 132, 82, sub, T, 24, T["suave"])
+    s += rejilla(mini(antes, 3, 3), x + 30, 130, 30, T, col=T["linea"])
+    s += flecha(x + 132, 180, x + 160, 180, T["tinta"], 3, .8)
+    s += rejilla(mini(despues, 3, 3), x + 172, 130, 30, T, col=T["linea"])
+    # centro resaltado
+    for xx in (x + 30, x + 172):
+        s += f"<rect x='{xx + 30}' y='160' width='30' height='30' fill='none' stroke='{col}' stroke-width='3'/>"
+    estado_antes = (1, 1) in antes; estado_desp = (1, 1) in despues
+    s += tx(x + 132, 290, ("viva" if estado_antes else "vacía") + " → " + ("viva" if estado_desp else "vacía"), T, 28, T["tinta"], peso=600)
+    return s
+
+def f_constructor(T):
+    s = ""
+    # máquina madre
+    s += caja(20, 40, 300, 250, T, borde=T["acento"])
+    s += tx(170, 90, "Máquina", T, 32, T["acento"], peso=700)
+    s += caja(45, 120, 120, 70, T, borde=T["linea"], sw=2) + tx(105, 164, "Constructor", T, 20)
+    s += caja(185, 120, 115, 70, T, borde=T["linea"], sw=2) + tx(242, 164, "Copiadora", T, 20)
+    for k in range(10):
+        s += f"<rect x='{45 + k * 25}' y='220' width='20' height='40' rx='3' fill='{T['linea'] if k % 3 else T['acento']}' opacity='.85'/>"
+    s += tx(170, 330, "Descripción (cinta)", T, 26, T["suave"])
+    # flechas
+    s += flecha(340, 150, 520, 150, T["tinta"], 4, .7) + tx(430, 130, "construye", T, 24)
+    s += flecha(340, 240, 520, 240, T["tinta"], 4, .7) + tx(430, 280, "copia la cinta", T, 24)
+    # hija
+    s += caja(540, 40, 300, 250, T, borde=CORAL)
+    s += tx(690, 90, "Hija", T, 32, CORAL, peso=700)
+    s += caja(565, 120, 120, 70, T, borde=T["linea"], sw=2) + tx(625, 164, "Constructor", T, 20)
+    s += caja(705, 120, 115, 70, T, borde=T["linea"], sw=2) + tx(762, 164, "Copiadora", T, 20)
+    for k in range(10):
+        s += f"<rect x='{565 + k * 25}' y='220' width='20' height='40' rx='3' fill='{T['linea'] if k % 3 else T['acento']}' opacity='.85'/>"
+    s += tx(1010, 120, "Plano que se lee", T, 26, T["acento"], peso=600) + tx(1010, 155, "para construir", T, 26, T["suave"])
+    s += tx(1010, 240, "Plano que se copia", T, 26, T["acento"], peso=600) + tx(1010, 275, "sin interpretarlo", T, 26, T["suave"])
+    s += tx(580, 410, "La misma lógica que usan las células con su material genético", T, 28, T["tinta"])
+    return s
+
+def f_reglas(T):
+    s = ""
+    s += regla_panel(0, "Sobrevive", "2 o 3 vecinas", [(1, 1), (0, 0), (2, 2)], [(1, 1)], T, T["acento"])
+    s += regla_panel(298, "Aislamiento", "0 o 1 vecina", [(1, 1), (0, 2)], [], T, CORAL)
+    s += regla_panel(596, "Superpoblación", "4 o más", [(1, 1), (0, 0), (0, 2), (2, 0), (2, 2)], [], T, CORAL)
+    s += regla_panel(894, "Nacimiento", "exactamente 3", [(0, 0), (0, 2), (2, 1)], [(1, 1)], T, T["acento"])
+    for k, t in enumerate(["Sigue igual", "Muere", "Muere", "Nace"]):
+        s += tx(132 + k * 298, 380, t, T, 40, T["acento"] if k in (0, 3) else CORAL, fam="Corm", peso=700)
+    return s
+
+def f_quietas(T):
+    s = ""
+    bloque = mini([(1, 1), (1, 2), (2, 1), (2, 2)], 4, 4)
+    colmena = mini([(1, 2), (1, 3), (2, 1), (2, 4), (3, 2), (3, 3)], 5, 6)
+    blink_h = mini([(2, 1), (2, 2), (2, 3)], 5, 5); blink_v = mini([(1, 2), (2, 2), (3, 2)], 5, 5)
+    s += rejilla(bloque, 60, 110, 46, T)
+    s += tx(152, 370, "Bloque", T, 34, peso=600) + tx(152, 410, "no cambia", T, 26, T["suave"])
+    s += rejilla(colmena, 330, 90, 40, T)
+    s += tx(450, 370, "Colmena", T, 34, peso=600) + tx(450, 410, "no cambia", T, 26, T["suave"])
+    s += rejilla(blink_h, 650, 100, 40, T, col=T["linea"])
+    s += rejilla(blink_v, 920, 100, 40, T, col=T["linea"])
+    s += flecha(860, 175, 905, 175, T["tinta"], 4, .8) + flecha(905, 225, 860, 225, T["tinta"], 4, .8)
+    s += tx(885, 370, "Parpadeador", T, 34, peso=600) + tx(885, 410, "oscila cada 2 generaciones", T, 26, T["suave"])
+    return s
+
+def recorte(g, alto, ancho):
+    ys, xs = np.nonzero(g)
+    cy, cx = (ys.min() + ys.max()) // 2, (xs.min() + xs.max()) // 2
+    return g[cy - alto // 2: cy - alto // 2 + alto, cx - ancho // 2: cx - ancho // 2 + ancho]
+
+def f_rpento(T):
+    s = ""; gens = [0, 60, 400, 1103]
+    g = np.zeros((420, 420), bool)
+    for y, x in RPENTO:
+        g[205 + y, 205 + x] = True
+    estados = {}; k = 0
+    for gen in range(gens[-1] + 1):
+        if gen in gens:
+            estados[gen] = g.copy()
+        g = vida_paso(g)
+    tams = {0: (7, 7), 60: (40, 40), 400: (90, 90), 1103: (100, 100)}
+    for i, gen in enumerate(gens):
+        x0 = 10 + i * 290; caja_w = 260
+        a, b = tams[gen]; sub = recorte(estados[gen], a, b); c = caja_w / b
+        s += caja(x0, 20, caja_w, caja_w, T, sw=2, rx=8)
+        s += rejilla(sub, x0, 20, c, T, col=T["acento"], lineas=(gen == 0), gap=(c * .1 if c > 4 else 0), rx=(c * .18 if c > 4 else 0))
+        s += tx(x0 + caja_w / 2, 340, "Generación " + miles(gen), T, 30, peso=600)
+        s += tx(x0 + caja_w / 2, 380, ["5 casillas", "se expande", "sigue agitándose", "por fin estable"][i], T, 26, T["suave"])
+    return s
+
+def f_planeador(T):
+    s = ""; g = mini(GLIDER, 3, 3)
+    for k in range(5):
+        h = vida(GLIDER, 7, 7, k, 1, 1)
+        x0 = 15 + k * 230
+        s += rejilla(h[0:6, 0:6], x0, 60, 33, T, col=(T["acento"] if k < 4 else CORAL))
+        s += tx(x0 + 99, 300, f"Generación {k}", T, 28, peso=600)
+    s += tx(1030 - 20 + 15, 340, "misma forma,", T, 26, CORAL) + tx(1030 - 20 + 15, 372, "una casilla más allá", T, 26, CORAL)
+    s += flecha(130, 400, 860, 400, T["linea"], 4, .8)
+    return s
+
+def f_canon(T):
+    g = np.zeros((220, 300), bool)
+    for y, x in GOSPER:
+        g[3 + y, 4 + x] = True
+    for _ in range(300):
+        g = vida_paso(g)
+    sub = g[0:52, 0:128]
+    c = 8.6
+    s = rejilla(sub, 30, 0, c, T, lineas=False, gap=.6, rx=1.2)
+    s += f"<rect x='22' y='-6' width='{40 * c}' height='{14 * c}' fill='none' stroke='{CORAL}' stroke-width='3' rx='10'/>"
+    s += tx(30 + 20 * c, 14 * c + 30, "El cañón", T, 30, CORAL, peso=700)
+    s += flecha(560, 220, 1050, 430, T["linea"], 3, .5)
+    s += tx(1120, 70, "Un planeador nuevo", T, 30, anc="end", peso=600)
+    s += tx(1120, 108, "cada 30 generaciones", T, 28, T["suave"], anc="end")
+    return s
+
+def pict_glider(x, y, c, col):
+    s = ""
+    for (i, j) in GLIDER:
+        s += f"<rect x='{x + j * c:.1f}' y='{y + i * c:.1f}' width='{c - 2:.1f}' height='{c - 2:.1f}' rx='2' fill='{col}'/>"
+    return s
+
+def f_puerta(T):
+    s = ""
+    # entrada horizontal: 1 0 1 1 0
+    bits = [1, 0, 1, 1, 0]
+    s += tx(20, 200, "Entrada", T, 30, T["acento"], anc="start", peso=700)
+    for k, b in enumerate(bits):
+        x = 60 + k * 90
+        if b:
+            s += pict_glider(x, 240, 14, T["acento"])
+        else:
+            s += f"<rect x='{x}' y='240' width='40' height='40' rx='6' fill='none' stroke='{T['suave']}' stroke-dasharray='5 5' stroke-width='2'/>"
+        s += tx(x + 20, 320, str(b), T, 34, T["tinta"], peso=700)
+    s += flecha(520, 262, 600, 262, T["acento"], 4)
+    # cañón arriba
+    s += caja(560, 0, 200, 64, T, borde=T["linea"]) + tx(660, 42, "Cañón", T, 30, T["linea"], peso=700)
+    for k in range(3):
+        s += pict_glider(645, 85 + k * 52, 12, T["linea"])
+    s += f"<circle cx='663' cy='262' r='44' fill='none' stroke='{CORAL}' stroke-width='4'/>"
+    s += tx(663, 340, "choque: se aniquilan", T, 26, CORAL)
+    # salida
+    out = [0, 1, 0, 0, 1]
+    s += flecha(663, 370, 663, 430, T["linea"], 4)
+    s += tx(1120, 200, "Salida", T, 30, T["linea"], anc="end", peso=700)
+    for k, b in enumerate(out):
+        x = 790 + k * 70
+        if b:
+            s += pict_glider(x, 240, 12, T["linea"])
+        else:
+            s += f"<rect x='{x}' y='240' width='34' height='34' rx='6' fill='none' stroke='{T['suave']}' stroke-dasharray='5 5' stroke-width='2'/>"
+        s += tx(x + 17, 320, str(b), T, 34, T["tinta"], peso=700)
+    s += tx(950, 400, "la señal invertida: «no»", T, 28, T["suave"])
+    return s
+
+def f_metapixel(T):
+    s = ""
+    g = mini(GLIDER, 3, 3); c = 120
+    for i in range(3):
+        for j in range(3):
+            x, y = 40 + j * c, 40 + i * c; on = g[i, j]
+            s += f"<rect x='{x}' y='{y}' width='{c - 8}' height='{c - 8}' rx='8' fill='{T['acento'] if on else T['panel']}' fill-opacity='{.9 if on else 1}' stroke='{T['linea']}' stroke-width='2'/>"
+    s += tx(216, 30, "Un planeador de metapíxeles", T, 26, T["suave"])
+    # zoom a una celda
+    s += linea(40 + 2 * c - 8, 40 + 1 * c, 560, 20, T["acento"], 2, .7, "6 6")
+    s += linea(40 + 2 * c - 8, 40 + 2 * c - 8, 560, 420, T["acento"], 2, .7, "6 6")
+    s += caja(560, 20, 400, 400, T, borde=T["acento"], rx=10)
+    r = random.Random(4)
+    for k in range(260):
+        x, y = 572 + r.random() * 376, 32 + r.random() * 376
+        if 640 < x < 880 and 110 < y < 330:
+            continue
+        s += f"<rect x='{x:.0f}' y='{y:.0f}' width='5' height='5' fill='{T['linea']}' opacity='.8'/>"
+    s += f"<rect x='660' y='130' width='200' height='180' rx='10' fill='{T['acento']}' opacity='.85'/>"
+    s += tx(760, 230, "encendido", T, 30, T["c2"], peso=700)
+    s += tx(1060, 200, "2.048", T, 46, T["acento"], fam="Corm", peso=700) + tx(1060, 240, "×", T, 30, T["suave"])
+    s += tx(1060, 290, "2.048", T, 46, T["acento"], fam="Corm", peso=700) + tx(1060, 330, "casillas", T, 26, T["suave"])
+    return s
+
+def f_gemini(T):
+    s = ""
+    def mitad(x, y, op, col):
+        r = caja(x, y, 150, 110, T, borde=col, sw=3)
+        r = r.replace("<rect", f"<rect opacity='{op}'")
+        for k in range(3):
+            r += linea(x + 150, y + 30 + k * 25, x + 210, y + 10 + k * 30, col, 3, op)
+        return r
+    s += mitad(60, 40, 1, T["acento"]) + tx(135, 105, "Mitad A", T, 26, T["acento"], peso=700)
+    s += mitad(60, 270, 1, T["acento"]) + tx(135, 335, "Mitad B", T, 26, T["acento"], peso=700)
+    for k in range(6):
+        s += pict_glider(115, 165 + k * 16, 5, T["linea"])
+    s += tx(30, 230, "cinta", T, 24, T["linea"], anc="start")
+    # copia
+    s += mitad(720, 10, .9, CORAL) + tx(795, 75, "Copia A", T, 26, CORAL, peso=700)
+    s += mitad(720, 240, .9, CORAL) + tx(795, 305, "Copia B", T, 26, CORAL, peso=700)
+    s += flecha(320, 200, 680, 170, T["tinta"], 4, .6)
+    s += tx(500, 150, "construye", T, 28, T["tinta"])
+    s += tx(260, 425, "la progenitora se borra", T, 26, T["suave"])
+    s += tx(980, 425, "y la criatura avanza", T, 26, T["suave"])
+    return s
+
+def f_periodos(T):
+    s = ""; c = 70; cols = 11
+    for n in range(1, 44):
+        i, j = (n - 1) // cols, (n - 1) % cols
+        x, y = 107 + j * (c + 16), 0 + i * (c + 16)
+        ult = n in (19, 41)
+        s += f"<rect x='{x}' y='{y}' width='{c}' height='{c}' rx='12' fill='{CORAL if ult else T['panel']}' stroke='{CORAL if ult else T['linea']}' stroke-width='2.5'/>"
+        s += tx(x + c / 2, y + c / 2 + 11, str(n), T, 30, T["c2"] if ult else T["tinta"], peso=700)
+    x = 20 + 10 * (c + 22) - 0
+    s += tx(580, 405, "Desde el 43 en adelante, basta un circuito con el Snark", T, 28, T["suave"])
+    return s
+
+def automata1d(regla, ancho, filas, inicio=None, seed=0):
+    bits = [(regla >> k) & 1 for k in range(8)]
+    if inicio is None:
+        a = np.zeros(ancho, int); a[ancho // 2] = 1
+    else:
+        a = inicio
+    out = [a]
+    for _ in range(filas - 1):
+        l, r = np.roll(a, 1), np.roll(a, -1)
+        a = np.array([bits[4 * x + 2 * y + z] for x, y, z in zip(l, a, r)])
+        out.append(a)
+    return np.array(out, bool)
+
+def f_regla30(T):
+    g = automata1d(30, 241, 105)
+    s = rejilla(g, 0, 0, 4.2, T, lineas=False, gap=0, rx=0)
+    s += tx(1150, 120, "Regla 30", T, 50, T["acento"], anc="end", fam="Corm", peso=700)
+    s += tx(1150, 170, "Empieza con una", T, 26, T["suave"], anc="end")
+    s += tx(1150, 204, "sola casilla viva", T, 26, T["suave"], anc="end")
+    s += tx(1150, 300, "Cada fila es", T, 26, T["suave"], anc="end")
+    s += tx(1150, 334, "una generación", T, 26, T["suave"], anc="end")
+    return s
+
+def f_regla110(T):
+    r = np.random.default_rng(3); ini = (r.random(270) < .5).astype(int)
+    g = automata1d(110, 270, 105, ini)
+    s = rejilla(g, 0, 0, 4.2, T, col=T["linea"], lineas=False, gap=0, rx=0)
+    s += caja(1150 - 300 + 120, 20, 180 - 0, 100, T, borde=T["acento"])
+    s += tx(1060, 82, "Regla 110", T, 40, T["acento"], fam="Corm", peso=700)
+    return s
+
+def f_lenia(T):
+    s = ("<defs><radialGradient id='orb' cx='50%' cy='50%' r='50%'>"
+         f"<stop offset='0%' stop-color='{T['c1']}' stop-opacity='.2'/><stop offset='45%' stop-color='{T['acento']}' stop-opacity='.95'/>"
+         f"<stop offset='70%' stop-color='{T['linea']}' stop-opacity='.7'/><stop offset='100%' stop-color='{T['linea']}' stop-opacity='0'/></radialGradient>"
+         "<filter id='bl'><feGaussianBlur stdDeviation='6'/></filter></defs>")
+    s += f"<ellipse cx='300' cy='200' rx='150' ry='135' fill='url(#orb)' filter='url(#bl)'/>"
+    s += f"<ellipse cx='255' cy='190' rx='45' ry='60' fill='{T['c2']}' opacity='.55' filter='url(#bl)'/>"
+    s += flecha(470, 200, 560, 200, T["acento"], 4, .8)
+    s += tx(300, 395, "Orbium", T, 40, T["acento"], fam="Corm", peso=700)
+    r = random.Random(9)
+    for k, (x, y, rr) in enumerate([(760, 120, 70), (950, 150, 55), (850, 300, 80), (1060, 320, 45)]):
+        s += f"<path d='{blob(x, y, rr, rr * .8, k + 3, jit=.25)}' fill='url(#orb)' filter='url(#bl)'/>"
+    s += tx(900, 410, "Más de 400 especies", T, 30, peso=600)
+    return s
+
+LAGARTIJA = """
+..........OO..........
+.........OOOO.........
+.....O...OOOO...O.....
+......O..OOOO..O......
+.......OOOOOOOO.......
+.........OOOO.........
+.........OOOO.........
+.........OOOO.........
+.......OOOOOOOO.......
+......O..OOOO..O......
+.....O....OO....O.....
+..........OO..........
+...........OO.........
+............OO........
+.............O........
+"""
+
+def f_lagartija(T):
+    full = mini(patron(LAGARTIJA), 15, 22)
+    s = ""; c = 9.5
+    etapas = []
+    semilla_g = np.zeros((15, 22), bool); semilla_g[7, 11] = True
+    medio = full.copy(); ys, xs = np.nonzero(full)
+    for y, x in zip(ys, xs):
+        if (y - 6) ** 2 + (x - 11) ** 2 > 14:
+            medio[y, x] = False
+    roto = full.copy(); roto[9:, :] = False; roto[8, :] &= False
+    etapas = [(semilla_g, "1 célula"), (medio, "crece"), (full, "forma completa"), (roto, "se corta"), (full, "se regenera")]
+    for k, (g, t) in enumerate(etapas):
+        x0 = 10 + k * 232
+        s += caja(x0, 40, 212, 212, T, sw=2, rx=10)
+        s += rejilla(g, x0 + 2, 70, c, T, col=(CORAL if k == 3 else T["acento"]), lineas=False)
+        s += tx(x0 + 106, 310, t, T, 28, peso=600)
+        if k < 4:
+            s += flecha(x0 + 214, 146, x0 + 230, 146, T["tinta"], 3, .7)
+    s += tx(580, 400, "Cada casilla aplica la misma red diminuta, mirando solo a sus vecinas", T, 26, T["suave"])
+    return s
+
+def f_aprender(T):
+    s = caja(0, 0, 540, 430, T, borde=T["acento"])
+    s += tx(270, 50, "Red mínima", T, 36, T["acento"], peso=700)
+    s += rejilla(mini([(0, 1), (1, 1), (2, 0)], 3, 3), 50, 130, 34, T, col=T["linea"])
+    sr, pos = red([2, 1], 250, 450, 110, 250, T, r=18, op=.7)
+    s += sr
+    for p in pos[0]:
+        s += linea(152, 181, p[0] - 18, p[1], T["linea"], 2, .6)
+    s += tx(270, 320, "pesos elegidos a mano:", T, 26, T["suave"])
+    s += tx(270, 360, "acierta siempre", T, 30, T["acento"], peso=700)
+    s += caja(600, 0, 560, 430, T, borde=CORAL)
+    s += tx(880, 50, "Entrenada desde cero", T, 36, CORAL, peso=700)
+    sr2, _ = red([6, 9, 9, 6, 1], 660, 1100, 80, 280, T, r=8, op=.25, w=1)
+    s += sr2
+    s += tx(880, 330, "la red pequeña casi nunca", T, 26, T["suave"])
+    s += tx(880, 364, "encuentra la solución;", T, 26, T["suave"])
+    s += tx(880, 400, "hace falta una mucho mayor", T, 30, CORAL, peso=700)
+    return s
+
+def f_vivo(T):
+    s = ""; r = random.Random(5); c = 30
+    for i in range(10):
+        for j in range(24):
+            esp = (i, j) == (4, 15)
+            op = .15 + .35 * r.random()
+            s += f"<rect x='{20 + j * (c + 6)}' y='{10 + i * (c + 6)}' width='{c}' height='{c}' rx='5' fill='{CORAL if esp else T['linea']}' opacity='{1 if esp else op:.2f}'/>"
+    x, y = 20 + 15 * (c + 6) + c / 2, 10 + 4 * (c + 6) + c / 2
+    s += f"<circle cx='{x}' cy='{y}' r='34' fill='none' stroke='{CORAL}' stroke-width='4'/>"
+    pruebas = ["Criticidad", "Entropía de Shannon", "Información integrada"]
+    for k, t in enumerate(pruebas):
+        s += pildora(200 + k * 380, 410, t, T, 26, T["tinta"], borde=T["acento"], w=340)
+    return s
+
+def f_niveles(T):
+    s = ""
+    niveles = [("Ordenadores y replicadores", 420, CORAL), ("Máquinas: cañones, puertas, memorias", 620, T["acento"]),
+               ("Patrones: planeadores, bloques, osciladores", 840, T["linea"]), ("Casillas que se encienden y se apagan", 1060, T["suave"])]
+    for k, (t, w, col) in enumerate(niveles):
+        y = 10 + k * 106
+        s += f"<rect x='{580 - w / 2}' y='{y}' width='{w}' height='88' rx='14' fill='{T['panel']}' stroke='{col}' stroke-width='3'/>"
+        s += tx(580, y + 56, t, T, 32 if k else 30, col if k < 3 else T["tinta"], peso=600)
+    return s
+
+FIGURAS.update({"cuadricula": f_cuadricula, "constructor": f_constructor, "reglas": f_reglas, "quietas": f_quietas, "rpento": f_rpento,
+                "planeador": f_planeador, "canon": f_canon, "puerta": f_puerta, "metapixel": f_metapixel, "gemini": f_gemini,
+                "periodos": f_periodos, "regla30": f_regla30, "regla110": f_regla110, "lenia": f_lenia, "lagartija": f_lagartija,
+                "aprender": f_aprender, "vivo": f_vivo, "niveles": f_niveles})
 
 # ---------------------------------------------------------------- integración con video_ligero
 _plantilla_base = VL.plantilla
