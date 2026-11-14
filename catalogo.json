@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "ia",
+    "ultima": "an",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -725,10 +725,97 @@
             {
               "id": "an02",
               "titulo": "Conductas de seguridad",
-              "descripcion": "Las protecciones que alivian en el momento y mantienen el miedo a largo plazo.",
-              "estado": "pendiente",
+              "descripcion": "El hombre que chasqueaba los dedos contra los elefantes, Rachman y las señales de seguridad, Salkovskis y la catástrofe que no ocurrió por los pelos, las palomas supersticiosas de Skinner, la claustrofobia de Texas, cómo fabricar ansiedad en una semana, el espejo interior de la ansiedad social, el móvil como manta de seguridad y el debate sobre el uso juicioso de las protecciones.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ligero"
+              "estilo": "ligero",
+              "archivo": "media/an02-conductas-seguridad.mp4",
+              "audio": "media/an02-conductas-seguridad.m4a",
+              "guion": "guiones/an02-conductas-seguridad.txt",
+              "duracion": "33 min",
+              "fecha": "2026-11-14",
+              "fuentes": [
+                {
+                  "titulo": "Safety behaviors (anxiety) (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Safety_behaviors_(anxiety)"
+                },
+                {
+                  "titulo": "Salkovskis (1991): The importance of behaviour in the maintenance of anxiety and panic",
+                  "url": "https://resolve.cambridge.org/core/journals/behavioural-and-cognitive-psychotherapy/article/abs/importance-of-behaviour-in-the-maintenance-of-anxiety-and-panic-a-cognitive-account/B3BAA0EFEF179C99BBCA5F983B05A534"
+                },
+                {
+                  "titulo": "Rachman (1984): Agoraphobia, a safety-signal perspective",
+                  "url": "https://scilit.com/publications/17ce0065a3a4c2c7ae13c82ba9d4ffbd"
+                },
+                {
+                  "titulo": "Stanley Rachman (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Stanley_Rachman"
+                },
+                {
+                  "titulo": "Paul Salkovskis (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Paul_Salkovskis"
+                },
+                {
+                  "titulo": "Skinner (1948): 'Superstition' in the pigeon (PDF)",
+                  "url": "https://psychology.hanover.edu/classes/Learning/papers/Skinner%20Superstion%20%281948%20orig%29.pdf"
+                },
+                {
+                  "titulo": "Wells y otros (1995): Social phobia, the role of in-situation safety behaviors",
+                  "url": "https://research.manchester.ac.uk/en/publications/social-phobia-the-role-of-in-situation-safety-behaviors-in-mainta/"
+                },
+                {
+                  "titulo": "Salkovskis y otros (1999): safety-seeking behaviours in panic disorder with agoraphobia (PDF)",
+                  "url": "https://www.personal.kent.edu/~dfresco/CBT_Readings/BRAT_Salkovskis_1999.pdf"
+                },
+                {
+                  "titulo": "Sloan y Telch (2002): The effects of safety-seeking behavior and guided threat reappraisal (PDF)",
+                  "url": "https://labs.la.utexas.edu/telch/files/2015/02/The-Effects-of-Safety-Seeking.pdf"
+                },
+                {
+                  "titulo": "Blakey y Abramowitz (2016): The effects of safety behaviors during exposure therapy (PDF)",
+                  "url": "https://jonabram.web.unc.edu/wp-content/uploads/sites/2968/2012/07/Blakey-Abramowitz-2016-Safety-Behavior-Review.pdf"
+                },
+                {
+                  "titulo": "Olatunji y otros (2011): The effects of safety behaviors on health anxiety",
+                  "url": "https://ro.uow.edu.au/sspapers/2094"
+                },
+                {
+                  "titulo": "Sy y otros (2011): Failure to replicate the deleterious effects of safety behaviors",
+                  "url": "https://ro.uow.edu.au/sspapers/2096"
+                },
+                {
+                  "titulo": "Gangemi, Mancini y van den Hout (2012): Behavior as information (PDF)",
+                  "url": "https://www.apc.it/wp-content/uploads/2013/06/2012-behavior-as-information.-if-i-avoid-then-there-must-be-a-danger.pdf"
+                },
+                {
+                  "titulo": "Dabas y otros (2023): safety behaviours, likeability and authenticity in social anxiety",
+                  "url": "https://www.cambridge.org/core/product/DF904C2C3D6971111045C3C620C2C53B/core-reader"
+                },
+                {
+                  "titulo": "Leigh, Chiu y Clark (2021): self-focused attention and safety behaviours in adolescents (PsyPost)",
+                  "url": "https://www.psypost.org/2021/09/focusing-on-oneself-and-using-safety-behaviors-during-conversation-unintentionally-perpetuates-social-anxiety-61894"
+                },
+                {
+                  "titulo": "Clark y otros (2006): Cognitive therapy versus exposure and applied relaxation in social phobia",
+                  "url": "https://ora.ox.ac.uk/objects/uuid:76bb2579-2c73-4188-aea9-d23ea66506b6"
+                },
+                {
+                  "titulo": "Smartphones may serve as digital security blankets (Science News Explores, 2018)",
+                  "url": "https://www.snexplores.org/article/smartphones-may-serve-digital-security-blankets"
+                },
+                {
+                  "titulo": "Goetz (2013): preventative and restorative safety behaviors on contamination fear",
+                  "url": "https://minds.wisc.edu/items/c0430d95-052f-4dd8-a8bf-0809e8eebc71/full"
+                },
+                {
+                  "titulo": "Zech, Patel y Cougle (2025): Safety behavior fading for social anxiety, ensayo aleatorizado",
+                  "url": "https://www.sciencedirect.com/science/article/abs/pii/S0887618525001045"
+                },
+                {
+                  "titulo": "Testing judicious use of safety behaviors during exposure (Cognitive Therapy and Research, 2025)",
+                  "url": "https://ifp.nyu.edu/2025/journal-article-abstracts/s10608-025-10667-1/"
+                }
+              ]
             },
             {
               "id": "an03",
