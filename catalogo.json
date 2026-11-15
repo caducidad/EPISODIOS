@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "an",
+    "ultima": "sc",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -200,10 +200,69 @@
             {
               "id": "sc03",
               "titulo": "Mao contra los gorriones",
-              "descripcion": "La campaña para exterminar a los gorriones, las plagas de langosta y la Gran Hambruna china.",
-              "estado": "pendiente",
+              "descripcion": "La guerra de 1958 contra los gorriones, los científicos que se atrevieron a abrir sus estómagos, las plagas y la Gran Hambruna china. Y qué dice el estudio de 2025 que por fin midió cuánto pesaron los gorriones en la tragedia.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ligero"
+              "estilo": "ligero",
+              "archivo": "media/sc03-mao-gorriones.mp4",
+              "audio": "media/sc03-mao-gorriones.m4a",
+              "guion": "guiones/sc03-mao-gorriones.txt",
+              "duracion": "34 min",
+              "fecha": "2026-11-15",
+              "fuentes": [
+                {
+                  "titulo": "Eliminate Sparrows campaign (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Eliminate_Sparrows_campaign"
+                },
+                {
+                  "titulo": "Four Pests campaign (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Four_Pests_campaign"
+                },
+                {
+                  "titulo": "Frank, Wang, Wang, Wang y You (2025): Campaigning for Extinction (Universidad de Chicago)",
+                  "url": "https://climate.uchicago.edu/wp-content/uploads/2025/08/Campaigning-for-Extinction-Eradication-of-Sparrows-and-the-Great-Famine-in-China.pdf"
+                },
+                {
+                  "titulo": "Resumen del estudio de 2025 (EPIC, Universidad de Chicago)",
+                  "url": "https://epic.uchicago.edu/insights/campaigning-for-extinction-eradication-of-sparrows-and-the-great-famine-in-china/"
+                },
+                {
+                  "titulo": "Crónica de la campaña en Pekín, Shanghái y Cantón (Aisixiang)",
+                  "url": "https://www.aisixiang.com/data/10223.html"
+                },
+                {
+                  "titulo": "The man who saved sparrows from catastrophe: Zheng Zuoxin (CGTN)",
+                  "url": "https://news.cgtn.com/news/3d3d514f34596a4e32457a6333566d54/index.html"
+                },
+                {
+                  "titulo": "Tso-Hsin Cheng: the founder of modern ornithology in China (PMC)",
+                  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7719139/"
+                },
+                {
+                  "titulo": "A Soviet scientist on the Four Pests campaign, Mijaíl Klochko (Alpha History)",
+                  "url": "https://alphahistory.com/chineserevolution/a-soviet-scientist-on-the-four-pests-campaign-1964/"
+                },
+                {
+                  "titulo": "China's worst self-inflicted environmental disaster (Gizmodo)",
+                  "url": "https://gizmodo.com/china-s-worst-self-inflicted-environmental-disaster-th-5927112"
+                },
+                {
+                  "titulo": "Great Chinese Famine (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Great_Famine_(China)"
+                },
+                {
+                  "titulo": "China's serial sparrow sorrows (The World of Chinese)",
+                  "url": "https://theworldofchinese.com/2017/09/chinas-serial-sparrow-sorrows"
+                },
+                {
+                  "titulo": "House Sparrow History (Sialis)",
+                  "url": "https://www.sialis.org/hosphistory/"
+                },
+                {
+                  "titulo": "Hong Kong Sparrow Census 2025 (HKBWS)",
+                  "url": "https://cms.hkbws.org.hk/cms/en/hkbws/work/resarch/sparrow-tw/sparrowcensus2025-eng"
+                }
+              ]
             },
             {
               "id": "sc04",
