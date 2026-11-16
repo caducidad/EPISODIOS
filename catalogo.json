@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "sc",
+    "ultima": "sh",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -431,10 +431,85 @@
             {
               "id": "sh03",
               "titulo": "Lorenzo Valla y la gran falsificación",
-              "descripcion": "Cómo el análisis del latín destapó que la Donación de Constantino era falsa.",
-              "estado": "pendiente",
+              "descripcion": "Cómo el análisis del latín destapó que la Donación de Constantino, el documento que sostuvo siete siglos de poder papal, era una falsificación. Y por qué el método de Valla sigue desenmascarando falsificaciones hoy.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ligero"
+              "estilo": "ligero",
+              "archivo": "media/sh03-lorenzo-valla.mp4",
+              "audio": "media/sh03-lorenzo-valla.m4a",
+              "guion": "guiones/sh03-lorenzo-valla.txt",
+              "duracion": "34 min",
+              "fecha": "2026-11-16",
+              "fuentes": [
+                {
+                  "titulo": "Lorenzo Valla (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Lorenzo_Valla"
+                },
+                {
+                  "titulo": "Lorenzo Valla (Stanford Encyclopedia of Philosophy)",
+                  "url": "https://plato.stanford.edu/ENTRiES/lorenzo-valla"
+                },
+                {
+                  "titulo": "Lorenzo Valla (Catholic Encyclopedia, New Advent)",
+                  "url": "https://www.newadvent.org/cathen/15257a.htm"
+                },
+                {
+                  "titulo": "Valla, tratado sobre la Donación de Constantino, ed. y trad. de C. B. Coleman (Proyecto Gutenberg)",
+                  "url": "https://gutenberg.org/files/70092/70092-h/70092-h.htm"
+                },
+                {
+                  "titulo": "Introducción de Coleman al tratado de Valla (Hanover College)",
+                  "url": "https://history.hanover.edu/texts/vallaintro.html"
+                },
+                {
+                  "titulo": "The fake medieval Donation of Constantine (Brewminate)",
+                  "url": "https://brewminate.com/the-fake-medieval-donation-of-constantine/"
+                },
+                {
+                  "titulo": "Donation of Constantine Exposed (EBSCO Research Starters)",
+                  "url": "https://www.ebsco.com/research-starters/history/donation-constantine-exposed"
+                },
+                {
+                  "titulo": "Church History's Biggest Hoax (Christian History Institute)",
+                  "url": "https://christianhistoryinstitute.org/magazine/article/church-historys-biggest-hoax"
+                },
+                {
+                  "titulo": "Johannes Fried, Donation of Constantine and Constitutum Constantini (De Gruyter, 2007)",
+                  "url": "https://ancientworldonline.blogspot.com/2024/07/donation-of-constantine-and-constitutum.html"
+                },
+                {
+                  "titulo": "Crítica a la tesis de Fried (blog Pseudo-Isidore)",
+                  "url": "https://pseudoisidore.blogspot.com/2011/08/johannes-fried-donation-of-constantine.html"
+                },
+                {
+                  "titulo": "Dante and the Donation of Constantine, Quattro Coronati (Duke University)",
+                  "url": "https://sites.duke.edu/danteslibrary/dante-and-the-donation-of-constantine-quattro-coronati-rome"
+                },
+                {
+                  "titulo": "The Donation of Constantine, pintura (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/The_Donation_of_Constantine_(painting)"
+                },
+                {
+                  "titulo": "Restauración de la Sala de Constantino (Museos Vaticanos, 2025)",
+                  "url": "https://www.museivaticani.va/content/museivaticani/en/eventi-e-novita/iniziative/Eventi/2025/restauro-sala-costantino.html"
+                },
+                {
+                  "titulo": "Lorenzo Valla, Reformer (First Things)",
+                  "url": "https://firstthings.com/lorenzo-valla-reformer/"
+                },
+                {
+                  "titulo": "Schaff, History of the Christian Church, vol. VII (CCEL)",
+                  "url": "https://ccel.org/ccel/schaff/hcc7.ii.iii.xiii.html"
+                },
+                {
+                  "titulo": "The Hitler Diaries (Museum of Hoaxes)",
+                  "url": "https://hoaxes.org/archive/permalink/the_hitler_diaries"
+                },
+                {
+                  "titulo": "Beinecke Library's Vinland Map determined to be a fake (Yale, 2021)",
+                  "url": "https://library.yale.edu/news/beinecke-librarys-vinland-map-determined-be-fake?page=1"
+                }
+              ]
             },
             {
               "id": "sh04",
