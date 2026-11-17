@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "sh",
+    "ultima": "fi",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -1187,10 +1187,85 @@
             {
               "id": "fi0-3",
               "titulo": "Los debates que nunca se cierran",
-              "descripcion": "Ser y cambio, razón y experiencia, mente y cuerpo, libertad y determinismo, verdad y relativismo.",
-              "estado": "pendiente",
+              "descripcion": "Los cinco grandes debates que atraviesan la filosofía: el río de Heráclito y el barco de Teseo; Locke contra Leibniz y la pregunta de Molyneux, respondida en la India en 2011; la objeción de Isabel de Bohemia a Descartes, la habitación de Mary y la apuesta entre Koch y Chalmers; el demonio de Laplace y el experimento de Libet revisado; Protágoras, la peritropé de Platón y el caso Sokal.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ilustrado"
+              "estilo": "ilustrado",
+              "archivo": "media/fi0-3-debates-que-nunca-se-cierran.mp4",
+              "audio": "media/fi0-3-debates-que-nunca-se-cierran.m4a",
+              "guion": "guiones/fi0-3-debates-que-nunca-se-cierran.txt",
+              "duracion": "34 min",
+              "fecha": "2026-11-17",
+              "fuentes": [
+                {
+                  "titulo": "Panta rhei y los fragmentos del río de Heráclito (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Panta_rhei_(doctrine)"
+                },
+                {
+                  "titulo": "El barco de Teseo: Plutarco y Hobbes (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Ship_of_Theseus"
+                },
+                {
+                  "titulo": "Molyneux's Problem (Stanford Encyclopedia of Philosophy)",
+                  "url": "https://plato.stanford.edu/entries/molyneux-problem/"
+                },
+                {
+                  "titulo": "MIT News: los recién operados del Proyecto Prakash y la pregunta de Molyneux (2011)",
+                  "url": "https://news.mit.edu/2011/vision-problem-0411.html"
+                },
+                {
+                  "titulo": "Isabel de Bohemia contra Descartes: la correspondencia de 1643 (Eric Schwitzgebel)",
+                  "url": "https://schwitzsplinters.blogspot.com/2023/09/elisabeth-of-bohemia-1-descartes-0.html"
+                },
+                {
+                  "titulo": "Descartes and the Discovery of the Mind-Body Problem (MIT Press Reader)",
+                  "url": "https://thereader.mitpress.mit.edu/discovery-mind-body-problem"
+                },
+                {
+                  "titulo": "The Knowledge Argument Against Physicalism (Internet Encyclopedia of Philosophy)",
+                  "url": "https://iep.utm.edu/know-arg/"
+                },
+                {
+                  "titulo": "La apuesta de Koch y Chalmers (WION, 2023)",
+                  "url": "https://www.wionews.com/trending/in-1998-a-bet-was-made-between-a-neuroscientist-and-philosopher-25-years-after-we-have-a-winner-609300"
+                },
+                {
+                  "titulo": "Carl Zimmer: dos grandes teorías de la conciencia, frente a frente (The New York Times, 2023)",
+                  "url": "https://carlzimmer.com/2-leading-theories-of-consciousness-square-off/"
+                },
+                {
+                  "titulo": "Adversarial testing of global neuronal workspace and integrated information theories (Nature, 2025)",
+                  "url": "https://research.birmingham.ac.uk/en/publications/adversarial-testing-of-global-neuronal-workspace-and-integrated-i/"
+                },
+                {
+                  "titulo": "Sci.News: siete años de experimento sobre la conciencia (2025)",
+                  "url": "https://www.sci.news/othersciences/neuroscience/consciousness-13871.html"
+                },
+                {
+                  "titulo": "El demonio de Laplace (Information Philosopher)",
+                  "url": "https://www.informationphilosopher.com/freedom/laplaces_demon.2.en.html"
+                },
+                {
+                  "titulo": "Revisión sobre Libet, Schurger y el potencial de preparación (PMC)",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8192467"
+                },
+                {
+                  "titulo": "Daniel C. Dennett, 1942-2024 (NCSE)",
+                  "url": "https://ncse.ngo/daniel-c-dennett-philosopher-and-evolution-enthusiast-dies-82"
+                },
+                {
+                  "titulo": "Peritrope: el argumento que se vuelve contra sí mismo (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Peritrope"
+                },
+                {
+                  "titulo": "El caso Sokal (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Sokal_affair"
+                },
+                {
+                  "titulo": "Resultados de la encuesta PhilPapers 2020",
+                  "url": "https://survey2020.philpeople.org/survey/results/all"
+                }
+              ]
             },
             {
               "id": "fi0-4",

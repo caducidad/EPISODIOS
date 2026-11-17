@@ -1,0 +1,206 @@
+@@ s01 | titulo | {"t": "Los debates que nunca se cierran", "s": "Temporada 0 · Episodio 3"}
+Los debates que nunca se cierran. Historia de la filosofía. Temporada cero, episodio tres.
+
+@@ s02 | fecha | {"a": "1998", "t": "Una apuesta en un bar de Bremen", "s": "Un neurocientífico contra un filósofo"}
+En mil novecientos noventa y ocho, al terminar un congreso sobre la conciencia en la ciudad alemana de Bremen, dos de los ponentes acabaron la noche en un bar. Uno era el neurocientífico Christof Koch, que llevaba años buscando en el cerebro el rastro de la experiencia consciente. El otro era el filósofo australiano David Chalmers, que andaba convencido de que en ese asunto había algo que la ciencia del cerebro, por sí sola, no iba a poder explicar.
+
+@@ s03 | ilus | {"fig": "apuesta", "pie": "Bremen, 1998: veinticinco años y una caja de vino"}
+La conversación se fue calentando y terminó en apuesta. Koch sostuvo que en veinticinco años alguien habría encontrado el mecanismo por el que las neuronas producen la conciencia, una especie de firma neuronal clara e inequívoca. Chalmers dijo que no. El que perdiera pagaría una caja de buen vino. Volveremos a esa apuesta más adelante, porque tuvo un final muy reciente y bastante revelador.
+
+@@ s04 | rotulo | {"t": "¿Por qué hay preguntas que no se cierran?", "s": "Algunas llevan abiertas dos mil quinientos años"}
+De momento, basta con fijarse en lo que tiene de curioso la escena. Dos personas muy inteligentes, que conocían los mismos datos, discutían sobre una pregunta que en realidad tiene más de dos mil años. En el episodio anterior desplegamos el mapa de las grandes regiones de la filosofía. Hoy vamos a recorrer las cinco grandes discusiones que atraviesan ese mapa de punta a punta, y que, por mucho que avance el conocimiento, siguen abiertas.
+
+@@ s05 | ilus | {"fig": "cinco", "pie": "Cinco frentes abiertos"}
+Son cinco parejas enfrentadas. El ser y el cambio, o si el mundo está hecho de cosas que permanecen o de procesos que fluyen. La razón y la experiencia, o de dónde sale lo que sabemos. La mente y el cuerpo, o cómo encaja la conciencia en un mundo de materia. La libertad y el determinismo, o si de verdad elegimos. Y la verdad y el relativismo, o si hay hechos que no dependen de quién los mira.
+
+@@ s06 | rotulo | {"t": "Recurrentes, no inútiles", "s": "Cada vuelta deja algo aprendido"}
+Conviene aclarar algo desde el principio. Que un debate no se cierre no quiere decir que no sirva para nada, ni que todo el mundo siga diciendo lo mismo que hace veinticinco siglos. Cada vez que la discusión da una vuelta, se descartan respuestas, se afinan las preguntas y a veces nace una ciencia entera. Lo que no ocurre es que alguien gane por completo. Veremos por qué al final, después de recorrer los cinco frentes.
+
+@@ s07 | capitulo | {"n": "Primer debate", "t": "El ser y el cambio"}
+Empezamos por el más antiguo de todos, que nació en las colonias griegas hace unos dos mil quinientos años. A un lado del Egeo, en la ciudad jonia de Éfeso, vivía Heráclito, un aristócrata solitario y altivo que escribía en sentencias breves y enigmáticas, tanto que ya en la Antigüedad lo apodaban el oscuro. Al otro lado del mar, en Elea, una colonia griega del sur de Italia, vivía Parménides, que escribió un largo poema en versos hexámetros.
+
+@@ s08 | ilus | {"fig": "rio", "pie": "Heráclito, fragmento doce: «aguas distintas fluyen sobre los que entran en los mismos ríos»"}
+De Heráclito todo el mundo conoce una frase, que no te puedes bañar dos veces en el mismo río. Pero lo más probable es que no la escribiera así. Los especialistas creen que el único fragmento auténtico sobre el río es otro, que dice más o menos que sobre los que entran en los mismos ríos fluyen aguas siempre distintas. Y la fórmula todo fluye, panta rei, no aparece literalmente hasta Simplicio, un comentarista del siglo sexto después de Cristo.
+
+@@ s09 | rotulo | {"t": "El río sigue siendo el mismo", "s": "…precisamente porque el agua cambia"}
+La diferencia es más que un detalle de erudito. La versión auténtica no dice que el río deje de ser el mismo. Dice algo más sutil y más interesante, que el río sigue siendo el mismo precisamente porque sus aguas no dejan de cambiar. Un río estancado ya no sería un río, sino una charca. Para Heráclito, la estabilidad de las cosas es el resultado de un equilibrio de tensiones, como la cuerda de un arco o la llama de una lámpara, que permanece mientras consume aceite.
+
+@@ s10 | persona | {"n": "Parménides de Elea", "r": "El ser es, el no ser no es", "a": "nacido hacia 515 a. C."}
+Parménides llegó a la conclusión contraria por un camino puramente lógico. Su poema cuenta que una diosa le enseña dos vías. Una es la vía de lo que es, y la otra la de lo que no es, que resulta impensable, porque no se puede pensar ni decir la nada. De ahí sacó consecuencias asombrosas. Si algo cambiara, tendría que pasar de lo que es a lo que no es, o al revés. Por tanto, el cambio, el nacimiento y la pluralidad serían ilusiones de los sentidos.
+
+@@ s11 | cita | {"q": "Es necesario decir y pensar que lo que es, es; pues es posible ser, y la nada no es.", "a": "Parménides, Poema, fragmento seis (paráfrasis)"}
+Es fácil sonreír ante esta conclusión, pero Parménides nos dejó una herramienta que la filosofía nunca abandonó. Se tomó en serio la idea de que la razón puede contradecir a los sentidos, y de que, cuando eso ocurre, quizá sea la razón la que tiene la última palabra. Toda la ciencia moderna, que nos dice que la mesa maciza es casi toda espacio vacío, hereda algo de esa audacia.
+
+@@ s12 | ilus | {"fig": "aquiles", "pie": "Zenón: Aquiles nunca alcanza a la tortuga… en apariencia"}
+Su discípulo Zenón de Elea defendió al maestro con paradojas que todavía se enseñan. La más famosa es la de Aquiles y la tortuga. Si la tortuga sale con ventaja, Aquiles tiene que llegar primero al punto donde ella estaba. Para entonces, la tortuga habrá avanzado un poco. Cuando Aquiles llegue a ese nuevo punto, ella habrá avanzado otro poco, y así infinitas veces. Parece que el corredor más rápido de Grecia no podrá alcanzarla nunca.
+
+@@ s13 | rotulo | {"t": "Infinitos pasos, distancia finita", "s": "Las matemáticas de las series lo resolvieron en el siglo diecinueve"}
+Aristóteles ya respondió que el tiempo, igual que el espacio, se puede dividir infinitamente, así que hay infinitos instantes para recorrer infinitos tramos. Siglos después, las matemáticas de las series y los límites mostraron que una suma de infinitas distancias cada vez más pequeñas puede dar un resultado finito. Muchos dan la paradoja por resuelta. Otros filósofos sostienen que las matemáticas describen el resultado, pero no explican cómo se completa de hecho una infinidad de pasos.
+
+@@ s14 | ilus | {"fig": "barco", "pie": "El barco de Teseo, según Plutarco y según Hobbes"}
+El debate entre el ser y el cambio sobrevive hoy sobre todo en una pregunta, la de qué hace que algo siga siendo lo mismo a lo largo del tiempo. Plutarco cuenta que los atenienses conservaron el barco del héroe Teseo hasta la época de Demetrio de Falero, a finales del siglo cuarto antes de Cristo, sustituyendo las tablas podridas por otras nuevas. Y añade que los filósofos lo usaban como ejemplo para discutir si seguía siendo el mismo barco.
+
+@@ s15 | rotulo | {"t": "¿Cuál es el barco de Teseo?", "s": "Hobbes, mil seiscientos cincuenta y cinco"}
+En mil seiscientos cincuenta y cinco, Thomas Hobbes complicó el problema. Supongamos que alguien guarda todas las tablas viejas que se van retirando y, cuando las tiene todas, vuelve a montar con ellas un barco. Ahora hay dos barcos en el puerto. Uno tiene la forma y la historia continua del original, y el otro tiene toda su madera. ¿Cuál de los dos es el barco de Teseo? Cada respuesta parece razonable, y las dos a la vez no pueden serlo.
+
+@@ s16 | rotulo | {"t": "Tú también eres un barco de Teseo", "s": "Las células y los átomos se renuevan; la persona sigue"}
+Lo inquietante es que la pregunta no va solo de barcos. Buena parte de las células de nuestro cuerpo se renueva a lo largo de la vida, y los átomos que nos forman se intercambian sin cesar con el entorno. Y sin embargo decimos que la persona de las fotos del colegio es la misma que hoy se mira al espejo. ¿Qué es lo que permanece? ¿El cuerpo, la memoria, el carácter, o una continuidad que no es ninguna de esas cosas por separado?
+
+@@ s17 | ilus | {"fig": "encuesta_identidad", "pie": "Encuesta PhilPapers dos mil veinte: identidad personal"}
+La filosofía actual sigue dividida. En la gran encuesta PhilPapers de dos mil veinte, que preguntó a casi mil ochocientos filósofos profesionales, el cuarenta y cuatro por ciento se inclinaba por la visión psicológica, según la cual lo que nos hace los mismos es la continuidad de recuerdos y rasgos mentales. Un diecinueve por ciento prefería la visión biológica, la continuidad del organismo. Y casi un quince por ciento creía que la identidad es un hecho adicional, irreducible a lo uno y a lo otro.
+
+@@ s18 | rotulo | {"t": "Cosas o procesos", "s": "La vieja disputa vive en la física y en la biología"}
+Ese es el rastro de Heráclito y Parménides en el siglo veintiuno. La pregunta de si el mundo está hecho de cosas que permanecen o de procesos que fluyen vuelve en la biología, cuando se describe un organismo como un torbellino que mantiene su forma mientras la materia lo atraviesa.
+
+@@ s19 | capitulo | {"n": "Segundo debate", "t": "La razón y la experiencia"}
+El segundo debate pregunta de dónde sale lo que sabemos. Una tradición, la de los racionalistas, sostiene que la razón por sí sola puede conocer verdades importantes, sin necesidad de mirar el mundo. Otra tradición, la de los empiristas, sostiene que todo conocimiento procede en último término de los sentidos. El germen de la disputa ya estaba en Grecia, pero la forma clásica la adquirió en los siglos diecisiete y dieciocho.
+
+@@ s20 | comparar | {"izq": ["Racionalismo", "La razón descubre verdades", "Ideas innatas", "Modelo: las matemáticas", "Descartes, Spinoza, Leibniz"], "der": ["Empirismo", "Todo viene de los sentidos", "La mente, papel en blanco", "Modelo: la observación", "Locke, Berkeley, Hume"]}
+Del lado racionalista estaban René Descartes, Baruch Spinoza y Gottfried Leibniz, deslumbrados por la geometría, donde unas pocas verdades evidentes permiten demostrar teoremas que valen para siempre. Del lado empirista estaban los británicos John Locke, George Berkeley y David Hume. Locke escribió que la mente, al nacer, es como un papel en blanco, y que todo lo que hay en ella lo ha escrito la experiencia.
+
+@@ s21 | cita | {"q": "Nada hay en el entendimiento que no haya estado antes en los sentidos… excepto el entendimiento mismo.", "a": "Leibniz, Nuevos ensayos, respondiendo a Locke"}
+Leibniz le contestó con un comentario muy agudo. Retomó una vieja máxima escolástica según la cual nada hay en el entendimiento que no haya estado antes en los sentidos, y le añadió una coletilla, excepto el entendimiento mismo. Es decir, para recibir experiencias hace falta una mente con cierta estructura previa, igual que para que una estatua salga de un bloque de mármol ayuda que la piedra tenga ya sus vetas.
+
+@@ s22 | persona | {"n": "William Molyneux", "r": "Científico irlandés. Su esposa había quedado ciega", "a": "1656 – 1698"}
+Lo bonito de este debate es que en un momento dado alguien lo convirtió en una pregunta casi experimental. Se llamaba William Molyneux, era un científico y político irlandés, y su esposa había perdido la vista en el primer año de matrimonio. El siete de julio de mil seiscientos ochenta y ocho le escribió a Locke para plantearle un problema. Locke no le contestó. Molyneux insistió con una segunda carta en mil seiscientos noventa y tres.
+
+@@ s23 | ilus | {"fig": "molyneux", "pie": "El problema de Molyneux: ¿reconocerá con la vista lo que conocía con las manos?"}
+Imaginemos a un hombre ciego de nacimiento que ha aprendido a distinguir con las manos un cubo y una esfera del mismo metal. Supongamos ahora que recupera la vista, y que le ponemos delante los dos objetos sin dejarle tocarlos. ¿Sabrá decir, solo con mirar, cuál es el cubo y cuál la esfera? Molyneux respondió que no, y Locke, que publicó la pregunta en la segunda edición de su Ensayo en mil seiscientos noventa y cuatro, estuvo de acuerdo con él.
+
+@@ s24 | rotulo | {"t": "Tres siglos de discusión sin datos", "s": "Berkeley, Leibniz, Diderot… y casos dudosos"}
+La pregunta se convirtió en un clásico. Si la respuesta era no, las ideas de la vista y las del tacto serían independientes y habría que aprender a relacionarlas, como querían los empiristas. Si era sí, la mente tendría una idea de la forma común a los dos sentidos. Berkeley, en mil setecientos nueve, defendió un no aún más radical. Leibniz y otros pensaron que sí. Hubo algunos casos médicos, como el de un muchacho operado de cataratas en Londres en mil setecientos veintiocho, pero eran difíciles de interpretar.
+
+@@ s25 | fecha | {"a": "2011", "t": "Proyecto Prakash, India", "s": "Cinco jóvenes que veían por primera vez"}
+La pregunta tuvo que esperar más de trescientos años. En dos mil once, un equipo del Instituto Tecnológico de Massachusetts encabezado por Pawan Sinha y Richard Held publicó un estudio con cinco jóvenes indios de entre ocho y diecisiete años. Habían nacido ciegos por cataratas congénitas o por una opacidad de la córnea, y recuperaron la vista gracias al Proyecto Prakash, una iniciativa que opera gratuitamente a niños con ceguera tratable. Prakash, en sánscrito, significa luz.
+
+@@ s26 | ilus | {"fig": "prakash", "pie": "Held, Sinha y colaboradores, dos mil once: al principio, casi al azar"}
+A las cuarenta y ocho horas de la operación les hicieron pruebas. Reconocían bien con la vista lo que habían visto antes, y con el tacto lo que habían tocado. Pero cuando tenían que reconocer con la vista un objeto que solo habían tocado, acertaban poco más que si lo hubieran echado a suertes. La respuesta a Molyneux, en ese primer momento, parecía ser que no. Sin embargo, en pocos días, sin ningún entrenamiento especial, varios de ellos mejoraron de forma espectacular.
+
+@@ s27 | rotulo | {"t": "Ni papel en blanco ni ideas innatas", "s": "Una mente preparada para aprender muy deprisa"}
+¿Quién ganó entonces, Locke o Leibniz? En cierto modo, ninguno de los dos. La conexión entre la vista y el tacto no venía de serie, pero se aprendía en unos días, mucho más rápido que otras capacidades visuales, como reconocer caras, que les costaba meses. Es exactamente el tipo de resultado que mantiene vivo el debate. La experiencia es necesaria, y a la vez la mente no parece un papel en blanco, sino algo preparado para aprender ciertas cosas con una facilidad asombrosa.
+
+@@ s28 | cita | {"q": "Los pensamientos sin contenido son vacíos; las intuiciones sin conceptos son ciegas.", "a": "Kant, Crítica de la razón pura, 1781"}
+Ya en el siglo dieciocho, Immanuel Kant había intentado una gran síntesis. Para él, todo conocimiento empieza con la experiencia, pero no todo procede de ella, porque la mente pone las formas con las que organiza lo que recibe, como el espacio, el tiempo o la causalidad. Su fórmula se ha citado mil veces. Los pensamientos sin contenido son vacíos, y las intuiciones sin conceptos son ciegas. Hacen falta las dos cosas.
+
+@@ s29 | ilus | {"fig": "encuesta_conocimiento", "pie": "PhilPapers dos mil veinte: ¿hay conocimiento a priori?"}
+La síntesis de Kant no cerró la discusión, pero cambió sus términos. Hoy casi nadie defiende un racionalismo o un empirismo puros, y la pregunta se ha desplazado a cosas más concretas. ¿Son las matemáticas conocimiento a priori, independiente de la experiencia? En la encuesta de dos mil veinte, alrededor del setenta y tres por ciento de los filósofos respondió que sí existe ese tipo de conocimiento. Pero cuando se les preguntó en general, los empiristas superaban a los racionalistas.
+
+@@ s30 | rotulo | {"t": "La vieja pregunta, en máquinas", "s": "¿Cuánto hay que traer de serie para aprender?"}
+Y el debate ha encontrado un escenario nuevo en la inteligencia artificial. Los grandes modelos de lenguaje aprenden a partir de cantidades enormes de texto, lo que suena muy empirista, pero su arquitectura impone estructuras que condicionan qué pueden aprender y qué no. La discusión sobre cuánto conocimiento previo necesita un sistema para aprender, sea un niño o una máquina, es Locke contra Leibniz con otro vocabulario.
+
+@@ s31 | capitulo | {"n": "Tercer debate", "t": "La mente y el cuerpo"}
+El tercer debate es probablemente el más famoso, y también el que motivó la apuesta del bar de Bremen. La pregunta es cómo encaja la mente en el mundo físico. Sabemos que pensamos, sentimos y recordamos, y sabemos que tenemos un cerebro de algo menos de kilo y medio hecho de neuronas. Lo que no sabemos explicar del todo es la relación entre una cosa y la otra.
+
+@@ s32 | rotulo | {"t": "Dos sustancias", "s": "Descartes: la cosa que piensa y la cosa extensa"}
+La forma moderna del problema se la debemos a Descartes. Para él, el mundo contiene dos clases de sustancias completamente distintas. Una es la materia, que ocupa espacio y se rige por leyes mecánicas. La otra es la mente, que piensa y no ocupa espacio alguno. Es lo que se llama dualismo. Tiene la ventaja de respetar la intuición de que la conciencia es algo muy diferente de un trozo de carne. Pero deja abierta una pregunta muy seria.
+
+@@ s33 | persona | {"n": "Isabel de Bohemia", "r": "Princesa del Palatinado. Puso a Descartes contra las cuerdas", "a": "1618 – 1680"}
+Quien la formuló con más precisión fue una mujer de veinticuatro años, la princesa Isabel de Bohemia, hija del rey exiliado Federico del Palatinado, que vivía con su familia en La Haya. En mayo de mil seiscientos cuarenta y tres escribió a Descartes una carta breve y demoledora. Le preguntaba cómo puede el alma, que según él es una sustancia que solo piensa y no tiene extensión, mover el cuerpo y producir acciones voluntarias.
+
+@@ s34 | ilus | {"fig": "glandula", "pie": "¿Cómo empuja lo que no ocupa espacio?"}
+El argumento de Isabel era sencillo. Todo movimiento, según la física de la época, se produce por contacto, y el contacto exige extensión. Si el alma no tiene extensión, no puede tocar nada, y entonces no se entiende cómo mueve un brazo. Descartes respondió que la unión del alma y el cuerpo es una noción primitiva que se entiende por sí misma, y que no conviene dedicar a la metafísica más que unas pocas horas al año. Más tarde propuso que la interacción ocurría en la glándula pineal, en el centro del cerebro.
+
+@@ s35 | cita | {"q": "Me resultaría más fácil conceder materia y extensión al alma que la capacidad de mover un cuerpo a un ser inmaterial.", "a": "Isabel de Bohemia a Descartes, 1643 (paráfrasis)"}
+La princesa no quedó convencida. En una de sus cartas de aquel verano le dijo, más o menos, que le resultaría más fácil atribuir materia y extensión al alma que aceptar que algo inmaterial pudiera mover un cuerpo. La correspondencia siguió durante años, y Descartes le dedicó sus Principios de la filosofía. Pero la objeción de Isabel nunca recibió una respuesta satisfactoria, y es la razón principal por la que hoy muy pocos filósofos son dualistas al estilo cartesiano.
+
+@@ s36 | rotulo | {"t": "La mente es lo que hace el cerebro", "s": "El fisicalismo, la postura mayoritaria"}
+La alternativa más extendida es el fisicalismo, la idea de que la mente no es una sustancia aparte, sino lo que hace el cerebro, igual que la digestión es lo que hace el estómago. Tiene a su favor un siglo de neurociencia. Una lesión en una zona concreta del cerebro puede borrar la capacidad de reconocer caras, una sustancia química puede cambiar el estado de ánimo, y un estímulo eléctrico puede provocar un recuerdo. La mente depende del cerebro de mil maneras.
+
+@@ s37 | ilus | {"fig": "mary", "pie": "La habitación de Mary, Frank Jackson, mil novecientos ochenta y dos"}
+Y sin embargo hay algo que se resiste. En mil novecientos ochenta y dos, el filósofo australiano Frank Jackson propuso un experimento mental famoso. Mary es una científica brillante que ha vivido siempre encerrada en una habitación en blanco y negro, y que sabe absolutamente todo lo que la física y la neurociencia pueden decir sobre los colores. Un día sale y ve por primera vez un tomate maduro. ¿Aprende algo nuevo? Parece que sí, que aprende qué se siente al ver el rojo.
+
+@@ s38 | rotulo | {"t": "Hasta el autor cambió de opinión", "s": "Jackson se hizo fisicalista a finales de los noventa"}
+Si Mary aprende algo, entonces había hechos que no estaban en la física, y el fisicalismo sería incompleto. Las respuestas han sido muy ingeniosas. Algunos dicen que Mary no aprende un hecho nuevo, sino una capacidad nueva, la de reconocer o imaginar el rojo. Otros, que conoce de otra manera algo que ya conocía. Lo más llamativo es que el propio Jackson cambió de opinión a finales de los años noventa y se convirtió en fisicalista. Su experimento, en cambio, siguió viviendo sin él.
+
+@@ s39 | rotulo | {"t": "El problema difícil de la conciencia", "s": "David Chalmers, Tucson, mil novecientos noventa y cuatro"}
+Unos años antes de la apuesta, en un congreso en Tucson, Chalmers había bautizado el núcleo del asunto como el problema difícil de la conciencia. Los problemas fáciles, dijo, son explicar cómo el cerebro discrimina estímulos, integra información o controla la conducta. Son dificilísimos en la práctica, pero sabemos qué aspecto tendría la solución. El problema difícil es otro. ¿Por qué todo ese procesamiento va acompañado de experiencia, de algo que se siente desde dentro?
+
+@@ s40 | ilus | {"fig": "cogitate", "pie": "Dos teorías, una prueba: la parte trasera del cerebro o la delantera"}
+Volvamos ahora al bar de Bremen. Para cuando se cumplió el plazo, en dos mil veintitrés, se estaba haciendo algo inédito, una colaboración adversarial. Los defensores de dos teorías rivales de la conciencia, la del espacio de trabajo global y la de la información integrada, acordaron de antemano qué resultados darían la razón a cada una. Luego, laboratorios independientes hicieron los experimentos. La primera teoría situaba la clave en la parte delantera del cerebro. La segunda, en la parte trasera.
+
+@@ s41 | rotulo | {"t": "Ninguna salió indemne", "s": "Nature, abril de dos mil veinticinco, doscientos cincuenta y seis participantes"}
+Los resultados se presentaron en junio de dos mil veintitrés en Nueva York, en el congreso anual de la Asociación para el Estudio Científico de la Conciencia, y se publicaron en la revista Nature en abril de dos mil veinticinco, con doscientos cincuenta y seis participantes. Ninguna de las dos teorías salió indemne. Algunas predicciones de cada una se cumplieron y otras fallaron. Y Koch, sobre el escenario, reconoció que había perdido la apuesta y regaló a Chalmers una caja de vino portugués.
+
+@@ s42 | rotulo | {"t": "Doble o nada, hasta dos mil cuarenta y ocho", "s": "Koch la renovó y Chalmers aceptó"}
+Koch no se dio por vencido del todo. Propuso doblar la apuesta para otros veinticinco años, hasta dos mil cuarenta y ocho, y Chalmers aceptó el reto. En la encuesta de dos mil veinte, algo más de la mitad de los filósofos se declaraban fisicalistas y alrededor de un tercio no. Y a la vieja pregunta se le ha sumado otra nueva, la de si una inteligencia artificial podría llegar a tener experiencias, que hoy discuten juntos filósofos, neurocientíficos e ingenieros.
+
+@@ s43 | capitulo | {"n": "Cuarto debate", "t": "La libertad y el determinismo"}
+El cuarto debate toca algo que nos afecta cada día. Cuando decidimos si nos levantamos a la primera o si respondemos con calma a una ofensa, tenemos la sensación de que podríamos haber hecho otra cosa. Pero también sabemos que todo lo que ocurre en el mundo tiene causas, y que nuestro cerebro forma parte del mundo. ¿Cómo pueden ser verdad las dos cosas a la vez?
+
+@@ s44 | ilus | {"fig": "laplace", "pie": "El demonio de Laplace, mil ochocientos catorce"}
+La imagen más rotunda del determinismo la dejó el matemático francés Pierre Simon Laplace, en mil ochocientos catorce. Imaginó una inteligencia que en un instante dado conociera todas las fuerzas que animan la naturaleza y la posición de todas sus partes. Si fuera capaz de analizar esos datos, nada sería incierto para ella, y el futuro, igual que el pasado, estaría presente ante sus ojos. La posteridad la llamó el demonio de Laplace.
+
+@@ s45 | rotulo | {"t": "El azar no es libertad", "s": "La física cuántica no resuelve el problema"}
+Hoy sabemos que el universo no es exactamente el reloj que imaginaba Laplace. Según la interpretación más común de la física cuántica, a escala atómica hay sucesos genuinamente aleatorios. Pero eso ayuda poco a la libertad. Si mi decisión dependiera de que un átomo se desintegre o no en mi cerebro, no sería más mía, sino simplemente fruto del azar. Ni un mundo de relojería ni una lotería parecen dejar sitio para una elección de verdad.
+
+@@ s46 | ilus | {"fig": "libertad", "pie": "Tres respuestas a una misma pregunta"}
+Ante este dilema hay tres grandes respuestas. Los deterministas duros dicen que, si todo está causado, la libertad es una ilusión. Los libertaristas, que no tienen nada que ver con el liberalismo económico, dicen que somos libres y que, por tanto, el determinismo no puede ser del todo cierto, al menos en nosotros. Y los compatibilistas dicen que la pregunta está mal planteada, porque libertad y determinismo pueden convivir.
+
+@@ s47 | cita | {"q": "Los hombres se creen libres porque son conscientes de sus acciones e ignoran las causas que las determinan.", "a": "Spinoza, Ética, 1677 (paráfrasis)"}
+Spinoza fue un determinista implacable. Escribió que los hombres se creen libres porque son conscientes de sus acciones e ignoran las causas que los determinan, igual que una piedra lanzada al aire, si pudiera pensar, creería que vuela por su propia voluntad. Los compatibilistas, en cambio, entienden la libertad de otra manera. Ser libre no sería escapar de las causas, sino actuar según los propios deseos y razones, sin que nadie nos obligue ni nos engañe.
+
+@@ s48 | ilus | {"fig": "libet", "pie": "Libet, mil novecientos ochenta y tres: el cerebro parecía adelantarse"}
+En mil novecientos ochenta y tres, el neurofisiólogo Benjamin Libet llevó la discusión al laboratorio. Pidió a unos voluntarios que flexionaran la muñeca cuando quisieran y que dijeran, mirando un reloj muy rápido, en qué momento habían sentido el deseo de moverse. Un electroencefalograma registraba a la vez una señal llamada potencial de preparación. Esa señal empezaba a crecer varios cientos de milisegundos antes de que los voluntarios fueran conscientes de su decisión.
+
+@@ s49 | rotulo | {"t": "¿Decide el cerebro antes que yo?", "s": "Durante décadas pareció una refutación de la libertad"}
+Durante décadas, el experimento se citó como la prueba de que el cerebro decide antes de que nos enteremos, y de que la voluntad consciente llega tarde, como un espectador que cree dirigir la función. El propio Libet era más prudente. Pensaba que la conciencia todavía podía vetar el movimiento en el último instante, lo que alguien resumió con una frase ingeniosa. No tendríamos libre albedrío, sino libre no albedrío.
+
+@@ s50 | rotulo | {"t": "Ruido que cruza un umbral", "s": "Schurger, dos mil doce: la señal quizá no es una decisión"}
+En dos mil doce, el neurocientífico Aaron Schurger y sus colegas propusieron una lectura muy distinta. El cerebro tiene una actividad de fondo que fluctúa al azar. Cuando alguien espera para moverse sin ningún motivo, el movimiento se produce cuando esa fluctuación cruza un umbral. Si se promedian muchos ensayos alineándolos con el momento del movimiento, aparece una rampa que parece una preparación, pero que no sería una decisión tomada de antemano.
+
+@@ s51 | rotulo | {"t": "Elegir sin motivo no es elegir de verdad", "s": "Con decisiones que importan, la señal casi desaparece"}
+Además, en el experimento de Libet no había nada que decidir de verdad, solo cuándo mover la muñeca sin ninguna razón. En dos mil diecinueve, un equipo encabezado por Uri Maoz comparó decisiones arbitrarias con decisiones que tenían consecuencias para los participantes, y encontró que la señal de preparación aparecía en las primeras, pero no en las segundas. La neurociencia no ha refutado la libertad, aunque sí nos ha obligado a precisar mejor qué entendemos por decidir.
+
+@@ s52 | ilus | {"fig": "encuesta_libertad", "pie": "PhilPapers dos mil veinte: libre albedrío"}
+El debate filosófico, entretanto, sigue vivo. En la encuesta de dos mil veinte, cerca del cincuenta y nueve por ciento de los filósofos eran compatibilistas, alrededor del diecinueve por ciento libertaristas y solo un once por ciento negaba que tengamos libre albedrío. Fuera de la filosofía académica la balanza es otra. El neurobiólogo Robert Sapolsky publicó en dos mil veintitrés un libro titulado Decidido, en el que defiende que no hay en nosotros ni una pizca de libertad.
+
+@@ s53 | rotulo | {"t": "Lo que está en juego: la responsabilidad", "s": "Elogiar, culpar, castigar, perdonar"}
+El gran defensor del compatibilismo en las últimas décadas, el estadounidense Daniel Dennett, murió en abril de dos mil veinticuatro sin haber cedido un milímetro. Para él, la libertad que merece la pena querer es la de criaturas capaces de anticipar, deliberar y corregirse, y esa libertad es perfectamente real en un mundo de causas. Lo que está en juego no es un tecnicismo, porque de la respuesta depende qué sentido tiene elogiar, culpar, castigar o perdonar.
+
+@@ s54 | capitulo | {"n": "Quinto debate", "t": "La verdad y el relativismo"}
+El último debate es quizá el que más se oye fuera de las aulas. Cada vez que alguien dice que eso será verdad para ti, pero no para mí, está tomando partido en una discusión que empezó en la Atenas del siglo quinto antes de Cristo. La pregunta es si hay verdades que valen para todos, con independencia de lo que piense cada uno, o si toda verdad es relativa a una persona, a una cultura o a una época.
+
+@@ s55 | ilus | {"fig": "dario", "pie": "Heródoto, Historias, libro tercero: griegos y calatios ante el rey Darío"}
+El historiador Heródoto cuenta una escena que resume el problema. El rey persa Darío reunió a unos griegos de su corte y les preguntó por cuánto dinero estarían dispuestos a comerse los cadáveres de sus padres. Respondieron que por nada del mundo. Luego llamó a unos indios llamados calatios, que tenían precisamente la costumbre de comerse a sus padres muertos, y les preguntó por cuánto los quemarían, como hacían los griegos. Los calatios gritaron horrorizados.
+
+@@ s56 | cita | {"q": "La costumbre es reina de todos.", "a": "Heródoto, citando a Píndaro"}
+La conclusión de Heródoto, citando al poeta Píndaro, es que la costumbre es reina de todos. Cada pueblo considera que sus propias costumbres son las mejores, y en esa observación se basa el relativismo cultural más moderado.
+
+@@ s57 | persona | {"n": "Protágoras de Abdera", "r": "El hombre es la medida de todas las cosas", "a": "hacia 490 – 420 a. C."}
+El sofista Protágoras, que enseñaba en Atenas en la época de Pericles, fue mucho más lejos. Su frase más famosa dice que el hombre es la medida de todas las cosas, de las que son en cuanto que son, y de las que no son en cuanto que no son. Platón la interpretó así. Si a mí el viento me parece frío y a ti templado, el viento es frío para mí y templado para ti, y no hay un hecho aparte de nuestras dos impresiones.
+
+@@ s58 | ilus | {"fig": "peritropo", "pie": "El argumento que se vuelve contra sí mismo, como una serpiente que se muerde la cola"}
+En su diálogo Teeteto, Platón le dio la vuelta al argumento de una manera que todavía se enseña. Si todo lo que a cada uno le parece verdadero es verdadero para él, entonces también es verdadera la opinión de quienes creen que Protágoras se equivoca. Y como esa es la opinión de casi todo el mundo, la doctrina de Protágoras sería falsa para casi todos. Los griegos llamaron a esto peritropé, el argumento que se vuelve contra sí mismo.
+
+@@ s59 | rotulo | {"t": "¿Es verdad para todos que todo es relativo?", "s": "La objeción clásica contra el relativismo radical"}
+La versión moderna de la objeción es muy sencilla. Quien afirma que toda verdad es relativa, ¿quiere decir que eso mismo es verdad para todos, o solo para él? Si es verdad para todos, ya hay al menos una verdad absoluta. Si es solo verdad para él, no tenemos por qué hacerle caso. Los relativistas más sofisticados tienen respuestas, y algunos estudiosos creen que Platón simplificó la postura de Protágoras. Pero el argumento ha resistido muy bien veinticuatro siglos.
+
+@@ s60 | cita | {"q": "Decir de lo que es que es, y de lo que no es que no es, es verdadero.", "a": "Aristóteles, Metafísica, libro cuarto"}
+Frente al relativismo, la definición clásica de la verdad la dio Aristóteles con una frase engañosamente simple. Decir de lo que es que no es, o de lo que no es que es, es falso. Y decir de lo que es que es, y de lo que no es que no es, es verdadero. Es la llamada teoría de la correspondencia, según la cual una afirmación es verdadera cuando se ajusta a cómo son las cosas.
+
+@@ s61 | ilus | {"fig": "tarski", "pie": "Alfred Tarski, mil novecientos treinta y tres"}
+En mil novecientos treinta y tres, el lógico polaco Alfred Tarski le dio una formulación precisa con un ejemplo que se ha hecho célebre. La oración la nieve es blanca es verdadera si y solo si la nieve es blanca. Parece una perogrullada, pero no lo es. Separa con claridad la frase, que es algo del lenguaje, del hecho, que es algo del mundo. En la encuesta de dos mil veinte, algo más de la mitad de los filósofos defendía alguna forma de esta teoría.
+
+@@ s62 | fecha | {"a": "1996", "t": "El caso Sokal", "s": "Un artículo-trampa en la revista Social Text"}
+El debate tuvo un episodio sonado en mil novecientos noventa y seis. El físico estadounidense Alan Sokal envió a Social Text, una revista de estudios culturales, un artículo que sostenía que la gravedad cuántica era una construcción social, lleno de jerga y de disparates deliberados. Se publicó en un número dedicado precisamente a las llamadas guerras de la ciencia. Unas tres semanas después, Sokal reveló en otra revista que todo había sido una parodia.
+
+@@ s63 | rotulo | {"t": "«Vivo en un piso veintiuno»", "s": "Sokal invitaba a desafiar las leyes físicas desde su ventana"}
+Sokal escribió con sorna que quien creyera que las leyes de la física son meras convenciones sociales estaba invitado a intentar transgredirlas desde las ventanas de su apartamento, y añadió que vivía en un piso veintiuno. La broma provocó un enorme escándalo. Unos la vieron como la prueba de que ciertos ámbitos académicos habían perdido el contacto con la realidad. Otros señalaron que una revista había confiado en la buena fe de un autor, y que de un engaño no se sigue gran cosa.
+
+@@ s64 | rotulo | {"t": "Hechos, valores y bulos", "s": "El debate volvió con la llamada posverdad"}
+Hoy la discusión ha cambiado otra vez de escenario. En una época de desinformación y de bulos que se difunden a toda velocidad, la pregunta por la verdad ya no parece un lujo académico. Y conviene distinguir planos. Una cosa es reconocer que nuestras creencias están condicionadas por nuestra cultura y nuestra historia, algo que casi nadie niega. Otra muy distinta es concluir que no hay hechos, y que todo es cuestión de perspectiva.
+
+@@ s65 | capitulo | {"n": "Para terminar", "t": "¿Por qué no se cierran?"}
+Hemos recorrido los cinco frentes. Queda la pregunta del principio, la de por qué estos debates no se cierran nunca, mientras que la física o la química sí parecen avanzar de una manera acumulativa. Hay varias respuestas posibles, y probablemente todas tienen algo de verdad.
+
+@@ s66 | lista | {"t": "Por qué siguen abiertos", "items": ["Cuando se resuelven, se convierten en ciencia", "Afectan a los conceptos con los que pensamos", "Cada época trae casos nuevos", "Los datos no deciden por sí solos"]}
+La primera es que, cuando una pregunta filosófica encuentra un método para resolverse, deja de considerarse filosofía y se convierte en ciencia, como pasó con la física o la psicología. A la filosofía le quedan, por definición, las preguntas que todavía no sabemos cómo resolver. La segunda es que estos debates no tratan de datos sueltos, sino de los conceptos con los que interpretamos todos los datos, como causa, mente, verdad o identidad. Y es muy difícil examinar las gafas con las que miramos sin quitárnoslas.
+
+@@ s67 | rotulo | {"t": "El progreso existe, pero es de otro tipo", "s": "Se descartan respuestas y se afinan las preguntas"}
+Aun así, sería injusto decir que no hay progreso. Hoy sabemos que el problema de Molyneux tiene una respuesta empírica, que la objeción de Isabel de Bohemia hunde el dualismo ingenuo, que el experimento de Libet no prueba lo que se creyó, y que el relativismo radical tiene que responder a la peritropé de Platón. Las preguntas siguen abiertas, pero son mucho más precisas, y el mapa de las respuestas posibles está mucho mejor dibujado que hace dos mil quinientos años.
+
+@@ s68 | rotulo | {"t": "Un mapa para leer la historia", "s": "Cada filósofo tomará partido en estos debates"}
+Para esta serie, todo esto tiene una utilidad práctica. A partir de ahora, cada vez que nos encontremos con un filósofo, podremos preguntarnos qué posición toma en estos cinco debates. Veremos que Platón está más cerca de Parménides y Aristóteles busca un punto medio, que Descartes y Hume son las dos caras del debate sobre el conocimiento, y que la disputa entre Sócrates y los sofistas es, en el fondo, la de la verdad y el relativismo.
+
+@@ s69 | fin | {"t": "Próximamente", "items": ["La caja de herramientas del filósofo", "El escenario griego", "El mismo siglo en otros lugares", "Los milesios: del mito al logos"]}
+En el próximo episodio abriremos la caja de herramientas del filósofo. Hablaremos de cómo se construye un buen argumento, de la lógica básica, de las falacias más comunes y de esos experimentos mentales, como el barco de Teseo o la habitación de Mary, que permiten pensar lo que no se puede probar en un laboratorio. Hasta entonces, la próxima vez que cruce un río, quizá merezca la pena pararse un momento a mirar el agua.

@@ -10,7 +10,7 @@ Tipo nuevo:
 Las figuras se dibujan en un lienzo de 1160x440 (se coloca entre la cabecera y el pie). Cada función recibe el
 tema T (colores de la serie) y devuelve el contenido SVG. Para un episodio nuevo, añade sus figuras a FIGURAS.
 Figuras actuales: episodios ia01 (Qué es una red neuronal, desde cero), sc02 (Los lobos de Yellowstone),
-fi0-2 (El mapa de las grandes preguntas) e ia02 (El juego de la vida).
+fi0-2 (El mapa de las grandes preguntas), ia02 (El juego de la vida) y fi0-3 (Los debates que nunca se cierran).
 """
 import math, os, random, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -1410,6 +1410,318 @@ FIGURAS.update({"cuadricula": f_cuadricula, "constructor": f_constructor, "regla
                 "planeador": f_planeador, "canon": f_canon, "puerta": f_puerta, "metapixel": f_metapixel, "gemini": f_gemini,
                 "periodos": f_periodos, "regla30": f_regla30, "regla110": f_regla110, "lenia": f_lenia, "lagartija": f_lagartija,
                 "aprender": f_aprender, "vivo": f_vivo, "niveles": f_niveles})
+
+# ---------------------------------------------------------------- figuras del episodio fi0-3 (Los debates que nunca se cierran)
+def hbarras(T, datos, x0=420, y0=40, paso=96, k=10.0, alto=60, tam=32):
+    """Barras horizontales con porcentaje: datos = [(etiqueta, valor, color o None)]."""
+    s = ""
+    for i, (t, v, c) in enumerate(datos):
+        y = y0 + i * paso
+        s += tx(x0 - 20, y + alto * .66, t, T, tam, T["tinta"], anc="end", peso=600 if c else 500)
+        s += f"<rect x='{x0}' y='{y}' width='{v * k:.0f}' height='{alto}' rx='8' fill='{c or AZUL}'/>"
+        s += tx(x0 + v * k + 18, y + alto * .66, f"{v} %", T, tam + 2, T["tinta"], anc="start", peso=600)
+    return s
+
+def f_apuesta(T):
+    s = ""
+    # Bremen
+    s += caja(20, 40, 330, 250, T, borde=T["linea"])
+    s += tx(185, 100, "Bremen", T, 50, T["tinta"], fam="Corm", peso=700)
+    s += tx(185, 150, "1998", T, 60, T["acento"], fam="Corm", peso=700, extra="style='font-variant-numeric:lining-nums'")
+    s += tx(185, 200, "Koch: «en 25 años", T, 24, T["suave"])
+    s += tx(185, 234, "se habrá encontrado»", T, 24, T["suave"])
+    # Nueva York
+    s += caja(810, 40, 330, 250, T, borde=T["acento"])
+    s += tx(975, 100, "Nueva York", T, 50, T["tinta"], fam="Corm", peso=700)
+    s += tx(975, 150, "2023", T, 60, T["acento"], fam="Corm", peso=700, extra="style='font-variant-numeric:lining-nums'")
+    s += tx(975, 200, "Chalmers gana", T, 28, T["tinta"], peso=600)
+    s += tx(975, 236, "Koch paga", T, 26, T["suave"])
+    s += flecha(370, 165, 790, 165, T["acento"], 5)
+    s += tx(580, 145, "veinticinco años", T, 28, T["suave"])
+    # caja de vino
+    bx, by = 470, 250
+    s += f"<rect x='{bx}' y='{by}' width='220' height='130' rx='6' fill='#7a5a3a' stroke='#c9a46a' stroke-width='4'/>"
+    for i in range(6):
+        x = bx + 25 + i * 34
+        s += f"<rect x='{x}' y='{by - 50}' width='18' height='60' rx='5' fill='#3b1f2a'/><rect x='{x + 5}' y='{by - 72}' width='8' height='26' rx='3' fill='#3b1f2a'/>"
+    s += tx(bx + 110, by + 78, "VINO", T, 34, "#f3ead8", peso=600)
+    s += tx(580, 430, "Apuesta: una caja de buen vino", T, 30, T["tinta"])
+    return s
+
+def f_cinco(T):
+    pares = [("Ser", "Cambio"), ("Razón", "Experiencia"), ("Mente", "Cuerpo"), ("Libertad", "Determinismo"), ("Verdad", "Relativismo")]
+    s = ""
+    for i, (a, b) in enumerate(pares):
+        y = 40 + i * 84
+        s += tx(470, y + 34, a, T, 44, T["acento"], anc="end", fam="Corm", peso=700)
+        s += tx(690, y + 34, b, T, 44, AZUL, anc="start", fam="Corm", peso=700)
+        s += f"<circle cx='580' cy='{y + 20}' r='24' fill='{T['panel']}' stroke='{T['linea']}' stroke-width='2.5'/>"
+        s += flecha(560, y + 20, 500, y + 20, T["acento"], 3) + flecha(600, y + 20, 660, y + 20, AZUL, 3)
+        s += tx(580, y + 29, str(i + 1), T, 24, T["tinta"], peso=600)
+    return s
+
+def f_rio(T):
+    s = ""
+    # orillas
+    s += f"<path d='M0 120 C200 90 400 150 600 120 S1000 90 1160 125 L1160 0 L0 0 Z' fill='{T['tierra']}' opacity='.75'/>"
+    s += f"<path d='M0 330 C220 300 420 360 620 330 S1000 300 1160 335 L1160 440 L0 440 Z' fill='{T['tierra']}' opacity='.75'/>"
+    s += f"<path d='M0 120 C200 90 400 150 600 120 S1000 90 1160 125 L1160 335 C1000 300 820 345 620 330 S220 300 0 330 Z' fill='#1f3d6e'/>"
+    r = random.Random(12)
+    for i in range(34):
+        x = r.uniform(20, 1100); y = r.uniform(150, 305); w = r.uniform(50, 130)
+        s += f"<path d='M{x:.0f} {y:.0f} q{w / 4:.0f} -10 {w / 2:.0f} 0 t{w / 2:.0f} 0' stroke='{AZUL}' stroke-width='3' fill='none' opacity='{r.uniform(.35, .9):.2f}'/>"
+    for x in (330, 760):
+        s += flecha(x, 225, x + 120, 225, T["tinta"], 4, .9)
+    # una figura que entra en el agua
+    px = 560
+    s += f"<circle cx='{px}' cy='170' r='18' fill='{T['tinta']}'/>"
+    s += linea(px, 190, px, 250, T["tinta"], 8) + linea(px, 250, px - 18, 290, T["tinta"], 7) + linea(px, 250, px + 18, 290, T["tinta"], 7)
+    s += linea(px, 205, px - 26, 235, T["tinta"], 6) + linea(px, 205, px + 26, 235, T["tinta"], 6)
+    s += tx(160, 62, "Mismo río", T, 40, T["acento"], fam="Corm", peso=700)
+    s += tx(1130, 400, "aguas siempre distintas", T, 36, T["tinta"], anc="end", fam="Corm", peso=700)
+    return s
+
+def f_aquiles(T):
+    s = linea(40, 300, 1120, 300, T["suave"], 3, .8)
+    pts = [80, 600, 860, 990, 1055, 1087, 1103, 1111]
+    for i in range(len(pts) - 1):
+        a, b = pts[i], pts[i + 1]
+        h = max(10, 90 * (b - a) / 520)
+        s += f"<path d='M{a} 300 Q{(a + b) / 2} {300 - h * 2:.0f} {b} 300' stroke='{T['acento']}' stroke-width='4' fill='none' opacity='.9'/>"
+        s += f"<circle cx='{b}' cy='300' r='{max(3, 8 - i)}' fill='{T['acento']}'/>"
+    # Aquiles (figura) y tortuga
+    s += f"<circle cx='80' cy='206' r='18' fill='{T['tinta']}'/>" + linea(80, 226, 80, 268, T["tinta"], 8)
+    s += linea(80, 268, 60, 298, T["tinta"], 7) + linea(80, 268, 104, 292, T["tinta"], 7) + linea(80, 238, 106, 222, T["tinta"], 6) + linea(80, 238, 56, 256, T["tinta"], 6)
+    s += tx(80, 350, "Aquiles", T, 30, T["tinta"], peso=600)
+    s += f"<ellipse cx='620' cy='282' rx='40' ry='22' fill='{VERDE}' stroke='#9fd0a8' stroke-width='3'/><circle cx='668' cy='284' r='11' fill='{VERDE}' stroke='#9fd0a8' stroke-width='3'/>"
+    s += tx(620, 350, "Tortuga", T, 30, T["tinta"], peso=600)
+    s += tx(580, 60, "½ + ¼ + ⅛ + … = 1", T, 52, T["acento"], fam="Corm", peso=700, extra="style='font-variant-numeric:lining-nums'")
+    s += tx(580, 110, "infinitos tramos, distancia finita", T, 28, T["suave"])
+    s += tx(1100, 410, "cada tramo, más corto que el anterior", T, 26, T["suave"], anc="end")
+    return s
+
+def barco_svg(x, y, T, col, k=1.0, tablas_col=None):
+    s = f"<path d='M{x - 170 * k:.0f} {y:.0f} L{x + 170 * k:.0f} {y:.0f} L{x + 120 * k:.0f} {y + 70 * k:.0f} L{x - 120 * k:.0f} {y + 70 * k:.0f} Z' fill='{col}' stroke='{T['tinta']}' stroke-width='3'/>"
+    for i in range(1, 4):
+        yy = y + i * 17 * k
+        s += linea(x - (170 - i * 12) * k, yy, x + (170 - i * 12) * k, yy, tablas_col or T["tinta"], 2, .6)
+    s += linea(x, y, x, y - 170 * k, T["tinta"], 5)
+    s += f"<path d='M{x + 6} {y - 160 * k:.0f} L{x + 110 * k:.0f} {y - 40 * k:.0f} L{x + 6} {y - 40 * k:.0f} Z' fill='{T['tinta']}' opacity='.85'/>"
+    s += f"<path d='M{x - 6} {y - 150 * k:.0f} L{x - 90 * k:.0f} {y - 40 * k:.0f} L{x - 6} {y - 40 * k:.0f} Z' fill='{T['tinta']}' opacity='.6'/>"
+    return s
+
+def f_barco(T):
+    s = f"<rect x='0' y='300' width='1160' height='60' fill='#1f3d6e' opacity='.8'/>"
+    s += barco_svg(260, 250, T, "#c9a46a", 1.0)
+    s += barco_svg(900, 250, T, "#6b4a2a", 1.0)
+    s += tx(260, 410, "Tablas nuevas, forma continua", T, 30, T["tinta"], peso=600)
+    s += tx(900, 410, "Todas las tablas viejas", T, 30, T["tinta"], peso=600)
+    s += tx(580, 200, "?", T, 150, T["acento"], fam="Corm", peso=700)
+    return s
+
+def f_encuesta_identidad(T):
+    return hbarras(T, [("Visión psicológica", 44, T["acento"]), ("Visión biológica", 19, None), ("Hecho adicional", 15, None), ("Otras", 32, T["suave"])],
+                   x0=430, y0=30, paso=98, k=11)
+
+def f_molyneux(T):
+    s = ""
+    # mano
+    s += caja(20, 30, 330, 330, T, borde=T["linea"])
+    s += f"<path d='M110 300 L110 170 Q110 150 128 150 Q146 150 146 170 L146 230 L146 120 Q146 100 164 100 Q182 100 182 120 L182 225 L182 110 Q182 90 200 90 Q218 90 218 110 L218 228 L218 130 Q218 112 236 112 Q254 112 254 130 L254 260 Q254 320 200 330 L150 330 Q118 325 110 300 Z' fill='none' stroke='{T['tinta']}' stroke-width='5' stroke-linejoin='round'/>"
+    s += tx(185, 400, "Tacto", T, 40, T["tinta"], fam="Corm", peso=700)
+    # objetos
+    s += f"<polygon points='470,170 560,170 590,140 500,140' fill='#b9c3d6' stroke='{T['tinta']}' stroke-width='3'/>"
+    s += f"<rect x='470' y='170' width='90' height='90' fill='#8f9bb3' stroke='{T['tinta']}' stroke-width='3'/>"
+    s += f"<polygon points='560,170 590,140 590,230 560,260' fill='#6f7a92' stroke='{T['tinta']}' stroke-width='3'/>"
+    s += f"<defs><radialGradient id='esf' cx='.35' cy='.35'><stop offset='0' stop-color='#eef2fa'/><stop offset='1' stop-color='#5c6782'/></radialGradient></defs>"
+    s += f"<circle cx='700' cy='205' r='58' fill='url(#esf)' stroke='{T['tinta']}' stroke-width='3'/>"
+    s += tx(530, 310, "cubo", T, 28, T["suave"]) + tx(700, 310, "esfera", T, 28, T["suave"])
+    s += flecha(360, 200, 440, 200, T["acento"], 4) + flecha(840, 200, 770, 200, T["acento"], 4)
+    # ojo
+    s += caja(830, 30, 310, 330, T, borde=T["acento"])
+    s += f"<path d='M880 195 Q985 105 1090 195 Q985 285 880 195 Z' fill='#f3ead8' stroke='{T['tinta']}' stroke-width='5'/>"
+    s += f"<circle cx='985' cy='195' r='42' fill='#3f6fa8'/><circle cx='985' cy='195' r='18' fill='#0a0e22'/>"
+    s += tx(985, 400, "Vista", T, 40, T["acento"], fam="Corm", peso=700)
+    s += tx(615, 400, "¿a primera vista?", T, 34, T["acento"], peso=600)
+    return s
+
+def f_prakash(T):
+    datos = [("Vista → vista", 92, AZUL), ("Tacto → tacto", 98, AZUL), ("Tacto → vista", 58, CORAL)]
+    s = ""
+    x0, y0, k = 330, 30, 6.2
+    # línea del azar
+    xa = x0 + 50 * k
+    for i, (t, v, c) in enumerate(datos):
+        y = y0 + i * 100
+        s += tx(x0 - 20, y + 42, t, T, 32, T["tinta"], anc="end", peso=600)
+        s += f"<rect x='{x0}' y='{y}' width='{v * k:.0f}' height='62' rx='8' fill='{c}'/>"
+    s += linea(xa, 10, xa, 320, T["tinta"], 3, .9, dash="8 8")
+    s += tx(xa, 350, "azar", T, 26, T["tinta"])
+    s += tx(x0 + 58 * k + 20, y0 + 242, "al principio", T, 28, CORAL, anc="start", peso=600)
+    s += tx(580, 420, "Tras unos días, varios mejoraron sin entrenamiento", T, 30, T["acento"], peso=600)
+    return s
+
+def f_encuesta_conocimiento(T):
+    s = tx(270, 40, "¿Hay conocimiento a priori?", T, 32, T["acento"], peso=600)
+    s += hbarras(T, [("Sí", 73, T["acento"]), ("No", 18, None)], x0=110, y0=70, paso=90, k=4.6, alto=58, tam=30)
+    s += tx(900, 40, "En general, ¿qué pesa más?", T, 32, T["acento"], peso=600)
+    s += hbarras(T, [("Empirismo", 44, AZUL), ("Racionalismo", 34, None)], x0=860, y0=70, paso=90, k=4.6, alto=58, tam=30)
+    s += linea(580, 20, 580, 280, T["suave"], 2, .5)
+    s += tx(580, 360, "Casi nadie defiende hoy un racionalismo o un empirismo puros", T, 28, T["suave"])
+    s += tx(580, 420, "Encuesta PhilPapers 2020 · 1.785 filósofos (podían elegir varias)", T, 24, T["suave"], extra="style='font-variant-numeric:lining-nums'")
+    return s
+
+def f_glandula(T):
+    s = ""
+    # alma (nube luminosa)
+    s += f"<path d='{blob(220, 190, 170, 120, 4)}' fill='{T['acento']}' opacity='.18' stroke='{T['acento']}' stroke-width='3' stroke-dasharray='8 8'/>"
+    s += tx(220, 180, "Alma", T, 56, T["acento"], fam="Corm", peso=700)
+    s += tx(220, 225, "piensa · sin extensión", T, 26, T["tinta"])
+    # cerebro (perfil)
+    cx, cy = 890, 200
+    s += f"<path d='{blob(cx, cy, 200, 140, 9, 18, .08)}' fill='#b98a8a' opacity='.35' stroke='#e7b8b8' stroke-width='4'/>"
+    r = random.Random(4)
+    for i in range(9):
+        x = cx - 160 + i * 38
+        s += f"<path d='M{x} {cy - 90 + r.randint(-10, 10)} q20 40 0 80 t0 80' stroke='#e7b8b8' stroke-width='3' fill='none' opacity='.5'/>"
+    s += f"<ellipse cx='{cx}' cy='{cy + 10}' rx='18' ry='12' fill='{T['acento']}' stroke='{T['tinta']}' stroke-width='2'/>"
+    s += linea(cx + 10, cy + 20, cx + 60, cy + 130, T["tinta"], 2, .8)
+    s += tx(cx + 40, cy + 165, "glándula pineal", T, 26, T["tinta"], anc="start")
+    s += tx(cx, 48, "Cuerpo", T, 56, T["tinta"], fam="Corm", peso=700)
+    s += flecha(400, 190, 680, 190, CORAL, 5)
+    s += tx(540, 160, "?", T, 90, CORAL, fam="Corm", peso=700)
+    s += tx(480, 430, "Mover exige contacto, y el contacto exige extensión", T, 28, T["suave"])
+    return s
+
+def f_mary(T):
+    s = caja(30, 20, 560, 380, T, borde="#cccccc", fondo="#2a2a2a", rx=6)
+    for i in range(6):
+        s += f"<rect x='{70 + i * 82}' y='60' width='60' height='{100 + (i * 37) % 80}' fill='{['#dddddd', '#999999', '#555555'][i % 3]}'/>"
+    s += f"<circle cx='310' cy='305' r='30' fill='#cfcfcf'/><rect x='290' y='335' width='40' height='50' fill='#cfcfcf'/>"
+    s += tx(310, 450 - 20, "Lo sabe todo sobre el color", T, 28, "#dddddd")
+    # puerta y tomate
+    s += f"<rect x='560' y='170' width='60' height='230' fill='#111' stroke='#cccccc' stroke-width='3'/>"
+    s += flecha(640, 280, 760, 280, T["acento"], 5)
+    s += f"<circle cx='920' cy='240' r='110' fill='#d8392b'/><path d='M880 140 q40 30 80 0 q-20 30 -40 20 z' fill='{VERDE}'/>"
+    s += f"<ellipse cx='880' cy='200' rx='26' ry='16' fill='#ff8f7f' opacity='.6'/>"
+    s += tx(920, 430 - 20, "¿Aprende algo nuevo?", T, 30, T["acento"], peso=600)
+    return s
+
+def f_cogitate(T):
+    s = ""
+    for i, (x, t, zona, col) in enumerate([(300, "Espacio de trabajo global", "delante", T["acento"]), (860, "Información integrada", "detrás", AZUL)]):
+        cx, cy = x, 210
+        s += f"<path d='{blob(cx, cy, 190, 125, 21, 18, .06)}' fill='#b98a8a' opacity='.25' stroke='#e7b8b8' stroke-width='3'/>"
+        hx = cx - 110 if zona == "delante" else cx + 110
+        s += f"<ellipse cx='{hx}' cy='{cy - 10}' rx='80' ry='85' fill='{col}' opacity='.55'/>"
+        s += tx(cx, 50, t, T, 34, col, fam="Corm", peso=700)
+        s += tx(hx, cy, zona, T, 28, T["tinta"], peso=600, extra="stroke='#0a0e22' stroke-width='5' paint-order='stroke'")
+        s += tx(cx, 380, "ni del todo confirmada ni refutada", T, 24, T["suave"])
+    s += tx(580, 210, "vs", T, 54, T["tinta"], fam="Corm", peso=700)
+    return s
+
+def f_laplace(T):
+    cx, cy = 300, 220
+    s = ""
+    for r_ in (70, 120, 170):
+        s += f"<circle cx='{cx}' cy='{cy}' r='{r_}' fill='none' stroke='{T['linea']}' stroke-width='2' opacity='.35'/>"
+    s += f"<circle cx='{cx}' cy='{cy}' r='30' fill='{T['acento']}'/>"
+    for r_, a, rr in ((70, 40, 9), (120, 200, 13), (170, 310, 11)):
+        x = cx + r_ * math.cos(math.radians(a)); y = cy + r_ * math.sin(math.radians(a))
+        s += f"<circle cx='{x:.0f}' cy='{y:.0f}' r='{rr}' fill='{AZUL}'/>"
+    # ojo que todo lo ve
+    s += f"<path d='M640 210 Q820 80 1000 210 Q820 340 640 210 Z' fill='none' stroke='{T['acento']}' stroke-width='5'/>"
+    s += f"<circle cx='820' cy='210' r='62' fill='none' stroke='{T['acento']}' stroke-width='4'/><circle cx='820' cy='210' r='24' fill='{T['acento']}'/>"
+    s += tx(820, 50, "Conoce todas las fuerzas", T, 32, T["tinta"])
+    s += tx(820, 90, "y todas las posiciones", T, 32, T["tinta"])
+    s += tx(820, 370, "pasado y futuro, igual de claros", T, 32, T["acento"], peso=600)
+    s += flecha(500, 210, 620, 210, T["tinta"], 4, .8)
+    return s
+
+def f_libertad(T):
+    cols = [("Determinismo duro", "Todo está causado:", "la libertad es ilusión", CORAL),
+            ("Compatibilismo", "Causas y libertad", "pueden convivir", T["acento"]),
+            ("Libertarismo", "Somos libres:", "el determinismo falla", AZUL)]
+    s = ""
+    for i, (t, a, b, c) in enumerate(cols):
+        x = 10 + i * 385
+        s += caja(x, 30, 370, 300, T, borde=c, sw=4)
+        s += tx(x + 185, 100, t, T, 40, c, fam="Corm", peso=700)
+        s += linea(x + 60, 130, x + 310, 130, T["suave"], 2, .5)
+        s += tx(x + 185, 200, a, T, 28) + tx(x + 185, 240, b, T, 28 if len(b) < 24 else 24)
+    s += tx(580, 410, "¿Es verdad el determinismo? ¿Es compatible con la libertad?", T, 28, T["suave"])
+    return s
+
+def f_libet(T):
+    x0, x1, y = 80, 1080, 215
+    s = linea(x0, y, x1, y, T["tinta"], 4)
+    def xm(ms):  # ms de -1000 a 0
+        return x0 + (ms + 1000) / 1000 * (x1 - x0 - 60)
+    # curva del potencial de preparación (sube hacia abajo en el EEG; aquí hacia arriba)
+    pts = [(ms, 0 if ms < -550 else ((ms + 550) / 550) ** 1.6) for ms in range(-1000, 1, 20)]
+    d = "M" + " L".join(f"{xm(ms):.0f} {y - 40 - v * 150:.0f}" for ms, v in pts)
+    s += f"<path d='{d}' stroke='{AZUL}' stroke-width='5' fill='none'/>"
+    for ms, t1, t2, c in ((-550, "Empieza la señal", "≈ −550 ms", AZUL), (-200, "Deseo consciente", "≈ −200 ms", T["acento"]), (0, "Movimiento", "0 ms", T["tinta"])):
+        x = xm(ms)
+        s += linea(x, y - 10, x, y + 30, c, 5) + f"<circle cx='{x:.0f}' cy='{y}' r='10' fill='{c}'/>"
+        dy = 95 if ms == 0 else 0
+        s += tx(x, y + 70 + dy, t1, T, 28, c, peso=600) + tx(x, y + 106 + dy, t2, T, 26, T["suave"], extra="style='font-variant-numeric:lining-nums'")
+    s += tx(xm(-900), 120, "potencial de preparación", T, 28, AZUL, anc="start")
+    return s
+
+def f_encuesta_libertad(T):
+    return hbarras(T, [("Compatibilismo", 59, T["acento"]), ("Libertarismo", 19, None), ("No hay libre albedrío", 11, CORAL), ("Otras", 14, T["suave"])],
+                   x0=450, y0=30, paso=98, k=9.5)
+
+def f_dario(T):
+    s = ""
+    # trono central
+    s += f"<rect x='530' y='150' width='100' height='150' rx='10' fill='#8a6a2c' stroke='{T['acento']}' stroke-width='3'/>"
+    s += f"<circle cx='580' cy='120' r='30' fill='{T['tinta']}'/><path d='M555 95 L565 70 L580 90 L595 70 L605 95 Z' fill='{T['acento']}'/>"
+    s += tx(580, 345, "Darío", T, 40, T["acento"], fam="Corm", peso=700)
+    for x, t, q, c in ((200, "Griegos", "queman a sus muertos", AZUL), (960, "Calatios", "comen a sus muertos", CORAL)):
+        for dx in (-60, 0, 60):
+            s += f"<circle cx='{x + dx}' cy='170' r='22' fill='{c}'/><rect x='{x + dx - 22}' y='196' width='44' height='80' rx='16' fill='{c}' opacity='.85'/>"
+        s += tx(x, 340, t, T, 40, c, fam="Corm", peso=700)
+        s += tx(x, 380, q, T, 26, T["suave"])
+        s += tx(x, 80, "¡Jamás!", T, 34, T["tinta"], peso=600)
+    s += tx(580, 430, "«La costumbre es reina de todos»", T, 30, T["tinta"], fam="Corm", peso=700)
+    return s
+
+def f_peritropo(T):
+    cx, cy, r = 200, 220, 150
+    s = f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='none' stroke='{VERDE}' stroke-width='34' stroke-dasharray='880 80' transform='rotate(-60 {cx} {cy})' stroke-linecap='round'/>"
+    s += f"<circle cx='{cx}' cy='{cy}' r='{r}' fill='none' stroke='#9fd0a8' stroke-width='4' stroke-dasharray='6 14' opacity='.7'/>"
+    hx, hy = cx + r * math.cos(math.radians(-60 + 300)), cy + r * math.sin(math.radians(-60 + 300))
+    hx, hy = cx + r * math.cos(math.radians(-75)), cy + r * math.sin(math.radians(-75))
+    s += f"<ellipse cx='{hx:.0f}' cy='{hy:.0f}' rx='34' ry='26' fill='{VERDE}' stroke='#9fd0a8' stroke-width='3'/>"
+    s += f"<circle cx='{hx + 8:.0f}' cy='{hy - 8:.0f}' r='5' fill='#0a0e22'/>"
+    filas = [("1", "Lo que a cada uno le parece verdad, lo es para él"), ("2", "A casi todos les parece falsa esa tesis"),
+             ("3", "Luego es falsa… para casi todos")]
+    for i, (n, t) in enumerate(filas):
+        y = 90 + i * 100
+        s += f"<circle cx='440' cy='{y}' r='24' fill='{T['panel']}' stroke='{T['acento']}' stroke-width='3'/>" + tx(440, y + 9, n, T, 26, T["acento"], peso=600)
+        s += tx(480, y + 10, t, T, 27, T["tinta"] if i < 2 else T["acento"], anc="start", peso=500 if i < 2 else 600)
+    s += tx(200, 420, "peritropé", T, 40, T["acento"], fam="Corm", peso=700)
+    return s
+
+def f_tarski(T):
+    s = caja(40, 40, 1080, 130, T, borde=T["acento"])
+    s += tx(580, 100, "«La nieve es blanca» es verdadera", T, 44, T["tinta"], fam="Corm", peso=700)
+    s += tx(580, 150, "si y solo si la nieve es blanca", T, 44, T["acento"], fam="Corm", peso=700)
+    s += caja(120, 230, 360, 150, T, borde=T["linea"])
+    s += tx(300, 290, "Lenguaje", T, 40, T["tinta"], fam="Corm", peso=700) + tx(300, 335, "la oración", T, 26, T["suave"])
+    s += caja(680, 230, 360, 150, T, borde=T["linea"])
+    s += tx(860, 290, "Mundo", T, 40, T["tinta"], fam="Corm", peso=700) + tx(860, 335, "el hecho", T, 26, T["suave"])
+    s += flecha(500, 305, 660, 305, T["acento"], 4) + flecha(660, 305, 500, 305, T["acento"], 4)
+    s += tx(580, 285, "corresponde", T, 24, T["suave"])
+    return s
+
+FIGURAS.update({"apuesta": f_apuesta, "cinco": f_cinco, "rio": f_rio, "aquiles": f_aquiles, "barco": f_barco,
+                "encuesta_identidad": f_encuesta_identidad, "molyneux": f_molyneux, "prakash": f_prakash,
+                "encuesta_conocimiento": f_encuesta_conocimiento, "glandula": f_glandula, "mary": f_mary, "cogitate": f_cogitate,
+                "laplace": f_laplace, "libertad": f_libertad, "libet": f_libet, "encuesta_libertad": f_encuesta_libertad,
+                "dario": f_dario, "peritropo": f_peritropo, "tarski": f_tarski})
 
 # ---------------------------------------------------------------- integración con video_ligero
 _plantilla_base = VL.plantilla
