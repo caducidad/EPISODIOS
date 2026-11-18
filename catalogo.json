@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "fi",
+    "ultima": "ia",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -728,10 +728,101 @@
             {
               "id": "ia03",
               "titulo": "Capacidades emergentes",
-              "descripcion": "Habilidades que aparecen de golpe al crecer los modelos, y el debate sobre si son reales o un efecto de cómo se miden.",
-              "estado": "pendiente",
+              "descripcion": "Buscando a Nemo con emojis, «más es diferente» de Anderson, las leyes de escala, BIG-bench y las 137 capacidades emergentes de Jason Wei; el artículo de Stanford que las llamó espejismo y la réplica; las cabezas de inducción, el papel del azar según estudios de 2025 y 2026, qué exige de verdad la palabra emergencia y el desalineamiento emergente publicado en Nature.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ligero"
+              "estilo": "ligero",
+              "archivo": "media/ia03-capacidades-emergentes.mp4",
+              "audio": "media/ia03-capacidades-emergentes.m4a",
+              "guion": "guiones/ia03-capacidades-emergentes.txt",
+              "duracion": "35 min",
+              "fecha": "2026-11-18",
+              "fuentes": [
+                {
+                  "titulo": "Wei y otros (2022): Emergent Abilities of Large Language Models",
+                  "url": "https://arxiv.org/pdf/2206.07682"
+                },
+                {
+                  "titulo": "Jason Wei: 137 emergent abilities of large language models",
+                  "url": "https://jasonwei.net/blog/emergence"
+                },
+                {
+                  "titulo": "Jason Wei: Common arguments regarding emergent abilities",
+                  "url": "https://www.jasonwei.net/blog/common-arguments-regarding-emergent-abilities"
+                },
+                {
+                  "titulo": "Schaeffer, Miranda y Koyejo (2023): Are Emergent Abilities of Large Language Models a Mirage? (NeurIPS)",
+                  "url": "https://papers.neurips.cc/paper_files/paper/2023/file/adc98a266f45005c403b8311ca7e8bd7-Paper-Conference.pdf"
+                },
+                {
+                  "titulo": "Entrevista a Brando Miranda (AIhub)",
+                  "url": "https://aihub.org/2024/04/25/are-emergent-abilities-of-large-language-models-a-mirage-interview-with-brando-miranda/"
+                },
+                {
+                  "titulo": "Anderson (1972): More is Different (Science)",
+                  "url": "https://www.fermatslibrary.com/s/more-is-different"
+                },
+                {
+                  "titulo": "Srivastava y otros (2022): Beyond the Imitation Game (BIG-bench)",
+                  "url": "https://arxiv.org/abs/2206.04615"
+                },
+                {
+                  "titulo": "Ganguli y otros (2022): Predictability and Surprise in Large Generative Models",
+                  "url": "https://www.anthropic.com/news/predictability-and-surprise-in-large-generative-models"
+                },
+                {
+                  "titulo": "The Unpredictable Abilities Emerging From Large AI Models (Quanta Magazine)",
+                  "url": "https://www.quantamagazine.org/the-unpredictable-abilities-emerging-from-large-ai-models-20230316/"
+                },
+                {
+                  "titulo": "How Quickly Do Large Language Models Learn Unexpected Skills? (Quanta / Nautilus)",
+                  "url": "https://lede-v2.nautil.us/how-quickly-do-large-language-models-learn-unexpected-skills-528047"
+                },
+                {
+                  "titulo": "GPT-3: resumen de los resultados de aritmética (Alignment Forum)",
+                  "url": "https://www.alignmentforum.org/posts/iwgx3BDPnqw2wiNC2"
+                },
+                {
+                  "titulo": "GPT-4 Technical Report (OpenAI)",
+                  "url": "https://ar5iv.labs.arxiv.org/html/2303.08774"
+                },
+                {
+                  "titulo": "Du, Zeng, Dong y Tang (2024): Understanding Emergent Abilities from the Loss Perspective",
+                  "url": "https://arxiv.org/abs/2403.15796v2"
+                },
+                {
+                  "titulo": "Olsson y otros (2022): In-context Learning and Induction Heads",
+                  "url": "https://arxiv.org/abs/2209.11895"
+                },
+                {
+                  "titulo": "Zhao y otros (2025-2026): Random Scaling of Emergent Capabilities",
+                  "url": "https://arxiv.org/abs/2502.17356"
+                },
+                {
+                  "titulo": "Baherwani y otros (2026): Emergent Capabilities Arise Randomly from Learning Sparse Attention Patterns",
+                  "url": "https://arxiv.org/pdf/2606.25010"
+                },
+                {
+                  "titulo": "Snell, Wallace, Klein y Levine (2024): Predicting Emergent Capabilities by Finetuning",
+                  "url": "https://arxiv.org/html/2411.16035v1"
+                },
+                {
+                  "titulo": "Krakauer, Krakauer y Mitchell (2025): Large Language Models and Emergence",
+                  "url": "https://arxiv.org/html/2506.11135"
+                },
+                {
+                  "titulo": "Berti, Giorgi y Kasneci: Emergent Abilities in Large Language Models: A Survey",
+                  "url": "https://arxiv.org/html/2503.05788v3"
+                },
+                {
+                  "titulo": "Betley y otros, Nature (2026): desalineamiento emergente (nota de prensa)",
+                  "url": "https://www.natureasia.com/en/info/press-releases/detail/9204"
+                },
+                {
+                  "titulo": "Reacciones de expertos al estudio de Nature (Scimex)",
+                  "url": "https://www.scimex.org/newsfeed/ais-behaving-badly-an-ai-trained-to-deliberately-make-bad-code-will-become-bad-at-unrelated-tasks-too"
+                }
+              ]
             },
             {
               "id": "ia04",
