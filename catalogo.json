@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "ia",
+    "ultima": "an",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -1045,10 +1045,85 @@
             {
               "id": "an03",
               "titulo": "No pienses en un oso blanco",
-              "descripcion": "El experimento de Wegner y por qué suprimir un pensamiento lo hace volver.",
-              "estado": "pendiente",
+              "descripcion": "El experimento de Wegner, el efecto rebote y los procesos irónicos; los pensamientos intrusivos que tiene casi todo el mundo, y los estudios recientes de Cambridge que matizan si suprimir siempre sale mal.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ligero"
+              "estilo": "ligero",
+              "archivo": "media/an03-oso-blanco.mp4",
+              "audio": "media/an03-oso-blanco.m4a",
+              "guion": "guiones/an03-oso-blanco.txt",
+              "duracion": "34 min",
+              "fecha": "2026-11-19",
+              "fuentes": [
+                {
+                  "titulo": "Paradoxical effects of thought suppression (Wegner, Schneider, Carter y White, 1987)",
+                  "url": "https://dtg.sites.fas.harvard.edu/DANWEGNER/pub/Wegner,Schneider,Carter,&White%201987.pdf"
+                },
+                {
+                  "titulo": "Ironic process theory (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Ironic_process_theory"
+                },
+                {
+                  "titulo": "Daniel Wegner (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Daniel_Wegner"
+                },
+                {
+                  "titulo": "Ironic processes of mental control (Wegner, 1994, PubMed)",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/8121959/"
+                },
+                {
+                  "titulo": "Thought suppression (Wenzlaff y Wegner, Annual Review of Psychology, 2000)",
+                  "url": "https://dtg.sites.fas.harvard.edu/DANWEGNER/pub/Wenzlaff & Wegner.pdf"
+                },
+                {
+                  "titulo": "Ironic effects of sleep urgency (Ansfield, Wegner y Bowser, 1996)",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/8826759/"
+                },
+                {
+                  "titulo": "Unwanted thoughts haunt the night: dream rebound (Harvard Gazette, 2004)",
+                  "url": "https://news.harvard.edu/gazette/story/2004/03/unwanted-thoughts-haunt-the-night"
+                },
+                {
+                  "titulo": "Suprimir pensamientos sobre el chocolate (Erskine, ScienceDaily, 2007)",
+                  "url": "https://sciencedaily.com/releases/2007/10/071026213538.htm"
+                },
+                {
+                  "titulo": "Paradoxical effects of thought suppression: a meta-analysis (Abramowitz, Tolin y Street, 2001)",
+                  "url": "https://contextualscience.org/publications/paradoxical_effects_thought_suppression_metaanalysis_controlled_studies"
+                },
+                {
+                  "titulo": "Ironic effects of thought suppression: a meta-analysis (Wang y col., 2020)",
+                  "url": "https://researchonline.jcu.edu.au/60795/"
+                },
+                {
+                  "titulo": "Pensamientos intrusivos en 13 países (Radomsky y col., ScienceDaily, 2014)",
+                  "url": "https://sciencedaily.com/releases/2014/04/140408122137.htm"
+                },
+                {
+                  "titulo": "Rachman y de Silva, 1978: obsesiones normales y anormales (No Panic)",
+                  "url": "https://nopanic.org.uk/?p=22004"
+                },
+                {
+                  "titulo": "Acceptance versus suppression of intrusive thoughts (Marcks y Woods, 2005)",
+                  "url": "https://contextualscience.org/node/2995"
+                },
+                {
+                  "titulo": "Suppressing distressing thoughts improves mental health (MRC CBU Cambridge, 2023)",
+                  "url": "https://www.mrc-cbu.cam.ac.uk/blog/2023/09/suppressing-distressing-thoughts-improves-mental-health-and-this-can-be-trained/"
+                },
+                {
+                  "titulo": "A jolt to what we believe (Psychology Today, 2023)",
+                  "url": "https://www.psychologytoday.com/us/blog/denying-to-the-grave/202311/a-jolt-to-what-we-believe"
+                },
+                {
+                  "titulo": "How the brain stops unwanted thoughts (MRC CBU Cambridge, 2025)",
+                  "url": "https://www.mrc-cbu.cam.ac.uk/blog/2025/07/how-the-brain-stops-unwanted-thoughts-a-new-review-traces-the-neural-pathways-behind-mental-control/"
+                },
+                {
+                  "titulo": "The life of Tolstoy (Biriukov): el juego del oso blanco",
+                  "url": "https://kwx.liehendr.com/content/wikisource_en_all_maxi_2022-09/A/Page%3AThe_life_of_Tolstoy.djvu/35"
+                }
+              ]
             },
             {
               "id": "an04",

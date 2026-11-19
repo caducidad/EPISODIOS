@@ -1,0 +1,205 @@
+@@ s01 | titulo | {"t": "No pienses en un oso blanco", "s": "Temporada 1 · Episodio 3"}
+No pienses en un oso blanco. La mente contra sí misma. Temporada uno, episodio tres.
+
+@@ s02 | rotulo | {"t": "Un pequeño experimento", "s": "Pruébalo ahora mismo"}
+Antes de empezar, te propongo un pequeño experimento que puedes hacer ahora mismo, mientras caminas o mientras escuchas desde donde estés. Durante el próximo minuto, intenta no pensar en un oso blanco. No en un oso pardo ni en un panda, sino en un oso polar, blanco, grande, con el hocico negro y las patas hundidas en la nieve. Sea lo que sea lo que pase por tu cabeza, procura que no sea eso.
+
+Lo más probable es que ya haya aparecido. Quizá de forma fugaz, quizá con todo detalle, quizá caminando sobre un témpano de hielo. En cualquiera de los dos casos, el oso ya ocupa un lugar en tu mente que hace un momento no ocupaba.
+
+@@ s03 | rotulo | {"t": "La protección más íntima", "s": "Intentar no pensar en lo que asusta"}
+En los dos episodios anteriores hablamos de la evitación y de las conductas de seguridad, de cómo huir de lo que tememos, o protegernos de ello con pequeños gestos, alivia en el momento y mantiene el miedo a largo plazo. Hoy vamos a hablar de una forma de evitación que no se ve desde fuera, porque ocurre entera dentro de la cabeza. Es el intento de no pensar en lo que nos asusta, nos duele o nos avergüenza.
+
+Es una estrategia tan natural que casi nadie la cuestiona. Si un pensamiento te hace daño, lo lógico parece apartarlo, cambiar de tema, pensar en otra cosa. Y a veces funciona. Pero durante casi cuarenta años, la psicología ha acumulado pruebas de que, en muchas ocasiones, lo que conseguimos es justo lo contrario. Como siempre en esta serie, conviene recordarlo una vez. Esto es divulgación basada en la investigación, no terapia, y si la ansiedad te pesa, hablarlo con un profesional sigue siendo la mejor idea.
+
+@@ s04 | capitulo | {"n": "Primera parte", "t": "Un oso en la literatura rusa"}
+La historia del oso blanco no empieza en un laboratorio, sino en la Rusia del siglo diecinueve. Y, como pasa a menudo con las buenas historias, por el camino se le han ido pegando adornos y confusiones que merece la pena separar.
+
+@@ s05 | persona | {"n": "Fiódor Dostoievski", "r": "Novelista ruso. Autor de Crimen y castigo", "a": "1821 – 1881"}
+En el verano de mil ochocientos sesenta y dos, Fiódor Dostoievski hizo su primer viaje por Europa occidental. Había vuelto pocos años antes de su condena a trabajos forzados en Siberia y todavía no había escrito sus grandes novelas. Recorrió Alemania, Francia, Inglaterra, Suiza e Italia, y al volver escribió un libro de crónicas, a medio camino entre el ensayo y el panfleto, en el que se burlaba con bastante mala uva de la burguesía europea. Se publicó en mil ochocientos sesenta y tres en la revista que dirigía con su hermano, con el título de Notas de invierno sobre impresiones de verano.
+
+@@ s06 | cita | {"q": "Intenta no pensar en un oso polar y verás que el maldito aparece a cada minuto", "a": "Dostoievski, Notas de invierno sobre impresiones de verano (1863), paráfrasis"}
+En medio de una de sus digresiones, Dostoievski dejó caer una frase que no tenía ninguna pretensión científica. Venía a decir que, si uno se impone la tarea de no pensar en un oso polar, comprobará que el maldito animal le viene a la cabeza a cada minuto. Era una observación de pasada, casi un chiste, de las que cualquier lector reconoce al instante. Pasaría más de un siglo antes de que alguien decidiera tomársela en serio y medirla.
+
+@@ s07 | rotulo | {"t": "Quedarse en un rincón sin pensar en un oso", "s": "El juego de los hermanos Tolstói"}
+Hay una segunda historia rusa con oso blanco, y es la que más se confunde con la primera. León Tolstói contó en sus recuerdos de infancia que su hermano mayor, Nikolái, había inventado un juego para los pequeños. Decía que conocía un secreto capaz de hacer felices a todos los seres humanos, de acabar con las enfermedades y con las peleas, y que lo había escrito en un palito verde enterrado junto a un camino, al borde de un barranco de la finca familiar.
+
+Para llegar al secreto había que cumplir una serie de condiciones, y la primera era quedarse de pie en un rincón y no pensar en un oso blanco. Los niños lo intentaban una y otra vez, y el oso siempre aparecía. El detalle final de la historia es conmovedor. Tolstói pidió que lo enterraran junto a ese barranco, en el lugar del palito verde, y allí está su tumba desde mil novecientos diez.
+
+@@ s08 | rotulo | {"t": "Dos osos que se mezclaron", "s": "Una anécdota que cambió de dueño"}
+Con los años, las dos historias se han fundido. Muchos libros y artículos cuentan que fue el joven Dostoievski quien retó a su hermano a no pensar en un oso, y esa versión aparece incluso en el artículo científico que vamos a ver enseguida. Lo que está documentado es otra cosa. La frase escrita es de Dostoievski, adulto y viajero, y el juego infantil del rincón es de los hermanos Tolstói.
+
+@@ s09 | capitulo | {"n": "Segunda parte", "t": "Un psicólogo y un timbre"}
+A mediados de los años ochenta, la frase de Dostoievski llegó a manos de un psicólogo social que trabajaba en una pequeña universidad de Texas. Le pareció una pregunta perfecta, sencilla de plantear y difícil de contestar. Si intentamos no pensar en algo, ¿qué ocurre exactamente dentro de nuestra cabeza?
+
+@@ s10 | persona | {"n": "Daniel M. Wegner", "r": "Psicólogo social. Trinity University, Virginia y Harvard", "a": "1948 – 2013"}
+Daniel Wegner había nacido en Calgary, en Canadá, en mil novecientos cuarenta y ocho. Se doctoró en mil novecientos setenta y cuatro y pasó unos dieciséis años en la Trinity University de San Antonio, después una década en la Universidad de Virginia y, desde el año dos mil, en Harvard. Además del oso blanco, estudió la sensación de que nuestras decisiones conscientes causan nuestros actos. Murió en dos mil trece, a los sesenta y cinco años, de esclerosis lateral amiotrófica.
+
+@@ s11 | fecha | {"a": "1987", "t": "Efectos paradójicos de la supresión del pensamiento", "s": "Wegner, Schneider, Carter y White"}
+En mil novecientos ochenta y siete, Wegner y tres colaboradores publicaron el artículo que haría famoso al oso. El diseño era casi de juguete. Treinta y cuatro estudiantes de la Trinity University entraban de uno en uno en una sala, se sentaban ante una mesa con un timbre y una grabadora, y se quedaban solos. Su tarea era decir en voz alta todo lo que les pasara por la cabeza durante cinco minutos, como un monólogo interior retransmitido.
+
+A la mitad de ellos se les pedía primero que intentaran no pensar en un oso blanco, y que tocaran el timbre cada vez que el oso apareciera de todos modos. Después, en un segundo periodo de otros cinco minutos, se les pedía lo contrario, que pensaran en el oso todo lo que quisieran, timbre incluido. La otra mitad hacía las mismas dos tareas en orden inverso, primero pensar libremente en el oso y luego intentar suprimirlo.
+
+@@ s12 | dato | {"v": "Más de 1 por minuto", "t": "Veces que aparecía el oso mientras se intentaba no pensar en él", "s": "Wegner y colaboradores, 1987"}
+El primer resultado ya era llamativo. Mientras intentaban no pensar en el oso, los estudiantes lo mencionaban o tocaban el timbre, de media, algo más de seis veces en cinco minutos. Es decir, más de una vez por minuto, en una tarea que en teoría consistía precisamente en no pensar en él. Nadie consiguió una supresión completa. El hallazgo que de verdad sorprendió llegó al comparar los dos grupos en la segunda parte.
+
+@@ s13 | rotulo | {"t": "El efecto rebote", "s": "Lo reprimido vuelve con más fuerza"}
+Cuando llegaba el momento de pensar libremente en el oso, quienes acababan de pasar cinco minutos suprimiéndolo pensaban en él más que quienes habían empezado por ahí. Y había un detalle aún más curioso. En casi todos los periodos del experimento, la frecuencia del oso iba bajando con los minutos, como ocurre con cualquier pensamiento que se agota. Solo en un caso subía en lugar de bajar, justo en el periodo de expresión de quienes antes lo habían reprimido. Era como si el oso, retenido tras una puerta, entrara de golpe en cuanto se le dejaba paso.
+
+Wegner lo llamó efecto rebote. La supresión no solo fallaba mientras se intentaba, sino que dejaba al pensamiento cargado, con una especie de energía acumulada que se liberaba después. Y aquí está una de las ideas centrales del episodio. Lo que hacemos para librarnos de un pensamiento puede estar preparando su regreso.
+
+@@ s14 | comparar | {"izq": ["Suprimir sin más", "No pienses en el oso", "Rebote posterior"], "der": ["Distracción enfocada", "Si aparece, piensa en un Volkswagen rojo", "Rebote mucho menor"]}
+En un segundo experimento con cuarenta y nueve estudiantes, el equipo añadió un tercer grupo con una instrucción distinta. A estas personas también se les pedía no pensar en el oso, pero con una ayuda concreta. Cada vez que el oso apareciera, debían pensar en un Volkswagen rojo. El coche era un distractor único, siempre el mismo, en lugar de la búsqueda desesperada de cualquier otra cosa en la que pensar.
+
+El resultado fue claro. El grupo del Volkswagen rojo mostró un rebote mucho menor después. Durante la supresión el oso seguía colándose, pero luego no volvía con la misma fuerza. La diferencia sugería algo importante sobre por qué falla la supresión cuando se hace a ciegas.
+
+@@ s15 | rotulo | {"t": "Cada distractor se convierte en un recordatorio", "s": "La lámpara, el techo, la mesa... y el oso"}
+Wegner propuso una explicación sencilla. Cuando intentamos no pensar en algo sin un plan, vamos saltando de una cosa a otra, de la lámpara al techo, del techo a la ventana, de la ventana a lo que haremos esta tarde. Pero cada una de esas cosas se usa en el preciso instante en que estamos huyendo del oso, y queda asociada con él. Al cabo de unos minutos, la habitación entera se ha convertido en una colección de recordatorios del oso.
+
+Con el Volkswagen rojo no pasa lo mismo, porque toda la asociación se concentra en un único objeto y el resto del mundo queda limpio. Por eso quien pasa semanas distrayéndose de una preocupación con todo lo que encuentra puede acabar en un entorno donde cualquier cosa se la recuerda.
+
+@@ s16 | capitulo | {"n": "Tercera parte", "t": "Dos procesos y una ironía"}
+El efecto rebote era un hallazgo, pero no una teoría. Durante los años siguientes, Wegner y su grupo se dedicaron a buscar un mecanismo que explicara por qué la mente, cuando le pedimos que no haga algo, parece empeñada en hacerlo. La respuesta que propuso es una de las ideas más elegantes de la psicología de finales del siglo veinte.
+
+@@ s17 | fecha | {"a": "1994", "t": "Procesos irónicos del control mental", "s": "Daniel Wegner, Psychological Review"}
+En mil novecientos noventa y cuatro, Wegner publicó en una de las revistas teóricas más prestigiosas de la psicología un artículo titulado Procesos irónicos del control mental. Su propuesta era que cualquier intento de controlar la propia mente, ya sea no pensar en algo, relajarse, dormirse o estar contento, pone en marcha dos procesos distintos que trabajan a la vez.
+
+@@ s18 | comparar | {"izq": ["El operador", "Busca activamente otra cosa", "Consciente y costoso", "Se agota con el cansancio"], "der": ["El vigilante", "Busca señales del oso", "Automático y barato", "Sigue funcionando siempre"]}
+El primero es lo que Wegner llamó el proceso operativo, que podemos imaginar como un operador. Su trabajo es buscar activamente contenidos que encajen con lo que queremos, otras imágenes, otros temas, cualquier cosa que no sea el oso.
+
+El segundo es el proceso de vigilancia, como un vigilante que revisa en segundo plano si el objetivo se está cumpliendo. Y para comprobar que no estamos pensando en el oso, el vigilante tiene que buscar osos. Es un proceso automático, que trabaja por debajo de la conciencia y apenas gasta energía. Mientras el operador funciona bien, el vigilante es útil, porque avisa cuando hay que corregir el rumbo. El problema llega cuando el operador se cansa.
+
+@@ s19 | rotulo | {"t": "Bajo carga, gana el vigilante", "s": "Estrés, prisa, cansancio, distracción"}
+Wegner predijo que, cuando estamos estresados, cansados, distraídos o con la cabeza ocupada en otras tareas, el operador pierde fuerza, porque necesita unos recursos que en ese momento no hay. El vigilante, en cambio, sigue trabajando igual, buscando sin descanso justo aquello que queremos evitar. Y al buscarlo, lo mantiene activado y cerca de la superficie. El resultado es irónico en sentido estricto. En las peores condiciones, el intento de control produce exactamente lo contrario de lo que pretendía.
+
+Esto explica algo que muchas personas con ansiedad conocen bien. Durante el día, con la mente ocupada y descansada, más o menos consiguen mantener a raya ciertos pensamientos. Pero de noche, agotadas, o en un momento de tensión, los pensamientos irrumpen con una fuerza que parece desproporcionada. No son más verdaderos, es que el operador se ha quedado sin fuerzas.
+
+@@ s20 | lista | {"t": "Ironías estudiadas en el laboratorio", "items": ["Intentar dormirse rápido", "Intentar relajarse bajo estrés", "No pasarse en un golpe de golf", "No pensar en el chocolate", "No soñar con alguien"]}
+A partir de esa teoría, el grupo de Wegner y otros laboratorios pusieron a prueba la ironía en terrenos muy distintos. Intentar dormirse cuanto antes, intentar relajarse en una situación tensa, evitar un error concreto en un movimiento, no pensar en un alimento, no prestar atención al dolor o, incluso, no soñar con una persona. Veamos algunos de esos estudios.
+
+@@ s21 | fecha | {"a": "1996", "t": "Los efectos irónicos de la prisa por dormir", "s": "Ansfield, Wegner y Bowser"}
+En mil novecientos noventa y seis, Wegner y dos colaboradores pidieron a un grupo de personas sin problemas de sueño que intentaran dormirse en el laboratorio. A unas se les decía que se durmieran lo más rápido posible, y a otras que lo hicieran cuando les apeteciera. Además, unas escuchaban música tranquila de estilo new age, y otras, marchas militares de John Philip Sousa, que dejan poco espacio para la calma.
+
+Con la música tranquila, la prisa ayudaba algo, y quienes intentaban dormirse rápido lo conseguían antes. Pero con las marchas, que ocupaban la mente, ocurría lo contrario. Quienes se esforzaban por dormirse rápido tardaban más que quienes no tenían ninguna prisa. Volveremos a ello en el episodio dedicado al insomnio.
+
+@@ s22 | rotulo | {"t": "El golpe y el péndulo", "s": "Wegner, Ansfield y Pilloff, 1998"}
+En mil novecientos noventa y ocho, el mismo grupo trasladó la ironía al movimiento. Pidieron a unos participantes que golpearan una pelota de golf hacia un hoyo con una instrucción adicional, que tuvieran especial cuidado en no pasarse. Cuando además tenían que hacer otra tarea mental a la vez, se pasaban del hoyo con más frecuencia que quienes no recibían ninguna advertencia.
+
+Algo parecido ocurría con un péndulo sostenido con la mano. Si se pedía a la gente que no lo dejara oscilar en una dirección concreta, y a la vez se le cargaba la mente con otra tarea, el péndulo tendía a moverse precisamente en esa dirección. El vigilante, buscando el error para evitarlo, acababa empujando hacia él.
+
+@@ s23 | dato | {"v": "134", "t": "Jóvenes en el estudio del chocolate", "s": "James Erskine, Universidad de Hertfordshire, 2007"}
+En dos mil siete, el psicólogo James Erskine, de la Universidad de Hertfordshire, en Inglaterra, publicó un estudio con ciento treinta y cuatro jóvenes, la mitad hombres y la mitad mujeres. Les pedía que verbalizaran sus pensamientos durante unos minutos con distintas instrucciones, y después, con la excusa de una prueba de sabor, les ponía delante dos marcas de chocolate. Quienes habían intentado no pensar en el chocolate comieron bastante más que los del grupo de control.
+
+Erskine lo llamó rebote conductual. Ya no se trataba solo de que el pensamiento volviera, sino de que la conducta asociada a él se disparaba.
+
+@@ s24 | fecha | {"a": "2004", "t": "El rebote de los sueños", "s": "Wegner, Wenzlaff y Kozak"}
+Uno de los estudios más curiosos se publicó en dos mil cuatro. Trescientas treinta personas pensaban en alguien que conocieran, y antes de acostarse pasaban cinco minutos escribiendo lo que les venía a la cabeza. Unas debían evitar pensar en esa persona, otras debían concentrarse en ella y otras escribían libremente. A la mañana siguiente, todas anotaban lo que habían soñado.
+
+En los tres grupos, la persona elegida aparecía en los sueños más que cualquier otra, lo cual ya es interesante. Pero quienes habían intentado no pensar en ella soñaban con ella más a menudo que nadie. Los periódicos de entonces titularon que la ciencia daba la razón a Freud, que había hablado de los deseos reprimidos que vuelven de noche. Era un titular exagerado, porque el mecanismo que proponía Wegner es mucho más prosaico.
+
+@@ s25 | capitulo | {"n": "Cuarta parte", "t": "Cuando el oso da miedo"}
+Hasta aquí hemos hablado de osos, chocolate y pelotas de golf, cosas más o menos neutras. Pero la pregunta que de verdad interesa en esta serie es otra. ¿Qué ocurre cuando el pensamiento que intentamos apartar no es un animal simpático, sino algo que nos asusta, nos avergüenza o nos parece monstruoso?
+
+@@ s26 | rotulo | {"t": "Pensamientos intrusivos", "s": "Rachman y de Silva, 1978"}
+En mil novecientos setenta y ocho, Stanley Rachman, el psicólogo del que hablamos en el episodio anterior, y su colega Padmal de Silva publicaron un estudio que cambió la forma de entender las obsesiones. Entrevistaron a pacientes con trastorno obsesivo compulsivo y a más de cien personas sin ningún diagnóstico, y les preguntaron por sus pensamientos indeseados. Imágenes de hacer daño a alguien, impulsos de saltar desde una ventana, dudas absurdas sobre si habían hecho algo terrible.
+
+La mayoría de las personas sin diagnóstico reconocieron tener pensamientos así. Y lo más revelador fue que, cuando se mostraron las dos listas a psicólogos con experiencia, les costó distinguir cuáles venían de pacientes y cuáles de personas sin problemas. La conclusión de los autores fue que las obsesiones, como pensamientos, son una experiencia muy común. Lo que distinguía a los pacientes no era el contenido, sino la frecuencia, el malestar y lo difícil que les resultaba librarse de ellos.
+
+@@ s27 | dato | {"v": "94 de cada 100", "t": "Universitarios con pensamientos intrusivos en los últimos tres meses", "s": "Radomsky y colaboradores, 2014 · 777 estudiantes de 13 países"}
+Más de tres décadas después, un equipo internacional dirigido por el psicólogo Adam Radomsky, de la Universidad Concordia de Montreal, repitió la pregunta a gran escala. Encuestaron a setecientos setenta y siete estudiantes universitarios de trece países de seis continentes, desde Canadá y Argentina hasta Irán, Sierra Leona, Hong Kong o España. Noventa y cuatro de cada cien dijeron haber tenido al menos un pensamiento, imagen o impulso intrusivo indeseado en los tres meses anteriores.
+
+Los ejemplos eran de lo más corriente, como la duda de si se ha cerrado la puerta de casa, la imagen de la propia casa ardiendo o el impulso repentino de hacer daño a alguien.
+
+@@ s28 | cita | {"q": "No son los pensamientos intrusivos el problema", "a": "Adam Radomsky, Universidad Concordia, 2014 (traducción)"}
+Radomsky lo resumió de una manera que conviene escuchar despacio. Lo que muestra el estudio, dijo, es que no son los pensamientos intrusivos no deseados el problema, sino lo que hacemos con ellos. Las personas con trastorno obsesivo los tienen más a menudo y les angustian mucho más, pero los pensamientos en sí parecen indistinguibles de los que tiene la población general. Y añadió una frase que tiene algo de consuelo, que nos parecemos más de lo que nos diferenciamos.
+
+@@ s29 | persona | {"n": "Paul Salkovskis", "r": "Psicólogo clínico británico. Modelo cognitivo del TOC", "a": "Investigador en activo"}
+Si el pensamiento no es el problema, ¿dónde está? La respuesta más influyente la dio Paul Salkovskis, el psicólogo británico que ya apareció en el episodio sobre conductas de seguridad. En un artículo de mil novecientos ochenta y cinco propuso que lo decisivo es la interpretación. Un pensamiento intrusivo se convierte en obsesión cuando la persona lo interpreta como algo significativo, como una señal de que es peligrosa, de que podría perder el control o de que es responsable de evitar una catástrofe.
+
+Una persona puede tener la imagen fugaz de empujar a alguien a las vías del tren y pensar que su mente produce cosas raras, y seguir con su vida. Otra puede tener exactamente la misma imagen y preguntarse qué clase de persona piensa algo así, si en el fondo lo desea, si debería alejarse de los andenes. A partir de ahí, el pensamiento ya no es ruido, sino una amenaza que hay que vigilar y eliminar.
+
+@@ s30 | lista | {"t": "El círculo de la supresión", "items": ["Aparece un pensamiento intrusivo", "Se interpreta como peligroso", "Se intenta suprimir", "El vigilante lo busca sin descanso", "Vuelve y parece que importa"]}
+Y aquí es donde el oso de Wegner encaja con la clínica. Cuando un pensamiento se interpreta como peligroso, la reacción natural es intentar suprimirlo. Pero la supresión pone en marcha al vigilante, que lo busca constantemente, y el pensamiento vuelve más a menudo. Y ese regreso se interpreta a su vez como una prueba de que el pensamiento es importante, porque si no lo fuera, piensa la persona, no volvería tanto.
+
+Es un círculo cerrado, en el que cada vuelta hace la siguiente más fuerte. La persona intenta con más ahínco no pensar, el pensamiento vuelve con más insistencia, y la conclusión de que algo va mal se vuelve cada vez más convincente.
+
+@@ s31 | rotulo | {"t": "Un ejemplo frecuente en las consultas", "s": "Caso ilustrativo, no real"}
+Vamos a imaginar un caso, inventado pero muy parecido a los que se describen con frecuencia en la literatura clínica sobre el trastorno obsesivo. Una mujer acaba de ser madre y, una tarde, mientras baña a su bebé, le cruza por la cabeza una imagen horrible, la de soltarlo bajo el agua. La imagen dura un segundo, pero la deja helada. Se pregunta cómo ha podido pensar algo así, si será una mala madre, si existe algún riesgo de que lo haga.
+
+A partir de ese día, intenta con todas sus fuerzas no volver a tener esa imagen. Evita bañar sola al bebé, guarda los cuchillos, se examina continuamente por si aparece algún impulso. Y cuanto más se vigila, más aparece la imagen, cada vez con más detalle. Lo que los especialistas le explicarían es justamente lo que vimos antes. Que pensamientos así son frecuentes, que su presencia no dice nada sobre sus deseos, y que precisamente el horror que le producen indica lo lejos que están de ser intenciones.
+
+@@ s32 | rotulo | {"t": "Distractores tristes", "s": "Wenzlaff, Wegner y Roper, 1988"}
+La supresión también se estudió en la depresión, con un resultado especialmente ingenioso. En mil novecientos ochenta y ocho, Richard Wenzlaff, Daniel Wegner y David Roper pidieron a personas con síntomas depresivos y sin ellos que intentaran no pensar en algo negativo. Ambos grupos buscaban distractores, como era de esperar. Pero las personas con síntomas depresivos tendían a elegir distractores también negativos, porque eran los que tenían más a mano.
+
+Esos distractores, a su vez, estaban conectados con el pensamiento que se quería evitar, y acababan conduciendo de vuelta a él. Años después, el propio Wenzlaff siguió durante varias semanas a un grupo de personas y comprobó que quienes más intentaban suprimir sus pensamientos depresivos tendían a empeorar.
+
+@@ s33 | rotulo | {"t": "Después de un trauma", "s": "La supresión como factor de riesgo"}
+Algo parecido aparece en las personas que han sufrido una experiencia traumática. Un estudio del equipo de la psicóloga Anke Ehlers, publicado en mil novecientos noventa y ocho, siguió a personas que habían tenido un accidente de tráfico. Quienes, tres meses después, se esforzaban más en suprimir los pensamientos sobre el accidente tenían más probabilidades de presentar síntomas de estrés postraumático al cabo de un año.
+
+Que dos cosas vayan juntas no demuestra que una cause la otra, y quizá quienes peor lo pasaban eran también quienes más intentaban no pensar. Pero el patrón encaja con el resto de la investigación, y es una de las razones por las que las terapias del trauma con más respaldo científico trabajan acercándose a los recuerdos de forma controlada, en lugar de enseñar a enterrarlos.
+
+@@ s34 | comparar | {"izq": ["Abramowitz y col., 2001", "28 estudios", "Rebote pequeño o moderado", "No mayor en pacientes"], "der": ["Wang y col., 2020", "31 estudios", "Rebote fiable", "Aumento inmediato solo bajo carga"]}
+Ahora bien, ¿es el efecto del oso blanco tan potente como sugiere su fama? Aquí conviene ser honestos. En dos mil uno, Jonathan Abramowitz y dos colegas reunieron los datos de veintiocho estudios controlados. Encontraron un efecto rebote real pero de tamaño pequeño o moderado, que variaba según el tipo de pensamiento y la forma de medirlo, y no hallaron que fuera mayor en personas con diagnóstico clínico, aunque había pocos estudios con pacientes.
+
+En dos mil veinte, otro metaanálisis, con treinta y un estudios que seguían el procedimiento original de Wegner, matizó el cuadro. El rebote posterior aparecía de forma bastante fiable. En cambio, el aumento inmediato del pensamiento mientras se intenta suprimir solo se observaba cuando las personas tenían, además, la mente cargada con otra tarea, tal como había predicho la teoría de los procesos irónicos. El oso existe, pero no es un monstruo. Es un efecto modesto, que crece con el cansancio y el estrés, y que la cultura popular ha tendido a exagerar.
+
+@@ s35 | capitulo | {"n": "Quinta parte", "t": "¿Y si a veces sí funciona?"}
+Hasta aquí, la historia parece redonda. Pero en las últimas dos décadas, un grupo de investigadores ha ido acumulando pruebas de que el cuadro es más complicado, y en dos mil veintitrés publicó un estudio que muchos titulares presentaron como un desafío a cien años de sabiduría psicológica.
+
+@@ s36 | persona | {"n": "Michael C. Anderson", "r": "Neurocientífico cognitivo. Unidad de Cognición y Ciencias del Cerebro, Cambridge", "a": "Investigador en activo"}
+Michael Anderson es un neurocientífico cognitivo estadounidense que trabaja desde hace años en una unidad de investigación del Consejo de Investigación Médica británico, en Cambridge. Su tema es casi el opuesto al de Wegner. En lugar de preguntarse por qué fallamos al intentar no pensar en algo, se pregunta cómo lo conseguimos cuando lo conseguimos, y qué ocurre en el cerebro cuando detenemos un recuerdo antes de que llegue a la conciencia.
+
+@@ s37 | fecha | {"a": "2001", "t": "Suprimir recuerdos no deseados", "s": "Anderson y Green, Nature"}
+En dos mil uno, Anderson y su colega Collin Green publicaron en la revista Nature un procedimiento que llamaron pensar o no pensar. Los participantes aprendían primero parejas de palabras. Después veían la primera palabra de cada pareja y, según una señal, debían recordar la segunda o, por el contrario, impedir que les viniera a la cabeza, sin distraerse con otra cosa, simplemente parando el recuerdo.
+
+Al final, cuando se les pedía recordar todas las parejas, las palabras que habían intentado bloquear se recordaban peor que otras que ni siquiera habían vuelto a ver. Detener un recuerdo de forma repetida parecía debilitarlo. No había rebote, sino olvido. Y con los años, los estudios de neuroimagen mostraron que en ese proceso intervienen regiones del lóbulo frontal que frenan la actividad del hipocampo, la estructura clave para recuperar recuerdos.
+
+@@ s38 | fecha | {"a": "2023", "t": "Mejorar la salud mental entrenando la supresión", "s": "Mamat y Anderson, Science Advances"}
+En septiembre de dos mil veintitrés, Zulkayda Mamat y Michael Anderson dieron un paso más y publicaron en la revista Science Advances un estudio hecho durante la pandemia de covid. Participaron ciento veinte adultos de dieciséis países, conectados por videoconferencia. Cada persona identificó varios temores que le rondaban la cabeza, situaciones que podían ocurrir en el futuro y que le angustiaban, además de pensamientos neutros y esperanzas, y asoció cada uno a una palabra que servía de señal.
+
+Durante tres días, sesenta y una personas se entrenaron en suprimir sus temores cuando aparecía la palabra correspondiente, y cincuenta y nueve hicieron lo mismo con pensamientos neutros. No se trataba de distraerse, sino de bloquear el pensamiento en cuanto asomaba, sin pensar en otra cosa.
+
+@@ s39 | rotulo | {"t": "Sin rebote", "s": "Temores menos vívidos y menos angustiosos"}
+Los resultados fueron llamativos. No hubo rebote. Los temores suprimidos se recordaban peor, se volvían menos vívidos y provocaban menos ansiedad. Quienes habían suprimido temores dijeron sentirse menos ansiosos y menos decaídos que el grupo de comparación, y la mejora en los síntomas depresivos se mantenía tres meses después. Además, las personas que más se beneficiaron fueron las que partían con más ansiedad y con más síntomas de estrés postraumático relacionados con la pandemia.
+
+Es decir, justo las personas para las que, según el saber tradicional, la supresión debería ser más peligrosa. El estudio es importante, pero conviene leer también sus límites.
+
+@@ s40 | lista | {"t": "Antes de sacar conclusiones", "items": ["120 personas, casi todas mujeres", "Sin diagnóstico clínico", "Pensamientos sobre el futuro", "Supresión ante una señal concreta", "Falta replicarlo"]}
+La muestra era pequeña, de ciento veinte personas, y en torno a nueve de cada diez eran mujeres. Ninguna tenía un diagnóstico de trastorno mental, así que no sabemos si funcionaría igual en el trastorno obsesivo o en el estrés postraumático grave. Los autores insistieron en que había que replicarlo antes de pensar en nuevas terapias. Y Mamat apuntó que quizá la supresión no sirva para cualquier pensamiento negativo ni para cualquier persona, y que podría encajar sobre todo con preocupaciones sobre el futuro sobre las que no se puede hacer nada.
+
+@@ s41 | rotulo | {"t": "El freno del cerebro", "s": "Anderson, Crespo García y Subbulakshmi, 2025"}
+En julio de dos mil veinticinco, Anderson y dos colegas, Maite Crespo García y la investigadora Subbulakshmi, de la Universidad de Stanford, publicaron en Nature Reviews Neuroscience una revisión de todo lo que se sabe sobre el freno cerebral de los pensamientos. Su conclusión es que existe un circuito, con un papel destacado de la corteza prefrontal derecha, parecido al que usamos para frenar un movimiento en el último momento, que actúa sobre el hipocampo.
+
+En ese freno participa un neurotransmisor inhibidor llamado ácido gamma aminobutírico, más conocido por sus siglas en inglés, gaba. Las personas con más gaba en el hipocampo parecen olvidar mejor los pensamientos que intentan bloquear. Los autores sugieren que un fallo en este circuito podría contribuir a los pensamientos intrusivos de la ansiedad, la depresión y el estrés postraumático.
+
+@@ s42 | comparar | {"izq": ["No pienses en el oso", "Instrucción abierta", "Sin señal concreta", "Vigilancia constante"], "der": ["Detener un recuerdo", "Ante una señal concreta", "Un gesto breve", "Sin búsqueda de distractores"]}
+¿Cómo encajan entonces el oso de Wegner y el freno de Anderson? Una forma razonable de verlo es que no están midiendo exactamente lo mismo. En el experimento del oso, la instrucción es abierta. No pienses en esto durante cinco minutos, lo que obliga a vigilar todo el tiempo, sin ninguna señal concreta. En el procedimiento de Anderson, la supresión es un gesto breve ante un recordatorio concreto, parar un recuerdo cuando llama a la puerta, sin buscar nada con lo que sustituirlo.
+
+Hay además una diferencia que importa mucho en la ansiedad, y es el motivo. No es lo mismo apartar un pensamiento porque no viene al caso que apartarlo porque se cree que pensarlo es peligroso, que dice algo terrible de uno mismo o que podría hacer que ocurriera. En el segundo caso, la supresión funciona como una conducta de seguridad mental, con todos los problemas que vimos en el episodio anterior.
+
+@@ s43 | capitulo | {"n": "Sexta parte", "t": "Dejar que el oso pase"}
+Si luchar contra los pensamientos suele salir mal, ¿qué alternativa queda? Aquí la investigación psicológica ofrece varias pistas, ninguna mágica, que tienen algo en común. Todas cambian la relación con el pensamiento en lugar de intentar eliminarlo.
+
+@@ s44 | rotulo | {"t": "Aceptar no es rendirse", "s": "Marcks y Woods, 2005"}
+En dos mil cinco, los psicólogos Brian Marcks y Douglas Woods compararon en un experimento tres formas de manejar un pensamiento intrusivo personal. Un grupo intentaba suprimirlo, otro simplemente lo observaba, y el tercero practicaba la aceptación, es decir, dejarlo estar sin pelear con él, como quien deja pasar un coche por la calle. Quienes lo suprimieron no lo consiguieron, y además su malestar aumentó después.
+
+En el grupo de aceptación ocurrió algo revelador. El número de veces que aparecía el pensamiento no cambió, pero el malestar que producía disminuyó. El objetivo no tiene por qué ser tener menos pensamientos desagradables, sino que esos pensamientos dejen de mandar. Un oso que aparece y se va sin que nadie le haga caso es mucho menos temible que uno al que se intenta expulsar a empujones.
+
+@@ s45 | lista | {"t": "Algunas pistas de la investigación", "items": ["Un solo distractor concreto", "Ver el pensamiento como pensamiento", "Exponerse a él a propósito", "Escribir sobre lo que preocupa", "Pedir ayuda profesional"]}
+Hay otras herramientas que se usan en terapia y que tienen respaldo científico. La primera viene del propio Wegner y su Volkswagen rojo. Si uno decide distraerse, mejor hacerlo con una actividad concreta y absorbente que saltando de una cosa a otra. La segunda es lo que algunas terapias llaman distanciamiento, observar el pensamiento como un suceso mental y no como un hecho. Por ejemplo, decirse que se está teniendo el pensamiento de que algo malo va a pasar, en lugar de decirse que algo malo va a pasar.
+
+La tercera es la más contraintuitiva, y es acercarse al pensamiento a propósito. En el tratamiento del trastorno obsesivo, la técnica con más respaldo, la exposición con prevención de respuesta, consiste en parte en provocar deliberadamente los pensamientos temidos sin hacer nada para neutralizarlos, hasta que pierden su poder. Escribir sobre lo que preocupa también ayuda a muchas personas a ordenarlo en lugar de esquivarlo. Todas estas técnicas funcionan mejor con la guía de alguien formado para ello.
+
+@@ s46 | rotulo | {"t": "Hojas en un río", "s": "Un ejercicio sencillo"}
+Hay un ejercicio sencillo que se usa en la terapia de aceptación y compromiso y que ilustra bien la idea. Consiste en imaginar que uno está sentado a la orilla de un río por el que bajan hojas flotando. Cada vez que aparece un pensamiento, sea el que sea, se coloca sobre una hoja y se deja que el agua se lo lleve, sin empujarlo ni retenerlo. Si aparece un oso blanco, va a una hoja. Si aparece la duda de si se está haciendo bien el ejercicio, va a otra hoja.
+
+El objetivo no es que el río se quede vacío, porque nunca lo hará. La mente produce pensamientos igual que el corazón late, sin pedir permiso. El objetivo es dejar de saltar al agua detrás de cada hoja. Y cuando nos descubramos metidos en el río, persiguiendo una preocupación, basta con volver a la orilla, sin regañarse.
+
+@@ s47 | rotulo | {"t": "El palito verde", "s": "El secreto no estaba en el rincón"}
+Volvamos al principio, a los hermanos Tolstói en su rincón, intentando no pensar en un oso blanco para encontrar el secreto de la felicidad. Quizá aquel juego de hermano mayor encerraba una lección que Nikolái no pretendía dar. La felicidad no dependía de conseguir que el oso no apareciera, y cuanto más se empeñaban en ello, más lejos quedaba el palito verde.
+
+La mente humana no tiene un interruptor para apagar pensamientos, y lo que hemos visto hoy sugiere que, cuando intentamos fabricarlo a la fuerza, a menudo acabamos encendiendo el pensamiento con más intensidad. A veces un freno breve funciona, como muestran los trabajos de Anderson. Pero cuando un pensamiento nos asusta y luchamos contra él una y otra vez, quizá lo más útil sea dejar de pelear, ver el oso, reconocer que es solo un oso imaginario y dejar que se vaya por sí solo.
+
+En el próximo episodio de esta serie hablaremos del círculo vicioso del pánico, de cómo una sensación corporal corriente, un latido más fuerte o un leve mareo, puede convertirse en pocos segundos en la certeza de que algo terrible está a punto de ocurrir.
+
+@@ s48 | fin | {"t": "Próximamente en esta serie", "items": ["El círculo vicioso del pánico", "La intención paradójica", "Rumiar y preocuparse", "La búsqueda de reafirmación"]}
+Gracias por escuchar La mente contra sí misma. Hasta el próximo episodio.
