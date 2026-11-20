@@ -1,0 +1,209 @@
+@@ s01 | titulo | {"t": "Fallos en cascada", "s": "Temporada 1 · Episodio 4"}
+Fallos en cascada. Sistemas complejos y efectos inesperados. Temporada uno, episodio cuatro.
+
+@@ s02 | fecha | {"a": "28 de abril de 2025", "t": "12:33 · La península ibérica se queda a oscuras", "s": "España peninsular y Portugal, a la vez"}
+El veintiocho de abril de dos mil veinticinco era un lunes tranquilo de primavera. A las doce y media hacía sol en casi toda la península, y las placas solares daban más de la mitad de la electricidad que se consumía en España. A las doce y treinta y tres minutos, en apenas unos segundos, se apagó todo. Los semáforos, los trenes, el metro, los ascensores, las cajas de los supermercados y los repetidores de telefonía móvil. En España peninsular y en Portugal, más de cincuenta millones de personas se quedaron sin luz a la vez, y decenas de miles de viajeros tuvieron que ser rescatados de trenes y vagones de metro.
+
+@@ s03 | rotulo | {"t": "Unos segundos para apagar un país", "s": "Y casi un año para entender por qué"}
+La pregunta que todo el mundo se hacía esa tarde era cómo puede venirse abajo de golpe un sistema tan enorme, con miles de centrales y protecciones por todas partes. No hubo un terremoto, ni una tormenta, y los informes oficiales descartaron el ciberataque. Lo que hubo fue una cadena de pequeños fallos, cada uno de los cuales empujó al siguiente.
+
+Los ingenieros lo llaman fallo en cascada: un problema local que, en lugar de quedarse donde empezó, se propaga hasta tumbar el sistema entero. En este episodio veremos grandes apagones en Norteamérica, en Italia y en media Europa, el ibérico con lo que ya sabemos gracias al informe final de los expertos europeos, y dos desplomes bursátiles en los que las máquinas acabaron acelerando el pánico.
+
+@@ s04 | capitulo | {"n": "Primera parte", "t": "Cómo se propaga un fallo"}
+La idea básica es sencilla. Imagina una red de carreteras en hora punta. Si un accidente corta una autopista, los coches buscan otras rutas, las carreteras secundarias se colapsan y los conductores que huyen de ellas atascan otras vías. El problema no se queda en el accidente. Viaja con el tráfico.
+
+@@ s05 | ilus | {"fig": "redistribucion", "pie": "Cuando una pieza cae, su carga se reparte entre las vecinas, que pueden caer a su vez"}
+Una red eléctrica funciona de forma parecida, pero mucho más deprisa. La electricidad no se puede guiar como un coche: se reparte por todas las líneas disponibles siguiendo las leyes de la física. Si una línea se desconecta, la corriente que llevaba pasa al instante a las vecinas. Si alguna ya iba cerca de su límite, se sobrecarga, se calienta y sus protecciones la desconectan para que no se dañe. Entonces su carga pasa a otras, y el proceso se repite.
+
+Lo inquietante es que cada protección, por separado, hace exactamente lo que debe. Desconectar una línea sobrecargada es lo correcto para salvar esa línea. Pero la suma de todas esas decisiones correctas puede ser un desastre. En una cascada no suele haber una pieza que se vuelve loca, sino muchas piezas que obedecen sus reglas locales sin ver el conjunto.
+
+@@ s06 | ilus | {"fig": "arena", "pie": "El montón de arena: la mayoría de granos no hacen nada, pero alguno desata una avalancha enorme"}
+En mil novecientos ochenta y siete, los físicos Per Bak, Chao Tang y Kurt Wiesenfeld propusieron un modelo que se ha convertido en la imagen clásica de estos fenómenos. Imagina que dejas caer granos de arena, uno a uno, sobre una mesa. El montón crece y se hace más empinado hasta alcanzar una pendiente crítica, y a partir de ahí cada grano nuevo puede provocar una avalancha.
+
+La mayoría de las avalanchas son pequeñas. Pero, muy de vez en cuando, un solo grano, idéntico a todos los demás, arrastra medio montón. No hay nada especial en ese grano. La diferencia está en el estado del montón cuando cae.
+
+@@ s07 | rotulo | {"t": "El grano no explica la avalancha", "s": "La explica el estado del montón"}
+Bak lo llamó criticidad autoorganizada: muchos sistemas, por su propia dinámica, se colocan cerca de un equilibrio frágil, donde perturbaciones minúsculas pueden tener consecuencias de cualquier tamaño. Los apagones se parecen bastante a esto. Cuando se recopilan los cortes de luz de un país durante décadas, los grandes aparecen con más frecuencia de lo que predeciría el puro azar. No son accidentes que caen del cielo, sino la cola larga de un sistema que vive, por diseño y por economía, cerca de sus límites.
+
+@@ s08 | persona | {"n": "Charles Perrow", "r": "Sociólogo, autor de «Normal Accidents» (1984)", "a": "1925 – 2019"}
+El sociólogo estadounidense Charles Perrow llegó a una conclusión parecida desde otro lado. Tras el accidente nuclear de Three Mile Island, en mil novecientos setenta y nueve, estudió cómo fallan las grandes organizaciones tecnológicas, y en mil novecientos ochenta y cuatro publicó un libro titulado Normal Accidents, accidentes normales. Su tesis era que, en ciertos sistemas, los accidentes graves no son una anomalía, sino una consecuencia casi inevitable de su diseño.
+
+@@ s09 | ilus | {"fig": "perrow", "pie": "Según Perrow, los sistemas complejos y muy acoplados son los más propensos a los «accidentes normales»"}
+Perrow señalaba dos rasgos peligrosos. Uno es la complejidad interactiva: las piezas se relacionan de maneras que nadie ha previsto del todo. El otro es el acoplamiento estrecho: los procesos van tan pegados unos a otros que no hay tiempo para darse cuenta de lo que pasa y corregirlo. Una red eléctrica moderna y un mercado financiero electrónico cumplen las dos condiciones.
+
+@@ s10 | capitulo | {"n": "Segunda parte", "t": "Árboles, alarmas y cincuenta y cinco millones de personas"}
+El jueves catorce de agosto de dos mil tres hacía calor en el norte de Ohio, en Estados Unidos. Los aparatos de aire acondicionado funcionaban a pleno rendimiento y la red iba muy cargada, aunque dentro de lo normal para un día de verano.
+
+@@ s11 | mapa | {"titulo": "El apagón de 2003 en Norteamérica", "region": [-90, -68, 37, 48], "puntos": [{"n": "Cleveland (Ohio)", "lat": 41.5, "lon": -81.7, "p": true, "pos": "izq"}, {"n": "Detroit", "lat": 42.3, "lon": -83.0, "pos": "izq"}, {"n": "Toronto", "lat": 43.7, "lon": -79.4, "pos": "der"}, {"n": "Nueva York", "lat": 40.7, "lon": -74.0, "pos": "der"}, {"n": "Ottawa", "lat": 45.4, "lon": -75.7, "pos": "der"}], "nota": "Ocho estados de Estados Unidos y la provincia canadiense de Ontario"}
+La compañía responsable de la zona era FirstEnergy. A la una y media de la tarde se desconectó una de sus centrales, la de Eastlake, a orillas del lago Erie. No era grave en sí mismo, pero obligaba a traer electricidad desde más lejos y cargaba aún más las líneas que atraviesan la región de Cleveland y Akron.
+
+Poco después de las dos ocurrió el fallo decisivo, aunque nadie lo notó. El sistema de alarmas de la sala de control de FirstEnergy dejó de funcionar. El programa, de la empresa General Electric, tenía un error escondido, lo que los informáticos llaman una condición de carrera: dos procesos intentaron usar a la vez los mismos datos y las alarmas se quedaron bloqueadas. Y no dieron ningún aviso de que habían dejado de avisar.
+
+@@ s12 | rotulo | {"t": "Una alarma que se rompe en silencio", "s": "Los operadores siguieron mirando pantallas que ya no decían la verdad"}
+Durante más de una hora, los operadores trabajaron convencidos de que todo iba bien, porque sus pantallas no mostraban ningún problema. Cuando la compañía vecina les llamó para comentar que una línea compartida se había desconectado, no le dieron importancia. Si hubiera pasado algo, pensaban, habría saltado una alarma.
+
+Mientras tanto, el organismo que supervisaba la región tenía su propio problema. Su herramienta para calcular cómo se comportaría la red si algo fallaba llevaba desde el mediodía dando resultados erróneos. Un técnico arregló el fallo, pero olvidó volver a activarla. Esa tarde, los dos centros que debían vigilar Ohio estaban medio ciegos.
+
+@@ s13 | tiempo | {"t": "La tarde del 14 de agosto de 2003", "marcas": [["13:31", "Cae la central de Eastlake"], ["14:14", "Falla el sistema de alarmas"], ["15:05", "Primera línea contra un árbol"], ["15:32", "Segunda línea contra un árbol"], ["15:41", "Tercera línea"], ["16:10", "Empieza la cascada"]]}
+A las tres y cinco, una línea de trescientos cuarenta y cinco mil voltios se desconectó al tocar un árbol cerca de Cleveland. Con el calor y la carga, los cables se dilatan y se comban, y si los árboles de debajo no se han podado, acaban rozándolos. A las tres y treinta y dos, una segunda línea tocó otro árbol, y a las tres y cuarenta y uno cayó una tercera, que funcionaba ya muy por encima de su capacidad.
+
+Con cada línea que se iba, las restantes cargaban más corriente, se calentaban y se combaban más. Más de una docena de líneas de menor tensión saltaron en el norte de Ohio. Un análisis posterior estimó que el apagón se habría podido evitar desconectando de forma controlada parte del consumo de la zona de Cleveland y Akron, sacrificando a unos para salvar a todos. Nadie lo hizo, porque nadie sabía lo que estaba pasando.
+@@ s14 | dato | {"v": "2 minutos y medio", "t": "lo que tardó la cascada en extenderse por el noreste", "s": "De las 16:10:34 a las 16:13"}
+A las cuatro y cinco cayó una de las grandes arterias que unían Ohio con el resto de la red. Fue el punto de no retorno. A las cuatro y diez, enormes flujos de energía empezaron a dar vueltas alrededor del lago Erie, primero en un sentido y luego en el contrario, en cuestión de segundos. Las protecciones de líneas y centrales, al detectar esos vaivenes, fueron desconectándolo todo.
+
+En unos dos minutos y medio, la red se partió en trozos: Michigan se dividió en dos, Cleveland quedó aislada, Ontario se separó del estado de Nueva York y Nueva Inglaterra de Nueva York. Más de quinientas unidades de generación, en al menos doscientas sesenta y cinco centrales, se apagaron automáticamente para protegerse.
+
+@@ s15 | dato | {"v": "55 millones", "t": "de personas sin luz en Estados Unidos y Canadá", "s": "Nueva York, Detroit, Cleveland, Toronto, Ottawa..."}
+Unos cincuenta y cinco millones de personas se quedaron sin electricidad, cuarenta y cinco millones en Estados Unidos y diez millones en Ontario. En Nueva York, millones de personas volvieron a casa andando. Hubo ciudades sin agua corriente porque las bombas se pararon. En algunas zonas la luz volvió en un par de horas y en otras tardó hasta cuatro días. Se atribuyen al apagón cerca de un centenar de muertes.
+
+@@ s16 | lista | {"t": "Lo que concluyó la investigación (2004)", "items": ["Árboles sin podar bajo las líneas", "Alarmas que fallaron sin avisar", "Operadores sin visión de conjunto", "Supervisores sin herramientas a punto", "Normas de fiabilidad voluntarias"]}
+La comisión conjunta de Estados Unidos y Canadá publicó su informe en abril de dos mil cuatro, y sus conclusiones eran sorprendentemente prosaicas. FirstEnergy no había podado bien los árboles, no entendía las debilidades de su propia red y no se dio cuenta de que se estaba deteriorando. Y los organismos de supervisión no le dieron el apoyo que necesitaba en tiempo real.
+
+Además, las normas de fiabilidad del sector eran en buena parte voluntarias, y el secretario de Energía reconoció que no había forma de castigar a la compañía a escala federal. La Ley de Política Energética de dos mil cinco las hizo obligatorias. Lo que enseña aquella tarde es que ningún fallo, por separado, habría bastado. Una central que se para, una línea que toca un árbol o un error informático ocurren todos los días. El desastre llegó porque coincidieron en una red muy cargada, y porque quienes podían cortar la cadena no sabían que estaba en marcha.
+
+@@ s17 | capitulo | {"n": "Tercera parte", "t": "Un árbol en Suiza, un barco en Alemania"}
+Apenas seis semanas después, le tocó a Europa. En la madrugada del domingo veintiocho de septiembre de dos mil tres, Roma celebraba su primera Noche Blanca, con museos, tiendas y transportes abiertos toda la noche. Poco después de las tres, todo se apagó. No solo Roma: toda la península italiana.
+
+@@ s18 | mapa | {"titulo": "Italia, 28 de septiembre de 2003", "region": [2, 20, 36, 49], "puntos": [{"n": "Línea del Lukmanier", "lat": 46.55, "lon": 8.8, "p": true, "pos": "der"}, {"n": "Roma", "lat": 41.9, "lon": 12.5, "pos": "der"}, {"n": "Milán", "lat": 45.46, "lon": 9.19, "pos": "izq"}, {"n": "Nápoles", "lat": 40.85, "lon": 14.27, "pos": "der"}], "nota": "Unos 56 millones de personas sin luz"}
+El origen estaba en los Alpes suizos. Italia importaba entonces mucha electricidad de sus vecinos, sobre todo de noche. A eso de las tres, una línea de cuatrocientos mil voltios que cruza el paso del Lukmanier hizo arco con un árbol y se desconectó. Su carga pasó a las líneas paralelas, que podían aguantar así unos quince minutos. Pero el operador suizo no fue consciente de la urgencia.
+
+Primero intentó volver a conectar la línea, sin éxito, y luego pidió al operador italiano que redujera sus importaciones. Italia lo hizo, pero tarde. Unos veinte minutos después del primer fallo, las líneas sobrecalentadas se combaron hasta tocar otros árboles y saltaron. Italia quedó desconectada de golpe de toda Europa, con un enorme hueco entre lo que consumía y lo que producía.
+
+@@ s19 | dato | {"v": "47,5 Hz", "t": "frecuencia a la que se desconectaron todas las centrales italianas", "s": "La red europea funciona a 50 hercios"}
+Aquí entra en juego la frecuencia. Las redes europeas funcionan con corriente alterna a cincuenta hercios, cincuenta ciclos por segundo, y esa frecuencia es como el pulso del sistema. Cuando se consume más de lo que se produce, los generadores se frenan y la frecuencia baja. Cuando sobra producción, sube.
+
+Al separarse de Europa, la frecuencia italiana se desplomó. A cuarenta y nueve hercios se desconectaron miles de megavatios de pequeñas centrales, lo que agravó el desequilibrio. Los cortes automáticos de consumo no bastaron, y a cuarenta y siete y medio las protecciones desconectaron todas las centrales que quedaban. Unos cincuenta y seis millones de personas se quedaron sin luz, en el norte durante unas tres horas y en partes del sur hasta doce.
+
+@@ s20 | persona | {"n": "Serguéi Buldyrev, Shlomo Havlin y otros", "r": "Físicos, autores de un artículo sobre redes interdependientes en «Nature»", "a": "Publicado en abril de 2010"}
+El apagón italiano tuvo una segunda vida en la ciencia. En dos mil diez, un grupo de físicos encabezado por Serguéi Buldyrev y Shlomo Havlin lo usó como ejemplo en un artículo muy citado de la revista Nature. Las centrales se controlan a través de una red de comunicaciones, y esa red necesita electricidad. Según su descripción, al caer varias centrales fallaron nodos de comunicaciones, y eso provocó la caída de más centrales.
+
+@@ s21 | ilus | {"fig": "interdependientes", "pie": "Dos redes que dependen una de otra: el fallo salta de una a otra y vuelve amplificado"}
+Lo que mostró su modelo es inquietante. Una red aislada aguanta bastante bien la pérdida de nodos al azar. Pero cuando dos redes dependen la una de la otra, el fallo rebota entre ellas como una pelota entre dos paredes. Basta perder una fracción pequeña de nodos para que todo se fragmente, y el colapso no es gradual, sino brusco: el sistema parece funcionar bien hasta que, de repente, deja de hacerlo. Y hoy casi todo lo importante funciona así: la electricidad depende de las comunicaciones, las comunicaciones de la electricidad, y el agua y los pagos de ambas.
+
+@@ s22 | fecha | {"a": "4 de noviembre de 2006", "t": "Un crucero apaga media Europa", "s": "El «Norwegian Pearl» bajaba por el río Ems, en Alemania"}
+Tres años después, Europa vivió un apagón con un origen casi novelesco. El astillero Meyer Werft, en Papenburg, en el noroeste de Alemania, construye enormes cruceros que salen al mar por el río Ems. Sobre el río pasa una línea de trescientos ochenta mil voltios, y los barcos eran tan altos que, para que pasaran con seguridad, había que desconectarla durante unas horas.
+@@ s23 | ilus | {"fig": "ems", "pie": "Para que pasara el crucero había que desconectar la línea que cruza el río Ems"}
+Era una maniobra que ya se había hecho otras veces. Esta vez el barco era el Norwegian Pearl, y el paso estaba previsto para la una de la madrugada del cinco de noviembre. Pero el día anterior el astillero pidió adelantarlo a las diez de la noche del cuatro, y la compañía eléctrica aceptó. El cambio se comunicó muy tarde a las redes vecinas y no hubo tiempo de hacer un análisis completo. Los técnicos hicieron algunos cálculos y dieron por hecho que la red aguantaría.
+
+A las nueve y treinta y ocho de la noche se desconectó la línea. La energía buscó otras rutas, y una línea vecina, gestionada por otra compañía, fue cargándose hasta superar su límite de seguridad. Para aliviarla, los operadores hicieron una maniobra sin coordinarse con la compañía vecina, y el efecto fue el contrario del que buscaban. A las diez y diez, esa línea saltó, y tras ella otras en cadena.
+
+@@ s24 | dato | {"v": "Más de 15 millones", "t": "de clientes sin luz en media Europa", "s": "Alemania, Francia, Bélgica, Italia, España, Portugal..."}
+En unos segundos, la red europea se partió en tres islas. En el oeste faltaba energía y la frecuencia cayó, y en el noreste sobraba y subió. Los cortes automáticos dejaron sin luz durante hasta dos horas a más de quince millones de clientes, en el norte de Alemania, en casi toda Francia, en Bélgica, en partes de Italia y también en España, con cortes en Madrid, Barcelona, Zaragoza y parte de Andalucía.
+
+@@ s25 | comparar | {"izq": ["Lo que se pensó", "Una maniobra rutinaria", "Un cambio de hora sin importancia", "La red aguantará"], "der": ["Lo que pasó", "Una red ya muy cargada", "Sin análisis completo", "Media Europa a oscuras"]}
+Nadie hizo nada absurdo. Adelantar unas horas una maniobra habitual parecía inofensivo. Pero en un sistema tan interconectado, una decisión local tiene consecuencias a mil kilómetros, y los márgenes que uno da por supuestos dependen de lo que hagan todos los demás en ese momento. Al año siguiente, las torres que sostienen la línea sobre el Ems se elevaron de ochenta y cuatro a ciento diez metros.
+
+@@ s26 | capitulo | {"n": "Cuarta parte", "t": "El cero eléctrico ibérico"}
+Volvamos a la península ibérica. Tras el veintiocho de abril circularon todo tipo de explicaciones: demasiadas renovables, falta de inercia, un ciberataque, un fenómeno atmosférico raro. Hoy tenemos tres informes oficiales: el del comité creado por el Gobierno, el de la Comisión Nacional de los Mercados y la Competencia y, sobre todo, el del panel de expertos de la red europea de operadores, que publicó su informe final el veinte de marzo de dos mil veintiséis.
+
+@@ s27 | dato | {"v": "49", "t": "expertos europeos en el panel que investigó el apagón", "s": "Dirigido por operadores de Austria y Hungría"}
+El panel lo formaban cuarenta y nueve expertos, dirigidos por dos técnicos de los operadores de Austria y Hungría, ajenos al incidente. Su conclusión es que fue el incidente más grave del sistema eléctrico europeo en más de veinte años, y el primero de su tipo. Porque este apagón no empezó por falta de energía ni por líneas sobrecargadas. Empezó por un exceso de tensión.
+
+@@ s28 | ilus | {"fig": "oscilaciones", "pie": "Antes del apagón hubo dos episodios de oscilaciones en la red (horas peninsulares)"}
+La mañana ya había dado avisos. Entre las doce y tres y las doce y ocho, la red ibérica sufrió unas oscilaciones extrañas, un vaivén en la potencia y la tensión. Entre las doce y diecinueve y las doce y veintidós hubo un segundo episodio, en el que la península entera se balanceaba contra el resto de Europa, como dos masas unidas por un muelle, a razón de una oscilación cada cinco segundos.
+
+Para calmarlas, Red Eléctrica redujo las exportaciones a Francia, conectó más líneas en el sur y cambió el modo de funcionamiento del enlace de corriente continua con Francia. Las oscilaciones se amortiguaron, pero esas medidas hicieron subir la tensión de fondo en la red. Y la tensión era precisamente el punto débil de aquel mediodía.
+
+@@ s29 | rotulo | {"t": "La tensión, la otra cara de la red", "s": "Hay que mantenerla dentro de unos márgenes, ni muy baja ni muy alta"}
+Si la frecuencia es el pulso de la red, la tensión sería algo así como la presión en una red de tuberías. Si sube demasiado puede dañar los equipos, y por eso transformadores y centrales tienen protecciones que los desconectan cuando se pasa de un límite.
+
+Para controlarla, los generadores pueden absorber o inyectar lo que los ingenieros llaman potencia reactiva. Las grandes centrales de gas, nucleares o hidráulicas lo hacen de forma dinámica, segundo a segundo. Las renovables también podrían hacerlo con su electrónica, pero la normativa española de entonces les pedía funcionar con un factor de potencia fijo, sin adaptarse a lo que pasara en la red.
+
+@@ s30 | lista | {"t": "Los tres pilares del apagón, según los análisis", "items": ["Centrales convencionales que no controlaron la tensión como se esperaba", "Renovables con factor de potencia fijo, sin ayudar a regularla", "Un operador desbordado por la velocidad de los hechos"]}
+Ese mediodía había pocas centrales convencionales conectadas en el sur, y las que había, según los análisis, no absorbieron toda la potencia reactiva que se esperaba. Las renovables no ayudaban, porque las normas no se lo pedían. Y algunos equipos de compensación de la red requerían una activación manual, demasiado lenta para lo que estaba a punto de pasar.
+@@ s31 | ilus | {"fig": "sobretension", "pie": "Cada planta que se desconecta deja de absorber reactiva, la tensión sube y desconecta a la siguiente"}
+A las doce y treinta y dos minutos y cincuenta y siete segundos, la tensión en una subestación de Granada subió tanto que se desconectó un transformador que recogía la energía de varias plantas solares, eólicas y termosolares. Se perdieron de golpe trescientos cincuenta y cinco megavatios. Enseguida, en dos subestaciones de Badajoz, cayeron otros setecientos veinticinco, y en los segundos siguientes más plantas en Segovia, Huelva, Badajoz, Sevilla y Cáceres.
+
+Aquí aparece el círculo vicioso. Esas plantas, aunque fuera poco, absorbían algo de potencia reactiva. Al desconectarse, la tensión subió todavía más, saltaron las protecciones de otras plantas, y al desconectarse estas, la tensión volvió a subir. Es la lógica de la cascada, solo que esta vez lo que se propagaba no era una sobrecarga de corriente, sino una subida de tensión.
+
+@@ s32 | ilus | {"fig": "caida_fv", "pie": "Generación en España justo antes y justo después del colapso, según los datos publicados ese día"}
+Con ese hueco, la frecuencia empezó a caer muy deprisa y entraron en juego los cortes automáticos de consumo. No bastó. A las doce y treinta y tres minutos y diecinueve segundos, la península perdió el sincronismo con el resto de Europa, dos segundos después se desconectaron las líneas con Francia, y a las doce y treinta y tres y veinticuatro segundos el sistema de España peninsular y Portugal se había apagado por completo.
+
+Según los datos de aquel día, en unos cinco segundos desaparecieron unos quince mil megavatios de generación, alrededor del sesenta por ciento de la demanda. La fotovoltaica, que producía unos dieciocho mil megavatios, bajó a ocho mil en un instante, y poco después a nada. Fue lo que los técnicos llaman un cero eléctrico.
+
+@@ s33 | rotulo | {"t": "Arrancar un país desde cero", "s": "Islas que se encienden con centrales hidráulicas y con ayuda de Francia y Marruecos"}
+Volver a encender un sistema apagado no es como darle a un interruptor, porque la mayoría de las centrales necesitan electricidad de la red para arrancar. Se empieza por las que pueden arrancar solas, sobre todo hidráulicas, como la de Aldeadávila, en el Duero. A partir de ellas se forman pequeñas islas de red que luego se unen con mucho cuidado.
+
+Las conexiones internacionales fueron decisivas. Unos diez minutos después del apagón se recuperó la primera línea con Francia, y a la una y cuatro de la tarde la conexión con Marruecos, que llegó a enviar unos novecientos megavatios por el estrecho. En Portugal la red quedó restablecida pasada la medianoche, y en España, hacia las siete de la mañana siguiente, se había recuperado el noventa y nueve por ciento de la demanda.
+
+@@ s34 | rotulo | {"t": "Un coste humano", "s": "Personas que dependían de aparatos eléctricos y accidentes con generadores y velas"}
+El apagón tuvo también un coste humano. Murieron varias personas en circunstancias relacionadas con la falta de luz, entre ellas pacientes que dependían de aparatos de oxígeno en casa y una familia de Ourense intoxicada por el humo de un generador. La patronal empresarial calculó los daños en unos mil seiscientos millones de euros.
+
+@@ s35 | comparar | {"izq": ["Red Eléctrica", "Las centrales convencionales no controlaron la tensión", "Cumplimos la normativa"], "der": ["Grandes eléctricas", "El operador gestionó mal la red", "Programó pocas centrales para controlar la tensión"]}
+Desde el primer momento hubo una batalla de culpas. Red Eléctrica, el operador del sistema, sostuvo que las centrales convencionales no habían hecho su trabajo de control de tensión. Las grandes eléctricas respondieron que el operador había programado pocas centrales capaces de controlarla aquel día. El comité del Gobierno, en junio de dos mil veinticinco, habló de un origen multifactorial y apuntó en ambas direcciones.
+
+@@ s36 | cita | {"q": "El problema no son las renovables, sino el control de la tensión", "a": "Damián Cortinas, presidente del Consejo de ENTSO-E (paráfrasis)"}
+El informe europeo tampoco señaló a un único culpable. Habla de varios factores que interactuaron: las oscilaciones, las carencias en el control de tensión, prácticas distintas de regulación en distintas plantas, reducciones rápidas de producción y una capacidad de estabilización desigual. Su presidente insistió en que el problema no eran las renovables en sí, sino el control de la tensión, fuera cual fuera el tipo de central.
+
+En abril de dos mil veintiséis, la Comisión Nacional de los Mercados y la Competencia abrió expedientes sancionadores: uno a Red Eléctrica, por haber podido incumplir sus funciones como operador, y otros por la gestión de diecinueve plantas de Endesa, Naturgy, Iberdrola y Repsol, aunque advirtió que eso no significaba atribuirles la causa del apagón. Y la historia sigue: este mismo mes se ha sabido que Repsol reclama en los tribunales unos ciento veinte millones de euros por la parada de sus cinco refinerías.
+
+@@ s37 | rotulo | {"t": "Nadie tenía todo el control", "s": "Cada pieza cumplía sus normas, y las normas no pensaban en el conjunto"}
+El apagón ibérico encaja como un guante en la idea de Perrow. Cada planta tenía sus protecciones ajustadas para protegerse a sí misma, las renovables seguían normas pensadas para otra época y algunas herramientas del operador eran demasiado lentas. El sistema había cambiado deprisa, con muchas más plantas conectadas a través de electrónica y menos máquinas giratorias, sin que las reglas cambiaran al mismo ritmo. Entre las recomendaciones del informe está que las renovables participen en el control dinámico de la tensión, algo que ya es técnicamente posible.
+@@ s38 | capitulo | {"n": "Quinta parte", "t": "Cuando el pánico va en el programa"}
+Los mercados financieros también fallan en cascada. En ellos, el papel de las líneas sobrecargadas lo juegan las órdenes de venta, y el de las protecciones automáticas, ciertos programas diseñados precisamente para limitar las pérdidas.
+
+@@ s39 | fecha | {"a": "19 de octubre de 1987", "t": "El lunes negro", "s": "El Dow Jones cae 508 puntos, un 22,6 % en un solo día"}
+El lunes diecinueve de octubre de mil novecientos ochenta y siete, el índice Dow Jones de la bolsa de Nueva York cayó quinientos ocho puntos, un veintidós coma seis por ciento, en una sola sesión. Sigue siendo su mayor caída porcentual en un día.
+
+El terreno estaba abonado. El mercado había subido más de un cuarenta por ciento en siete meses, y había quien hablaba de burbuja. El viernes anterior el Dow ya había perdido un cuatro coma seis por ciento, y durante el fin de semana se acumularon las órdenes de venta. El lunes, antes de que abriera Wall Street, las bolsas asiáticas ya caían con fuerza, y el pánico fue saltando de un mercado a otro siguiendo el sol.
+
+@@ s40 | persona | {"n": "Hayne Leland y Mark Rubinstein", "r": "Profesores de Berkeley, creadores del «seguro de cartera»", "a": "Fundaron su empresa a comienzos de los años ochenta"}
+Pero había un ingrediente nuevo. A comienzos de los años ochenta, dos profesores de Berkeley, Hayne Leland y Mark Rubinstein, habían desarrollado junto a John O'Brien una estrategia llamada seguro de cartera. Consistía en vender futuros sobre el índice bursátil a medida que el mercado baja, de modo que las pérdidas de las acciones se compensan con las ganancias de esos futuros.
+
+@@ s41 | ilus | {"fig": "bucle", "pie": "El bucle del seguro de cartera: la protección de cada uno empuja al mercado contra todos"}
+Funciona bien si lo hace uno solo. Si lo hacen muchos grandes inversores a la vez, aparece un bucle. El mercado cae y los programas venden futuros. Los futuros se abaratan respecto a las acciones, lo que lleva a otros operadores a vender acciones. Las acciones caen más, y los programas venden todavía más futuros. Es el mismo mecanismo de la cascada eléctrica, con órdenes de venta en lugar de corriente.
+
+La comisión presidencial que investigó el desplome, conocida como comisión Brady, concluyó que esas ventas y su interacción con el arbitraje entre futuros y acciones contribuyeron de forma importante a la caída. Algunos economistas le restaron peso después, pero la idea de que las protecciones pueden alimentar el pánico cuando todos las usan a la vez se quedó para siempre.
+
+@@ s42 | cita | {"q": "Disposición a servir como fuente de liquidez para apoyar el sistema económico y financiero", "a": "Alan Greenspan, Reserva Federal, 20 de octubre de 1987"}
+A la mañana siguiente, antes de que abrieran los mercados, el presidente de la Reserva Federal, Alan Greenspan, anunció que el banco central estaba dispuesto a servir como fuente de liquidez para el sistema. En dos sesiones, el Dow recuperó más de la mitad de lo perdido, no hubo recesión y en menos de dos años superó sus máximos anteriores.
+
+Una consecuencia duradera fueron los cortacircuitos bursátiles: pausas obligatorias cuando el mercado cae demasiado en poco tiempo. Hoy, en Estados Unidos, saltan cuando el índice ese ande pe quinientos cae un siete, un trece o un veinte por ciento. No impiden los incendios, pero intentan que no se propaguen.
+
+@@ s43 | fecha | {"a": "6 de mayo de 2010", "t": "El «Flash Crash»", "s": "Casi un billón de dólares se evapora y reaparece en minutos"}
+Veintitrés años después, los mercados estaban dominados por ordenadores que operan en milésimas de segundo. El jueves seis de mayo de dos mil diez, el ambiente ya era nervioso por la crisis de deuda griega. A media tarde, hora de Nueva York, el Dow Jones se desplomó en cuestión de minutos casi mil puntos, alrededor de un nueve por ciento, y recuperó buena parte poco después.
+
+@@ s44 | dato | {"v": "75.000", "t": "contratos de futuros E-mini a la venta", "s": "Unos 4.100 millones de dólares, sin mirar precio ni momento"}
+El informe conjunto de los reguladores estadounidenses reconstruyó la secuencia. A las dos y treinta y dos, una gran gestora de fondos, que la prensa identificó como Waddell and Reed, lanzó una orden para vender setenta y cinco mil contratos de futuros sobre el índice, valorados en unos cuatro mil cien millones de dólares. Usó un algoritmo programado para vender al ritmo del nueve por ciento del volumen negociado en el minuto anterior, sin tener en cuenta ni el precio ni el tiempo.
+
+@@ s45 | ilus | {"fig": "patata", "pie": "La «patata caliente»: los mismos contratos pasan de mano en mano, el volumen se dispara y nadie compra de verdad"}
+Ese detalle era crucial: si el volumen sube, el algoritmo vende más deprisa. Los primeros compradores fueron operadores de alta frecuencia, que ganan dinero comprando y vendiendo muy rápido sin quedarse con posiciones grandes, así que empezaron a revender enseguida, a menudo entre ellos. En solo catorce segundos, entre las dos, cuarenta y cinco y trece y las dos, cuarenta y cinco y veintisiete, negociaron más de veintisiete mil contratos, casi la mitad de todo el volumen, pero en neto solo compraron unos doscientos.
+
+Era una patata caliente que pasaba de mano en mano. El volumen se disparaba, pero nadie se quedaba con la mercancía, y el algoritmo, al ver tanto volumen, vendía todavía más rápido.
+
+@@ s46 | dato | {"v": "5 segundos", "t": "de pausa automática en el mercado de futuros de Chicago", "s": "A las 14:45:28, y el desplome se frenó"}
+A las dos, cuarenta y cinco minutos y veintiocho segundos, el sistema de la bolsa de Chicago detectó que los precios caían demasiado deprisa y detuvo la negociación de esos futuros durante cinco segundos. Parece una pausa ridícula, pero bastó. Al reanudarse aparecieron compradores y los precios empezaron a recuperarse.
+
+@@ s47 | rotulo | {"t": "Acciones a un centavo y a cien mil dólares", "s": "Más de 20.000 operaciones anuladas después"}
+En el mercado de acciones hubo escenas absurdas. Algunos creadores de mercado, obligados a ofrecer siempre precios, ponían órdenes simbólicas de un centavo o de cien mil dólares, convencidos de que nunca se ejecutarían. Esa tarde se ejecutaron. Acciones de la consultora Accenture llegaron a cambiar de manos a un centavo. Más de veinte mil operaciones, en más de trescientos valores, se hicieron a precios muy alejados de los de unos minutos antes, y después se anularon.
+
+@@ s48 | persona | {"n": "Navinder Singh Sarao", "r": "Operador británico que trabajaba desde casa de sus padres, en Hounslow (Londres)", "a": "Detenido en 2015, condenado en 2020"}
+La historia tuvo un epílogo inesperado. En dos mil quince, Estados Unidos acusó a Navinder Singh Sarao, un operador británico que trabajaba desde una pequeña habitación en casa de sus padres, al oeste de Londres. Lo acusaron de spoofing: colocar grandes órdenes que no pensaba ejecutar, para simular presión vendedora, y cancelarlas a tiempo. También aquel seis de mayo.
+
+Sarao fue extraditado, se declaró culpable y colaboró con los investigadores. En enero de dos mil veinte, una jueza de Chicago lo condenó a un año de arresto domiciliario en esa misma casa. Sus abogados explicaron que tiene autismo y que había perdido millones a manos de estafadores. Cuánto contribuyó al desplome sigue siendo objeto de debate: el informe oficial de dos mil diez ni lo mencionaba, y es difícil que su actividad lo explique por sí sola.
+@@ s49 | fecha | {"a": "19 de julio de 2024", "t": "Una actualización bloquea 8,5 millones de ordenadores", "s": "Menos del 1 % de los Windows, pero justo los de aerolíneas, hospitales y bancos"}
+Las cascadas no necesitan electricidad ni dinero. Basta con que muchas piezas dependan de lo mismo. El diecinueve de julio de dos mil veinticuatro, la empresa de ciberseguridad CrowdStrike distribuyó una actualización defectuosa para ordenadores con Windows, y los equipos que la recibieron se bloquearon. Según Microsoft, fueron unos ocho millones y medio, menos del uno por ciento del total, pero eran justo los de grandes empresas. Se cancelaron miles de vuelos, hubo hospitales que aplazaron operaciones y bancos con problemas. Los biólogos lo llamarían un monocultivo: cuando todos los campos tienen la misma variedad, una sola plaga basta para arrasarlos.
+
+@@ s50 | capitulo | {"n": "Sexta parte", "t": "Cómo se corta una cascada"}
+La pregunta obvia es si se puede hacer algo, y la respuesta es que sí, aunque nunca del todo. Apagón tras apagón y desplome tras desplome, ingenieros y reguladores han ido aprendiendo algunos principios para que los fallos se queden pequeños.
+
+@@ s51 | lista | {"t": "Cortafuegos contra las cascadas", "items": ["Márgenes: no funcionar siempre al límite", "Pausas automáticas que dan tiempo a pensar", "Islas que se separan para salvar el resto", "Diversidad: no depender todos de lo mismo", "Ver el conjunto, no solo la propia pieza"]}
+El primero es dejar margen. En las redes eléctricas existe la regla llamada ene menos uno: el sistema debe poder perder cualquier elemento sin que pase nada grave. Pero mantener ese margen cuesta dinero, y la presión económica empuja a aprovechar al máximo cada línea y cada central. Es el montón de arena de Bak: la eficiencia lleva al sistema hacia su pendiente crítica.
+
+El segundo es introducir pausas. Los cortacircuitos bursátiles y los cinco segundos de Chicago funcionan porque rompen el acoplamiento estrecho del que hablaba Perrow, y dan tiempo para dejar de reaccionar al último movimiento.
+
+@@ s52 | ilus | {"fig": "islas", "pie": "Sacrificar una parte a tiempo para salvar el resto: la idea de las islas y los cortes de carga"}
+El tercero es saber partir el sistema a tiempo. En dos mil seis, los cortes automáticos dejaron sin luz a millones de personas, pero evitaron que se apagara el continente. En Ohio, un corte controlado en Cleveland probablemente habría salvado a cincuenta millones de personas. Es duro de decidir, y por eso conviene tenerlo pensado de antemano.
+
+El cuarto es la diversidad: si todos usan el mismo programa, la misma estrategia o los mismos ajustes, un mismo fallo los alcanza a la vez. Y el quinto, quizá el más difícil, es que alguien vea el conjunto. En casi todas las cascadas que hemos visto, cada pieza hacía lo correcto desde su punto de vista. Lo que faltaba era alguien, o algo, que viera cómo encajaban todas.
+
+@@ s53 | cita | {"q": "En sistemas complejos y muy acoplados, los accidentes graves acaban llegando", "a": "Idea central de Charles Perrow en «Normal Accidents» (paráfrasis)"}
+Perrow era pesimista: pensaba que en ciertos sistemas los accidentes graves llegarán tarde o temprano. Otros investigadores señalan organizaciones, como algunos portaaviones o centrales nucleares, que funcionan durante décadas con muy pocos accidentes, a base de prestar atención a las señales débiles y dar voz a cualquiera que vea algo raro.
+
+Las dos posturas tienen algo de razón. En Ohio, una alarma silenciosa impidió ver venir el desastre. En la península, las oscilaciones de media hora antes eran una señal débil de que la red estaba en un estado delicado. Los grandes fallos rara vez llegan sin avisar. Lo difícil es escuchar los avisos cuando todo parece funcionar con normalidad.
+
+@@ s54 | rotulo | {"t": "Lo que enseñan las cascadas", "s": "El tamaño del desastre no depende del tamaño de la chispa"}
+Hay una paradoja de fondo: muchos de estos sistemas son frágiles precisamente porque funcionan muy bien. Las mismas conexiones que reparten energía barata, liquidez o actualizaciones de seguridad son las que, en un mal día, reparten los fallos. Y si hay una idea con la que quedarse, es que el tamaño de un desastre no depende del tamaño de la chispa. Un árbol sin podar, un barco que adelanta su paso por un río o un algoritmo que vende sin mirar el precio no son nada extraordinario. Lo que los convierte en catástrofes es el estado del sistema cuando aparecen. Por eso no basta con buscar al culpable de la última chispa. Hay que mirar el montón de arena entero.
+
+@@ s55 | fin | {"t": "Próximamente en esta serie", "items": ["Orden sin jefe", "Invasores", "Burbujas", "Contagios"]}
+En el próximo episodio de Sistemas complejos y efectos inesperados daremos la vuelta a esta historia. Veremos cómo muchas piezas que siguen reglas sencillas pueden crear un orden asombroso sin que nadie lo dirija: bandadas de estorninos que se mueven como un solo animal, hormigueros sin jefe y atascos que aparecen de la nada en una autopista despejada. Gracias por escuchar, y hasta la próxima.

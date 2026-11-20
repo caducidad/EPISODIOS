@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "an",
+    "ultima": "sc",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -267,10 +267,97 @@
             {
               "id": "sc04",
               "titulo": "Fallos en cascada",
-              "descripcion": "Grandes apagones, pánicos bursátiles y el Flash Crash de 2010: cuando un fallo pequeño tumba el sistema entero.",
-              "estado": "pendiente",
+              "descripcion": "Del árbol sin podar que apagó el noreste de Norteamérica en 2003 al crucero que dejó a oscuras media Europa en 2006, el apagón ibérico de 2025 según el informe final europeo, el lunes negro de 1987 y el Flash Crash de 2010: cómo un fallo pequeño tumba un sistema entero.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ilustrado"
+              "estilo": "ilustrado",
+              "archivo": "media/sc04-fallos-en-cascada.mp4",
+              "audio": "media/sc04-fallos-en-cascada.m4a",
+              "guion": "guiones/sc04-fallos-en-cascada.txt",
+              "duracion": "35 min",
+              "fecha": "2026-11-20",
+              "fuentes": [
+                {
+                  "titulo": "28 April 2025 Iberian Blackout (ENTSO-E)",
+                  "url": "https://www.entsoe.eu/publications/blackout/28-april-2025-iberian-blackout/"
+                },
+                {
+                  "titulo": "Las claves del gran apagón (SINC)",
+                  "url": "https://www.agenciasinc.es/Noticias/Las-claves-del-gran-apagon-fallo-en-el-control-de-tension-y-cascada-de-desconexiones"
+                },
+                {
+                  "titulo": "El informe final de ENTSO-E confirma el origen multifactorial (Smartgridsinfo)",
+                  "url": "https://www.smartgridsinfo.es/2026/03/23/informe-final-entso-e-confirma-origen-multifactorial-apagon-electrico-espana-portugal"
+                },
+                {
+                  "titulo": "Apagón del 28A: la secuencia (Energías Renovables)",
+                  "url": "https://www.energias-renovables.com/panorama/apag-n-del-28a-la-secuencia-que-20251003"
+                },
+                {
+                  "titulo": "Los cinco segundos del caos (El Independiente)",
+                  "url": "https://www.elindependiente.com/economia/2025/04/28/los-cinco-segundos-del-caos-asi-cayo-cada-fuente-de-energia-de-repente/"
+                },
+                {
+                  "titulo": "Un año después: autopsia del apagón (Diario de León)",
+                  "url": "https://www.diariodeleon.es/economia/260426/2082938/ano-despues-autopsia-apagon-historico.html"
+                },
+                {
+                  "titulo": "La CNMC abre expedientes sancionadores por el apagón (Ara)",
+                  "url": "https://es.ara.cat/economia/energia/cnmc-abre-expedientes-sancionadores-raiz-apagon-electrico_1_5709975.html"
+                },
+                {
+                  "titulo": "Repsol denuncia a Iberdrola, Endesa, Naturgy y Red Eléctrica (Ara)",
+                  "url": "https://es.ara.cat/economia/repsol-denuncia-iberdrola-endesa-naturgy-red-electrica-apagon-2025_1_5912329.html"
+                },
+                {
+                  "titulo": "Northeast blackout of 2003 (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Northeast_blackout_of_2003"
+                },
+                {
+                  "titulo": "2003 Italy blackout (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/2003_Italy_blackout"
+                },
+                {
+                  "titulo": "2006 European blackout (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/2006_European_blackout"
+                },
+                {
+                  "titulo": "Ems powerline crossing (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Ems_powerline_crossing"
+                },
+                {
+                  "titulo": "Buldyrev y otros: Catastrophic cascade of failures in interdependent networks (Nature, 2010)",
+                  "url": "https://www.cl.cam.ac.uk/teaching/2021/R02/papers/nature08932.pdf"
+                },
+                {
+                  "titulo": "Bak, Tang y Wiesenfeld: Self-organized criticality (Physical Review Letters, 1987)",
+                  "url": "https://courses.physics.ucsd.edu/2016/Spring/physics235/BTW-PRL.pdf"
+                },
+                {
+                  "titulo": "Stock Market Crash of 1987 (Federal Reserve History)",
+                  "url": "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987"
+                },
+                {
+                  "titulo": "Peter Fortune: The 1987 crash (New England Economic Review, Boston Fed)",
+                  "url": "https://www.bostonfed.org/-/media/Documents/neer/neer293a.pdf"
+                },
+                {
+                  "titulo": "Findings Regarding the Market Events of May 6, 2010 (SEC y CFTC)",
+                  "url": "https://www.banking.senate.gov/download/joint-staff-report-from-sec-and-cftc-regarding-market-events-of-may-6-2010&download=1"
+                },
+                {
+                  "titulo": "The Flash Crash, explained (NPR)",
+                  "url": "https://www.npr.org/sections/money/2010/10/01/130272516/the-flash-crash-explained"
+                },
+                {
+                  "titulo": "British futures trader who triggered US stock market crash spared prison (ITV)",
+                  "url": "https://www.itv.com/news/2020-01-29/british-futures-trader-who-triggered-us-stock-market-crash-spared-prison"
+                },
+                {
+                  "titulo": "Microsoft says 8.5M Windows devices were affected by CrowdStrike outage (TechCrunch)",
+                  "url": "https://techcrunch.com/2024/07/20/microsoft-says-8.5m-windows-devices-were-affected-by-crowdstrike-outage"
+                }
+              ]
             },
             {
               "id": "sc05",

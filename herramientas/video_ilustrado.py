@@ -10,7 +10,7 @@ Tipo nuevo:
 Las figuras se dibujan en un lienzo de 1160x440 (se coloca entre la cabecera y el pie). Cada función recibe el
 tema T (colores de la serie) y devuelve el contenido SVG. Para un episodio nuevo, añade sus figuras a FIGURAS.
 Figuras actuales: episodios ia01 (Qué es una red neuronal, desde cero), sc02 (Los lobos de Yellowstone),
-fi0-2 (El mapa de las grandes preguntas), ia02 (El juego de la vida) y fi0-3 (Los debates que nunca se cierran).
+fi0-2 (El mapa de las grandes preguntas), ia02 (El juego de la vida), fi0-3 (Los debates que nunca se cierran) y sc04 (Fallos en cascada).
 """
 import math, os, random, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -1722,6 +1722,234 @@ FIGURAS.update({"apuesta": f_apuesta, "cinco": f_cinco, "rio": f_rio, "aquiles":
                 "encuesta_conocimiento": f_encuesta_conocimiento, "glandula": f_glandula, "mary": f_mary, "cogitate": f_cogitate,
                 "laplace": f_laplace, "libertad": f_libertad, "libet": f_libet, "encuesta_libertad": f_encuesta_libertad,
                 "dario": f_dario, "peritropo": f_peritropo, "tarski": f_tarski})
+
+# ---------------------------------------------------------------- figuras del episodio sc04 (Fallos en cascada)
+def _red_nodos(T, pos, aristas, estado, r=26, etiquetas=None):
+    """estado: dict nodo -> 'ok' | 'carga' | 'caido'."""
+    s = ""
+    for a, b in aristas:
+        caido = estado.get(a) == "caido" or estado.get(b) == "caido"
+        s += linea(*pos[a], *pos[b], T["suave"] if caido else T["linea"], 3 if caido else 5, .35 if caido else .9, "6 10" if caido else None)
+    for k, (x, y) in pos.items():
+        e_ = estado.get(k, "ok")
+        if e_ == "caido":
+            s += f"<circle cx='{x}' cy='{y}' r='{r}' fill='{T['c2']}' stroke='{CORAL}' stroke-width='4'/>"
+            s += linea(x - 11, y - 11, x + 11, y + 11, CORAL, 5) + linea(x - 11, y + 11, x + 11, y - 11, CORAL, 5)
+        elif e_ == "carga":
+            s += f"<circle cx='{x}' cy='{y}' r='{r + 10}' fill='{T['acento']}' opacity='.25'/>"
+            s += nodo(x, y, r, T, fill=T["acento"], stroke=T["tinta"], sw=3)
+        else:
+            s += nodo(x, y, r, T, fill=T["c2"], stroke=T["linea"], sw=4)
+    return s
+
+def f_redistribucion(T):
+    base = {"a": (0, 0), "b": (120, -90), "c": (120, 90), "d": (250, 0), "e": (250, 150), "f": (250, -150)}
+    ar = [("a", "b"), ("a", "c"), ("b", "d"), ("c", "d"), ("c", "e"), ("b", "f"), ("d", "e"), ("d", "f")]
+    est = [({}, "1 · Todo bien"), ({"a": "caido", "b": "carga", "c": "carga"}, "2 · Cae una"),
+           ({"a": "caido", "b": "caido", "c": "carga", "d": "carga", "f": "carga"}, "3 · Se reparte"),
+           ({"a": "caido", "b": "caido", "c": "caido", "d": "caido", "f": "caido", "e": "carga"}, "4 · En cadena")]
+    s = ""
+    for i, (e_, t) in enumerate(est):
+        ox, oy = 25 + i * 290, 190
+        pos = {k: (ox + x * .85, oy + y * .85) for k, (x, y) in base.items()}
+        s += _red_nodos(T, pos, ar, e_, r=20)
+        s += tx(ox + 105, 380, t, T, 28, T["acento"] if i else T["tinta"], peso=600)
+        if i < 3:
+            s += flecha(ox + 240, 30, ox + 280, 30, T["suave"], 4, .7)
+    s += f"<circle cx='40' cy='420' r='10' fill='{T['acento']}'/>" + tx(60, 429, "sobrecargada", T, 24, T["suave"], anc="start")
+    s += f"<circle cx='300' cy='420' r='10' fill='none' stroke='{CORAL}' stroke-width='4'/>" + tx(320, 429, "desconectada", T, 24, T["suave"], anc="start")
+    return s
+
+def f_arena(T):
+    r = random.Random(7)
+    s = f"<rect x='180' y='370' width='800' height='14' rx='4' fill='{T['suave']}' opacity='.6'/>"
+    s += f"<path d='M260 370 L580 120 L900 370 Z' fill='{T['acento']}' opacity='.85'/>"
+    for _ in range(260):
+        x = r.uniform(270, 890); yt = 120 + abs(x - 580) / 320 * 250
+        y = r.uniform(yt + 4, 368)
+        s += f"<circle cx='{x:.0f}' cy='{y:.0f}' r='2.2' fill='#8a5a10' opacity='.45'/>"
+    s += f"<path d='M600 140 C 680 200 720 260 800 330 L 860 368 L 700 368 C 660 300 630 220 600 140 Z' fill='{CORAL}' opacity='.55'/>"
+    for k in range(14):
+        x = 640 + k * 15 + r.uniform(-8, 8); y = 190 + k * 12 + r.uniform(-10, 10)
+        s += f"<circle cx='{x:.0f}' cy='{y:.0f}' r='6' fill='{CORAL}'/>"
+    s += f"<circle cx='580' cy='40' r='9' fill='{T['tinta']}'/>" + flecha(580, 55, 580, 105, T["tinta"], 3, .8)
+    s += tx(610, 50, "un grano más", T, 28, T["tinta"], anc="start", peso=600)
+    s += tx(900, 220, "avalancha", T, 32, CORAL, anc="start", peso=700)
+    s += tx(170, 230, "pendiente", T, 28, T["suave"], anc="middle") + tx(170, 262, "crítica", T, 28, T["suave"])
+    s += tx(580, 425, "Bak, Tang y Wiesenfeld (1987)", T, 24, T["suave"])
+    return s
+
+def f_perrow(T):
+    s = linea(160, 400, 1080, 400, T["tinta"], 3) + linea(160, 400, 160, 20, T["tinta"], 3)
+    s += flecha(160, 400, 1090, 400, T["tinta"], 3) + flecha(160, 400, 160, 10, T["tinta"], 3)
+    s += f"<rect x='560' y='25' width='540' height='215' rx='16' fill='{CORAL}' opacity='.18'/>"
+    s += tx(830, 60, "zona de «accidentes normales»", T, 26, CORAL, peso=600)
+    pts = [(300, 330, "Una oficina de correos", AZUL), (360, 120, "Una presa", AZUL), (790, 300, "Una universidad", AZUL),
+           (670, 100, "Red eléctrica", T["acento"]), (820, 175, "Central nuclear", T["acento"]), (960, 100, "Mercado electrónico", T["acento"])]
+    for x, y, t, c in pts:
+        s += f"<circle cx='{x}' cy='{y}' r='13' fill='{c}'/>" + tx(x, y + 42, t, T, 24, T["tinta"])
+    s += tx(620, 438, "Complejidad de las interacciones →", T, 26, T["suave"])
+    s += tx(110, 210, "Acoplamiento →", T, 26, T["suave"], extra="transform='rotate(-90 110 210)'")
+    return s
+
+def f_interdependientes(T):
+    r = random.Random(11)
+    A = [(140 + r.uniform(-30, 30) + (i % 6) * 170, 80 + r.uniform(-20, 20) + (i // 6) * 60) for i in range(12)]
+    B = [(x + r.uniform(-25, 25), y + 220) for x, y in A]
+    caidos = {2, 3, 8}
+    s = ""
+    for grupo, col, nombre, y in ((A, T["acento"], "Red eléctrica", 20), (B, AZUL, "Red de comunicaciones", 430)):
+        for i in range(len(grupo)):
+            for j in range(i + 1, len(grupo)):
+                if math.dist(grupo[i], grupo[j]) < 240:
+                    c = i in caidos or j in caidos
+                    s += linea(*grupo[i], *grupo[j], T["suave"] if c else col, 2 if c else 3, .3 if c else .6)
+        s += tx(1150, y, nombre, T, 28, col, anc="end", peso=600)
+    for i, (a, b) in enumerate(zip(A, B)):
+        s += linea(*a, *b, T["tinta"], 1.5, .25 if i not in caidos else .8, "4 6")
+    for grupo, col in ((A, T["acento"]), (B, AZUL)):
+        for i, (x, y) in enumerate(grupo):
+            if i in caidos:
+                s += f"<circle cx='{x:.0f}' cy='{y:.0f}' r='15' fill='{T['c2']}' stroke='{CORAL}' stroke-width='4'/>"
+            else:
+                s += f"<circle cx='{x:.0f}' cy='{y:.0f}' r='15' fill='{col}'/>"
+    s += tx(30, 220, "dependencias", T, 24, T["suave"], anc="start")
+    return s
+
+def f_ems(T):
+    s = f"<rect x='0' y='330' width='1160' height='110' fill='#1d4f6b' opacity='.9'/>"
+    for k in range(6):
+        s += f"<path d='M{k * 200} 360 q 50 -12 100 0 t 100 0' stroke='#6fb7e0' stroke-width='3' fill='none' opacity='.6'/>"
+    for x in (150, 1010):
+        s += f"<path d='M{x - 40} 330 L{x} 20 L{x + 40} 330' fill='none' stroke='{T['suave']}' stroke-width='6'/>"
+        s += linea(x - 60, 40, x + 60, 40, T["suave"], 6) + linea(x - 50, 80, x + 50, 80, T["suave"], 5)
+    s += f"<path d='M150 40 Q 580 190 1010 40' fill='none' stroke='{CORAL}' stroke-width='5' stroke-dasharray='14 10'/>"
+    s += f"<path d='M150 80 Q 580 230 1010 80' fill='none' stroke='{CORAL}' stroke-width='5' stroke-dasharray='14 10'/>"
+    s += tx(580, 24, "línea de 380.000 voltios, desconectada", T, 26, CORAL, peso=600)
+    # crucero
+    s += f"<path d='M330 330 L370 270 L840 270 L880 300 L860 330 Z' fill='{T['tinta']}'/>"
+    for k, (x0, x1, y) in enumerate([(400, 820, 240), (430, 800, 212), (470, 760, 186)]):
+        s += f"<rect x='{x0}' y='{y}' width='{x1 - x0}' height='{30 if k < 2 else 28}' fill='{T['tinta']}' stroke='{T['c2']}' stroke-width='2'/>"
+        for w in range(x0 + 14, x1 - 10, 26):
+            s += f"<rect x='{w}' y='{y + 9}' width='12' height='10' fill='{AZUL}'/>"
+    s += f"<rect x='700' y='160' width='40' height='28' fill='{T['acento']}'/>"
+    s += tx(600, 312, "NORWEGIAN PEARL", T, 22, T["c2"], peso=600)
+    s += tx(580, 420, "Río Ems, 4 de noviembre de 2006, 21:38", T, 26, T["tinta"])
+    return s
+
+def f_oscilaciones(T):
+    x0, x1, yb = 70, 1120, 260
+    def xm(minuto):  # de 12:00 a 12:35
+        return x0 + minuto / 35 * (x1 - x0)
+    s = linea(x0, yb, x1, yb, T["suave"], 2, .6)
+    d = ""
+    for k in range(0, 3501):
+        m = k / 100
+        a = 0
+        if 3 <= m <= 8: a = 60 * math.sin(math.pi * (m - 3) / 5)
+        if 19 <= m <= 22: a = 80 * math.sin(math.pi * (m - 19) / 3)
+        y = yb - a * math.sin(m * 9.0)
+        d += f"{'M' if k == 0 else 'L'}{xm(m):.1f} {y:.1f} "
+    s += f"<path d='{d}' stroke='{T['linea']}' stroke-width='3' fill='none'/>"
+    for m0, m1, t in ((3, 8, "12:03 – 12:08"), (19, 22, "12:19 – 12:22")):
+        s += f"<rect x='{xm(m0):.0f}' y='120' width='{xm(m1) - xm(m0):.0f}' height='280' rx='10' fill='{T['acento']}' opacity='.12'/>"
+        s += tx((xm(m0) + xm(m1)) / 2, 108, t, T, 28, T["acento"], peso=600)
+    s += f"<rect x='{xm(32.9):.0f}' y='120' width='8' height='280' fill='{CORAL}'/>"
+    s += tx(xm(32.9) - 14, 108, "12:33 apagón", T, 28, CORAL, anc="end", peso=700)
+    for m in (0, 10, 20, 30):
+        s += tx(xm(m), 435, f"12:{m:02d}", T, 24, T["suave"], extra="style='font-variant-numeric:lining-nums'")
+    s += tx(xm(9.5), 360, "oscilación local", T, 24, T["suave"], anc="start")
+    s += tx(xm(22.5), 360, "entre áreas · ≈ 0,2 Hz", T, 24, T["suave"], anc="start")
+    return s
+
+def f_sobretension(T):
+    cx, cy, R = 580, 215, 150
+    pasos = [("Una planta se desconecta", CORAL), ("Absorbe menos reactiva", T["linea"]), ("La tensión sube", T["acento"]),
+             ("Saltan otras plantas", CORAL)]
+    s = f"<circle cx='{cx}' cy='{cy}' r='{R}' fill='none' stroke='{T['suave']}' stroke-width='3' stroke-dasharray='8 10' opacity='.6'/>"
+    for i, (t, c) in enumerate(pasos):
+        ang = -math.pi / 2 + i * math.pi / 2
+        x, y = cx + R * math.cos(ang), cy + R * math.sin(ang)
+        a2 = ang + math.pi / 2 * .62
+        s += flecha(cx + R * math.cos(ang + .38), cy + R * math.sin(ang + .38), cx + R * math.cos(a2 + .05), cy + R * math.sin(a2 + .05), T["tinta"], 4, .8)
+        w = 370
+        bx = x - w / 2 + (220 if i == 1 else -220 if i == 3 else 0)
+        s += caja(bx, y - 34, w, 68, T, borde=c) + tx(bx + w / 2, y + 10, t, T, 27, T["tinta"], peso=600)
+    s += tx(cx, cy - 6, "Sobretensión", T, 34, T["acento"], peso=700) + tx(cx, cy + 30, "en cascada", T, 30, T["acento"], peso=600)
+    return s
+
+def f_caida_fv(T):
+    datos = [("Fotovoltaica", 18, 8), ("Eólica", 3.6, 2.2)]
+    s = ""
+    for i, (t, a, b) in enumerate(datos):
+        y = 70 + i * 160
+        s += tx(270, y + 60, t, T, 32, T["tinta"], anc="end", peso=600)
+        s += f"<rect x='300' y='{y}' width='{a * 36:.0f}' height='50' rx='8' fill='{T['acento']}'/>"
+        s += tx(300 + a * 36 + 16, y + 36, f"{str(a).replace('.', ',')} GW antes", T, 26, T["tinta"], anc="start", extra="style='font-variant-numeric:lining-nums'")
+        s += f"<rect x='300' y='{y + 62}' width='{b * 36:.0f}' height='50' rx='8' fill='{CORAL}'/>"
+        s += tx(300 + b * 36 + 16, y + 98, f"{str(b).replace('.', ',')} GW después", T, 26, T["tinta"], anc="start", extra="style='font-variant-numeric:lining-nums'")
+    s += caja(150, 360, 860, 70, T, borde=CORAL) + tx(580, 405, "≈ 15 GW perdidos en unos 5 segundos · 60 % de la demanda", T, 28, T["tinta"], peso=600)
+    return s
+
+def f_bucle(T):
+    cx, cy, R = 580, 200, 150
+    pasos = ["El mercado cae", "Se venden futuros", "Los futuros se abaratan", "Se venden más acciones"]
+    s = ""
+    for i, t in enumerate(pasos):
+        ang = -math.pi / 2 + i * math.pi / 2
+        x, y = cx + R * math.cos(ang), cy + R * math.sin(ang)
+        a2 = ang + math.pi / 2 * .62
+        s += flecha(cx + R * math.cos(ang + .38), cy + R * math.sin(ang + .38), cx + R * math.cos(a2 + .05), cy + R * math.sin(a2 + .05), CORAL, 5, .9)
+        w = 380
+        bx = x - w / 2 + (220 if i == 1 else -220 if i == 3 else 0)
+        s += caja(bx, y - 34, w, 68, T, borde=T["acento"] if i == 0 else T["linea"]) + tx(bx + w / 2, y + 10, t, T, 27, T["tinta"], peso=600)
+    s += tx(cx, cy - 4, "19 de octubre", T, 30, T["acento"], peso=700) + tx(cx, cy + 30, "de 1987", T, 30, T["acento"], peso=700)
+    s += tx(cx, 425, "Cada protección individual empuja el precio hacia abajo", T, 26, T["suave"])
+    return s
+
+def f_patata(T):
+    r = random.Random(5)
+    pos = [(200, 120), (420, 70), (650, 110), (880, 80), (300, 300), (560, 280), (800, 290), (1000, 230)]
+    s = ""
+    for k in range(16):
+        a, b = r.sample(range(len(pos)), 2)
+        (x1, y1), (x2, y2) = pos[a], pos[b]
+        mx, my = (x1 + x2) / 2, (y1 + y2) / 2 - 60
+        s += f"<path d='M{x1} {y1} Q {mx} {my} {x2} {y2}' stroke='{T['acento']}' stroke-width='3' fill='none' opacity='.55'/>"
+    for x, y in pos:
+        s += f"<rect x='{x - 46}' y='{y - 30}' width='92' height='60' rx='12' fill='{T['panel']}' stroke='{T['linea']}' stroke-width='3'/>"
+        s += f"<rect x='{x - 22}' y='{y - 10}' width='44' height='24' rx='4' fill='{T['linea']}' opacity='.8'/>"
+    s += f"<ellipse cx='560' cy='185' rx='34' ry='24' fill='#c98a3c' stroke='{CORAL}' stroke-width='3'/>"
+    for dx in (-30, 0, 30):
+        s += f"<path d='M{560 + dx} 150 q 8 -14 0 -26' stroke='{CORAL}' stroke-width='3' fill='none'/>"
+    s += caja(130, 365, 900, 70, T, borde=T["acento"])
+    s += tx(580, 410, "27.000 contratos en 14 segundos · solo ≈ 200 comprados en neto", T, 28, T["tinta"], peso=600, extra="style='font-variant-numeric:lining-nums'")
+    return s
+
+def f_islas(T):
+    r = random.Random(3)
+    s = ""
+    pts = [(r.uniform(40, 1120), r.uniform(30, 330)) for _ in range(46)]
+    zona = lambda x, y: 0 if x < 380 else (1 if x < 760 else 2)
+    for i, p in enumerate(pts):
+        for j in range(i + 1, len(pts)):
+            q = pts[j]
+            if math.dist(p, q) < 150:
+                mismo = zona(*p) == zona(*q)
+                s += linea(*p, *q, T["linea"] if mismo else CORAL, 3 if mismo else 2, .7 if mismo else .5, None if mismo else "5 8")
+    for x, y in pts:
+        z = zona(x, y)
+        col = T["suave"] if z == 0 else T["acento"]
+        s += f"<circle cx='{x:.0f}' cy='{y:.0f}' r='11' fill='{T['c2'] if z == 0 else col}' stroke='{col}' stroke-width='3'/>"
+    for x in (380, 760):
+        s += linea(x, 10, x, 350, CORAL, 4, .9, "12 10")
+    s += tx(210, 395, "Zona sacrificada", T, 30, T["suave"], peso=600) + tx(210, 428, "sin luz unas horas", T, 24, T["suave"])
+    s += tx(770, 395, "El resto sigue funcionando", T, 30, T["acento"], peso=600) + tx(770, 428, "en islas que luego se reúnen", T, 24, T["suave"])
+    return s
+
+FIGURAS.update({"redistribucion": f_redistribucion, "arena": f_arena, "perrow": f_perrow, "interdependientes": f_interdependientes,
+                "ems": f_ems, "oscilaciones": f_oscilaciones, "sobretension": f_sobretension, "caida_fv": f_caida_fv,
+                "bucle": f_bucle, "patata": f_patata, "islas": f_islas})
 
 # ---------------------------------------------------------------- integración con video_ligero
 _plantilla_base = VL.plantilla
