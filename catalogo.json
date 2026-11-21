@@ -9,7 +9,7 @@
       "sh",
       "fi"
     ],
-    "ultima": "sc",
+    "ultima": "sh",
     "nota": "Un episodio de cada serie por turno. El siguiente es el primer pendiente de la serie que va detrás de 'ultima' en 'orden'. Al publicar, 'ultima' pasa a ser la serie de ese episodio."
   },
   "series": [
@@ -601,10 +601,73 @@
             {
               "id": "sh04",
               "titulo": "Franklin y Lavoisier contra Mesmer",
-              "descripcion": "El magnetismo animal, la alta sociedad de París y uno de los primeros experimentos a ciegas.",
-              "estado": "pendiente",
+              "descripcion": "El magnetismo animal de Mesmer, la alta sociedad de París y la comisión real de 1784 que, con vendas, árboles y tazas de agua, hizo uno de los primeros experimentos a ciegas. Y su legado: el placebo y los ensayos clínicos.",
+              "estado": "publicado",
               "formato": "video",
-              "estilo": "ligero"
+              "estilo": "ligero",
+              "archivo": "media/sh04-franklin-lavoisier-mesmer.mp4",
+              "audio": "media/sh04-franklin-lavoisier-mesmer.m4a",
+              "guion": "guiones/sh04-franklin-lavoisier-mesmer.txt",
+              "duracion": "34 min",
+              "fecha": "2026-11-21",
+              "fuentes": [
+                {
+                  "titulo": "Informe de la comisión real sobre el magnetismo animal, 1784 (Benjamin Franklin Papers, Founders Online)",
+                  "url": "https://founders.archives.gov/documents/Franklin/01-42-02-0304"
+                },
+                {
+                  "titulo": "Mesmer a Franklin, 14 de mayo de 1784 (Founders Online)",
+                  "url": "https://founders.archives.gov/documents/Franklin/01-42-02-0159"
+                },
+                {
+                  "titulo": "Lafayette a Franklin, 20 de mayo de 1784 (Founders Online)",
+                  "url": "https://founders.archives.gov/documents/Franklin/01-42-02-0170"
+                },
+                {
+                  "titulo": "Mesmerising Science: The Franklin Commission and the Modern Clinical Trial (The Public Domain Review)",
+                  "url": "https://publicdomainreview.org/essay/mesmerising-science-the-franklin-commission-and-the-modern-clinical-trial"
+                },
+                {
+                  "titulo": "Commission Royale, Bailly (1784) (James Lind Library)",
+                  "url": "https://www.jameslindlibrary.org/commission-royale-bailly-a-1784/"
+                },
+                {
+                  "titulo": "Franz Mesmer (Wikipedia)",
+                  "url": "https://en.wikipedia.org/wiki/Franz_Mesmer"
+                },
+                {
+                  "titulo": "Mesmer, Franz Anton (Deutsche Biographie)",
+                  "url": "https://www.deutsche-biographie.de/118581309.html"
+                },
+                {
+                  "titulo": "Mesmerized (Science History Institute)",
+                  "url": "https://www.sciencehistory.org/stories/magazine/mesmerized/"
+                },
+                {
+                  "titulo": "Franz Mesmer and the history of hypnotism (National Geographic)",
+                  "url": "https://www.nationalgeographic.com/history/history-magazine/article/franz-mesmer-hypnotism-mesmerized"
+                },
+                {
+                  "titulo": "Nicolas Bergasse (Early works on animal magnetism, Universidad de Pittsburgh)",
+                  "url": "https://hsls.pitt.edu/early-works-on-animal-magnetism/Bergasse%2C%20Nicolas"
+                },
+                {
+                  "titulo": "Mesmer and the Animal Magnetism Movement: an archive (History of Information)",
+                  "url": "https://historyofinformation.com/detail.php?id=3940"
+                },
+                {
+                  "titulo": "Lavoisier y la Revolución francesa (Britannica)",
+                  "url": "https://britannica.com/biography/Antoine-Lavoisier/The-French-Revolution-and-Lavoisiers-execution"
+                },
+                {
+                  "titulo": "Inventing the randomized double-blind trial: the Nürnberg salt test of 1835 (James Lind Library)",
+                  "url": "https://www.jameslindlibrary.org/articles/inventing-the-randomized-double-blind-trial-the-nurnberg-salt-test-of-1835/"
+                },
+                {
+                  "titulo": "Darnton, Mesmerism and the End of the Enlightenment in France (Harvard University Press)",
+                  "url": "https://www.jstor.org/stable/j.ctvk12q6m"
+                }
+              ]
             },
             {
               "id": "sh05",

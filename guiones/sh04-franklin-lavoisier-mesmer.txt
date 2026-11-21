@@ -1,0 +1,197 @@
+@@ s01 | titulo | {"t": "Franklin y Lavoisier contra Mesmer", "s": "Temporada 1 · Episodio 4"}
+Franklin y Lavoisier contra Mesmer. Los Sherlock de la historia. Temporada uno, episodio cuatro.
+
+@@ s02 | fecha | {"a": "22 de mayo de 1784", "t": "Un jardín de albaricoqueros", "s": "Passy, a las afueras de París"}
+El sábado veintidós de mayo de mil setecientos ochenta y cuatro, en el jardín de una casa de Passy, a las afueras de París, un grupo de caballeros muy serios observa a un muchacho de unos doce años. El chico lleva los ojos vendados. Alguien lo toma del brazo y lo lleva despacio hasta un albaricoquero, lo deja allí un par de minutos y luego lo conduce hasta otro árbol, y después hasta otro.
+
+@@ s03 | rotulo | {"t": "¿Qué árbol está «magnetizado»?", "s": "El chico no lo sabe. Los observadores, sí"}
+Poco antes, un médico llamado Charles Deslon ha magnetizado uno de los árboles del jardín, apuntándolo con su bastón desde cierta distancia. Según la doctrina que Deslon defiende, el árbol ha quedado cargado de un fluido invisible, y cualquier persona sensible que se acerque a él debería notar sus efectos. Pero el muchacho no sabe cuál es el árbol tratado. Y lo que va a ocurrir en los minutos siguientes es una de las escenas fundacionales de la medicina moderna.
+
+@@ s04 | rotulo | {"t": "Tos, sudor, dolor de cabeza… y un desmayo", "s": "Pero ninguno de esos árboles estaba magnetizado"}
+Junto al primer árbol, el chico dice que suda y empieza a toser. Junto al segundo siente un dolor de cabeza y una especie de aturdimiento. En el tercero los síntomas aumentan. Y al llegar al cuarto, a unos veinticuatro pies del árbol magnetizado, pierde el conocimiento, se queda rígido y tienen que llevarlo hasta un césped cercano para reanimarlo. Ninguno de los cuatro árboles a los que se había acercado estaba magnetizado.
+
+@@ s05 | persona | {"n": "Benjamin Franklin", "r": "Embajador de Estados Unidos en Francia, científico e inventor", "a": "1706 – 1790"}
+La casa de Passy era la residencia de Benjamin Franklin, embajador de los recién nacidos Estados Unidos ante la corte de Luis dieciséis. Franklin tenía entonces setenta y ocho años, sufría de gota y de piedras en el riñón, y apenas podía viajar en carruaje. Por eso algunos de los experimentos se hacían en su jardín. Era el científico más famoso del mundo, el hombre que había demostrado que el rayo era electricidad, y ahora presidía, de hecho, una comisión real con un encargo extraño.
+
+@@ s06 | rotulo | {"t": "Un fluido invisible que todo lo cura", "s": "La moda médica del París de 1784"}
+La comisión tenía que averiguar si existía o no el magnetismo animal, un fluido universal e invisible que, según su descubridor, llenaba el cosmos, unía los astros con los cuerpos y, bien manejado, curaba casi cualquier enfermedad. Medio París hablaba de él. Aristócratas, damas de la corte, abogados, oficiales y hasta el marqués de Lafayette, el héroe de la guerra de Independencia americana, estaban convencidos de su poder. El hombre detrás de todo aquello se llamaba Franz Anton Mesmer.
+
+@@ s07 | rotulo | {"t": "Cómo se pone a prueba lo invisible", "s": "La historia de este episodio"}
+Esta es la historia de cómo un grupo de sabios, entre ellos Franklin y el químico Antoine Lavoisier, se enfrentó a una pregunta que parece sencilla y no lo es. ¿Cómo se comprueba si algo invisible existe, cuando las personas que lo experimentan juran sentirlo con toda claridad? La respuesta que encontraron fue tan buena que seguimos usándola hoy, cada vez que se prueba un medicamento nuevo. Y por el camino descubrieron algo que no buscaban, el enorme poder de la imaginación sobre el cuerpo.
+
+@@ s08 | capitulo | {"n": "Primera parte", "t": "Un médico en Viena"}
+Para entender cómo se llegó a aquel jardín de Passy hay que retroceder unas cuantas décadas y viajar al sur de Alemania, a la orilla del lago de Constanza. Allí, en una aldea llamada Iznang, nació Franz Anton Mesmer el veintitrés de mayo de mil setecientos treinta y cuatro. Su padre era guardabosques del obispo de Constanza, y la familia, católica y modesta, pensó para él en la carrera eclesiástica.
+
+@@ s09 | persona | {"n": "Franz Anton Mesmer", "r": "Médico alemán, creador del «magnetismo animal»", "a": "1734 – 1815"}
+Mesmer estudió con los jesuitas en Dillingen y después en Ingolstadt, donde pasó por la teología, la filosofía, las matemáticas y la física. En mil setecientos cincuenta y nueve llegó a la Universidad de Viena, primero para estudiar derecho y enseguida medicina, con algunos de los mejores profesores de la época, como Gerard van Swieten y Anton de Haen. Era un hombre inteligente, culto, aficionado a la música y con una notable habilidad para moverse en sociedad.
+
+@@ s10 | fecha | {"a": "1766", "t": "Tesis: la influencia de los planetas en el cuerpo humano", "s": "Universidad de Viena"}
+En mil setecientos sesenta y seis presentó su tesis doctoral, titulada Sobre la influencia de los planetas en el cuerpo humano. La idea era que, igual que la Luna produce las mareas, los astros ejercen sobre los cuerpos vivos una especie de marea interior. El historiador Frank Pattie demostró mucho después que buena parte de la tesis estaba copiada de un libro del médico inglés Richard Mead, publicado en mil setecientos cuatro. Aunque entonces nadie esperaba que una tesis fuera original.
+
+@@ s11 | rotulo | {"t": "Una boda rica y un jardín con teatro", "s": "Mozart, con doce años, en casa de Mesmer"}
+En mil setecientos sesenta y ocho Mesmer se casó con Anna Maria von Posch, una viuda adinerada, y la boda le abrió las puertas de la buena sociedad vienesa. Su casa, con un gran jardín, se convirtió en un lugar de reunión de músicos y aficionados. La familia Mozart lo visitaba a menudo, y se cuenta que en ese jardín se estrenó la pequeña ópera Bastián y Bastiana, que Wolfgang compuso con doce años, aunque los biógrafos discuten si aquella representación llegó a celebrarse.
+
+@@ s12 | fecha | {"a": "1774", "t": "Imanes para Franziska Österlin", "s": "Viena"}
+El giro de su vida llegó en mil setecientos setenta y cuatro, con una paciente llamada Franziska Österlin, una joven de veintiocho años que sufría ataques, vómitos, dolores y desmayos que ningún remedio aliviaba. Por sugerencia del astrónomo jesuita Maximilian Hell, Mesmer le hizo tragar un preparado con hierro y le colocó imanes sobre el cuerpo. La joven dijo sentir corrientes que le recorrían los miembros, y los síntomas desaparecieron durante unas horas.
+
+@@ s13 | rotulo | {"t": "El poder no está en los imanes", "s": "Está en el médico, pensó Mesmer"}
+Mesmer sacó una conclusión audaz. Pensó que los imanes no curaban por sí mismos, sino que servían de conductores de una fuerza que estaba en todas partes y, sobre todo, en su propio cuerpo. La llamó magnetismo animal, en el sentido de magnetismo del ser vivo, del ánima. Muy pronto dejó los imanes y empezó a tratar a sus pacientes solo con las manos, con pases lentos a poca distancia del cuerpo y tocando a veces el vientre o las rodillas.
+
+@@ s14 | persona | {"n": "Johann Joseph Gassner", "r": "Sacerdote y exorcista, famoso en el sur de Alemania", "a": "1727 – 1779"}
+Por entonces causaba furor en Baviera un sacerdote llamado Johann Joseph Gassner, que curaba a multitudes expulsando demonios con un crucifijo y órdenes en latín. En mil setecientos setenta y cinco la Academia de Ciencias de Múnich pidió su opinión a Mesmer. Dijo que Gassner era sincero y que sus curaciones eran reales, pero que no tenían nada de demoníaco. Según él, Gassner poseía sin saberlo mucho magnetismo animal.
+
+@@ s15 | rotulo | {"t": "Del exorcismo a la física", "s": "Mesmer quería una explicación natural"}
+Mesmer no se veía como un mago ni como un curandero. Se consideraba un hombre de ciencia ilustrado, que sustituía los demonios por una fuerza física y natural, como la gravedad o la electricidad. El historiador de la psiquiatría Henri Ellenberger vio en aquel choque entre el exorcista y el médico el nacimiento de la psiquiatría dinámica. El problema era que nadie había medido nunca ese fluido.
+
+@@ s16 | persona | {"n": "Maria Theresia von Paradis", "r": "Pianista, cantante y compositora vienesa, ciega desde niña", "a": "1759 – 1824"}
+El caso que acabó echándolo de Viena fue el de Maria Theresia von Paradis, una pianista de dieciocho años, ciega desde los tres o cuatro, ahijada de la emperatriz María Teresa. Los mejores médicos de la ciudad la habían sometido durante años a sangrías, sanguijuelas, ampollas y descargas eléctricas, sin ningún resultado. En mil setecientos setenta y siete, Mesmer la acogió en su casa para tratarla.
+
+@@ s17 | rotulo | {"t": "Rostros que dan miedo", "s": "Mesmer aseguró que empezaba a ver"}
+Al cabo de unas semanas, Mesmer anunció que la joven empezaba a distinguir luces y formas. Según su propio relato, los rostros humanos le daban miedo, y se reía ante la nariz de las personas, que le parecía ridícula. Pero había un problema. Al parecer, cuanto más veía, peor tocaba el piano, y la familia vivía en parte de la pensión imperial que recibía por su ceguera y de su fama como intérprete. Los padres se presentaron en casa de Mesmer y se llevaron a su hija entre gritos y escenas violentas.
+
+@@ s18 | rotulo | {"t": "De nuevo ciega", "s": "Y Mesmer, acusado de charlatán"}
+Ya en su casa, la familia afirmó que la muchacha seguía tan ciega como antes. El protomédico de Viena, Anton von Störck, que llevaba años tratándola sin éxito, intervino para cortar el asunto, y la reputación de Mesmer quedó por los suelos. Hoy muchos piensan que la ceguera de Maria Theresia pudo tener un componente de lo que entonces se llamaba histeria, lo que explicaría mejorías parciales y pasajeras, pero no hay forma de saberlo con certeza.
+
+@@ s19 | rotulo | {"t": "La pianista que inspiró una escuela", "s": "Valentin Haüy, París, 1784"}
+La historia de Maria Theresia tiene, por cierto, un final mucho mejor que el de Mesmer. Se convirtió en una pianista y compositora de prestigio y en mil setecientos ochenta y cuatro tocó en París. Allí, su manera de leer con ayudas táctiles impresionó a Valentin Haüy, que poco después fundó la primera escuela para ciegos del mundo. En mil ochocientos ocho fundó en Viena una escuela de música.
+
+@@ s20 | capitulo | {"n": "Segunda parte", "t": "París bajo el hechizo"}
+Mesmer abandonó Viena y, a comienzos de mil setecientos setenta y ocho, llegó a París. Era la capital de la Ilustración, la ciudad de la Enciclopedia, pero también una ciudad fascinada por las maravillas invisibles. La electricidad, los gases recién descubiertos y, pocos años después, los globos de los hermanos Montgolfier parecían demostrar que el mundo estaba lleno de fuerzas sutiles. Un fluido curativo no sonaba más fantástico que un globo que vuela.
+
+@@ s21 | rotulo | {"t": "Las academias le cierran la puerta", "s": "Pero un médico respetado se hace su discípulo"}
+Mesmer quiso que la Academia de Ciencias y la Sociedad Real de Medicina reconocieran su descubrimiento, pero ninguna de las dos se lo tomó en serio. Ganó, en cambio, un discípulo valioso, Charles Deslon, médico de la Facultad de París y médico del conde de Artois, hermano del rey. En mil setecientos setenta y nueve, animado por Deslon, Mesmer publicó una memoria de ochenta y ocho páginas que terminaba con veintisiete proposiciones, el resumen de su teoría.
+
+@@ s22 | lista | {"t": "Las 27 proposiciones (resumen)", "items": ["Un fluido universal une astros y cuerpos", "La enfermedad es un obstáculo a su circulación", "El médico puede dirigirlo y acumularlo", "Las «crisis» son el camino de la curación", "Una sola enfermedad y un solo remedio"]}
+Las proposiciones decían, en resumen, que existe un fluido universal que llena todo el espacio y que pone en relación los cuerpos celestes, la Tierra y los seres vivos. La enfermedad sería un obstáculo en la circulación de ese fluido dentro del cuerpo, y el médico, convertido en una especie de imán, podría dirigirlo, acumularlo y restablecer la armonía. Las crisis, convulsiones y desmayos que sufrían los pacientes eran, según Mesmer, la señal de que la curación estaba en marcha.
+
+@@ s23 | rotulo | {"t": "El «baquet»", "s": "Una tina de madera para tratar a treinta personas"}
+Como cada vez tenía más pacientes, Mesmer inventó un sistema para tratarlos en grupo, el famoso baquet, que en francés significa tina o cubeta. Era un gran recipiente circular de madera, con tapa, lleno de agua magnetizada, limaduras de hierro y botellas colocadas en círculo. De la tapa salían varillas de hierro dobladas, que los pacientes, sentados alrededor, se aplicaban sobre la parte enferma del cuerpo. Una cuerda los unía a todos, y además se tomaban de las manos para formar una cadena por la que circulaba el fluido.
+
+@@ s24 | rotulo | {"t": "Penumbra, espejos y armónica de cristal", "s": "La puesta en escena de las sesiones"}
+Las sesiones tenían una escenografía cuidadísima. Salas en penumbra, cortinas gruesas, espejos, silencio y una música suave que salía de una armónica de cristal, un instrumento de copas que se frotan con los dedos húmedos. Lo curioso es que la armónica de cristal la había inventado Benjamin Franklin en mil setecientos sesenta y uno. Mesmer la tocaba muy bien. Y entonces aparecía él, según los relatos de la época vestido con una túnica de seda lila y con una varilla de hierro en la mano.
+
+@@ s25 | rotulo | {"t": "La sala de las crisis", "s": "Gritos, risas, convulsiones… y alivio"}
+Lo que ocurría a continuación asombraba a todos. Algunos pacientes empezaban a toser, a reír o a llorar sin control. Otros sufrían convulsiones violentas, gritaban o caían desmayados. Para ellos había una habitación aparte, acolchada, a la que llamaban la sala de las crisis. Mesmer recorría el círculo, miraba fijamente a unos, tocaba a otros, hacía pases con las manos o con la varilla. Y muchos salían de allí aliviados de males que arrastraban desde hacía años.
+
+@@ s26 | rotulo | {"t": "Una oferta del rey", "s": "Y un Mesmer que pide más"}
+La fama de Mesmer llegó hasta la corte. Entre sus admiradores estaba la reina María Antonieta. Por su mediación, en mil setecientos ochenta y uno el gobierno le ofreció una pensión de veinte mil libras al año y otras diez mil para una clínica, a cambio de que enseñara su método a médicos nombrados por el Estado. Mesmer se negó. Quería un reconocimiento oficial de su descubrimiento y no aceptaba que otros examinaran su doctrina. Ofendido, se marchó una temporada al balneario de Spa, en lo que hoy es Bélgica.
+
+@@ s27 | persona | {"n": "Nicolas Bergasse", "r": "Abogado de Lyon, teórico y secretario de Mesmer", "a": "1750 – 1832"}
+Mientras tanto, Deslon atendía en París su propia consulta con gran éxito, lo que a Mesmer le parecía poco menos que un robo. Fue entonces cuando entraron en escena dos personajes decisivos, el abogado Nicolas Bergasse y el banquero alsaciano Guillaume Kornmann. Juntos idearon una solución que garantizaba a Mesmer dinero y control sobre su doctrina. En lugar de vendérsela al Estado, se la venderían a una sociedad privada de discípulos.
+
+@@ s28 | dato | {"v": "100 luises", "t": "Cuota de entrada en la Sociedad de la Armonía", "s": "Con juramento de guardar el secreto"}
+Así nació la Sociedad de la Armonía Universal. Para entrar había que pagar cien luises de oro, una fortuna, y jurar no revelar nada de lo aprendido. Los cien primeros miembros ingresaron entre octubre de mil setecientos ochenta y tres y abril de mil setecientos ochenta y cuatro. El marqués de Lafayette fue el número noventa y uno. Y en las listas aparece también, con el número ciento sesenta y tres, un tal William Temple Franklin, el nieto y secretario de Benjamin Franklin. El magnetismo animal se había metido en casa del futuro investigador.
+
+@@ s29 | rotulo | {"t": "Una moda, un negocio, una secta", "s": "Y sociedades filiales por toda Francia"}
+La Sociedad de la Armonía se extendió con filiales en Lyon, Estrasburgo, Burdeos, Amiens y otras ciudades. Mesmer reunió así una suma enorme, cientos de miles de libras, y se convirtió en el médico de moda de París. Lafayette, que estaba a punto de viajar a América, llegó a escribir a George Washington para presumir de ser uno de los discípulos más entusiastas de Mesmer y prometerle que le revelaría el secreto.
+
+@@ s30 | rotulo | {"t": "Un asunto de Estado", "s": "Policía, moral y orden público"}
+Para el gobierno, aquello empezaba a ser un problema. Se hablaba de mujeres que sufrían convulsiones en salas a oscuras en presencia de hombres, y se sospechaba que en aquellas reuniones secretas se mezclaban ideas peligrosas. Además, Deslon, el discípulo rebelde, pedía que su método fuera examinado oficialmente. En marzo de mil setecientos ochenta y cuatro, el rey decidió intervenir.
+
+@@ s31 | capitulo | {"n": "Tercera parte", "t": "Los comisarios del rey"}
+El doce de marzo de mil setecientos ochenta y cuatro, Luis dieciséis nombró a cuatro médicos de la Facultad de Medicina de París para examinar el magnetismo animal. Los propios médicos pidieron que se les unieran varios miembros de la Academia de Ciencias, y el rey añadió a cinco. Poco después creó una segunda comisión, formada por miembros de la Sociedad Real de Medicina, para estudiar el mismo asunto por separado. La primera, la de la Facultad y la Academia, es la que ha pasado a la historia.
+
+@@ s32 | lista | {"t": "La comisión real de 1784", "items": ["Benjamin Franklin", "Antoine Lavoisier", "Jean Sylvain Bailly", "Joseph Ignace Guillotin", "Le Roy, Bory, Sallin, d’Arcet y Majault"]}
+Por la Academia estaban Benjamin Franklin, el único extranjero, el físico Jean Baptiste Le Roy, el astrónomo Jean Sylvain Bailly, el geógrafo Gabriel de Bory y el químico Antoine Lavoisier. Por la Facultad, los médicos Sallin, d'Arcet y Joseph Ignace Guillotin, además de Borie, que murió al comienzo de los trabajos y fue sustituido por Majault. Franklin presidía de hecho la comisión, y Bailly sería el encargado de redactar el informe.
+
+@@ s33 | persona | {"n": "Antoine Lavoisier", "r": "Químico, padre de la química moderna", "a": "1743 – 1794"}
+Antoine Lavoisier tenía cuarenta años y estaba en plena revolución química. Acababa de demostrar que el agua no es un elemento sino un compuesto, estaba desmontando la vieja teoría del flogisto y trabajaba con una balanza de precisión para medir con exactitud lo que entraba y salía de cada reacción. Sus notas, que se han conservado, muestran que fue él quien diseñó al menos algunos de los experimentos decisivos de la comisión.
+
+@@ s34 | persona | {"n": "Joseph Ignace Guillotin", "r": "Médico, profesor de la Facultad de París", "a": "1738 – 1814"}
+Entre los médicos destacaba Joseph Ignace Guillotin, un profesor respetado y de ideas reformistas. Su apellido se haría famoso pocos años después por razones que nada tienen que ver con el magnetismo. En mil setecientos ochenta y nueve propuso en la Asamblea Nacional que todos los condenados a muerte fueran ejecutados por el mismo método, rápido e igual para nobles y plebeyos. La máquina la diseñó otro médico, Antoine Louis, pero el pueblo de París le puso el nombre de Guillotin, y él pasó el resto de su vida lamentándolo.
+
+@@ s35 | cita | {"q": "Tendré a la posteridad por vengadora", "a": "Mesmer, carta a Franklin, 14 de mayo de 1784"}
+Mesmer reaccionó con furia. La comisión había decidido examinar el método en casa de Deslon, que se había ofrecido a colaborar, y no en la suya. El catorce de mayo escribió a Franklin, en una carta que probablemente redactó Bergasse, acusando a Deslon de haber roto un juramento y un contrato firmado, y de haber vendido una doctrina que no era suya. Y terminaba con una frase solemne, que tendría a la posteridad por vengadora.
+
+@@ s36 | rotulo | {"t": "La pregunta correcta", "s": "No «¿cura?», sino «¿existe el fluido?»"}
+Los comisarios tomaron entonces una decisión de método que lo cambió todo. No iban a preguntarse si los pacientes de Mesmer o de Deslon se sentían mejor, porque eso, pensaban, era muy difícil de juzgar. Muchas enfermedades mejoran solas o van y vienen. Se preguntarían algo más preciso, si existía o no el fluido magnético. Porque si existía, tenía que poder detectarse, y sus efectos tenían que aparecer siempre que se aplicara, lo supiera o no la persona tratada.
+
+@@ s37 | fecha | {"a": "9 de mayo de 1784", "t": "Primera sesión en casa de Deslon", "s": "Con el teniente de policía Lenoir"}
+El nueve de mayo, los comisarios y el teniente general de policía, Jean Charles Lenoir, se reunieron en casa de Deslon. El médico les leyó una memoria con los principios del magnetismo, les mostró su baquet y les explicó cómo se dirigía el fluido. Durante semanas vieron con sus propios ojos las convulsiones y los desmayos. Reconocieron que el espectáculo era impresionante. Pero no se conformaron con mirar.
+
+@@ s38 | rotulo | {"t": "Magnetizarse a sí mismos", "s": "Dos horas y media a la semana… y nada"}
+Lo primero que hicieron fue probar el magnetismo en sí mismos. Se sentaron alrededor de un baquet en una habitación privada, una vez por semana y durante unas dos horas y media cada vez, y algunos lo hicieron tres días seguidos. Ninguno sintió nada especial. Deslon trató también la migraña de uno de ellos, sin aliviarle el dolor. Y cuando fue a Passy a magnetizar a Franklin, a dos parientes suyos, a su secretario y a un oficial americano, ninguno notó el menor efecto.
+
+@@ s39 | comparar | {"izq": ["Pacientes pobres", "Siete tratados en Passy", "Tres sienten efectos", "Más deseo de complacer"], "der": ["Pacientes ricos", "Cuatro aristócratas", "Dos efectos leves", "Más escepticismo"]}
+Después compararon distintos tipos de pacientes. En casa de Franklin, Deslon magnetizó a siete enfermos de condición humilde. Cuatro no sintieron nada y tres notaron algún efecto. Luego probaron con cuatro personas de clase alta, dos mujeres y dos hombres, de las cuales solo dos sintieron cosas leves. Los comisarios anotaron que los efectos eran más fuertes en las personas sencillas, que llegaban con más fe y más ganas de agradar, y casi inexistentes en los sujetos instruidos y desconfiados.
+
+@@ s40 | capitulo | {"n": "Cuarta parte", "t": "Los experimentos a ciegas"}
+La idea clave era sencilla y brillante. Si el fluido es una realidad física, debe actuar aunque el paciente no sepa que se le está aplicando. Y si el paciente cree que se le aplica, pero en realidad no se le aplica, no debería sentir nada. Había que separar dos cosas que en las sesiones de Mesmer siempre iban juntas, el supuesto fluido y lo que el paciente creía que le estaba pasando. Para eso bastaba con un instrumento muy humilde, una venda sobre los ojos.
+
+@@ s41 | rotulo | {"t": "Una venda sobre los ojos", "s": "Calor solo cuando ella creía que la magnetizaban"}
+Las primeras pruebas las hizo un médico de la Facultad llamado Jumelin, que también practicaba el magnetismo. Con una mujer vendada, comprobaron que ella sentía calor en las partes del cuerpo donde creía que se la estaba magnetizando, y no donde de verdad se dirigía el fluido. A veces sentía el calor cuando nadie hacía nada. En otra serie usaron una venda acolchada con plumón de ganso para que no pudiera ver absolutamente nada. El resultado fue siempre el mismo. Los pacientes notaban efectos solo cuando creían que se les magnetizaba.
+
+@@ s42 | rotulo | {"t": "El albaricoquero", "s": "Una crisis completa junto al árbol equivocado"}
+Entonces llegó el experimento del jardín de Passy, el del muchacho vendado. Fue Deslon quien eligió al chico, uno de sus pacientes más sensibles, y fue el propio Deslon quien magnetizó el árbol, manteniéndose después lejos del muchacho para no influir en él. El chico sufrió síntomas crecientes junto a los tres primeros árboles, a unos veintisiete, treinta y seis y treinta y ocho pies del árbol tratado, y tuvo una crisis completa junto al cuarto. Ninguno estaba magnetizado.
+
+@@ s43 | rotulo | {"t": "Cuatro tazas de agua", "s": "Crisis con agua normal; calma con agua magnetizada"}
+En casa de Lavoisier se hizo otra prueba con una mujer que, en las sesiones, era muy sensible al magnetismo. Le dieron a beber agua en varias tazas. Con cuatro tazas de agua corriente, que ella creía magnetizada, sufrió una crisis. Después le dieron una taza de agua realmente magnetizada, sin decírselo, y la bebió tranquilamente, sin notar nada.
+
+@@ s44 | rotulo | {"t": "Detrás de una puerta", "s": "Ni la tocaron ni había nadie al otro lado"}
+Hubo pruebas todavía más reveladoras. A una mujer le dijeron que Deslon la estaba magnetizando desde la habitación de al lado, a través de una puerta cerrada. Al poco rato sufrió una crisis completa. Deslon no estaba allí, y nadie la había tocado ni le había tomado el pulso. Después hicieron lo contrario. Con un tabique de papel de por medio, la magnetizaron de verdad durante media hora sin que ella lo supiera, y no sintió nada. Cuando el magnetizador se colocó delante de ella, a la vista y a la misma distancia, cayó en convulsiones.
+
+@@ s45 | rotulo | {"t": "Lo que el experimento separa", "s": "El fluido y la creencia, por fin por separado"}
+Durante siglos, la medicina había juzgado los remedios por la impresión del médico y el testimonio del enfermo. Los comisarios de mil setecientos ochenta y cuatro entendieron que ese testimonio, por sincero que fuera, no servía para saber qué estaba causando el efecto. Para eso había que ocultar al paciente lo que se le hacía, cambiar una sola cosa cada vez y comparar. Es lo que hoy llamamos un experimento a ciegas con control. Ellos no le pusieron nombre, pero lo hicieron.
+
+@@ s46 | capitulo | {"n": "Quinta parte", "t": "El veredicto: la imaginación"}
+El once de agosto de mil setecientos ochenta y cuatro los comisarios firmaron su informe. Franklin, que no podía desplazarse, lo había firmado por adelantado, a partir del manuscrito que le enviaron en una caja cerrada con llave. Fue impreso por la Imprenta Real hacia el veintiuno de agosto, con sesenta y seis páginas, y se distribuyeron más de veinte mil ejemplares. Su conclusión era unánime y tajante. Nada probaba la existencia del fluido magnético animal, y un fluido que no existe no puede tener ninguna utilidad.
+
+@@ s47 | lista | {"t": "Las causas reales, según el informe", "items": ["El tacto", "La imaginación", "La imitación"]}
+¿Qué explicaba, entonces, aquellos efectos tan llamativos? El informe señalaba tres causas. El tacto, es decir, la presión de las manos sobre el vientre y otras partes del cuerpo, que podía provocar sensaciones reales. La imaginación, capaz de producir convulsiones sin ningún fluido, mientras que el supuesto fluido sin imaginación no producía nada. Y la imitación, el contagio que se daba en las sesiones colectivas, donde bastaba con que un paciente entrara en crisis para que los demás le siguieran.
+
+@@ s48 | cita | {"q": "La imaginación sin magnetismo produce convulsiones; el magnetismo sin imaginación no produce nada", "a": "Informe de la comisión, 1784 (paráfrasis)"}
+Los comisarios lo resumieron en una idea que se ha citado mil veces. La imaginación sin magnetismo produce convulsiones, y el magnetismo sin imaginación no produce nada. Y añadían una advertencia. Los tratamientos públicos, con sus crisis y sus convulsiones contagiosas, solo podían tener a la larga efectos funestos. No negaban que algunos pacientes mejoraran, sino que la causa fuera la que Mesmer decía.
+
+@@ s49 | rotulo | {"t": "El informe secreto", "s": "Solo para los ojos del rey"}
+Ese mismo día, por consejo del ministro Breteuil, los comisarios firmaron un segundo informe, secreto, destinado solo al rey. En él hablaban de lo que no querían decir en público, el peligro moral. Describían sesiones en las que un hombre magnetizaba a una mujer durante largo rato, frente a frente, rodilla con rodilla y con las manos sobre su cuerpo. Y advertían que así la atracción recíproca de los sexos se excitaba con toda su fuerza. Deslon había admitido ante el jefe de policía lo fácil que sería abusar de una mujer en aquel estado.
+
+@@ s50 | persona | {"n": "Antoine Laurent de Jussieu", "r": "Botánico, comisario de la Sociedad Real de Medicina", "a": "1748 – 1836"}
+La segunda comisión, la de la Sociedad Real de Medicina, firmó su informe el dieciséis de agosto y llegó a conclusiones parecidas. Pero uno de sus miembros, el botánico Antoine Laurent de Jussieu, se negó a firmar y publicó su propio informe. Jussieu aceptaba que la imaginación explicaba la mayoría de los efectos, pero creía haber visto casos que no encajaban. Por eso dejó abierta la posibilidad de un calor animal que pasara de un cuerpo a otro. Fue la única voz discordante.
+
+@@ s51 | rotulo | {"t": "«Magnetizaré a un caballo»", "s": "La respuesta de Mesmer"}
+Mesmer recibió el informe como una ofensa personal. Alegó que se había investigado a Deslon y no a él, que era el único que conocía de verdad la doctrina. Para demostrar que todo aquello no era cosa de la imaginación, se ofreció a magnetizar a un caballo, un paciente que no podía dejarse sugestionar. En uno de esos grabados, titulado El magnetismo desvelado, aparece Franklin al frente de la comisión, con el informe en la mano, mientras los magnetizadores huyen.
+
+@@ s52 | capitulo | {"n": "Sexta parte", "t": "Lo que vino después"}
+El informe no acabó con el magnetismo animal, pero sí con el prestigio de Mesmer en París. En mil setecientos ochenta y cinco Kornmann y Bergasse rompieron con él, acusándolo de querer seguir controlando una doctrina por la que todos habían pagado. Ese mismo año Mesmer abandonó Francia. Viajó por Inglaterra, Alemania e Italia y perdió buena parte de sus ahorros, invertidos en deuda francesa, durante la Revolución. Acabó en Suiza, en la pequeña ciudad de Frauenfeld, donde vivió de forma discreta.
+
+@@ s53 | fecha | {"a": "5 de marzo de 1815", "t": "Muere Mesmer", "s": "Meersburg, junto al lago de Constanza"}
+En sus últimos años regresó a la orilla del lago de Constanza, el paisaje de su infancia. Murió en Meersburg el cinco de marzo de mil ochocientos quince, con ochenta años, convencido hasta el final de que había hecho un gran descubrimiento y de que la posteridad le daría la razón. En cierto sentido no le faltaba algo de razón, aunque no por el motivo que él creía. Mesmer se equivocó por completo sobre el fluido, pero había tropezado con algo real.
+
+@@ s54 | rotulo | {"t": "Buzancy, 1784: el sueño magnético", "s": "El marqués de Puységur y Victor Race"}
+Ese algo empezó a revelarse ya en mil setecientos ochenta y cuatro, el mismo año de la comisión. En su finca de Buzancy, cerca de Soissons, un discípulo de Mesmer, el marqués de Puységur, magnetizó a un joven campesino llamado Victor Race. En lugar de sufrir convulsiones, el joven cayó en un estado tranquilo, parecido al sueño, en el que hablaba con soltura, respondía preguntas y obedecía sugerencias, y al despertar no recordaba nada. Puységur lo llamó sonambulismo magnético. Magnetizaba incluso un olmo en la plaza del pueblo, al que se ataban sus pacientes con cuerdas.
+
+@@ s55 | fecha | {"a": "1843", "t": "James Braid propone la palabra «hipnotismo»", "s": "Mánchester"}
+Aquel estado de trance, sin crisis ni convulsiones, fue el que estudiaron durante el siglo diecinueve médicos y curiosos de toda Europa. En mil ochocientos cuarenta y tres, el cirujano escocés James Braid, que trabajaba en Mánchester, propuso llamarlo hipnotismo, de la palabra griega que significa sueño. Defendió que no tenía nada que ver con ningún fluido, sino con la atención concentrada y la sugestión. Así, de los restos del mesmerismo salió la hipnosis, y de ahí, con el tiempo, una parte de la psicoterapia moderna.
+
+@@ s56 | rotulo | {"t": "Del mesmerismo a la Revolución", "s": "Brissot, Bergasse, Lafayette…"}
+El historiador Robert Darnton estudió otro efecto inesperado del mesmerismo. Varios de los hombres que habían pasado por la Sociedad de la Armonía, como el periodista Jacques Pierre Brissot o el propio Bergasse, acabaron siendo figuras de la Revolución. Bergasse fue diputado en los Estados Generales de mil setecientos ochenta y nueve. Brissot llegó a dirigir a los girondinos y murió en la guillotina.
+
+@@ s57 | tiempo | {"t": "El destino de los protagonistas", "marcas": [["1786", "Muere Deslon"], ["1790", "Muere Franklin"], ["1793", "Bailly, guillotinado"], ["1794", "Lavoisier, guillotinado"], ["1814", "Muere Guillotin"], ["1815", "Muere Mesmer"]]}
+El destino de los investigadores fue, en varios casos, trágico. Deslon murió en mil setecientos ochenta y seis, según se contó, durante una sesión de magnetismo. Franklin regresó a América y murió en Filadelfia el diecisiete de abril de mil setecientos noventa. Bailly, que llegó a ser el primer alcalde de París en mil setecientos ochenta y nueve, fue guillotinado el doce de noviembre de mil setecientos noventa y tres. Lavoisier, que había sido socio de la Ferme générale, la compañía privada que cobraba impuestos para la Corona, fue guillotinado el ocho de mayo de mil setecientos noventa y cuatro, junto a su suegro y otros veintiséis recaudadores.
+
+@@ s58 | cita | {"q": "Bastó un instante para cortar esa cabeza, y quizá cien años no produzcan otra igual", "a": "Joseph Louis Lagrange, sobre Lavoisier"}
+El matemático Joseph Louis Lagrange resumió la pérdida con una frase que se repite desde entonces. Bastó un instante para cortar esa cabeza, y quizá cien años no basten para producir otra igual. Se cuenta también que el juez respondió a quienes pedían clemencia que la República no necesitaba sabios, pero esa frase es casi con seguridad una invención posterior. Guillotin, en cambio, no murió en la máquina que llevaba su nombre, como dice la leyenda. Murió en su cama, en París, el veintiséis de marzo de mil ochocientos catorce.
+
+@@ s59 | capitulo | {"n": "Séptima parte", "t": "Una herramienta para siempre"}
+El método de los comisarios tardó en convertirse en norma, pero no se perdió. En mil ochocientos treinta y cinco, en Núremberg, un grupo de ciudadanos puso a prueba la homeopatía con un diseño admirable. Prepararon cien frascos numerados, la mitad con agua de nieve destilada y la otra mitad con una dilución homeopática de sal, los barajaron y guardaron la lista en un sobre cerrado. Repartieron los frascos entre voluntarios, que debían contar al cabo de tres semanas si habían notado algo.
+
+@@ s60 | dato | {"v": "8 de 50", "t": "notaron algo: 5 con sal y 3 con agua", "s": "Núremberg, 1835"}
+De los cincuenta que informaron, solo ocho dijeron haber notado algo extraño. Cinco habían tomado la dilución de sal, y tres, simple agua. La diferencia era insignificante. Los organizadores concluyeron que la homeopatía no producía los efectos que prometía. Aquel experimento de Núremberg tenía ya casi todos los ingredientes de un ensayo moderno, el azar, un grupo de comparación con una sustancia inerte, y ni los participantes ni quienes repartían los frascos sabían qué contenía cada uno.
+
+@@ s61 | rotulo | {"t": "El ensayo a doble ciego", "s": "Hoy, la regla para aprobar un fármaco"}
+Durante el siglo veinte, estas ideas se convirtieron en la regla. En mil novecientos cuarenta y ocho, el ensayo británico de la estreptomicina contra la tuberculosis repartió a los pacientes por sorteo. Hoy, el ensayo aleatorio a doble ciego, en el que ni el paciente ni el médico saben quién recibe el placebo, es la prueba que se exige a cualquier medicamento nuevo. Cada vez que leemos que un fármaco funciona mejor que el placebo, estamos usando una herramienta cuyo antecedente está en un jardín de Passy.
+
+@@ s62 | rotulo | {"t": "Cirugía simulada", "s": "Moseley y la artroscopia de rodilla, 2002"}
+La lección de los comisarios sigue dando sorpresas. En dos mil dos, un equipo dirigido por el cirujano Bruce Moseley publicó en una gran revista médica un ensayo con ciento ochenta pacientes con artrosis de rodilla. A unos les hicieron la operación habitual de limpieza por artroscopia, y a otros solo unas pequeñas incisiones en la piel, sin tocar la articulación. Los dos grupos mejoraron lo mismo. Una operación muy extendida resultó no ser mejor que su simulacro, y fue la imaginación, o mejor dicho la expectativa, la que hizo buena parte del trabajo.
+
+@@ s63 | rotulo | {"t": "La otra cara: la imaginación es real", "s": "Placebo, nocebo y placebo «abierto»"}
+Y aquí está la gran paradoja de esta historia. Los comisarios demostraron que el fluido no existía, pero también demostraron, sin proponérselo, que la imaginación podía provocar convulsiones, calor, dolor, desmayos y alivio. Es lo que hoy llamamos efecto placebo y, en su versión negativa, efecto nocebo. En dos mil diez, el investigador de Harvard Ted Kaptchuk publicó un estudio en el que daba pastillas de azúcar a pacientes con colon irritable, diciéndoles abiertamente que eran placebo. Aun así, muchos mejoraron más que los que no tomaban nada, y desde entonces decenas de ensayos y varias revisiones han estudiado ese placebo abierto.
+
+@@ s64 | rotulo | {"t": "No es que no funcione", "s": "Es saber por qué funciona"}
+Conviene no simplificar. Que un efecto se deba a la expectativa no significa que el paciente lo invente, ni que sea falso. El alivio que sentían muchos pacientes de Mesmer probablemente era real. Lo que los comisarios demostraron es que no se debía a un fluido, sino a la mente del propio paciente, al ritual, a la confianza y a la atención. Saberlo importa, porque permite distinguir los tratamientos que hacen algo por sí mismos de los que solo funcionan mientras creemos en ellos.
+
+@@ s65 | rotulo | {"t": "El método de los Sherlock", "s": "Separar lo que se cree de lo que ocurre"}
+Si Lorenzo Valla desenmascaró una falsificación leyendo el latín palabra por palabra, y Friedrich Spee demostró que la tortura fabrica confesiones, Franklin, Lavoisier y sus compañeros enseñaron a separar lo que creemos sentir de lo que de verdad está pasando. Lo hicieron sin despreciar a los pacientes, con una venda, unos árboles y unas tazas de agua. Es una de las ideas más modestas y más poderosas de la ciencia, que nuestras convicciones, por intensas que sean, también hay que ponerlas a prueba.
+
+@@ s66 | fin | {"t": "Próximamente en Los Sherlock de la historia", "items": ["John Snow y la fuente de Broad Street", "Semmelweis y las manos de los médicos", "Hans el Listo", "Houdini contra los médiums"]}
+Y con esto termina este episodio de Los Sherlock de la historia. En el próximo viajaremos al Londres de mil ochocientos cincuenta y cuatro, en plena epidemia de cólera, para seguir a un médico que, con un mapa y mucha tozudez, encontró al culpable en una fuente pública de la calle Broad. Gracias por escuchar, y hasta la próxima.
